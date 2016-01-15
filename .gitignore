@@ -22,6 +22,8 @@ app/w3tc-config/
 
 app/plugins/*
 !app/plugins/index.php
+!app/plugins/advanced-custom-fields-pro
+!app/plugins/wp-migrate-db-pro
 app/themes/*
 !app/themes/index.php
 
