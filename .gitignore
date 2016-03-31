@@ -20,11 +20,10 @@ app/uploads/
 app/wp-cache-config.php
 app/w3tc-config/
 
+# set plugins you install manually to a not-ignore statement
 app/plugins/*
 !app/plugins/index.php
 !app/plugins/advanced-custom-fields-pro
 !app/plugins/wp-migrate-db-pro
 app/themes/*
 !app/themes/index.php
-
-app/mu-plugins/timber-library/
