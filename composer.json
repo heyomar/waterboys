@@ -18,7 +18,13 @@
     "php": ">=5.5",
     "composer/installers": "^1.0",
     "johnpbloch/wordpress": "^4.4.2",
-    "vlucas/phpdotenv": "~2.2"
+    "vlucas/phpdotenv": "~2.2",
+    "wpackagist-plugin/disable-comments": "^1.4",
+    "wpackagist-plugin/regenerate-thumbnails": "^2.2",
+    "wpackagist-plugin/wordpress-seo": "^3.1",
+    "wpackagist-plugin/wp-smushit": "^2.1",
+    "wpackagist-plugin/enable-media-replace": "^3.0",
+    "wpackagist-plugin/simple-page-ordering": "^2.2"
   },
   "require-dev": {
     "wpackagist-plugin/query-monitor": "^2.8",
