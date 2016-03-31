@@ -25,5 +25,6 @@ app/plugins/*
 !app/plugins/index.php
 !app/plugins/advanced-custom-fields-pro
 !app/plugins/wp-migrate-db-pro
+!app/plugins/wp-migrate-db-pro-media-files
 app/themes/*
 !app/themes/index.php
