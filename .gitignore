@@ -19,6 +19,7 @@ app/upgrade/
 app/uploads/
 app/wp-cache-config.php
 app/w3tc-config/
+app/db.php
 
 # set plugins you install manually to a not-ignore statement
 app/plugins/*
@@ -28,3 +29,4 @@ app/plugins/*
 !app/plugins/wp-migrate-db-pro-media-files
 app/themes/*
 !app/themes/index.php
+!app/themes/offset

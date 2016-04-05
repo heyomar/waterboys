@@ -14,9 +14,10 @@ able to set it up yourself, you will have to make directory edits in
 `/index.php` and `/wp-config.php`.
 
 ## Requirements
-* PHP 5.5 or higher
-* MariaDB, Percona XtraDB, or MySQL
-* Composer (required for dev)
+* Vagrant or the following:
+  * PHP 5.5 or higher
+  * MariaDB, Percona XtraDB, or MySQL
+  * Composer (required for dev)
 
 ## Setup
 If you have VirtualBox installed, you can use the current version, or if you
@@ -35,3 +36,18 @@ A halt, suspend, or destroy command will trigger an SQL dump into the
 `/databases` folder to insure there is no unintentional data loss. It is not
 saved in the repo and it is not recommended you do so either, although it is
 just text.
+
+## Testing Mailers
+If you have a function or plugin that sends mail, you can test these using the
+MailCatcher plugin that comes preinstalled on Scotch Box. SSH into your Vagrant
+box and ru the command `mailcatcher --http-ip:0.0.0.0`. You can then see the
+sent emails over a web interface on port 1080.
+
+## MySQL Database Access
+You can access MySQL from Vagrant SSH or through a GUI such as Sequel Pro. If
+you are unsure of how to do this, review the Scotch Box documentation on the
+subject here: <https://box.scotch.io/#database-access>
+
+The database will be dumped on a potentially destructive Vagrant action, but you
+should also consider using a database backup plugin in WP for extra safety and
+to run regular backups.
