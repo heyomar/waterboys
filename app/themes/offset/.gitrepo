@@ -4,9 +4,8 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-    remote = git@github.com:bytefair/offset.git
-    branch = master
-    commit = daa4a55bc3eb015aeaea945c7d30d7b5ebc3948c
-    parent = 34a2e03442271fa75b88aa10176223742b28fc8e
-    cmdver = 0.3.0
-
+	remote = git@github.com:bytefair/offset.git
+	branch = master
+	commit = 2fc2f45f7facea72db18895be77c8008426aab1d
+	parent = 3554eecb5b660ed9aaf1b54b9d4b18c09a22dbf0
+	cmdver = 0.3.0
