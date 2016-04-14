@@ -1,0 +1,9 @@
+@import "normalize.css";
+@import "./wb__fonts.scss";
+@import "./wb__vars.scss";
+@import "./wb__base.scss";
+
+body {
+  background: #fff;
+  font-family: $wb__lib;
+}
