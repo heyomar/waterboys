@@ -3,8 +3,8 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "scotch/box"
-  config.vm.network :private_network, id: "wp_primary", ip: "192.168.33.10"
-  config.vm.hostname = "hlkpress"
+  config.vm.network :private_network, id: "wp_primary", ip: "192.168.33.23"
+  config.vm.hostname = "waterboys"
   config.vm.synced_folder ".", "/var/www/public", :nfs => { :mount_options => ["dmode=777","fmode=666"] }
   config.vm.provider :virtualbox do |v|
     v.customize ["modifyvm", :id, "--memory", 1024]

@@ -18,8 +18,9 @@
     <title><?php wp_title('|', true, 'right') . bloginfo('name'); ?></title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <?php wp_head(); ?>
+    <script src="https://use.typekit.net/wmb3pty.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
 
   <body <?php body_class(); ?>>
