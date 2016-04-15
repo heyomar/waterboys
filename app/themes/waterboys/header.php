@@ -27,8 +27,18 @@
 
     <header role="banner" class="site__header">
       <div class="site__header__content">
-        <a href="<?php echo home_url('/'); ?>"><h1><?php bloginfo('name'); ?></h1></a>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-logo.png" alt="" />
       </div>
+      <nav class="wb__header-nav">
+          <a class="wb__header-button" href="#">DONATE</a>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-waves.png" alt="" />
+          <?php
+          $args = array(
+              'theme_location' => 'primary'
+          );
+           ?>
+          <?php wp_nav_menu($args); ?>
+      </nav>
     </header>
 
     <main>
