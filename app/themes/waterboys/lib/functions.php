@@ -24,3 +24,10 @@ function is_tree($pid)
   else
     return false;
 }
+
+// Navigation
+register_nav_menus(array(
+    'primary' => __('Primary Menu'),
+    'footer' => __('Footer Menu'),
+    'footer-bottom' => __('Footer Links')
+));
