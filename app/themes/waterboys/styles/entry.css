@@ -1,9 +1,12 @@
 @import "normalize.css";
-@import "./wb__fonts.scss";
-@import "./wb__vars.scss";
-@import "./wb__base.scss";
+@import "./wb__base.css";
+@import "./wb__fonts.css";
+@import "./wb__vars.css";
+@import "./wb__home.css";
+@import "./wb__header.css";
+@import "./wb__footer.css";
 
 body {
   background: #fff;
-  font-family: $wb__lib;
+  font-family: $wb__gothic;
 }
