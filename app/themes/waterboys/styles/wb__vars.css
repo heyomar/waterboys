@@ -14,7 +14,7 @@ $wb__head: 5.85em;
 $wb__subhead: 2.17em;
 
 /* BREAK POINTS */
-$mobile: (min-width:320px);
+$mobile: (max-width:480px);
 $tablet: (min-width:768px);
 $desktop: (min-width:980px);
 $wide: (min-width:1300px);
