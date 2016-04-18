@@ -1,16 +1,39 @@
 .site__header {
   position: fixed;
   z-index: 1;
+  width: 100%;
 }
 
-.wb__header-nav {
-  float: right;
+.wb__header__nav {
   display: none;
 }
 
-.wb__header-nav img {
+.site__header__content {
+  width: 100%;
+
 }
 
-.site__header__content img{
+.site__header__content img {
   padding: 25px;
+}
+
+.wb__header-button {
+  padding: 8px 40px;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 100px;
+
+}
+
+.wb__header__right {
+  height: 100%;
+  border: 1px solid red;
+  float: right;
+
+}
+
+.wb__header__hamburger {
+
 }
