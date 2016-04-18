@@ -8,9 +8,12 @@
   display: none;
 }
 
+.wb__header-logo {
+  max-width: 260px;
+}
+
 .site__header__content {
   width: 100%;
-
 }
 
 .site__header__content img {
@@ -21,19 +24,32 @@
   padding: 8px 40px;
   text-transform: uppercase;
   color: #fff;
-  position: absolute;
-  top: 20px;
-  right: 100px;
+  position: inline-block;
+  margin-bottom: 10px;
+  position: relative;
+  top: -33px;
 
 }
 
 .wb__header__right {
   height: 100%;
-  border: 1px solid red;
   float: right;
-
 }
 
-.wb__header__hamburger {
+.wb__header__hamburger {}
 
+
+/* MEDIA QUERIES */
+@media screen and $mobile {
+  .wb__header-logo {
+    width: 49%;
+  }
+  .wb__header-button {
+    padding: 5px 20px;
+    top: -30px;
+    right: -10px;
+  }
+  .wb__header__hamburger {
+    width: 80px;
+  }
 }
