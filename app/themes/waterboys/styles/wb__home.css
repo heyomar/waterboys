@@ -20,18 +20,32 @@
 }
 
 .wb__home-content img {
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 .wb__hero-title {
-  font-size: 70px;
+  font-size: 50px;
   font-family: $wb__libh;
   letter-spacing: 2px;
+  line-height: 55px;
 }
 
 .wb__hero-subtitle {
   line-height: 30px;
   font-weight: 300;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
   font-family: $wb__libl;
+}
+
+.wb__hero-button {
+  font-family: $wb__gothic;
+  text-transform: uppercase;
+  padding: 8px 40px;
+}
+
+.wb__hero-missionlink {
+  font-family: $wb__gothic;
+  text-decoration: underline;
+  margin-top: 20px;
+  display: block;
 }
