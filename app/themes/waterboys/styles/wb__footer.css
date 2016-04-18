@@ -94,6 +94,7 @@ a {
   color: $wb__lblue;
   font-weight: bold;
   padding-bottom: 10px;
+  list-style-type: none;
 
 }
 
