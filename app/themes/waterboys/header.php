@@ -27,11 +27,13 @@
 
     <header role="banner" class="site__header">
       <div class="site__header__content">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-logo.png" alt="" />
+          <a href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-logo.png" alt="" /></a>
+        <div class="wb__header__right">
+          <a class="wb__button wb__header-button" href="/">Donate</a>
+          <a href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-waves.png" alt="" /></a>
+        </div>
       </div>
-      <nav class="wb__header-nav">
-          <a class="wb__header-button" href="#">DONATE</a>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-waves.png" alt="" />
+      <nav class="wb__header__nav">
           <?php
           $args = array(
               'theme_location' => 'primary'
