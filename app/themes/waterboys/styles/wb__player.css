@@ -1,0 +1,37 @@
+.wb__player-viewall {
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-color: $wb__lblue;
+  padding-top: 25px;
+  margin-top: -5px;
+
+}
+
+.wb__player-viewall a {
+  display: block;
+  text-align: center;
+  width: 250px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.wb__player-container {
+  display: flex;
+  margin-top: -5px;
+}
+
+.wb__player-content {
+  height: 500px;
+  border: 1px solid red;
+}
+
+.wb__content-bio {
+  flex-grow: 3;
+  border: 1px solid red;
+
+}
+
+.wb__content-info {
+  flex-grow: 1;
+}
