@@ -454,6 +454,13 @@ textarea {
 
 /* BREAK POINTS */
 
+.wb__button {
+  border: 2px solid #fff;
+  border-radius: 6px;
+  padding: 12px 40px;
+  font-size: 1.25rem;
+}
+
 .wb__home-container {
   background-image: url(../assets/wb__home-bg.jpg);
   background-size: cover;
@@ -468,8 +475,8 @@ textarea {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50% , -50%);
-          transform: translate(-50% , -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-family: 'liberatorheavy', sans-serif;
   color: #fff;
   width: 100%;
@@ -493,28 +500,44 @@ textarea {
   font-family: 'liberatorlight', sans-serif;
 }
 
-.wb__home-button {
-  border: 2px solid #fff;
-  border-radius: 6px;
-  padding: 12px 40px;
-  font-size: 1.25rem;
-}
-
 .site__header {
   position: fixed;
   z-index: 1;
+  width: 100%;
 }
 
-.wb__header-nav {
-  float: right;
+.wb__header__nav {
   display: none;
 }
 
-.wb__header-nav img {
+.site__header__content {
+  width: 100%;
+
 }
 
-.site__header__content img{
+.site__header__content img {
   padding: 25px;
+}
+
+.wb__header-button {
+  padding: 8px 40px;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 100px;
+
+}
+
+.wb__header__right {
+  height: 100%;
+  border: 1px solid red;
+  float: right;
+
+}
+
+.wb__header__hamburger {
+
 }
 
 /* FOOTER */
