@@ -19,19 +19,75 @@
 .wb__player-container {
   display: flex;
   margin-top: -5px;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.wb__player__content-career {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .wb__player-content {
-  height: 500px;
-  border: 1px solid red;
+  padding: 25px;
+  color: $wb__gray;
+  font-weight: 300;
+
 }
 
-.wb__content-bio {
-  flex-grow: 3;
-  border: 1px solid red;
-
+.wb__content {
+  flex: 65%;
+  width: 500px;
 }
 
 .wb__content-info {
-  flex-grow: 1;
+  flex: 35%;
+  min-width: 250px;
+}
+
+.wb__player__content__header-image {
+  width: 100%;
+}
+
+.wb__player__content__title {
+  text-transform: uppercase;
+  color: $wb__red;
+  letter-spacing: 1px;
+  padding-bottom: -10px;
+  font-family: $wb__libl;
+  font-size: 13px;
+  opacity: 0.55;
+}
+
+.wb__player__content__body {
+  line-height: 20px;
+}
+
+.wb__player__content__info-position {
+  margin-bottom: -12px;
+}
+
+.wb__player__content__info-college {
+  margin-bottom: -12px;
+}
+
+.wb__player__content__info-careerhighlights {
+  margin-bottom: -12px;
+}
+
+.wb__player__career-ul {
+  padding-left: 20px;
+}
+
+.wb__player__career-ul li {
+  padding: 2px 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and $mobile {
+  .wb__player__content-career {
+    max-width: 100%;
+  }
+
+  .wb__content-info {}
 }
