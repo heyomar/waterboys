@@ -1,3 +1,33 @@
+.wb__player-name {
+  font-size: 55px;
+  margin-bottom: 23px;
+  letter-spacing: 5px;
+}
+
+.wb__player-team {
+  padding-top: 5px;
+  font-family: $wb__gothic;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.wb__player__header {
+  text-align: center;
+  position: absolute;
+  margin: 0 auto;
+  width: 300px;
+  top: 20%;
+  font-family: $wb__libh;
+  color: #fff;
+  width: 100%;
+}
+
+.wb__player__header img {
+  width: auto;
+  height: 8px;
+}
+
 .wb__player-viewall {
   display: block;
   width: 100%;
@@ -18,31 +48,34 @@
 
 .wb__player-container {
   display: flex;
-  margin-top: -5px;
+  margin-top: -4px;
   flex-wrap: wrap;
   height: auto;
+  padding-bottom: 5px;
+}
+
+.wb__content-bio {
+  flex: 70%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.wb__content-info {
+  flex: 30%;
+  min-width: 350px;
+  background-color: #f0f0ef;
+  font-weight: 700;
 }
 
 .wb__player__content-career {
-  max-width: 80%;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .wb__player-content {
   padding: 25px;
   color: $wb__gray;
-  font-weight: 300;
-
-}
-
-.wb__content {
-  flex: 65%;
-  width: 500px;
-}
-
-.wb__content-info {
-  flex: 35%;
-  min-width: 250px;
 }
 
 .wb__player__content__header-image {
@@ -59,20 +92,11 @@
   opacity: 0.55;
 }
 
+.wb__player__info-title {
+  margin-bottom: -12px;
+}
+
 .wb__player__content__body {
-  line-height: 20px;
-}
-
-.wb__player__content__info-position {
-  margin-bottom: -12px;
-}
-
-.wb__player__content__info-college {
-  margin-bottom: -12px;
-}
-
-.wb__player__content__info-careerhighlights {
-  margin-bottom: -12px;
 }
 
 .wb__player__career-ul {
@@ -85,9 +109,5 @@
 
 /* MEDIA QUERIES */
 @media screen and $mobile {
-  .wb__player__content-career {
-    max-width: 100%;
-  }
 
-  .wb__content-info {}
 }
