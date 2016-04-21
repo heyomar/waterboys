@@ -13,11 +13,13 @@
   },
   "homepage": "https://github.com/bytefair/offset#readme",
   "devDependencies": {
+    "babel-eslint": "^6.0.3",
     "babel-preset-es2015": "latest",
     "babelify": "latest",
     "browser-sync": "latest",
     "browserify": "latest",
     "cssnano": "latest",
+    "jquery": "^2.2.3",
     "nodemon": "latest",
     "normalize.css": "~4",
     "parallelshell": "latest",

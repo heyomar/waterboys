@@ -4,16 +4,18 @@
   width: 100%;
 }
 
-.wb__header__nav {
-  display: none;
-}
-
 .wb__header-logo {
   max-width: 260px;
 }
 
 .site__header__content {
   width: 100%;
+  position: absolute;
+}
+
+.wb__header__hamburger {
+  z-index: 10;
+  position: relative;
 }
 
 .site__header__content img {
@@ -34,6 +36,73 @@
 .wb__header__right {
   height: 100%;
   float: right;
+}
+
+.wb__header__nav {
+  display: none;
+  position: relative;
+  z-index: 5;
+}
+
+.wb__header__nav.active {
+  display: block;
+}
+
+.wb__nav__ctn {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  top: 0;
+  z-index: 10;
+}
+
+.wb__nav__ctn-item {
+  height: 20%;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+  text-align: center;
+}
+
+.wb__nav__ctn-item a {
+  font-family: $wb__libh;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #fff;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.nav-item-ourmission {
+  background: url('../assets/wb__nav-bg-ourmission.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav-item-donate {
+  background: url('../assets/wb__nav-bg-donate.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav-item-initiatives {
+  background: url('../assets/wb__nav-bg-initiatives.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav-item-waterboys {
+  background: url('../assets/wb__nav-bg-waterboys.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav-item-social {
+  background: url('../assets/wb__nav-bg-social.jpg');
+  background-position: center center;
+  background-size: cover;
 }
 
 /* MEDIA QUERIES */

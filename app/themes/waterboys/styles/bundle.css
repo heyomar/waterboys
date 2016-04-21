@@ -648,16 +648,16 @@ textarea {
 
   .wb__content-info {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 35%;
-        -ms-flex: 1 1 35%;
-            flex: 1 1 35%;
+    -webkit-flex: 1 1 20%;
+        -ms-flex: 1 1 20%;
+            flex: 1 1 20%;
     min-width: 335px;
     background-color: #f0f0ef;
     font-weight: 700;
   }
 
   .wb__player__content-career {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
   }
 }
@@ -668,16 +668,18 @@ textarea {
   width: 100%;
 }
 
-.wb__header__nav {
-  display: none;
-}
-
 .wb__header-logo {
   max-width: 260px;
 }
 
 .site__header__content {
   width: 100%;
+  position: absolute;
+}
+
+.wb__header__hamburger {
+  z-index: 10;
+  position: relative;
 }
 
 .site__header__content img {
@@ -698,6 +700,74 @@ textarea {
 .wb__header__right {
   height: 100%;
   float: right;
+}
+
+.wb__header__nav {
+  display: none;
+  position: relative;
+  z-index: 5;
+}
+
+.wb__header__nav.active {
+  display: block;
+}
+
+.wb__nav__ctn {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  top: 0;
+  z-index: 10;
+}
+
+.wb__nav__ctn-item {
+  height: 20%;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+  text-align: center;
+}
+
+.wb__nav__ctn-item a {
+  font-family: 'liberatorheavy', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  color: #fff;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+}
+
+.nav-item-ourmission {
+  background: url('../assets/wb__nav-bg-ourmission.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav-item-donate {
+  background: url('../assets/wb__nav-bg-donate.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav-item-initiatives {
+  background: url('../assets/wb__nav-bg-initiatives.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav-item-waterboys {
+  background: url('../assets/wb__nav-bg-waterboys.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav-item-social {
+  background: url('../assets/wb__nav-bg-social.jpg');
+  background-position: center center;
+  background-size: cover;
 }
 
 /* MEDIA QUERIES */

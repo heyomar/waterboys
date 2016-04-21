@@ -27,7 +27,6 @@ function is_tree($pid)
 
 // Navigation
 register_nav_menus(array(
-    'primary' => __('Primary Menu'),
     'footer' => __('Footer Menu'),
     'footer-bottom' => __('Footer Links')
 ));

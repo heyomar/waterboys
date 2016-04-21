@@ -30,16 +30,17 @@
           <a href="/"><img class="wb__header-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-logo.png" alt="" /></a>
         <div class="wb__header__right">
           <a class="wb__button wb__header-button" href="/">Donate</a>
-          <a href="/"><img class="wb__header__hamburger" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-waves.png" alt="" /></a>
+          <img id="hamburger" class="wb__header__hamburger" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-waves.png" alt="" />
         </div>
       </div>
-      <nav class="wb__header__nav">
-          <?php
-          $args = array(
-              'theme_location' => 'primary'
-          );
-           ?>
-          <?php wp_nav_menu($args); ?>
+      <nav id="main-nav" class="wb__header__nav active">
+        <div class="wb__nav__ctn">
+          <div class="wb__nav__ctn-item nav-item-ourmission"><a href="/">Our Mission</a></div>
+          <div class="wb__nav__ctn-item nav-item-donate"><a href="/">Donate</a></div>
+          <div class="wb__nav__ctn-item nav-item-initiatives"><a href="/">Special Initiatives</a></div>
+          <div class="wb__nav__ctn-item nav-item-waterboys"><a href="/">Meet the Waterboys</a></div>
+          <div class="wb__nav__ctn-item nav-item-social"><a href="/">Social</a></div>
+        </div>
       </nav>
     </header>
 
