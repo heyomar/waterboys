@@ -36,9 +36,6 @@
   float: right;
 }
 
-.wb__header__hamburger {}
-
-
 /* MEDIA QUERIES */
 @media screen and $mobile {
   .wb__header-logo {
