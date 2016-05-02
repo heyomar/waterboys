@@ -58,21 +58,34 @@
 
 .wb__nav__ctn-item {
   height: 20%;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
   text-align: center;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 3px solid #fff;
+}
+
+.wb__nav__ctn-item:nth-child(5n) {
+  border-bottom: 0;
+}
+
+.wb__nav__ctn-item:hover {
+  height: 26%;
 }
 
 .wb__nav__ctn-item a {
   font-family: $wb__libh;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 45px;
+  letter-spacing: 3px;
   color: #fff;
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 35px 0;
+}
+
+.wb__nav__ctn-item a:hover {
+  text-decoration: none;
 }
 
 .nav-item-ourmission {
@@ -117,5 +130,8 @@
   }
   .wb__header__hamburger {
     width: 80px;
+  }
+  .wb__nav__ctn-item a {
+    font-size: 39px;
   }
 }

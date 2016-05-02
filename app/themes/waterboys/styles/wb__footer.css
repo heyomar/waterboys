@@ -7,10 +7,6 @@ a {
   color: inherit;
 }
 
-.home a:hover {
-  text-decoration: underline;
-}
-
 .site__footer {
   background-image: url('../assets/wb__home-footerpattern.png');
   background-size: cover;
