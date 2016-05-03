@@ -118,6 +118,10 @@
   background-size: cover;
 }
 
+.wb__nav-overflow {
+  overflow: hidden;
+}
+
 /* MEDIA QUERIES */
 @media screen and $mobile {
   .wb__header-logo {
