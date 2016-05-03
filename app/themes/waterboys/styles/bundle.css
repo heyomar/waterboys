@@ -450,8 +450,6 @@ textarea {
 
 /* FONTS */
 
-/* FONT SIZES */
-
 /* BREAK POINTS */
 
 .wb__button {
@@ -461,6 +459,151 @@ textarea {
   font-size: 1.25rem;
   color: #fff;
   font-weight: 700;
+}
+
+.site__header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.wb__header-logo {
+  max-width: 260px;
+}
+
+.site__header__content {
+  width: 100%;
+  position: absolute;
+}
+
+.wb__header__hamburger {
+  z-index: 10;
+  position: relative;
+}
+
+.site__header__content img {
+  padding: 25px;
+}
+
+.wb__header-button {
+  padding: 8px 40px;
+  text-transform: uppercase;
+  color: #fff;
+  position: inline-block;
+  margin-bottom: 10px;
+  position: relative;
+  top: -33px;
+
+}
+
+.wb__header__right {
+  height: 100%;
+  float: right;
+}
+
+.wb__header__nav {
+  display: none;
+  position: relative;
+  z-index: 5;
+}
+
+.wb__header__nav.active {
+  display: block;
+}
+
+.wb__nav__ctn {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  top: 0;
+  z-index: 10;
+}
+
+.wb__nav__ctn-item {
+  height: 20%;
+  text-align: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 3px solid #fff;
+}
+
+.wb__nav__ctn-item:nth-child(5n) {
+  border-bottom: 0;
+}
+
+.wb__nav__ctn-item:hover {
+  height: 26%;
+}
+
+.wb__nav__ctn-item a {
+  font-family: 'liberatorheavy', sans-serif;
+  text-transform: uppercase;
+  font-size: 2.8125rem;
+  letter-spacing: 0.1875rem;
+  color: #fff;
+  position: relative;
+  display: block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 35px 0;
+}
+
+.wb__nav__ctn-item a:hover {
+  text-decoration: none;
+}
+
+.nav-item-ourmission {
+  background: url('../assets/wb__nav-bg-ourmission.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav-item-donate {
+  background: url('../assets/wb__nav-bg-donate.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav-item-initiatives {
+  background: url('../assets/wb__nav-bg-initiatives.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav-item-waterboys {
+  background: url('../assets/wb__nav-bg-waterboys.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav-item-social {
+  background: url('../assets/wb__nav-bg-social.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.wb__nav-overflow {
+  overflow: hidden;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:30em) {
+  .wb__header-logo {
+    width: 49%;
+  }
+  .wb__header-button {
+    padding: 5px 20px;
+    top: -30px;
+    right: -10px;
+  }
+  .wb__header__hamburger {
+    width: 80px;
+  }
+  .wb__nav__ctn-item a {
+    font-size: 2.4375rem;
+  }
 }
 
 .wb__home-container {
@@ -662,145 +805,133 @@ textarea {
   }
 }
 
-.site__header {
-  position: fixed;
-  z-index: 1;
-  width: 100%;
+.mission-flex-ctn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 15px 10%;
 }
 
-.wb__header-logo {
-  max-width: 260px;
+.mission-flex-child {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2 1 50%;
+      -ms-flex: 2 1 50%;
+          flex: 2 1 50%;
+  border: 1px solid red;
 }
 
-.site__header__content {
-  width: 100%;
-  position: absolute;
-}
-
-.wb__header__hamburger {
-  z-index: 10;
-  position: relative;
-}
-
-.site__header__content img {
-  padding: 25px;
-}
-
-.wb__header-button {
-  padding: 8px 40px;
+.wb__red-sm-title {
+  color: #c2001a;
+  font-size: 0.875rem;
+  letter-spacing: 0.125rem;
+  font-family: 'liberatorlight', sans-serif;
   text-transform: uppercase;
-  color: #fff;
-  position: inline-block;
-  margin-bottom: 10px;
-  position: relative;
-  top: -33px;
-
-}
-
-.wb__header__right {
-  height: 100%;
-  float: right;
-}
-
-.wb__header__nav {
-  display: none;
-  position: relative;
-  z-index: 5;
-}
-
-.wb__header__nav.active {
-  display: block;
-}
-
-.wb__nav__ctn {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  top: 0;
-  z-index: 10;
-}
-
-.wb__nav__ctn-item {
-  height: 20%;
   text-align: center;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  border-bottom: 3px solid #fff;
 }
 
-.wb__nav__ctn-item:nth-child(5n) {
-  border-bottom: 0;
+.wb__page-hero {
+  background: url('../assets/page-hero.jpg') center center no-repeat;
+  background-size: cover;
+  height: 320px;
+  width: 100%;
 }
 
-.wb__nav__ctn-item:hover {
-  height: 26%;
+.wb__mission-hero-copy {}
+
+.wb__mission-meter-ctn {
 }
 
-.wb__nav__ctn-item a {
-  font-family: 'liberatorheavy', sans-serif;
-  text-transform: uppercase;
-  font-size: 2.8125rem;
-  letter-spacing: 0.1875rem;
-  color: #fff;
-  position: relative;
+.wb__mission-meter {
+  min-width: 310px;
+  height: 120px;
+}
+
+.wb__mission-meter-ctn img {
+  text-align: center;
+  height: 120px;
+  width: auto;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.wb__meter-sub-copy {}
+
+.wb__wb__mission-reasons-ctn {}
+
+.reasons-flex-child{
+  -webkit-box-flex: 2;
+  -webkit-flex: 2 1 50%;
+      -ms-flex: 2 1 50%;
+          flex: 2 1 50%;
+  border: 1px solid red;
+  padding: 10px;
+  min-width: 250px;
+}
+
+.wb__mission-reason {}
+
+.wb__mission-education {}
+
+.wb__mission-agriculture {}
+
+.wb__mission-economy {}
+
+.wb__mission-health {}
+
+.wb__mission-video-ctn {
+  padding: 35px 10%;
+  width: 100%;
+  background-image: url('../assets/mission__video-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.wb__mission-health {}
+
+.wb__dig-deep-ctn {}
+
+.wb__dig-deep-title {}
+
+.wb__dig-deep-copy {}
+
+.wb__affilates-ctn {}
+
+.affilates-img-ctn{
+  text-align: center;
   display: block;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  padding: 35px 0;
+  margin: 0 auto;
 }
 
-.wb__nav__ctn-item a:hover {
-  text-decoration: none;
+.wb__affilates-ctn img{
+  padding: 15px 20px;
+  height: auto;
+  width: 220px;
 }
 
-.nav-item-ourmission {
-  background: url('../assets/wb__nav-bg-ourmission.jpg');
-  background-position: center center;
-  background-size: cover;
+.wb__mission-socialbar-ctn {
+  background-color: #323639;
+  height: 100px;
+  text-align: center;
+  color: #fff;
 }
 
-.nav-item-donate {
-  background: url('../assets/wb__nav-bg-donate.jpg');
-  background-position: center center;
-  background-size: cover;
+.socialbar-copy {}
+
+.socialbar-button {
+  border: 2px solid #fff;
+  border-radius: 6px;
+  padding: 12px 40px;
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 700;
 }
 
-.nav-item-initiatives {
-  background: url('../assets/wb__nav-bg-initiatives.jpg');
-  background-position: center center;
-  background-size: cover;
-}
-
-.nav-item-waterboys {
-  background: url('../assets/wb__nav-bg-waterboys.jpg');
-  background-position: center center;
-  background-size: cover;
-}
-
-.nav-item-social {
-  background: url('../assets/wb__nav-bg-social.jpg');
-  background-position: center center;
-  background-size: cover;
-}
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width:30em) {
-  .wb__header-logo {
-    width: 49%;
-  }
-  .wb__header-button {
-    padding: 5px 20px;
-    top: -30px;
-    right: -10px;
-  }
-  .wb__header__hamburger {
-    width: 80px;
-  }
-  .wb__nav__ctn-item a {
-    font-size: 2.4375rem;
-  }
+.social-button-icon {
 }
 
 /* FOOTER */

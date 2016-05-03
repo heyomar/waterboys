@@ -9,10 +9,6 @@ $wb__libh: 'liberatorheavy', sans-serif;
 $wb__libl: 'liberatorlight', sans-serif;
 $wb__gothic: 'pill-gothic-300mg', sans-serif;
 
-/* FONT SIZES */
-$wb__head: 5.85em;
-$wb__subhead: 2.17em;
-
 /* BREAK POINTS */
 $mobile: (max-width:480px);
 $tablet: (min-width:768px);
