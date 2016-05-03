@@ -1,0 +1,99 @@
+.mission-flex-ctn {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 10%;
+}
+
+.mission-flex-child {
+  flex: 2 1 50%;
+  border: 1px solid red;
+}
+
+.wb__red-sm-title {
+  color: $wb__red;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-family: $wb__libl;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wb__page-hero {
+  background: url('../assets/page-hero.jpg') center center no-repeat;
+  background-size: cover;
+  height: 320px;
+  width: 100%;
+}
+
+
+.wb__mission-hero-copy {}
+.wb__mission-meter-ctn {
+}
+
+.wb__mission-meter {
+  min-width: 310px;
+  height: 120px;
+}
+
+.wb__mission-meter-ctn img {
+  text-align: center;
+  height: 120px;
+  width: auto;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.wb__meter-sub-copy {}
+.wb__wb__mission-reasons-ctn {}
+.reasons-flex-child{
+  flex: 2 1 50%;
+  border: 1px solid red;
+  padding: 10px;
+  min-width: 250px;
+}
+.wb__mission-reason {}
+.wb__mission-education {}
+.wb__mission-agriculture {}
+.wb__mission-economy {}
+.wb__mission-health {}
+.wb__mission-video-ctn {
+  padding: 35px 10%;
+  width: 100%;
+  background-image: url('../assets/mission__video-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+.wb__mission-health {}
+.wb__dig-deep-ctn {}
+.wb__dig-deep-title {}
+.wb__dig-deep-copy {}
+.wb__affilates-ctn {}
+
+.affilates-img-ctn{
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.wb__affilates-ctn img{
+  padding: 15px 20px;
+  height: auto;
+  width: 220px;
+}
+.wb__mission-socialbar-ctn {
+  background-color: $wb__gray;
+  height: 100px;
+  text-align: center;
+  color: #fff;
+}
+.socialbar-copy {}
+.socialbar-button {
+  border: 2px solid #fff;
+  border-radius: 6px;
+  padding: 12px 40px;
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 700;
+}
+.social-button-icon {
+}

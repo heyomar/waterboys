@@ -19,6 +19,7 @@
     "browser-sync": "latest",
     "browserify": "latest",
     "cssnano": "latest",
+    "fitvids": "^1.0.2",
     "jquery": "^2.2.3",
     "nodemon": "latest",
     "normalize.css": "~4",

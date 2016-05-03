@@ -1,8 +1,9 @@
-var burger = document.getElementById('hamburger')
-var nav = document.getElementById('main-nav')
+var burger = document.querySelector('#hamburger')
+var nav = document.querySelector('#main-nav')
 
 module.exports = () => {
   burger.addEventListener('click', () => {
     nav.classList.toggle('active')
+    document.getElementsByTagName('body')[0].classList.toggle('wb__nav-overflow')
   })
 }
