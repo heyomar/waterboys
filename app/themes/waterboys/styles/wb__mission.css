@@ -1,7 +1,7 @@
 .mission-flex-ctn {
   display: flex;
   flex-wrap: wrap;
-  padding: 15px 10%;
+  padding: 15px 5%;
 }
 
 .mission-flex-child {
@@ -31,7 +31,7 @@
 }
 
 .wb__mission-meter {
-  min-width: 310px;
+  /*min-width: 310px;*/
   height: 120px;
 }
 
@@ -49,7 +49,6 @@
   flex: 2 1 50%;
   border: 1px solid red;
   padding: 10px;
-  min-width: 250px;
 }
 .wb__mission-reason {}
 .wb__mission-education {}
@@ -69,31 +68,67 @@
 .wb__dig-deep-copy {}
 .wb__affilates-ctn {}
 
-.affilates-img-ctn{
+.affilates-img-ctn {
   text-align: center;
   display: block;
   margin: 0 auto;
 }
 
-.wb__affilates-ctn img{
+.wb__affilates-ctn img {
   padding: 15px 20px;
   height: auto;
   width: 220px;
 }
+
 .wb__mission-socialbar-ctn {
   background-color: $wb__gray;
-  height: 100px;
+  height: auto;
   text-align: center;
   color: #fff;
+
+  padding: 40px 20px;
+  margin: 0 auto;
 }
-.socialbar-copy {}
+
+.socialbar-copy {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
 .socialbar-button {
   border: 2px solid #fff;
   border-radius: 6px;
-  padding: 12px 40px;
+  padding: 10px 25px;
   font-size: 1.25rem;
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
+  margin-right: 20px;
+  text-transform: uppercase;
 }
-.social-button-icon {
+
+.socialbar-buttons-ctn {
+  height: auto;
+  display: inline-block;
+  min-width: 250px;
+}
+
+.socialbar-button svg {
+  position: relative;
+  bottom: -2px;
+  margin-right: 5px;
+}
+
+
+@media screen and $tablet{
+  .socialbar-copy {
+    padding-bottom: 0;
+    padding-right: 25px;
+  }
+  .wb__mission-socialbar-ctn {
+    padding: 25px 40px;
+    height: 100px;
+  }
+  .mission-flex-ctn {
+    padding: 15px 10%;
+  }
 }

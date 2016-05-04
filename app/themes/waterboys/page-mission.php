@@ -5,33 +5,31 @@
     <img src="" alt="" />
   </div>
   <div class="mission-flex-ctn wb__mission-hero-copy">
-    <p class="mission-flex-child">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p>
+    <p class="mission-flex-child"><?php the_field('hero_sub_copy'); ?></p>
   </div>
 
   <div class="mission-flex-ctn wb__mission-meter-ctn">
     <img class="mission-meter-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__wells-funded.png" alt="" />
     <div class="mission-flex-child wb__mission-meter"><p class="wb__red-sm-title">Progress To Next Level</p></div>
-    <p class="mission-flex-child meter-sub-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p>
   </div>
-
+<div class="mission-flex-ctn"><p class="mission-flex-child meter-sub-copy"><?php the_field('meter_sub_copy'); ?></p></div>
   <div class="mission-flex-ctn wb__mission-reasons-ctn">
     <div class="reasons-flex-child wb__mission-education mission-reason"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__reasons-education.png" alt="">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.
+        <?php the_field('reasons_education_copy'); ?>
       </p>
     </div>
     <div class="reasons-flex-child wb__mission-agriculture mission-reason"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__reasons-agriculture.png" alt="">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.
+        <?php the_field('reasons_agriculture_copy'); ?>
       </p>
     </div>
     <div class="reasons-flex-child wb__mission-economy mission-reason"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__reasons-economy.png" alt=""><p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.
+      <?php the_field('reasons_economy_copy'); ?>
     </p></div>
-    <div class="reasons-flex-child wb__mission-health mission-reason"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__reasons-health.png" alt=""><p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.
+    <div class="reasons-flex-child wb__mission-health mission-reason"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__reasons-health.png" alt=""><p><?php the_field('reasons_health_copy'); ?>
     </p></div>
-    <p class="mission-flex-child reasons-sub-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p>
+    <p class="mission-flex-child reasons-sub-copy"><?php the_field('reasons_sub_copy'); ?></p>
   </div>
 
   <div class="wb__mission-video-ctn">
@@ -39,7 +37,7 @@
   </div>
   <div class="mission-flex-ctn wb__dig-deep-ctn">
     <h3 class="dig-deep-title wb__red-sm-title">How We Dig Deep</h3>
-    <p class="dig-deep-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.
+    <p class="dig-deep-copy"><?php the_field('dig_deep_copy'); ?>
     </p>
   </div>
 
@@ -52,8 +50,16 @@
 
   <div class="wb__mission-socialbar-ctn">
     <p class="socialbar-copy">Bring it in. Connect with us on social.</p>
-    <a href="" class="socialbar-button"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-footertwitter.svg" class="social-button-icon"/> Tweet</a>
-    <a href="" class="socialbar-button"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-footerfacebook.svg" class="social-button-icon"/> Share</a>
+    <div class="socialbar-buttons-ctn">
+      <a href="" class="socialbar-button">
+        <svg class="icon icon-twitter">
+        <use xlink:href="#icon-twitter"></use>
+        </svg> Tweet</a>
+      <a href="" class="socialbar-button">
+        <svg class="icon icon-facebook-square">
+        <use xlink:href="#icon-facebook-square"></use>
+        </svg> Share</a>
+    </div>
   </div>
 <?php endwhile; ?>
 <?php endif ?>
