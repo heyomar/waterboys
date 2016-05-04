@@ -122,6 +122,14 @@
   overflow: hidden;
 }
 
+.wb__footer__social .icon {
+  height: 1.6em;
+  width: auto;
+  max-width: 1.6em;
+  position: relative;
+  bottom: -4px;
+}
+
 /* MEDIA QUERIES */
 @media screen and $mobile {
   .wb__header-logo {

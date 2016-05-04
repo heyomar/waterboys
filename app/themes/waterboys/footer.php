@@ -16,8 +16,12 @@
   <footer role="contentinfo" class="site__footer">
     <div class="site__footer__content">
         <div class="wb__footer__social wb__footer__flex-item">
-            <a href="https://twitter.com/waterboysorg"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-footertwitter.svg" alt="" />@WaterboysORG</a>
-            <a href="https://www.facebook.com/waterboysorg"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-footerfacebook.svg" alt="" />/WaterboysORG</a>
+            <a href="https://twitter.com/waterboysorg"> <svg class="icon icon-twitter">
+              <use xlink:href="#icon-twitter"></use>
+            </svg> @WaterboysORG</a>
+            <a href="https://www.facebook.com/waterboysorg"> <svg class="icon icon-facebook-square">
+              <use xlink:href="#icon-facebook-square"></use>
+            </svg> /WaterboysORG</a>
             <a href="https://www.instagram.com/waterboysorg/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-footerinstagram.svg" alt="" />@WaterboysORG</a>
         </div>
         <nav class="wb__footer__links">

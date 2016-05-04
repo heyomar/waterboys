@@ -1,0 +1,26 @@
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+/* =======================================================================================
+Example showing how to change the color/size of the icons:
+.icon-name {
+	font-size: 32px; // works because "width" & "height" were set using em units
+	color: red; // works for single-colored icons, because "fill" was set to "currentColor"
+}
+======================================================================================== */
+
+.icon-facebook-square {
+	width: 0.8571436107158661em;
+}
+
+.icon-twitter {
+	width: 0.9285703301429749em;
+}
+
+.icon-instagram {
+	width: 0.8571415841579437em;
+}
