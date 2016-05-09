@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<div class="wb__home-container">
-			<div class="wb__home-content">
-		    <h1 class="wb__hero-title">
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <div class="wb__home-container">
+      <div class="wb__home-content">
+        <h1 class="wb__hero-title">
 		        Team Up to <br> Tackle Thirst
 		    <h2>
 		    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-wave.png" alt="" />
