@@ -23,6 +23,7 @@
   background-size: cover;
   height: 320px;
   width: 100%;
+  background-position: top center;
 }
 
 
@@ -85,7 +86,6 @@
   height: auto;
   text-align: center;
   color: #fff;
-
   padding: 40px 20px;
   margin: 0 auto;
 }

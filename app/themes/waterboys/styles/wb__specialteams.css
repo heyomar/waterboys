@@ -1,0 +1,96 @@
+.st__bar-ctn {
+  background-color: $wb__gray;
+  height: auto;
+  text-align: center;
+  color: #fff;
+  padding: 20px 20px;
+  margin: 0 auto;
+}
+
+.st__flex-ctn {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 5%;
+
+}
+
+.st__flex-child {
+  flex: 1 1 35%;
+}
+
+.st__hero-subcopy {
+  padding: 15px 6%;
+}
+
+.st__ctn {
+  padding-bottom: 60px;
+}
+
+.st__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: $wb__libh;
+  color: #fff;
+}
+
+.st__title-wave {
+  width: 100px;
+  height: auto;
+}
+
+.inner{
+  /*margin: 0 auto;*/
+  /*max-width: 1450px;*/
+}
+
+.st__box {
+  background-image: url('../assets/st__boxbg.jpg');
+  background-size: cover;
+  height: 290px;
+  margin: 15px;
+  position: relative;
+  min-width: 250px;
+  /*max-width: 600px;*/
+
+}
+
+.st__box-title {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  top: 40%;
+  text-transform: uppercase;
+}
+
+.st__description-title {
+  text-align: center;
+}
+
+.st__box-description {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 15px 25px;
+
+}
+
+.st__box:hover .st__box-description,
+.st__box:active .st__box-description {
+  display: block;
+  cursor: pointer;
+  background-image: url('../assets/st__boxbg-hover.jpg');
+  background-size: cover;
+}
+
+
+.st__box:hover .st__box-title {
+  display: none;
+}
+
+@media screen and $mobile{
+  .st__box{
+  }
+}

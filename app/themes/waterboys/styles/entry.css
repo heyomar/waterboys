@@ -8,6 +8,8 @@
 @import "./wb__home.css";
 @import "./wb__player.css";
 @import "./wb__mission.css";
+@import "./wb__highlights.css";
+@import "./wb__specialteams.css";
 @import "./wb__footer.css";
 
 body {
