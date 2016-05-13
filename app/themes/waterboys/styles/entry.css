@@ -8,11 +8,23 @@
 @import "./wb__home.css";
 @import "./wb__player.css";
 @import "./wb__mission.css";
-@import "./wb__highlights.css";
 @import "./wb__specialteams.css";
+@import "./wb__highlights.css";
+@import "./wb__roster.css";
 @import "./wb__footer.css";
+
 
 body {
   background: #fff;
   font-family: $wb__gothic;
 }
+
+.wb__page-hero {
+  background: url('../assets/page-hero.jpg') top center no-repeat;
+  background-size: cover;
+  height: 320px;
+  width: 100%;
+}
+
+
+@import "slick-carousel/slick/slick.css";

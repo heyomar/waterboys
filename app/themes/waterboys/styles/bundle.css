@@ -461,6 +461,16 @@ textarea {
   font-weight: 700;
 }
 
+.wb__button-blue {
+  background-color: #5c6268;
+  font-family: 'pill-gothic-300mg', sans-serif;
+  font-size: 1.25rem;
+  padding: 12px 40px;
+  color: #fff;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
 .icon {
 	display: inline-block;
 	width: 1em;
@@ -856,7 +866,11 @@ Example showing how to change the color/size of the icons:
   -webkit-flex: 2 1 50%;
       -ms-flex: 2 1 50%;
           flex: 2 1 50%;
-  border: 1px solid red;
+}
+
+.mission-ctn {
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 .wb__red-sm-title {
@@ -865,15 +879,35 @@ Example showing how to change the color/size of the icons:
   letter-spacing: 0.125rem;
   font-family: 'liberatorlight', sans-serif;
   text-transform: uppercase;
-  text-align: center;
+  margin: 0 auto;
 }
 
+.
 .wb__page-hero {
-  background: url('../assets/page-hero.jpg') center center no-repeat;
+  background: url('../assets/page-hero.jpg') top center no-repeat;
   background-size: cover;
   height: 320px;
   width: 100%;
-  background-position: top center;
+}
+
+.mission__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.125rem;
+  font-family: 'liberatorheavy', sans-serif;
+  color: #fff;
+  margin-top: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  letter-spacing: 0.125rem;
+}
+
+.mission__title-wave {
+  width: 100px;
+  height: auto;
 }
 
 .wb__mission-hero-copy {}
@@ -882,7 +916,6 @@ Example showing how to change the color/size of the icons:
 }
 
 .wb__mission-meter {
-  /*min-width: 310px;*/
   height: 120px;
 }
 
@@ -890,21 +923,42 @@ Example showing how to change the color/size of the icons:
   text-align: center;
   height: 120px;
   width: auto;
-  border: 1px solid red;
   margin: 0 auto;
+}
+
+.mission__meter-title {
+  text-align: center;
 }
 
 .wb__meter-sub-copy {}
 
 .wb__wb__mission-reasons-ctn {}
 
-.reasons-flex-child{
+.reasons__description-title {
+  text-align: left;
+  display: inline-block;
+}
+
+.reasons-flex-child {
   -webkit-box-flex: 2;
   -webkit-flex: 2 1 50%;
       -ms-flex: 2 1 50%;
           flex: 2 1 50%;
-  border: 1px solid red;
-  padding: 10px;
+  padding: 10px 10px 35px 10px;
+
+}
+
+.mission-reason img {
+  width: 100px;
+  height: auto;
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+
+.mission-reason p {
+  display: inline-block;
+  width: 250px;
 }
 
 .wb__mission-reason {}
@@ -929,7 +983,9 @@ Example showing how to change the color/size of the icons:
 
 .wb__dig-deep-ctn {}
 
-.wb__dig-deep-title {}
+.wb__dig-deep-title {
+  padding: 25px 0 15px 0;
+}
 
 .wb__dig-deep-copy {}
 
@@ -939,6 +995,11 @@ Example showing how to change the color/size of the icons:
   text-align: center;
   display: block;
   margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.affilates-title {
+  padding: 25px 0 15px 0;
 }
 
 .wb__affilates-ctn img {
@@ -999,6 +1060,13 @@ Example showing how to change the color/size of the icons:
   }
 }
 
+@media screen and (max-width:30em){
+  .socialbar-button{
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+}
+
 .st__bar-ctn {
   background-color: #323639;
   height: auto;
@@ -1017,14 +1085,13 @@ Example showing how to change the color/size of the icons:
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   padding: 15px 5%;
-
 }
 
 .st__flex-child {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 35%;
-      -ms-flex: 1 1 35%;
-          flex: 1 1 35%;
+  -webkit-flex: 1 1 45%;
+      -ms-flex: 1 1 45%;
+          flex: 1 1 45%;
 }
 
 .st__hero-subcopy {
@@ -1033,6 +1100,8 @@ Example showing how to change the color/size of the icons:
 
 .st__ctn {
   padding-bottom: 60px;
+  max-width: 1450px;
+  margin: 0 auto;
 }
 
 .st__title {
@@ -1041,16 +1110,18 @@ Example showing how to change the color/size of the icons:
   font-size: 3.125rem;
   font-family: 'liberatorheavy', sans-serif;
   color: #fff;
+  margin-top: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  letter-spacing: 0.125rem;
 }
 
 .st__title-wave {
   width: 100px;
   height: auto;
-}
-
-.inner{
-  /*margin: 0 auto;*/
-  /*max-width: 1450px;*/
 }
 
 .st__box {
@@ -1059,8 +1130,6 @@ Example showing how to change the color/size of the icons:
   height: 290px;
   margin: 15px;
   position: relative;
-  min-width: 250px;
-  /*max-width: 600px;*/
 
 }
 
@@ -1098,9 +1167,160 @@ Example showing how to change the color/size of the icons:
   display: none;
 }
 
-@media screen and (max-width:30em){
-  .st__box{
-  }
+.hl__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.125rem;
+  font-family: 'liberatorheavy', sans-serif;
+  color: #fff;
+  margin-top: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  letter-spacing: 0.125rem;
+}
+
+.hl__title-wave {
+  width: 100px;
+  height: auto;
+}
+
+.hl__flex-ctn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.hl__flex-ctn img {
+  padding: 10px 25px;
+  margin-top: 20px;
+  max-height: 210px;
+}
+
+.hl__flex-child-copy {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3 2 50%;
+      -ms-flex: 3 2 50%;
+          flex: 3 2 50%;
+  padding: 0 25px;
+}
+
+.article__excerpt {}
+
+.hl__article-ctn {
+  padding-bottom: 15px;
+}
+
+.placehold {
+  width: 100%;
+  height: 500px;
+  background-color: #5c6268;
+}
+
+.table-ctn {
+  /*width: 100%;*/
+}
+
+.rs__title {
+  padding-top: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.75rem;
+  font-family: 'liberatorheavy', sans-serif;
+  color: #c2001a;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  letter-spacing: 0.25rem;
+}
+
+.rs__ctn {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.roster {}
+
+tr:nth-child(odd) {
+  background-color: #f3f5f7;
+}
+
+.roster td {
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.rs__honor-ctn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.rs__honor-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 40%;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+}
+
+.rs__honor-name-ctn {
+  background-color: rgba(50, 54, 57, 0.95);
+  text-align: center;
+  padding: 5px 0;
+  min-width: 250px;
+  width: 100%;
+  margin: 0 15px;
+}
+
+.rs__honor-name-copy {
+  color: #fff;
+  font-family: 'pill-gothic-300mg', sans-serif;
+  font-weight: 400;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  margin-bottom: -20px;
+}
+
+.rs__honor-team-copy {
+  font-family: 'pill-gothic-300mg', sans-serif;
+  text-transform: uppercase;
+  color: #c2001a;
+  font-size: 1.375rem;
+}
+
+.rs__honor-boyer-bg {
+  background-image: url('../assets/roster__honor-boyer.jpg');
+  background-size: cover;
+}
+
+.rs__honor-molina-bg {
+  background-image: url('../assets/roster__honor-molina.jpg');
+  background-size: cover;
+}
+
+.rs__raised-ctn {
+  background-color: #fff;
+  padding: 20px 20px;
+  border: 1px solid red;
+  text-align: center;
+  margin: 0 15px;
+}
+
+.rs__raised-ctn p {
+  font-size: 1.75rem;
 }
 
 /* FOOTER */
@@ -1244,3 +1464,12 @@ body {
   background: #fff;
   font-family: 'pill-gothic-300mg', sans-serif;
 }
+
+.wb__page-hero {
+  background: url('../assets/page-hero.jpg') top center no-repeat;
+  background-size: cover;
+  height: 320px;
+  width: 100%;
+}
+
+@import "slick-carousel/slick/slick.css";
