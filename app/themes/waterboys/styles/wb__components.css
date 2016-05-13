@@ -6,3 +6,13 @@
   color: #fff;
   font-weight: 700;
 }
+
+.wb__button-blue {
+  background-color: $wb__lblue;
+  font-family: $wb__gothic;
+  font-size: 20px;
+  padding: 12px 40px;
+  color: #fff;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
