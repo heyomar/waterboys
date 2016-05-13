@@ -31,6 +31,7 @@
     "postcss-pxtorem": "^3.3.1",
     "postcss-sassy-mixins": "latest",
     "postcss-simple-vars": "^1.2.0",
+    "slick-carousel": "^1.6.0",
     "snazzy": "latest",
     "standard": "latest",
     "stylelint": "latest",
