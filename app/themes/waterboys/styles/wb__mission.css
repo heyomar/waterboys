@@ -6,7 +6,11 @@
 
 .mission-flex-child {
   flex: 2 1 50%;
-  border: 1px solid red;
+}
+
+.mission-ctn {
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 .wb__red-sm-title {
@@ -15,24 +19,41 @@
   letter-spacing: 2px;
   font-family: $wb__libl;
   text-transform: uppercase;
-  text-align: center;
+  margin: 0 auto;
 }
 
+.
 .wb__page-hero {
-  background: url('../assets/page-hero.jpg') center center no-repeat;
+  background: url('../assets/page-hero.jpg') top center no-repeat;
   background-size: cover;
   height: 320px;
   width: 100%;
-  background-position: top center;
 }
 
+.mission__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: $wb__libh;
+  color: #fff;
+  margin-top: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 2px;
+}
+
+.mission__title-wave {
+  width: 100px;
+  height: auto;
+}
 
 .wb__mission-hero-copy {}
 .wb__mission-meter-ctn {
 }
 
 .wb__mission-meter {
-  /*min-width: 310px;*/
   height: 120px;
 }
 
@@ -40,22 +61,47 @@
   text-align: center;
   height: 120px;
   width: auto;
-  border: 1px solid red;
   margin: 0 auto;
+}
+
+.mission__meter-title {
+  text-align: center;
 }
 
 .wb__meter-sub-copy {}
 .wb__wb__mission-reasons-ctn {}
-.reasons-flex-child{
-  flex: 2 1 50%;
-  border: 1px solid red;
-  padding: 10px;
+
+.reasons__description-title {
+  text-align: left;
+  display: inline-block;
 }
+
+.reasons-flex-child {
+  flex: 2 1 50%;
+  padding: 10px 10px 35px 10px;
+
+}
+
+
+.mission-reason img {
+  width: 100px;
+  height: auto;
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+
+.mission-reason p {
+  display: inline-block;
+  width: 250px;
+}
+
 .wb__mission-reason {}
 .wb__mission-education {}
 .wb__mission-agriculture {}
 .wb__mission-economy {}
 .wb__mission-health {}
+
 .wb__mission-video-ctn {
   padding: 35px 10%;
   width: 100%;
@@ -63,9 +109,12 @@
   background-size: cover;
   background-position: center center;
 }
+
 .wb__mission-health {}
 .wb__dig-deep-ctn {}
-.wb__dig-deep-title {}
+.wb__dig-deep-title {
+  padding: 25px 0 15px 0;
+}
 .wb__dig-deep-copy {}
 .wb__affilates-ctn {}
 
@@ -73,6 +122,11 @@
   text-align: center;
   display: block;
   margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.affilates-title {
+  padding: 25px 0 15px 0;
 }
 
 .wb__affilates-ctn img {
@@ -130,5 +184,12 @@
   }
   .mission-flex-ctn {
     padding: 15px 10%;
+  }
+}
+
+@media screen and $mobile{
+  .socialbar-button{
+    display: inline-block;
+    margin-bottom: 15px;
   }
 }
