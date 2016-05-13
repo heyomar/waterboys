@@ -1,0 +1,96 @@
+.placehold {
+  width: 100%;
+  height: 500px;
+  background-color: $wb__lblue;
+}
+
+.table-ctn {
+  /*width: 100%;*/
+}
+
+.rs__title {
+  padding-top: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: $wb__libh;
+  color: $wb__red;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 4px;
+}
+
+.rs__ctn {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.roster {}
+
+tr:nth-child(odd) {
+  background-color: $wb__blue;
+}
+
+.roster td {
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.rs__honor-ctn {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rs__honor-item {
+  flex: 1 1 40%;
+}
+
+.rs__honor-name-ctn {
+  background-color: rgba(50, 54, 57, 0.95);
+  text-align: center;
+  padding: 5px 0;
+  min-width: 250px;
+  width: 100%;
+  margin: 0 15px;
+}
+
+.rs__honor-name-copy {
+  color: #fff;
+  font-family: $wb__gothic;
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: -20px;
+}
+
+.rs__honor-team-copy {
+  font-family: $wb__gothic;
+  text-transform: uppercase;
+  color: $wb__red;
+  font-size: 22px;
+}
+
+.rs__honor-boyer-bg {
+  background-image: url('../assets/roster__honor-boyer.jpg');
+  background-size: cover;
+}
+
+.rs__honor-molina-bg {
+  background-image: url('../assets/roster__honor-molina.jpg');
+  background-size: cover;
+}
+
+.rs__raised-ctn {
+  background-color: #fff;
+  padding: 20px 20px;
+  border: 1px solid red;
+  text-align: center;
+  margin: 0 15px;
+}
+
+.rs__raised-ctn p {
+  font-size: 28px;
+}
