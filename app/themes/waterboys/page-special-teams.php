@@ -1,15 +1,17 @@
 <?php get_header(); ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="wb__page-hero">
-      <h2 class="st__title">Special Teams</h2>
-      <img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/wb__home-wave.png" alt="">
-    </div>
-    <div class="st__hero-subcopy">
-      <p>These special teams and trick plays go beyond our basic donation structure to engage fans and spread awareness.
-      </p>
+      <h2 class="st__title">Special Teams <br><img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/wb__home-wave.png" alt=""></h2>
     </div>
 
-    <div class="st__ctn inner">
+
+
+    <div class="st__ctn">
+      <div class="st__hero-subcopy">
+        <p>These special teams and trick plays go beyond our basic donation structure to engage fans and spread awareness.
+        </p>
+      </div>
+
       <div class="st__flex-ctn">
         <div class="st__flex-child st__box">
           <h2 class="st__box-title">Conquering Kili</h2>
@@ -54,7 +56,7 @@
     </div>
 
     <div class="st__bar-ctn">
-      <p>14 million Tanzanians lack access to safe water. Dig deep with us.</p>
+      <p>14 million Tanzanians lack access to safe water. Dig deep with us. &nbsp;</p>
     </div>
 
 
