@@ -21,6 +21,9 @@
     <?php wp_head(); ?>
     <script src="https://use.typekit.net/wmb3pty.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/jquery-latest.js"></script>
+    <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/jquery.tablesorter.js"></script>
+    <script type="text/javascript">$(document).ready(function(){$("#roster").tablesorter();});</script>
   </head>
 
   <body <?php body_class(); ?>>
