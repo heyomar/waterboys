@@ -118,34 +118,41 @@
       </div>
       <div class="rs__ctn">
         <div class="rs__honor-ctn">
-          <div class="rs__honor-image-1 rs__honor-item">
-            <div class="rs__honor-name-ctn">
-              <h2 class="rs__honor-name-copy">Nate Boyer</h2>
-              <p class="rs__honor-team-copy">TEAM NAME</p>
-            </div>
+          <div class="rs__honor-item">
+            <div class="rs__honor-image-1"></div>
+            <div class="rs__honor-info-ctn">
+              <div class="rs__honor-name-ctn">
+                <h2 class="rs__honor-name-copy">Nate Boyer</h2>
+                <p class="rs__honor-team-copy">TEAM NAME</p>
+              </div>
 
-            <div class="rs__raised-ctn">
-              <h3 class="wb__red-sm-title">Total Raised</h3>
-              <p>
-                $27,000
-              </p>
-              <a href="/" class="wb__button-blue">View Profile</a>
+              <div class="rs__raised-ctn">
+                <h3 class="wb__red-sm-title">Total Raised</h3>
+                <p>
+                  $27,000
+                </p>
+                <a href="/" class="wb__button-blue">View Profile</a>
+              </div>
             </div>
           </div>
 
-          <div class="rs__honor-image-2 rs__honor-item">
-            <div class="rs__honor-name-ctn">
-              <h2 class="rs__honor-name-copy">Yadier Molina</h2>
-              <p class="rs__honor-team-copy">TEAM NAME</p>
-            </div>
-            <div class="rs__raised-ctn">
-              <h3 class="wb__red-sm-title">Total Raised</h3>
-              <p>
-                $27,000
-              </p>
-              <a href="/" class="wb__button-blue">View Profile</a>
+          <div class="rs__honor-item">
+            <div class="rs__honor-image-2"></div>
+            <div class="rs__honor-info-ctn">
+              <div class="rs__honor-name-ctn">
+                <h2 class="rs__honor-name-copy">Yadier Molina</h2>
+                <p class="rs__honor-team-copy">TEAM NAME</p>
+              </div>
+              <div class="rs__raised-ctn">
+                <h3 class="wb__red-sm-title">Total Raised</h3>
+                <p>
+                  $27,000
+                </p>
+                <a href="/" class="wb__button-blue">View Profile</a>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
