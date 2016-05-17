@@ -15,9 +15,9 @@
         <table border="0" id="roster" class="tablesorter roster">
           <thead>
             <tr>
-              <th><a href="#">Waterboys &#2195;</a></th>
-              <th><a href="#">Team &#129171;</a></th>
-              <th><a href="#">Fundraising Rank &#129171;</a></th>
+              <th><a href="#">Waterboys</a></th>
+              <th><a href="#">Team</a></th>
+              <th><a href="#">Fundraising Rank</a></th>
             </tr>
           </thead>
           <tbody>
@@ -110,39 +110,51 @@
         </table>
       </div>
     </div>
-    <div class="rs__ctn">
-      <h3>Honorary Waterboys</h3>
-      <p>Our honorary Waterboys work in — and play on— other fields, but demonstrate the same passion and dedication to.</p>
-    </div>
-    <div class="rs__ctn">
-      <div class="rs__honor-ctn">
-          <div class="rs__honor-item rs__honor-name-ctn">
-            <h2 class="rs__honor-name-copy">Nate Boyer</h2>
-            <p class="rs__honor-team-copy">TEAM NAME</p>
+
+    <div class="rs__honor-bg">
+      <div class="rs__ctn rs__honor-copy">
+        <h3>Honorary Waterboys</h3>
+        <p>Our honorary Waterboys work in — and play on— other fields, but demonstrate the same passion and dedication to.</p>
+      </div>
+      <div class="rs__ctn">
+        <div class="rs__honor-ctn">
+          <div class="rs__honor-image-1 rs__honor-item">
+            <div class="rs__honor-name-ctn">
+              <h2 class="rs__honor-name-copy">Nate Boyer</h2>
+              <p class="rs__honor-team-copy">TEAM NAME</p>
+            </div>
+
+            <div class="rs__raised-ctn">
+              <h3 class="wb__red-sm-title">Total Raised</h3>
+              <p>
+                $27,000
+              </p>
+              <a href="/" class="wb__button-blue">View Profile</a>
+            </div>
           </div>
 
-          <div class="rs__honor-item rs__honor-name-ctn">
-            <h2 class="rs__honor-name-copy">Yadier Molina</h2>
-            <p class="rs__honor-team-copy">TEAM NAME</p>
+          <div class="rs__honor-image-2 rs__honor-item">
+            <div class="rs__honor-name-ctn">
+              <h2 class="rs__honor-name-copy">Yadier Molina</h2>
+              <p class="rs__honor-team-copy">TEAM NAME</p>
+            </div>
+            <div class="rs__raised-ctn">
+              <h3 class="wb__red-sm-title">Total Raised</h3>
+              <p>
+                $27,000
+              </p>
+              <a href="/" class="wb__button-blue">View Profile</a>
+            </div>
           </div>
-      </div>
-      <div class="rs__honor-ctn">
-        <div class="rs__honor-item rs__raised-ctn">
-          <h3 class="wb__red-sm-title">Total Raised</h3>
-          <p>
-            $27,000
-          </p>
-          <a href="/" class="wb__button-blue">View Profile</a>
-        </div>
-        <div class="rs__honor-item rs__raised-ctn">
-          <h3 class="wb__red-sm-title">Total Raised</h3>
-          <p>
-            $27,000
-          </p>
-          <a href="/" class="wb__button-blue">View Profile</a>
         </div>
       </div>
     </div>
-      <?php endwhile; ?>
-        <?php endif ?>
-          <?php get_footer(); ?>
+    </div>
+    <div class="wb__mission-socialbar-ctn rs__space">
+      <div class="socialbar-buttons-ctn">
+        <a href="" class="socialbar-button">Meet Our Special Teams</a>
+      </div>
+    </div>
+    <?php endwhile; ?>
+      <?php endif ?>
+        <?php get_footer(); ?>

@@ -1223,9 +1223,7 @@ Example showing how to change the color/size of the icons:
   background-color: #5c6268;
 }
 
-.table-ctn {
-  /*width: 100%;*/
-}
+.table-ctn {}
 
 .rs__title {
   padding-top: 100px;
@@ -1247,7 +1245,9 @@ Example showing how to change the color/size of the icons:
   margin: 0 auto;
 }
 
-.roster {}
+.roster {
+  width: 100%;
+}
 
 tr:nth-child(odd) {
   background-color: #f3f5f7;
@@ -1271,18 +1271,18 @@ tr:nth-child(odd) {
 
 .rs__honor-item {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 40%;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
+  -webkit-flex: 1 1 45%;
+      -ms-flex: 1 1 45%;
+          flex: 1 1 45%;
 }
 
 .rs__honor-name-ctn {
   background-color: rgba(50, 54, 57, 0.95);
   text-align: center;
   padding: 5px 0;
-  min-width: 250px;
   width: 100%;
-  margin: 0 15px;
+  position: absolute;
+  bottom: -120px;
 }
 
 .rs__honor-name-copy {
@@ -1301,26 +1301,58 @@ tr:nth-child(odd) {
   font-size: 1.375rem;
 }
 
-.rs__honor-boyer-bg {
+.rs__honor-image-1 {
   background-image: url('../assets/roster__honor-boyer.jpg');
   background-size: cover;
+  background-position: top center;
+  height: 300px;
+  margin: 0 15px;
+  position: relative;
+  margin-bottom: 300px;
 }
 
-.rs__honor-molina-bg {
+.rs__honor-image-2 {
   background-image: url('../assets/roster__honor-molina.jpg');
   background-size: cover;
+  background-position: top center;
+  height: 300px;
+  margin: 0 15px;
+  position: relative;
 }
 
 .rs__raised-ctn {
   background-color: #fff;
-  padding: 20px 20px;
-  border: 1px solid red;
+  padding: 20px;
+  padding-bottom: 30px;
   text-align: center;
-  margin: 0 15px;
+  position: absolute;
+  bottom: -285px;
+  width: 100%;
+
 }
 
 .rs__raised-ctn p {
   font-size: 1.75rem;
+}
+
+.rs__honor-bg {
+  background-image: url(../assets/roster__honor-bg.png);
+  background-size: cover;
+  padding: 25px 0;
+}
+
+.rs__honor-copy {
+  padding: 20px;
+}
+
+.rs__ctn h3 {
+  text-align: center;
+  color: #c2001a;
+}
+
+.rs__space {
+  height: auto;
+  padding: 30px;
 }
 
 /* FOOTER */
