@@ -24,7 +24,9 @@
     "wpackagist-plugin/wordpress-seo": "^3.1",
     "wpackagist-plugin/wp-smushit": "^2.1",
     "wpackagist-plugin/enable-media-replace": "^3.0",
-    "wpackagist-plugin/simple-page-ordering": "^2.2"
+    "wpackagist-plugin/simple-page-ordering": "^2.2",
+    "wpackagist-plugin/disable-emojis": "^1.5",
+    "wpackagist-plugin/ninja-forms": "^2.9"
   },
   "require-dev": {
     "wpackagist-plugin/query-monitor": "^2.8",
