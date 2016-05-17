@@ -27,6 +27,7 @@ app/plugins/*
 !app/plugins/advanced-custom-fields-pro
 !app/plugins/wp-migrate-db-pro
 !app/plugins/wp-migrate-db-pro-media-files
+!app/plugins/ninja-forms-*
 app/themes/*
 !app/themes/index.php
 !app/themes/waterboys

@@ -1,0 +1,212 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ninja-forms-stripe\n"
+"POT-Creation-Date: 2014-11-16 16:13-0500\n"
+"PO-Revision-Date: 2014-11-16 16:13-0500\n"
+"Last-Translator: \n"
+"Language-Team: WP Ninjas <info@wpninjas.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x;_n\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: classes/class-stripe-process.php:90
+msgid "There was a problem creating your payment. Please try again."
+msgstr ""
+
+#: classes/class-stripe-process.php:160
+msgid "Invalid Stripe token."
+msgstr ""
+
+#: classes/class-stripe-settings.php:27 classes/class-stripe-settings.php:35
+#: classes/class-stripe-settings.php:165
+msgid "Stripe Settings"
+msgstr ""
+
+#: classes/class-stripe-settings.php:27
+msgid "Stripe"
+msgstr ""
+
+#: classes/class-stripe-settings.php:89
+msgid "Basic Settings"
+msgstr ""
+
+#: classes/class-stripe-settings.php:96
+msgid "Currency"
+msgstr ""
+
+#: classes/class-stripe-settings.php:111
+msgid "API Credentials"
+msgstr ""
+
+#: classes/class-stripe-settings.php:118
+msgid "Live Secret Key"
+msgstr ""
+
+#: classes/class-stripe-settings.php:124
+msgid "Live Publishable Key"
+msgstr ""
+
+#: classes/class-stripe-settings.php:130
+msgid "Test Secret Key"
+msgstr ""
+
+#: classes/class-stripe-settings.php:136
+msgid "Test Publishable Key"
+msgstr ""
+
+#: classes/class-stripe-settings.php:156
+msgid "Settings Updated"
+msgstr ""
+
+#: classes/class-stripe-settings.php:172
+msgid "Use Stripe"
+msgstr ""
+
+#: classes/class-stripe-settings.php:177
+msgid "Run in sandbox (test) mode"
+msgstr ""
+
+#: classes/class-stripe-settings.php:182
+msgid "Default Product Description"
+msgstr ""
+
+#: classes/class-stripe-settings.php:183
+msgid ""
+"If you do not plan on adding any calculation fields to your form, enter a "
+"product description here."
+msgstr ""
+
+#: classes/class-stripe-settings.php:188
+msgid "Default Total"
+msgstr ""
+
+#: classes/class-stripe-settings.php:189
+msgid ""
+"If you do not want to use a Total Field in your form, you can use this "
+"setting. Please leave out any currency markers."
+msgstr ""
+
+#: classes/class-stripe-settings.php:194
+msgid "Recurring Payment Plan ID"
+msgstr ""
+
+#: classes/class-stripe-settings.php:195
+msgid ""
+"<strong>If you do not want to create a recurring payment, leave this field "
+"blank.</strong><p><em>If you would like to sign users up for a recurring "
+"payment plan using this form, enter the ID of that plan here. You can create "
+"a recurring payment plan from your dashboard at Stripe.com.</em></p>"
+msgstr ""
+
+#: classes/class-stripe-settings.php:219
+msgid "Include this label in the product description list sent to Stripe."
+msgstr ""
+
+#: classes/class-stripe-settings.php:229
+msgid "Use list label for Stripe description"
+msgstr ""
+
+#: classes/class-stripe-subs.php:46 classes/class-stripe-subs.php:79
+msgid "Stripe Charge ID"
+msgstr ""
+
+#: classes/class-stripe-subs.php:98
+msgid "Stripe information"
+msgstr ""
+
+#: classes/class-stripe-subs.php:118
+msgid "Transaction ID"
+msgstr ""
+
+#: classes/deprecated-class-stripe-subs.php:37
+#: classes/deprecated-class-stripe-subs.php:81
+msgid "Charge ID"
+msgstr ""
+
+#: includes/functions.php:12
+msgid "Australian Dollars"
+msgstr ""
+
+#: includes/functions.php:13
+msgid "Canadian Dollars"
+msgstr ""
+
+#: includes/functions.php:14
+msgid "Czech Koruna"
+msgstr ""
+
+#: includes/functions.php:15
+msgid "Danish Krone"
+msgstr ""
+
+#: includes/functions.php:16
+msgid "Euros"
+msgstr ""
+
+#: includes/functions.php:17
+msgid "Hong Kong Dollars"
+msgstr ""
+
+#: includes/functions.php:18
+msgid "Hungarian Forints"
+msgstr ""
+
+#: includes/functions.php:19
+msgid "Israeli New Sheqels"
+msgstr ""
+
+#: includes/functions.php:20
+msgid "Japanese Yen"
+msgstr ""
+
+#: includes/functions.php:21
+msgid "Mexican Pesos"
+msgstr ""
+
+#: includes/functions.php:22
+msgid "Norwegian Krone"
+msgstr ""
+
+#: includes/functions.php:23
+msgid "New Zealand Dollars"
+msgstr ""
+
+#: includes/functions.php:24
+msgid "Philippine Pesos"
+msgstr ""
+
+#: includes/functions.php:25
+msgid "Polish Zloty"
+msgstr ""
+
+#: includes/functions.php:26
+msgid "Pound Sterling"
+msgstr ""
+
+#: includes/functions.php:27
+msgid "Singapore Dollars"
+msgstr ""
+
+#: includes/functions.php:28
+msgid "Swedish Krona"
+msgstr ""
+
+#: includes/functions.php:29
+msgid "Swiss Franc"
+msgstr ""
+
+#: includes/functions.php:30
+msgid "Taiwan New Dollars"
+msgstr ""
+
+#: includes/functions.php:31
+msgid "Thai Baht"
+msgstr ""
+
+#: includes/functions.php:32
+msgid "U.S. Dollars"
+msgstr ""
