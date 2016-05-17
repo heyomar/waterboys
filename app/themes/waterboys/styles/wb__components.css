@@ -16,3 +16,39 @@
   border-radius: 6px;
   text-transform: uppercase;
 }
+
+.wb__page-dash-ctn {
+  width: 100%;
+  background-color: $wb__gray;
+  min-height: 150px;
+}
+
+.wb__page-dash-inner-ctn {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wb__page-dash-item {
+  flex: 2 1 auto;
+  height: 150px;
+  min-width: 200px;
+}
+
+.wb__page-dash-item h3 {
+  margin: 0;
+  color: #fff;
+  font-family: $wb__gothic;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.wb__dash-donate {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.wb__page-legal {
+  padding: 35px 25px;
+}
