@@ -27,7 +27,8 @@
     "wpackagist-plugin/simple-page-ordering": "^2.2",
     "wpackagist-plugin/disable-emojis": "^1.5",
     "wpackagist-plugin/ninja-forms": "^2.9",
-    "wpackagist-plugin/custom-post-type-ui": "^1.3"
+    "wpackagist-plugin/custom-post-type-ui": "^1.3",
+    "wpackagist-plugin/white-label-cms": "^1.5"
   },
   "require-dev": {
     "wpackagist-plugin/query-monitor": "^2.8",
