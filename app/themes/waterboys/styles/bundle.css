@@ -1409,6 +1409,132 @@ tr:nth-child(odd) {
   padding: 35px 20px;
 }
 
+.cn__ctn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.cn__sidebar-ctn {
+  background-image: url('../assets/connect__sidebar-bg.jpg');
+  background-size: cover;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-width: 200px;
+}
+
+.cn__sidebar-info {
+  padding: 30px;
+}
+
+.cn__sidebar-info p{
+  font-size: 1.125rem;
+}
+
+.cn__social-ctn {
+  height: auto;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.cn__icon-flex {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2 1 33%;
+      -ms-flex: 2 1 33%;
+          flex: 2 1 33%;
+}
+
+.cn__social-ctn h3 {
+  text-align: center;
+  padding: 25px;
+  font-size: 1.125rem;
+}
+
+.cn__social-icons-ctn {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cn__social-icons-ctn a {
+  text-decoration: underline;
+  display: inline-block;
+  height: 100px;
+}
+
+.cn__social-icons-ctn svg {
+  height: 60px;
+  width: 60px;
+  color: #c2001a;
+}
+
+.cn__form-ctn {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3 2 auto;
+      -ms-flex: 3 2 auto;
+          flex: 3 2 auto;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ninja-forms-all-fields-wrap {
+  padding: 30px;
+}
+
+.ninja-forms-all-fields-wrap textarea, input {
+  border: 2px solid #d6d8d9;
+  resize: none;
+  padding: 10px 0;
+  font-size: 1.375rem;
+}
+
+.ninja-forms-all-fields-wrap div:nth-of-type(2),
+.ninja-forms-all-fields-wrap div:nth-of-type(3) {
+  display: block;
+}
+
+.ninja-forms-all-fields-wrap input[type=submit] {
+  color: #fff;
+  padding: 10px 60px;
+  text-transform: uppercase;
+  background-color: #5c6268;
+  border: 0;
+  border-radius: 5px;
+}
+
+.ninja-forms-all-fields-wrap .submit-wrap {
+  text-align: center;
+}
+
+label {
+  /*font-style: italic;*/
+  color: #5c6268;
+  font-weight: 100;
+  font-family: 'pill-gothic-300mg', sans-serif;
+}
+
+@media screen and (min-width:48em) {
+  .cn__sidebar-ctn {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    max-width: 400px;
+    min-width: 200px;
+  }
+  .ninja-forms-all-fields-wrap div:nth-of-type(2),
+  .ninja-forms-all-fields-wrap div:nth-of-type(3) {
+    display: inline-block;
+    width: 49.5%;
+  }
+}
+
 /* FOOTER */
 
 .home ul li,

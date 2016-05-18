@@ -1,0 +1,106 @@
+.cn__ctn {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cn__sidebar-ctn {
+  background-image: url('../assets/connect__sidebar-bg.jpg');
+  background-size: cover;
+  flex: 1 1 auto;
+  min-width: 200px;
+}
+
+.cn__sidebar-info {
+  padding: 30px;
+}
+
+.cn__sidebar-info p{
+  font-size: 18px;
+}
+
+.cn__social-ctn {
+  height: auto;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.cn__icon-flex {
+  flex: 2 1 33%;
+}
+
+.cn__social-ctn h3 {
+  text-align: center;
+  padding: 25px;
+  font-size: 18px;
+}
+
+.cn__social-icons-ctn {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cn__social-icons-ctn a {
+  text-decoration: underline;
+  display: inline-block;
+  height: 100px;
+}
+
+.cn__social-icons-ctn svg {
+  height: 60px;
+  width: 60px;
+  color: $wb__red;
+}
+
+.cn__form-ctn {
+  flex: 3 2 auto;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ninja-forms-all-fields-wrap {
+  padding: 30px;
+}
+
+.ninja-forms-all-fields-wrap textarea, input {
+  border: 2px solid $wb__iron;
+  resize: none;
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+.ninja-forms-all-fields-wrap div:nth-of-type(2),
+.ninja-forms-all-fields-wrap div:nth-of-type(3) {
+  display: block;
+}
+
+.ninja-forms-all-fields-wrap input[type=submit] {
+  color: #fff;
+  padding: 10px 60px;
+  text-transform: uppercase;
+  background-color: $wb__lblue;
+  border: 0;
+  border-radius: 5px;
+}
+
+.ninja-forms-all-fields-wrap .submit-wrap {
+  text-align: center;
+}
+
+label {
+  color: $wb__lblue;
+  font-family: $libl;
+}
+
+@media screen and $tablet {
+  .cn__sidebar-ctn {
+    flex: 1 1 auto;
+    max-width: 400px;
+    min-width: 200px;
+  }
+  .ninja-forms-all-fields-wrap div:nth-of-type(2),
+  .ninja-forms-all-fields-wrap div:nth-of-type(3) {
+    display: inline-block;
+    width: 49.5%;
+  }
+}
