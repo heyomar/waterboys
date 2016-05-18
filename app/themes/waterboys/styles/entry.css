@@ -13,8 +13,8 @@
 @import "./wb__roster.css";
 @import "./wb__conqueringkili.css";
 @import "./wb__connect.css";
+@import "./wb__thankyou";
 @import "./wb__footer.css";
-
 
 body {
   background: #fff;
@@ -27,6 +27,5 @@ body {
   height: 320px;
   width: 100%;
 }
-
 
 @import "slick-carousel/slick/slick.css";
