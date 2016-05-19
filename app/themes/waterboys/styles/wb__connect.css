@@ -89,7 +89,7 @@
 
 label {
   color: $wb__lblue;
-  font-family: $libl;
+  font-family: $wb__libl;
 }
 
 @media screen and $tablet {

@@ -29,7 +29,7 @@
   <body <?php body_class(); ?>>
     <?php get_template_part('components/svg') ?>
     <header role="banner" class="site__header">
-      <div class="site__header__content">
+      <div class="site__header__content solid-background">
           <a href="/"><img class="wb__header-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-logo.png" alt="" /></a>
         <div class="wb__header__right">
           <a class="wb__button wb__header-button" href="/">Donate</a>

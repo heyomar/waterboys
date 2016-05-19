@@ -13,12 +13,16 @@
 @import "./wb__roster.css";
 @import "./wb__conqueringkili.css";
 @import "./wb__connect.css";
-@import "./wb__thankyou";
+@import "./wb__thankyou.css";
 @import "./wb__footer.css";
 
 body {
   background: #fff;
   font-family: $wb__gothic;
+}
+
+.solid-background {
+  background-color: $wb__gray;
 }
 
 .wb__page-hero {

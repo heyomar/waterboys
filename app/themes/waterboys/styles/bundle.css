@@ -1433,7 +1433,7 @@ tr:nth-child(odd) {
   padding: 30px;
 }
 
-.cn__sidebar-info p{
+.cn__sidebar-info p {
   font-size: 1.125rem;
 }
 
@@ -1513,10 +1513,8 @@ tr:nth-child(odd) {
 }
 
 label {
-  /*font-style: italic;*/
   color: #5c6268;
-  font-weight: 100;
-  font-family: 'pill-gothic-300mg', sans-serif;
+  font-family: 'liberatorlight', sans-serif;
 }
 
 @media screen and (min-width:48em) {
@@ -1533,6 +1531,53 @@ label {
     display: inline-block;
     width: 49.5%;
   }
+}
+
+.ty__ctn {
+  max-width: 900px;
+  margin: 0 auto;
+  height: auto;
+  padding-bottom: 200px;
+}
+
+.ty__inner-ctn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 10px;
+}
+
+.ty__side-share-ctn {
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-width: 190px;
+  padding: 20px;
+}
+
+.ty__share-button {
+  background-color: #5c6268;
+  color: #fff;
+  border: 0;
+  display: block;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.ty__body-copy-ctn {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3 2 50%;
+      -ms-flex: 3 2 50%;
+          flex: 3 2 50%;
+  font-size: 1.1875rem;
+  font-family: 'pill-gothic-300mg', sans-serif;
+  min-width: 250px;
 }
 
 /* FOOTER */
@@ -1675,6 +1720,10 @@ a {
 body {
   background: #fff;
   font-family: 'pill-gothic-300mg', sans-serif;
+}
+
+.solid-background {
+  background-color: #323639;
 }
 
 .wb__page-hero {
