@@ -1,0 +1,35 @@
+.ty__ctn {
+  max-width: 900px;
+  margin: 0 auto;
+  height: auto;
+  padding-bottom: 200px;
+}
+
+.ty__inner-ctn {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.ty__side-share-ctn {
+  text-align: center;
+  flex: 1 1 auto;
+  min-width: 190px;
+  padding: 20px;
+}
+
+.ty__share-button {
+  background-color: $wb__lblue;
+  color: #fff;
+  border: 0;
+  display: block;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.ty__body-copy-ctn {
+  flex: 3 2 50%;
+  font-size: 19px;
+  font-family: $wb__gothic;
+  min-width: 250px;
+}
