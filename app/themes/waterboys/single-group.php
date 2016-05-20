@@ -2,45 +2,76 @@
 Template Name: Group Profile
 */ ?>
 
-<?php get_header(); ?>
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-  <?php
-    $image = get_field('desktop_header');
-    if( !empty($image) ): ?>
-    <img class="wb__player__content__header-image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-    <div class="wb__player__header">
-        <h2 class="wb__player-name"><?php the_field('player_name'); ?></h2>
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-wave.png" alt="" />
-        <p class="wb__player-team"><?php the_field('team'); ?></p>
-    </div>
-  <?php endif; ?>
-      <div class="wb__player-container">
-          <div class="wb__player-content wb__content-bio">
-              <div class="wb__player__content-career">
-                <p class="wb__player__content__title wb__player__bio-title"><?php the_field('bio_title'); ?></p>
-                <p class="wb__player__content__body"><?php the_field('bio_body'); ?></p>
-              </div>
-          </div>
-          <div class="wb__player-content wb__content-info">
-            <p class="wb__player__content__info-position wb__player__content__title wb__player__info-title"><?php the_field('position_title'); ?></p>
-              <p><?php the_field('position'); ?></p>
-            <p class="wb__player__content__info-college wb__player__content__title wb__player__info-title"><?php the_field('college_title'); ?></p>
-              <p><?php the_field('college'); ?></p>
-            <p class="wb__player__content__info-careerhighlights wb__player__content__title wb__player__info-title"><?php the_field('careerhighlights_title'); ?></p>
-            <?php
-            if( have_rows('career_highlights') ): ?>
-                <ul class="wb__player__career-ul">
-                <?php while ( have_rows('career_highlights') ) : the_row(); ?>
-                    <li><?php the_sub_field('highlight');?></li>
-                <? endwhile;?>
-                </ul>
-            <?php else : ?>
+  <?php get_header(); ?>
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+      <div class="wb__page-hero gp__page-hero">
+        <div class="gp__page-hero-inner-ctn">
+          <?php if( get_field('profile_image') ): ?><img class="gp__profile-image" src="<?php the_field('profile_image'); ?>" />
             <?php endif; ?>
+              <h2 class="st__title ">
+      <?php the_field('group_name'); ?><br><img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/wb__home-wave.png" alt=""></h2></div>
+      </div>
+      <div class="wb__page-dash-ctn">
+        <div class="wb__page-dash-inner-ctn">
+          <div class="wb__page-dash-item">
+            <h3>Fundraising Goal</h3>
           </div>
+          <div class="wb__page-dash-item">
+            <h3>Progress to Goal</h3>
+          </div>
+          <div class="wb__page-dash-item">
+            <div class="wb__dash-donate"><a class="wb__button" href="/">Donate Now</a></div>
+          </div>
+        </div>
       </div>
-      <div class="wb__player-viewall">
-          <a class="wb__button" href="/">View All Players</a>
+
+
+      <div class="wb__player-container">
+        <div class="wb__player-content wb__content-bio">
+          <div class="wb__player__content-career">
+            <p class="wb__player__content__title wb__player__bio-title">
+              <?php the_field('bio_title'); ?>
+            </p>
+            <p class="wb__player__content__body">
+              <?php the_field('bio_body'); ?>
+            </p>
+            <p class="wb__player__content__title wb__player__bio-title">
+              <?php the_field('location_title'); ?>
+            </p>
+            <p class="wb__player__content__body">
+              <?php the_field('location_body'); ?>
+            </p>
+            <p class="wb__player__content__title wb__player__bio-title">
+              <?php the_field('contact_title'); ?>
+            </p>
+            <p class="wb__player__content__body">
+              <?php the_field('contact_body'); ?>
+            </p>
+          </div>
+        </div>
+        <div class="wb__player-content wb__content-info">
+          <p class="wb__player__content__info-position wb__player__content__title wb__player__info-title">
+            <?php the_field('about_waterboys_title'); ?>
+          </p>
+          <p>
+            <?php the_field('about_waterboys_body'); ?>
+          </p>
+
+        </div>
       </div>
-<?php endwhile; ?>
-<?php endif ?>
-<?php get_footer(); ?>
+      <div class="wb__mission-socialbar-ctn">
+        <p class="socialbar-copy">Share this page.</p>
+        <div class="socialbar-buttons-ctn">
+          <a href="" class="socialbar-button">
+            <svg class="icon icon-twitter">
+              <use xlink:href="#icon-twitter"></use>
+            </svg> Tweet</a>
+          <a href="" class="socialbar-button">
+            <svg class="icon icon-facebook-square">
+              <use xlink:href="#icon-facebook-square"></use>
+            </svg> Share</a>
+        </div>
+      </div>
+      <?php endwhile; ?>
+        <?php endif ?>
+          <?php get_footer(); ?>

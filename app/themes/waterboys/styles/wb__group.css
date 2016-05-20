@@ -1,0 +1,30 @@
+.gp__profile-image {
+  background-color: #fff;
+  border-radius: 100px;
+  border: 3px solid #fff;
+  height: 120px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.gp__page-hero {}
+
+.gp__page-hero-inner-ctn {
+  max-width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 35%;
+}
+
+.gp__page-hero-inner-ctn h2 {
+  display: inline-block;
+  position: relative;
+  left: 80px;
+  top: 25px;
+}
+
+.single-group .wb__content-info {
+  margin-top: 4px;
+}
