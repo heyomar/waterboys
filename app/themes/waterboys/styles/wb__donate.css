@@ -13,6 +13,7 @@
   margin: 0 auto;
   flex: 3 1 30%;
   padding: 25px;
+  padding-bottom: 60px;
 }
 
 .dn__now-copy-ctn p {
@@ -85,4 +86,28 @@
   height: 200px;
   background-size: cover;
   width: 100%;
+  padding: 20px;
+  text-align: center;
+  margin-top: -50px;
+  font-size: 20px;
+}
+
+.donate .field-wrap {
+  max-width: 900px;
+  margin: 15px auto;
+}
+
+.donate .ninja-forms-all-fields-wrap {
+  padding: 0;
+  padding-bottom: 25px;
+}
+
+#ninja_forms_field_14_div_wrap select {
+  border: 2px solid $wb__iron;
+  height: 50px;
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  top: -110px;
+  text-align: center;
 }

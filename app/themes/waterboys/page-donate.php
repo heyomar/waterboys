@@ -70,8 +70,11 @@
       </div>
     </div>
 
-    <div class="dn__ctn">
+    <!-- <div class="dn__ctn"> -->
       <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 6 ); }?>
+    <!-- </div> -->
+    <div class="st__bar-ctn">
+      <p>14 million Tanzanians lack access to safe water. Dig deep with us. &nbsp;</p>
     </div>
     <?php endwhile; ?>
       <?php endif ?>
