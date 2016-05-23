@@ -4,16 +4,26 @@ Template Name: Player Profile
 
 <?php get_header(); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-  <?php
-    $image = get_field('desktop_header');
-    if( !empty($image) ): ?>
-    <img class="wb__player__content__header-image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-    <div class="wb__player__header">
-        <h2 class="wb__player-name"><?php the_field('player_name'); ?></h2>
+
+    <div style="background: url('<?php the_field('desktop_header'); ?>') top center no-repeat; background-size: cover;" class="wb__player__header">
+        <div class="wb__player-name-ctn"><h2 class="wb__player-name"><?php the_field('player_name'); ?></h2>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-wave.png" alt="" />
-        <p class="wb__player-team"><?php the_field('team'); ?></p>
+        <p class="wb__player-team"><?php the_field('team'); ?></p></div>
     </div>
-  <?php endif; ?>
+
+  <div class="wb__page-dash-ctn">
+    <div class="wb__page-dash-inner-ctn">
+      <div class="wb__page-dash-item">
+        <h3>Fundraising Goal</h3>
+      </div>
+      <div class="wb__page-dash-item">
+        <h3>Progress to Goal</h3>
+      </div>
+      <div class="wb__page-dash-item">
+        <div class="wb__dash-donate"><a class="wb__button" href="/">Donate Now</a></div>
+      </div>
+    </div>
+  </div>
       <div class="wb__player-container">
           <div class="wb__player-content wb__content-bio">
               <div class="wb__player__content-career">

@@ -1,7 +1,13 @@
+.wb__player-name-ctn {
+  position: relative;
+  top: 30%;
+}
+
 .wb__player-name {
   font-size: 55px;
   margin-bottom: 23px;
   letter-spacing: 5px;
+  margin-top: 0;
 }
 
 .wb__player-team {
@@ -14,18 +20,10 @@
 
 .wb__player__header {
   text-align: center;
-  position: absolute;
-  margin: 0 auto;
-  width: 300px;
-  top: 20%;
   font-family: $wb__libh;
   color: #fff;
+  height: 500px;
   width: 100%;
-}
-
-.wb__player__header img {
-  width: auto;
-  height: 8px;
 }
 
 .wb__player-viewall {
@@ -52,6 +50,7 @@
   flex-wrap: wrap;
   height: auto;
   padding-bottom: 5px;
+  margin-top: 0;
 }
 
 .wb__content-bio {

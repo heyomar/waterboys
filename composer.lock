@@ -253,7 +253,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.3.4.zip",
-                "reference": "tags/1.3.4",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -273,7 +273,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/disable-comments.1.5.zip",
-                "reference": "tags/1.5",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -293,7 +293,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/disable-emojis.1.5.1.zip",
-                "reference": "tags/1.5.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -313,7 +313,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/enable-media-replace.3.0.4.zip",
-                "reference": "tags/3.0.4",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -333,7 +333,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/ninja-forms.2.9.45.zip",
-                "reference": "tags/2.9.45",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -353,7 +353,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.6.zip",
-                "reference": "tags/2.2.6",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -373,7 +373,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/simple-page-ordering.zip",
-                "reference": "trunk",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -413,7 +413,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.2.5.zip",
-                "reference": "tags/3.2.5",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -433,7 +433,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wp-smushit.2.2.2.zip",
-                "reference": "tags/2.2.2",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -455,7 +455,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/debug-bar.0.8.4.zip",
-                "reference": "tags/0.8.4",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -475,7 +475,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/debug-objects.2.3.1.zip",
-                "reference": "tags/2.3.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -495,7 +495,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/log-deprecated-notices.0.3.zip",
-                "reference": "tags/0.3",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -515,7 +515,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/query-monitor.2.10.0.zip",
-                "reference": "tags/2.10.0",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -535,7 +535,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/rewrite-rules-inspector.1.2.1.zip",
-                "reference": "tags/1.2.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -555,7 +555,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/theme-check.20151211.1.zip",
-                "reference": "tags/20151211.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -575,7 +575,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/user-switching.1.0.9.zip",
-                "reference": "tags/1.0.9",
+                "reference": null,
                 "shasum": null
             },
             "require": {
