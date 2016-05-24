@@ -1,0 +1,16 @@
+.terms p:first-of-type {
+  text-transform: uppercase;
+}
+
+.wb__page-legal {
+  color: $wb__lblue;
+}
+
+.photo-credits .wb__page-legal li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.photo-credits .wb__page-legal {
+  text-align: center;
+}

@@ -17,6 +17,8 @@
 @import "./wb__group.css";
 @import "./wb__donate.css";
 @import "./wb__footer.css";
+@import "./wb__legal.css";
+@import "lity/dist/lity.css";
 
 body {
   background: #fff;
