@@ -10,8 +10,8 @@
 		    <h3 class="wb__hero-subtitle">
 		        Waterboys unites players and fans from across the NFL in support of one mission:<br>bringing life-sustaining well water to East African communities in need.
 		    </h3>
-		    <a class="wb__button wb__hero-button" href="https://www.youtube.com/watch?v=_nWaaS66Fw8" >Watch &nbsp; &#9654;</a><br>
-				<a class="wb__hero-missionlink" href="/">Our Mission</a>
+		    <a class="wb__button wb__hero-button" data-lity href="https://www.youtube.com/watch?v=_nWaaS66Fw8" >Watch &nbsp; &#9654;</a><br>
+				<a class="wb__hero-missionlink" href="/mission">Our Mission</a>
 			</div>
 		</div>
 <?php endwhile; ?>
