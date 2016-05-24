@@ -13,14 +13,11 @@
   },
   "homepage": "https://github.com/bytefair/offset#readme",
   "devDependencies": {
-    "babel-eslint": "^6.0.3",
-    "babel-preset-es2015": "latest",
-    "babelify": "latest",
     "browser-sync": "latest",
-    "browserify": "latest",
     "cssnano": "latest",
     "fitvids": "^1.0.2",
     "jquery": "^2.2.3",
+    "lity": "^1.6.6",
     "nodemon": "latest",
     "normalize.css": "~4",
     "parallelshell": "latest",
@@ -36,22 +33,19 @@
     "standard": "latest",
     "stylelint": "latest",
     "stylelint-config-standard": "latest",
-    "uglify-js": "latest",
-    "watchify": "latest"
+    "uglify-js": "latest"
   },
   "scripts": {
-    "js:compile": "browserify scripts/entry.js --debug --verbose --transform [ babelify --presets [ es2015 ] ] --outfile scripts/bundle.js",
     "js:lint": "standard --verbose | snazzy",
     "js:min": "uglifyjs scripts/bundle.js --compress --mangle --output scripts/bundle.js",
     "styles:compile": "postcss --use postcss-import --use postcss-simple-vars --use postcss-cssnext --use postcss-sassy-mixins --use postcss-em-media-query --use postcss-pxtorem --config postcss.json --output styles/bundle.css styles/entry.css",
     "styles:lint": "stylelint styles/**/*.css",
     "styles:min": "postcss --use cssnano --replace styles/bundle.css",
     "serve": "browser-sync start --proxy 'waterboys' --files '**/*'",
-    "watch:js": "watchify scripts/entry.js --debug --verbose --transform [ babelify --presets [ es2015 ] ] --outfile scripts/bundle.js",
     "watch:styles": "nodemon --watch styles --ext css --ignore styles/bundle.css --exec 'npm run styles:compile'",
-    "watch": "parallelshell 'npm run watch:js' 'npm run watch:styles' 'npm run serve'",
-    "build:dev": "npm-run-all --parallel js:compile styles:compile",
-    "build:prod": "npm-run-all --parallel js:compile styles:compile --sequential styles:min js:min",
+    "watch": "parallelshell 'npm run watch:styles' 'npm run serve'",
+    "build:dev": "npm-run-all --parallel styles:compile",
+    "build:prod": "npm-run-all --parallel styles:compile --sequential styles:min js:min",
     "deploy": "git push prod master"
   },
   "standard": {
