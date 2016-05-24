@@ -20,21 +20,43 @@
 .hl__flex-ctn {
   display: flex;
   flex-wrap: wrap;
-}
-
-.hl__flex-ctn img {
-  padding: 10px 25px;
-  margin-top: 20px;
-  max-height: 210px;
+  padding: 15px;
 }
 
 .hl__flex-child-copy {
   flex: 3 2 50%;
   padding: 0 25px;
+  min-width: 350px;
 }
 
 .article__excerpt {}
+.article__content {
+  padding-bottom: 5px;
+  color: $wb__red;
+}
+
+.article__title {
+  color: $wb__lblue;
+}
 
 .hl__article-ctn {
   padding-bottom: 15px;
+}
+
+.hl__article-bg:nth-child(odd) {
+  background-image: url('../assets/highlights__post-bg.png');
+  padding-top: 20px;
+}
+
+.hl__article-link {
+  font-size: 16px;
+}
+
+.hl__post-thumbnail-ctn {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  flex: 1 1 35%;
+  min-width: 310px;
+  min-height: 250px;
 }

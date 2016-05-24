@@ -34,7 +34,8 @@
 	<?php if ( !is_page() ) : ?>
 		<footer class="article__footer">
 			<p class="article__categories">
-				<?php _e('Categorized: ', 'offset'); ?><?php the_category(', '); ?>
+				<!-- <?php _e('Categorized: ', 'offset'); ?><?php the_category(', '); ?> -->
+				<a class="wb__button-blue hl__article-link" href="<?php the_field('press_link'); ?>">Read More</a>
 			</p>
 			<p class="article__tags">
 				<?php the_tags(); ?>
