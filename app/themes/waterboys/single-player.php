@@ -42,14 +42,13 @@ Template Name: Player Profile
                 <ul class="wb__player__career-ul">
                 <?php while ( have_rows('career_highlights') ) : the_row(); ?>
                     <li><?php the_sub_field('highlight');?></li>
-                <? endwhile;?>
+                <?php endwhile;?>
                 </ul>
-            <?php else : ?>
-            <?php endif; ?>
+            <?php endif ?>
           </div>
       </div>
       <div class="wb__player-viewall">
-          <a class="wb__button" href="/">View All Players</a>
+          <a class="wb__button" href="/roster">View All Players</a>
       </div>
 <?php endwhile; ?>
 <?php endif ?>
