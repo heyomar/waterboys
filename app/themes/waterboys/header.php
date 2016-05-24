@@ -21,9 +21,6 @@
     <?php wp_head(); ?>
     <script src="https://use.typekit.net/wmb3pty.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/jquery-latest.js"></script>
-    <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/jquery.tablesorter.js"></script>
-    <script type="text/javascript">$(document).ready(function(){$("#roster").tablesorter();});</script>
   </head>
 
   <body <?php body_class(); ?>>
@@ -41,8 +38,8 @@
           <div class="wb__nav__ctn-item nav-item-ourmission"><a href="/mission/">Our Mission</a></div>
           <div class="wb__nav__ctn-item nav-item-donate"><a href="/donate/">Donate</a></div>
           <div class="wb__nav__ctn-item nav-item-initiatives"><a href="/special-teams/">Special Teams</a></div>
-          <div class="wb__nav__ctn-item nav-item-waterboys"><a href="/waterboys/">Meet the Waterboys</a></div>
-          <div class="wb__nav__ctn-item nav-item-social"><a href="/social/">Social</a></div>
+          <div class="wb__nav__ctn-item nav-item-waterboys"><a href="/roster/">The Waterboys Roster</a></div>
+          <div class="wb__nav__ctn-item nav-item-social"><a href="/connect/">Connect</a></div>
         </div>
       </nav>
     </header>

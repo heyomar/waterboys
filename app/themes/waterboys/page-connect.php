@@ -7,30 +7,25 @@
       <div class="cn__sidebar-ctn">
         <div class="cn__sidebar-info">
           <p><strong>Connect with us on social or contact us directly to learn more about our efforts to provide clean, accessible drinking water to East African communities in need.</strong></p>
-          <p>1234 Address Lane
-            <br> Suite 567
-            <br> Some city, SS 98765</p>
-          <p>123.456.6789
             <br>
-            <a href="/">someemail@waterboys.com</a>
-          </p>
+            <a href="mailto:info@waterboys.org">info@waterboys.org</a>
         </div>
       </div>
       <div class="cn__form-ctn">
         <div class="cn__social-ctn">
           <h3 class="wb__red-sm-title">Huddle Up</h3>
           <div class="cn__social-icons-ctn cn__ctn">
-            <a class="cn__icon-flex" href="https://twitter.com/waterboysorg">
+            <a class="cn__icon-flex" target="_blank" href="https://twitter.com/waterboysorg">
               <svg class="icon icon-twitter">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
               <br> @WaterboysORG</a>
-            <a class="cn__icon-flex" href="https://www.facebook.com/waterboysorg">
+            <a class="cn__icon-flex" target="_blank" href="https://www.facebook.com/waterboysorg">
               <svg class="icon icon-facebook-square">
                 <use xlink:href="#icon-facebook-square"></use>
               </svg>
               <br>/WaterboysORG</a>
-            <a class="cn__icon-flex" href="https://www.instagram.com/waterboysorg/">
+            <a class="cn__icon-flex" target="_blank" href="https://www.instagram.com/waterboysorg/">
               <svg class="icon icon-facebook-square">
                 <use xlink:href="#icon-instagram"></use>
               </svg>
