@@ -1,0 +1,26 @@
+.gr__ctn {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.groups {
+  width: 100%;
+}
+
+.groups td {
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.gr__head-copy {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 50px 15px 0;
+}
+
+.gr__button-ctn {
+  padding: 40px 0 65px;
+  text-align: center;
+}
