@@ -17,11 +17,13 @@ function offset_load_assets()
 
   wp_register_script( 'footer_scripts', get_stylesheet_directory_uri() . '/scripts/bundle.js', array('jquery'), false, true );
   wp_register_script( 'lity', get_stylesheet_directory_uri() . '/scripts/vendor/lity.js', array('jquery'), false, true);
+  wp_register_script( 'slick', get_stylesheet_directory_uri() . '/scripts/vendor/slick.js', array('jquery'), false, true);
   wp_register_script( 'fitVids', get_stylesheet_directory_uri() . '/scripts/vendor/fitvids.js', array('jquery'), false, true);
   wp_register_script( 'tablesort', get_stylesheet_directory_uri() . '/scripts/vendor/jquery.tablesorter.js', array('jquery'), false, true);
 
   wp_enqueue_script( 'jquery' );
   wp_enqueue_script( 'lity' );
+  wp_enqueue_script( 'slick' );
   wp_enqueue_script( 'fitVids' );
   wp_enqueue_script( 'tablesort' );
   wp_enqueue_script( 'footer_scripts' );
