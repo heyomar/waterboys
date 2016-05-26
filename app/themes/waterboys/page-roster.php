@@ -1,23 +1,59 @@
 <?php get_header(); ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <!-- <div id="player-slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-      <div><h3>1</h3></div>
-      <div><h3>2</h3></div>
-      <div><h3>3</h3></div>
-      <div><h3>4</h3></div>
-      <div><h3>5</h3></div>
-      <div><h3>6</h3></div>
-    </div> -->
-    <div class="placehold"></div>
+
+    <?php $players = new WP_Query( array( 'post_type' => 'player' ) );?>
+
+    <div class="center rs__slider-ctn" data-slick="centerMode: true,">
+      <?php
+    if( $players->have_posts()): ?>
+        <?php while ( $players->have_posts()) : $players->the_post();  ?>
+
+
+            <div class="block-hold" style="background-image:url('<?php the_field('player_slider_image'); ?>')" >
+              <div class="rs__slider-overlay">
+                <div class="rs___slider-flex-ctn-wrapper">
+                  <div class="rs___slider-flex-ctn">
+                    <div class="rs__slider-nameplate">
+                      <h3><?php the_field('player_name'); ?></h3>
+                      <p class="wb__red-sm-title">
+                        <?php the_field('team'); ?>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="rs___slider-flex-ctn">
+                    <div class="rs__slider-player-minidash">
+                      <h3 class="wb__red-sm-title">Total Raised</h3>
+                      <p>
+                        $27,000
+                      </p>
+                    </div>
+                    <div class="rs__slider-player-minidash">
+                      <h3 class="wb__red-sm-title">Ranking</h3>
+                      <p>
+                        3RD
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        <?php endwhile; ?>
+          <?php endif ?>
+    </div>
+
+
+
+
     <div class="rs__ctn">
       <h2 class="rs__title">The Roster<br><img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/roster__blue-wave.png" alt=""></h2>
       <div class="table-ctn">
         <table border="0" id="roster" class="tablesorter roster">
           <thead>
             <tr>
-              <th><a href="#">Waterboys</a></th>
-              <th><a href="#">Team</a></th>
-              <th><a href="#">Fundraising Rank</a></th>
+              <th><a class="wb__red-sm-title" href="#">Waterboys</a></th>
+              <th><a class="wb__red-sm-title" href="#">Team</a></th>
+              <th><a class="wb__red-sm-title" href="#">Fundraising Rank</a></th>
             </tr>
           </thead>
           <tbody>
@@ -159,7 +195,7 @@
     </div>
     <div class="wb__mission-socialbar-ctn rs__space">
       <div class="socialbar-buttons-ctn">
-        <a href="" class="socialbar-button">Meet Our Special Teams</a>
+        <a href="/special-teams" class="socialbar-button">Meet Our Special Teams</a>
       </div>
     </div>
     <?php endwhile; ?>
