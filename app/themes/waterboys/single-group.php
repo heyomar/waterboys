@@ -30,19 +30,19 @@ Template Name: Group Profile
         <div class="wb__player-content wb__content-bio">
           <div class="wb__player__content-career">
             <p class="wb__player__content__title wb__player__bio-title">
-              <?php the_field('bio_title'); ?>
+              About The Group
             </p>
             <p class="wb__player__content__body">
               <?php the_field('bio_body'); ?>
             </p>
             <p class="wb__player__content__title wb__player__bio-title">
-              <?php the_field('location_title'); ?>
+              Location
             </p>
             <p class="wb__player__content__body">
               <?php the_field('location_body'); ?>
             </p>
             <p class="wb__player__content__title wb__player__bio-title">
-              <?php the_field('contact_title'); ?>
+              Group Contact
             </p>
             <p class="wb__player__content__body">
               <?php the_field('contact_body'); ?>
@@ -51,7 +51,7 @@ Template Name: Group Profile
         </div>
         <div class="wb__player-content wb__content-info">
           <p class="wb__player__content__info-position wb__player__content__title wb__player__info-title">
-            <?php the_field('about_waterboys_title'); ?>
+            About Waterboys
           </p>
           <p>
             <?php the_field('about_waterboys_body'); ?>

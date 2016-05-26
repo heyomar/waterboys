@@ -27,16 +27,16 @@ Template Name: Player Profile
       <div class="wb__player-container">
           <div class="wb__player-content wb__content-bio">
               <div class="wb__player__content-career">
-                <p class="wb__player__content__title wb__player__bio-title"><?php the_field('bio_title'); ?></p>
+                <p class="wb__player__content__title wb__player__bio-title">Waterboy Bio</p>
                 <p class="wb__player__content__body"><?php the_field('bio_body'); ?></p>
               </div>
           </div>
           <div class="wb__player-content wb__content-info">
-            <p class="wb__player__content__info-position wb__player__content__title wb__player__info-title"><?php the_field('position_title'); ?></p>
+            <p class="wb__player__content__info-position wb__player__content__title wb__player__info-title">Position</p>
               <p><?php the_field('position'); ?></p>
-            <p class="wb__player__content__info-college wb__player__content__title wb__player__info-title"><?php the_field('college_title'); ?></p>
+            <p class="wb__player__content__info-college wb__player__content__title wb__player__info-title">College</p>
               <p><?php the_field('college'); ?></p>
-            <p class="wb__player__content__info-careerhighlights wb__player__content__title wb__player__info-title"><?php the_field('careerhighlights_title'); ?></p>
+            <p class="wb__player__content__info-careerhighlights wb__player__content__title wb__player__info-title">Career Highlights</p>
             <?php
             if( have_rows('career_highlights') ): ?>
                 <ul class="wb__player__career-ul">
