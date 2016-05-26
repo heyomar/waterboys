@@ -1,0 +1,11 @@
+.rg__ctn {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.rg__ctn h3 {
+  text-align: center;
+  padding: 50px 15px;
+  font-size: 20px;
+}

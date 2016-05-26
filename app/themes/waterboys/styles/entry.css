@@ -10,11 +10,16 @@
 @import "./wb__mission.css";
 @import "./wb__specialteams.css";
 @import "./wb__highlights.css";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 @import "./wb__roster.css";
 @import "./wb__conqueringkili.css";
 @import "./wb__connect.css";
 @import "./wb__thankyou.css";
 @import "./wb__group.css";
+@import "./wb__groups.css";
+@import "./wb__registergroup.css";
+@import "./wb__headtohead.css";
 @import "./wb__donate.css";
 @import "./wb__footer.css";
 @import "./wb__legal.css";
@@ -35,5 +40,3 @@ body {
   height: 320px;
   width: 100%;
 }
-
-@import "slick-carousel/slick/slick.css";
