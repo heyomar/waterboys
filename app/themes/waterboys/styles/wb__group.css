@@ -8,7 +8,8 @@
   position: relative;
 }
 
-.gp__page-hero {}
+.gp__page-hero {
+}
 
 .gp__page-hero-inner-ctn {
   max-width: 250px;
@@ -27,4 +28,11 @@
 
 .single-group .wb__content-info {
   margin-top: 4px;
+}
+
+
+.gp__page-dash-ctn {
+    width: 100%;
+    background-color: rgba(50, 54, 57, 0.8);
+    min-height: 180px;
 }

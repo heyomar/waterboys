@@ -86,7 +86,7 @@
   height: 200px;
   background-size: cover;
   width: 100%;
-  padding: 20px;
+  padding: 45px 20px;
   text-align: center;
   margin-top: -50px;
   font-size: 20px;
@@ -95,6 +95,7 @@
 .donate .field-wrap {
   max-width: 900px;
   margin: 15px auto;
+  text-align: center;
 }
 
 .donate .ninja-forms-all-fields-wrap {

@@ -133,15 +133,16 @@
 /* MEDIA QUERIES */
 @media screen and $mobile {
   .wb__header-logo {
-    width: 49%;
+    width: 48%;
   }
   .wb__header-button {
-    padding: 5px 20px;
+    padding: 5px 15px;
     top: -30px;
     right: -10px;
+    font-size: 15px;
   }
   .wb__header__hamburger {
-    width: 80px;
+    width: 75px;
   }
   .wb__nav__ctn-item a {
     font-size: 39px;

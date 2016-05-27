@@ -1,6 +1,6 @@
 .wb__player-name-ctn {
   position: relative;
-  top: 30%;
+  top: 40%;
 }
 
 .wb__player-name {
@@ -22,8 +22,9 @@
   text-align: center;
   font-family: $wb__libh;
   color: #fff;
-  height: 500px;
+  height: 600px;
   width: 100%;
+  position: relative;
 }
 
 .wb__player-viewall {

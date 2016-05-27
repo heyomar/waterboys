@@ -34,9 +34,14 @@ body {
   background-color: $wb__gray;
 }
 
+.transparent-background {
+  background-color: transparent;
+}
+
 .wb__page-hero {
   background: url('../assets/page-hero.jpg') top center no-repeat;
   background-size: cover;
   height: 320px;
   width: 100%;
+  position: relative;
 }

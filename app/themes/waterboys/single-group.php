@@ -11,7 +11,7 @@ Template Name: Group Profile
               <h2 class="st__title ">
       <?php the_field('group_name'); ?><br><img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/wb__home-wave.png" alt=""></h2></div>
       </div>
-      <div class="wb__page-dash-ctn">
+      <div class="gp__page-dash-ctn">
         <div class="wb__page-dash-inner-ctn">
           <div class="wb__page-dash-item">
             <h3>Fundraising Goal</h3>

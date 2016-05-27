@@ -458,23 +458,45 @@ textarea {
   padding: 12px 40px;
   font-size: 1.25rem;
   color: #fff;
-  font-weight: 700;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #fff;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+  font-family: 'pill-gothic-300mg', sans-serif;
+  text-transform: uppercase;
+}
+
+.wb__button:hover {
+  box-shadow: inset 0 -100px 0 0 #fff;
+  color: #323639;
 }
 
 .wb__button-blue {
   background-color: #5c6268;
   font-family: 'pill-gothic-300mg', sans-serif;
   font-size: 1.25rem;
+  font-weight: bold;
   padding: 12px 40px;
   color: #fff;
   border-radius: 6px;
   text-transform: uppercase;
+  box-shadow: inset 0 0 0 0 #95999d;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+
+.wb__button-blue:hover {
+  box-shadow: inset 0 -100px 0 0 #95999d;
+  color: #fff;
 }
 
 .wb__page-dash-ctn {
   width: 100%;
-  background-color: #5c6268;
-  min-height: 150px;
+  background-color: rgba(50, 54, 57, 0.8);
+  min-height: 180px;
+  position: absolute;
+  bottom: 0;
 }
 
 .wb__page-dash-inner-ctn {
@@ -503,7 +525,7 @@ textarea {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  padding: 20px 0;
+  padding: 25px 0;
 }
 
 .wb__dash-donate {
@@ -680,15 +702,16 @@ Example showing how to change the color/size of the icons:
 
 @media screen and (max-width:30em) {
   .wb__header-logo {
-    width: 49%;
+    width: 48%;
   }
   .wb__header-button {
-    padding: 5px 20px;
+    padding: 5px 15px;
     top: -30px;
     right: -10px;
+    font-size: 0.9375rem;
   }
   .wb__header__hamburger {
-    width: 80px;
+    width: 75px;
   }
   .wb__nav__ctn-item a {
     font-size: 2.4375rem;
@@ -748,9 +771,25 @@ Example showing how to change the color/size of the icons:
   display: block;
 }
 
+@media screen and (max-width:20em) {
+  .wb__hero-title {
+    font-size: 1.75rem;
+    line-height: 2.1875rem;
+    margin-bottom: -15px;
+  }
+  .wb__hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.3125rem;
+  }
+  .wb__home-content img {
+    padding: 0;
+    width: 100px;
+  }
+}
+
 .wb__player-name-ctn {
   position: relative;
-  top: 30%;
+  top: 40%;
 }
 
 .wb__player-name {
@@ -772,8 +811,9 @@ Example showing how to change the color/size of the icons:
   text-align: center;
   font-family: 'liberatorheavy', sans-serif;
   color: #fff;
-  height: 500px;
+  height: 600px;
   width: 100%;
+  position: relative;
 }
 
 .wb__player-viewall {
@@ -1072,7 +1112,7 @@ Example showing how to change the color/size of the icons:
   font-size: 20px;
   font-size: 1.25rem;
   color: #fff;
-  font-weight: 400;
+  font-weight: bold;
   margin-right: 20px;
   text-transform: uppercase;
 }
@@ -2074,7 +2114,8 @@ label {
   position: relative;
 }
 
-.gp__page-hero {}
+.gp__page-hero {
+}
 
 .gp__page-hero-inner-ctn {
   max-width: 250px;
@@ -2093,6 +2134,12 @@ label {
 
 .single-group .wb__content-info {
   margin-top: 4px;
+}
+
+.gp__page-dash-ctn {
+    width: 100%;
+    background-color: rgba(50, 54, 57, 0.8);
+    min-height: 180px;
 }
 
 .gr__ctn {
@@ -2264,7 +2311,7 @@ label {
   height: 200px;
   background-size: cover;
   width: 100%;
-  padding: 20px;
+  padding: 45px 20px;
   text-align: center;
   margin-top: -50px;
   font-size: 1.25rem;
@@ -2273,6 +2320,7 @@ label {
 .donate .field-wrap {
   max-width: 900px;
   margin: 15px auto;
+  text-align: center;
 }
 
 .donate .ninja-forms-all-fields-wrap {
@@ -2660,9 +2708,14 @@ body {
   background-color: #323639;
 }
 
+.transparent-background {
+  background-color: transparent;
+}
+
 .wb__page-hero {
   background: url('../assets/page-hero.jpg') top center no-repeat;
   background-size: cover;
   height: 320px;
   width: 100%;
+  position: relative;
 }

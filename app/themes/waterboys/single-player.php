@@ -9,21 +9,23 @@ Template Name: Player Profile
         <div class="wb__player-name-ctn"><h2 class="wb__player-name"><?php the_field('player_name'); ?></h2>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-wave.png" alt="" />
         <p class="wb__player-team"><?php the_field('team'); ?></p></div>
+        
+        <div class="wb__page-dash-ctn">
+          <div class="wb__page-dash-inner-ctn">
+            <div class="wb__page-dash-item">
+              <h3>Fundraising Goal</h3>
+            </div>
+            <div class="wb__page-dash-item">
+              <h3>Progress to Goal</h3>
+            </div>
+            <div class="wb__page-dash-item">
+              <div class="wb__dash-donate"><a class="wb__button" href="/">Donate Now</a></div>
+            </div>
+          </div>
+        </div>
     </div>
 
-  <div class="wb__page-dash-ctn">
-    <div class="wb__page-dash-inner-ctn">
-      <div class="wb__page-dash-item">
-        <h3>Fundraising Goal</h3>
-      </div>
-      <div class="wb__page-dash-item">
-        <h3>Progress to Goal</h3>
-      </div>
-      <div class="wb__page-dash-item">
-        <div class="wb__dash-donate"><a class="wb__button" href="/">Donate Now</a></div>
-      </div>
-    </div>
-  </div>
+
       <div class="wb__player-container">
           <div class="wb__player-content wb__content-bio">
               <div class="wb__player__content-career">

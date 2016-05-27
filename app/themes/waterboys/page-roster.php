@@ -195,7 +195,7 @@
     </div>
     <div class="wb__mission-socialbar-ctn rs__space">
       <div class="socialbar-buttons-ctn">
-        <a href="/special-teams" class="socialbar-button">Meet Our Special Teams</a>
+        <a href="/special-teams" class="socialbar-button wb__button">Meet Our Special Teams</a>
       </div>
     </div>
     <?php endwhile; ?>
