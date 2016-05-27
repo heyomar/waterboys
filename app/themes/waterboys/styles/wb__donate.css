@@ -58,6 +58,8 @@
   margin-bottom: 15px;
   flex: 1 1 25%;
   margin-right: 10px;
+  align-self: center;
+  max-height: 60px;
 }
 
 .dn__select-amount-btn:focus {
@@ -90,12 +92,12 @@
   text-align: center;
   margin-top: -50px;
   font-size: 20px;
+  line-height: 22px;
 }
 
 .donate .field-wrap {
   max-width: 900px;
   margin: 15px auto;
-  text-align: center;
 }
 
 .donate .ninja-forms-all-fields-wrap {
@@ -111,4 +113,39 @@
   position: relative;
   top: -110px;
   text-align: center;
+}
+
+.donate select {
+  border: 2px solid $wb__iron;
+  height: 50px !important;
+}
+
+.credit_card-wrap {
+  padding: 0 30px;
+}
+
+.donate .ninja-forms-credit-card-cvc {
+  display: inline-block;
+  width: 25%;
+}
+
+.donate .ninja-forms-credit-card-number {
+  display: inline-block;
+  width: 74.5%;
+}
+
+#ninja_forms_field_14_div_wrap {
+  text-align: center;
+}
+
+#ninja_forms_field_20_div_wrap,
+#ninja_forms_field_21_div_wrap,
+#ninja_forms_field_22_div_wrap,
+#ninja_forms_field_23_div_wrap,
+#ninja_forms_field_24_div_wrap,
+#ninja_forms_field_25_div_wrap,
+#ninja_forms_field_26_div_wrap,
+#ninja_forms_field_27_div_wrap {
+  padding: 0 30px;
+  text-align: left;
 }
