@@ -11,6 +11,10 @@
   text-align: center;
 }
 
+.photo-credits .wb__page-legal ul {
+  padding: 0;
+}
+
 .photo-credits .wb__page-legal {
   text-align: center;
 }
