@@ -46,7 +46,8 @@
     "watch": "parallelshell 'npm run watch:styles' 'npm run serve'",
     "build:dev": "npm-run-all --parallel styles:compile",
     "build:prod": "npm-run-all --parallel styles:compile --sequential styles:min js:min",
-    "deploy": "git push prod master"
+    "deploy": "git push prod master",
+    "start": "npm run watch"
   },
   "standard": {
     "ignore": [
