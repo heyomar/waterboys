@@ -18,6 +18,12 @@ Template Name: Group Profile
           </div>
           <div class="wb__page-dash-item">
             <h3>Progress to Goal</h3>
+            <div class="wb__progressgoal-ctn">
+              <div class="wb__progressgoal-bar"></div>
+            </div>
+            <p class="wb__progressgoal-amount">
+              $12,255
+            </p>
           </div>
           <div class="wb__page-dash-item">
             <div class="wb__dash-donate"><a class="wb__button" href="/">Donate Now</a></div>
@@ -62,11 +68,11 @@ Template Name: Group Profile
       <div class="wb__mission-socialbar-ctn">
         <p class="socialbar-copy">Share this page.</p>
         <div class="socialbar-buttons-ctn">
-          <a href="" class="socialbar-button">
+          <a href="" class="socialbar-button wb__button">
             <svg class="icon icon-twitter">
               <use xlink:href="#icon-twitter"></use>
             </svg> Tweet</a>
-          <a href="" class="socialbar-button">
+          <a href="" class="socialbar-button wb__button">
             <svg class="icon icon-facebook-square">
               <use xlink:href="#icon-facebook-square"></use>
             </svg> Share</a>
