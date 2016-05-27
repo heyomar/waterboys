@@ -4,12 +4,17 @@
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 50) {
+    if (scroll >= 5) {
       header.addClass('solid-background').fadeIn();
     } else {
       header.removeClass('solid-background');
     }
   });
+
+  $('.wb__nav__ctn-item').on('mouseenter mouseleave', function () {
+    $('.wb__nav__ctn-item').not('.active').toggleClass('compress')
+    $(this).toggleClass('active').removeClass('compress')
+  })
 })(jQuery)
 
 fitvids()
