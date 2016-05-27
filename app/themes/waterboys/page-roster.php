@@ -3,13 +3,13 @@
 
     <?php $players = new WP_Query( array( 'post_type' => 'player' ) );?>
 
-    <div class="center rs__slider-ctn" data-slick="centerMode: true,">
-      <?php
+      <div class="center rs__slider-ctn" data-slick="centerMode: true,">
+        <?php
     if( $players->have_posts()): ?>
-        <?php while ( $players->have_posts()) : $players->the_post();  ?>
+          <?php while ( $players->have_posts()) : $players->the_post();  ?>
 
 
-            <div class="block-hold" style="background-image:url('<?php the_field('player_slider_image'); ?>')" >
+            <div class="block-hold" style="background-image:url('<?php the_field('player_slider_image'); ?>')">
               <div class="rs__slider-overlay">
                 <div class="rs___slider-flex-ctn-wrapper">
                   <div class="rs___slider-flex-ctn">
@@ -38,166 +38,95 @@
               </div>
 
             </div>
-        <?php endwhile; ?>
-          <?php endif ?>
-    </div>
-
-
-
-
-    <div class="rs__ctn">
-      <h2 class="rs__title">The Roster<br><img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/roster__blue-wave.png" alt=""></h2>
-      <div class="table-ctn">
-        <table border="0" id="roster" class="tablesorter roster">
-          <thead>
-            <tr>
-              <th><a class="wb__red-sm-title" href="#">Waterboys</a></th>
-              <th><a class="wb__red-sm-title" href="#">Team</a></th>
-              <th><a class="wb__red-sm-title" href="#">Fundraising Rank</a></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Smith</td>
-              <td>John</td>
-              <td>1st</td>
-            </tr>
-            <tr>
-              <td>Bach</td>
-              <td>Frank</td>
-              <td>2ND</td>
-            </tr>
-            <tr>
-              <td>Doe</td>
-              <td>Jason</td>
-              <td>3rd</td>
-            </tr>
-            <tr>
-              <td>Conway</td>
-              <td>Tim</td>
-              <td>4th</td>
-            </tr>
-            <tr>
-              <td>Conway</td>
-              <td>Tim</td>
-              <td>4th</td>
-            </tr>
-            <tr>
-              <td>Conway</td>
-              <td>Tim</td>
-              <td>4th</td>
-            </tr>
-            <tr>
-              <td>Conway</td>
-              <td>Tim</td>
-              <td>4th</td>
-            </tr>
-            <tr>
-              <td>Conway</td>
-              <td>Tim</td>
-              <td>4th</td>
-            </tr>
-            <tr>
-              <td>Conway</td>
-              <td>Tim</td>
-              <td>4th</td>
-            </tr>
-            <tr>
-              <td>Conway</td>
-              <td>Tim</td>
-              <td>4th</td>
-            </tr>
-            <tr>
-              <td>Conway</td>
-              <td>Tim</td>
-              <td>4th</td>
-            </tr>
-            <tr>
-              <td>Conway</td>
-              <td>Tim</td>
-              <td>4th</td>
-            </tr>
-            <tr>
-              <td>Conway</td>
-              <td>Tim</td>
-              <td>4th</td>
-            </tr>
-            <tr>
-              <td>Conway</td>
-              <td>Tim</td>
-              <td>4th</td>
-            </tr>
-            <tr>
-              <td>Conway</td>
-              <td>Tim</td>
-              <td>4th</td>
-            </tr>
-            <tr>
-              <td>Conway</td>
-              <td>Tim</td>
-              <td>4th</td>
-            </tr>
-            <tr>
-              <td>Conway</td>
-              <td>Tim</td>
-              <td>4th</td>
-            </tr>
-          </tbody>
-        </table>
+            <?php endwhile; ?>
+              <?php endif ?>
       </div>
-    </div>
 
-    <div class="rs__honor-bg">
-      <div class="rs__ctn rs__honor-copy">
-        <h3>Honorary Waterboys</h3>
-        <p>Our honorary Waterboys work in — and play on— other fields, but demonstrate the same passion and dedication to.</p>
-      </div>
+
+
+
       <div class="rs__ctn">
-        <div class="rs__honor-ctn">
-          <div class="rs__honor-item">
-            <div class="rs__honor-image-1"></div>
-            <div class="rs__honor-info-ctn">
-              <div class="rs__honor-name-ctn">
-                <h2 class="rs__honor-name-copy">Nate Boyer</h2>
-                <p class="rs__honor-team-copy">TEAM NAME</p>
-              </div>
-
-              <div class="rs__raised-ctn">
-                <h3 class="wb__red-sm-title">Total Raised</h3>
-                <p>
-                  $27,000
-                </p>
-                <a href="/" class="wb__button-blue">View Profile</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="rs__honor-item">
-            <div class="rs__honor-image-2"></div>
-            <div class="rs__honor-info-ctn">
-              <div class="rs__honor-name-ctn">
-                <h2 class="rs__honor-name-copy">Yadier Molina</h2>
-                <p class="rs__honor-team-copy">TEAM NAME</p>
-              </div>
-              <div class="rs__raised-ctn">
-                <h3 class="wb__red-sm-title">Total Raised</h3>
-                <p>
-                  $27,000
-                </p>
-                <a href="/" class="wb__button-blue">View Profile</a>
-              </div>
-            </div>
-          </div>
-
+        <h2 class="rs__title">The Roster<br><img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/roster__blue-wave.png" alt=""></h2>
+        <div class="table-ctn">
+          <table border="0" id="roster" class="tablesorter roster">
+            <thead>
+              <tr>
+                <th><a class="wb__red-sm-title" href="#">Waterboys</a></th>
+                <th><a class="wb__red-sm-title" href="#">Team</a></th>
+                <th><a class="wb__red-sm-title" href="#">Fundraising Rank</a></th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php $players = new WP_Query( array( 'post_type' => 'player' ) );?>
+                <?php if( $players->have_posts()): ?>
+                  <?php while ( $players->have_posts()) : $players->the_post();  ?>
+                    <tr>
+                      <td>
+                        <?php the_field('player_name'); ?>
+                      </td>
+                      <td>
+                        <?php the_field('team'); ?>
+                      </td>
+                      <td>1st</td>
+                    </tr>
+                  <?php endwhile; ?>
+                <?php endif ?>
+            </tbody>
+          </table>
         </div>
       </div>
-    </div>
-    </div>
-    <div class="wb__mission-socialbar-ctn rs__space">
-      <div class="socialbar-buttons-ctn">
-        <a href="/special-teams" class="socialbar-button wb__button">Meet Our Special Teams</a>
+
+      <div class="rs__honor-bg">
+        <div class="rs__ctn rs__honor-copy">
+          <h3>Honorary Waterboys</h3>
+          <p>Our honorary Waterboys work in — and play on— other fields, but demonstrate the same passion and dedication to.</p>
+        </div>
+        <div class="rs__ctn">
+          <div class="rs__honor-ctn">
+            <div class="rs__honor-item">
+              <div class="rs__honor-image-1"></div>
+              <div class="rs__honor-info-ctn">
+                <div class="rs__honor-name-ctn">
+                  <h2 class="rs__honor-name-copy">Nate Boyer</h2>
+                  <p class="rs__honor-team-copy">TEAM NAME</p>
+                </div>
+
+                <div class="rs__raised-ctn">
+                  <h3 class="wb__red-sm-title">Total Raised</h3>
+                  <p>
+                    $27,000
+                  </p>
+                  <a href="/" class="wb__button-blue">View Profile</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="rs__honor-item">
+              <div class="rs__honor-image-2"></div>
+              <div class="rs__honor-info-ctn">
+                <div class="rs__honor-name-ctn">
+                  <h2 class="rs__honor-name-copy">Yadier Molina</h2>
+                  <p class="rs__honor-team-copy">TEAM NAME</p>
+                </div>
+                <div class="rs__raised-ctn">
+                  <h3 class="wb__red-sm-title">Total Raised</h3>
+                  <p>
+                    $27,000
+                  </p>
+                  <a href="/" class="wb__button-blue">View Profile</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-    </div>
-    <?php endwhile; ?>
-      <?php endif ?>
-        <?php get_footer(); ?>
+      </div>
+      <div class="wb__mission-socialbar-ctn rs__space">
+        <div class="socialbar-buttons-ctn">
+          <a href="/special-teams" class="socialbar-button wb__button">Meet Our Special Teams</a>
+        </div>
+      </div>
+      <?php endwhile; ?>
+        <?php endif ?>
+          <?php get_footer(); ?>
