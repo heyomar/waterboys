@@ -24,31 +24,60 @@
           <?php the_field('meter_sub_copy'); ?>
         </p>
       </div>
-      <div class="mission-flex-ctn wb__mission-reasons-ctn">
-        <div class="reasons-flex-child wb__mission-education mission-reason"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__reasons-education.png" alt="">
-          <p>
-            <h3 class="wb__red-sm-title reasons__description-title">Education</h3><br><br>
-            <?php the_field('reasons_education_copy'); ?>
-          </p>
+      <div class="mission-flex-ctn">
+
+        <div class="reasons-flex-child mission-reason">
+          <div class="mission-inner-flex-ctn">
+            <div class="mission-flex-image">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__reasons-education.png" alt="">
+            </div>
+
+            <div class="mission-flex-para">
+                <h3 class="wb__red-sm-title reasons__description-title">Education</h3> <br>
+                <?php the_field('reasons_education_copy'); ?>
+            </div>
+          </div>
         </div>
-        <div class="reasons-flex-child wb__mission-agriculture mission-reason"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__reasons-agriculture.png" alt="">
-          <h3 class="wb__red-sm-title reasons__description-title">Agriculture</h3>
-          <p>
-            <?php the_field('reasons_agriculture_copy'); ?>
-          </p>
+
+        <div class="reasons-flex-child mission-reason">
+          <div class="mission-inner-flex-ctn">
+            <div class="mission-flex-image">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__reasons-agriculture.png" alt="">
+            </div>
+
+            <div class="mission-flex-para">
+                <h3 class="wb__red-sm-title reasons__description-title">Agriculture</h3> <br>
+                <?php the_field('reasons_agriculture_copy'); ?>
+            </div>
+          </div>
         </div>
-        <div class="reasons-flex-child wb__mission-economy mission-reason"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__reasons-economy.png" alt="">
-          <h3 class="wb__red-sm-title reasons__description-title">Economy</h3>
-          <p>
-            <?php the_field('reasons_economy_copy'); ?>
-          </p>
+
+        <div class="reasons-flex-child mission-reason">
+          <div class="mission-inner-flex-ctn">
+            <div class="mission-flex-image">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__reasons-economy.png" alt="">
+            </div>
+
+            <div class="mission-flex-para">
+                <h3 class="wb__red-sm-title reasons__description-title">Economy</h3> <br>
+                <?php the_field('reasons_economy_copy'); ?>
+            </div>
+          </div>
         </div>
-        <div class="reasons-flex-child wb__mission-health mission-reason"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__reasons-health.png" alt="">
-          <h3 class="wb__red-sm-title reasons__description-title">Health</h3>
-          <p>
-            <?php the_field('reasons_health_copy'); ?>
-          </p>
+
+        <div class="reasons-flex-child mission-reason">
+          <div class="mission-inner-flex-ctn">
+            <div class="mission-flex-image">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__reasons-agriculture.png" alt="">
+            </div>
+
+            <div class="mission-flex-para">
+                <h3 class="wb__red-sm-title reasons__description-title">Health</h3> <br>
+                <?php the_field('reasons_health_copy'); ?>
+            </div>
+          </div>
         </div>
+
         <p class="mission-flex-child reasons-sub-copy">
           <?php the_field('reasons_sub_copy'); ?>
         </p>
