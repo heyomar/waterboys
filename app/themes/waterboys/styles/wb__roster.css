@@ -70,7 +70,7 @@
 }
 
 .rs__title {
-  padding-top: 100px;
+  padding-top: 155px;
   text-align: center;
   text-transform: uppercase;
   font-size: 60px;
@@ -216,5 +216,10 @@ tr:nth-child(odd) {
 .slick-next::before {
   content: url(../assets/rs__slider-arrow-right.png);
   margin-right: 20px;
+}
 
+@media screen and (max-width: 768px) {
+  .block-hold {
+    height: 100vh;
+  }
 }

@@ -27,12 +27,10 @@
 }
 
 .single-group .wb__content-info {
-  margin-top: 4px;
+  margin-bottom: -5px;
 }
 
-
 .gp__page-dash-ctn {
-    width: 100%;
-    background-color: rgba(50, 54, 57, 0.8);
-    min-height: 180px;
+  width: 100%;
+  background-color: rgba(50, 54, 57, 0.8);
 }

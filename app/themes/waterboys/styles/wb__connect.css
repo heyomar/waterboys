@@ -41,7 +41,6 @@
 }
 
 .cn__social-icons-ctn a {
-  text-decoration: underline;
   display: inline-block;
   height: 100px;
 }
@@ -65,12 +64,12 @@
 .ninja-forms-all-fields-wrap textarea, input {
   border: 2px solid $wb__iron;
   resize: none;
-  padding: 10px 0;
+  padding: 10px;
   font-size: 22px;
 }
 
-.ninja-forms-all-fields-wrap div:nth-of-type(2),
-.ninja-forms-all-fields-wrap div:nth-of-type(3) {
+.connect .ninja-forms-all-fields-wrap div:nth-of-type(2),
+.connect .ninja-forms-all-fields-wrap div:nth-of-type(3) {
   display: block;
 }
 
@@ -92,14 +91,18 @@ label {
   font-family: $wb__libl;
 }
 
+.ninja-forms-required-items {
+  padding: 15px 0;
+}
+
 @media screen and $tablet {
   .cn__sidebar-ctn {
     flex: 1 1 auto;
     max-width: 400px;
     min-width: 200px;
   }
-  .ninja-forms-all-fields-wrap div:nth-of-type(2),
-  .ninja-forms-all-fields-wrap div:nth-of-type(3) {
+  .connect .ninja-forms-all-fields-wrap div:nth-of-type(2),
+  .connect .ninja-forms-all-fields-wrap div:nth-of-type(3) {
     display: inline-block;
     width: 49.5%;
   }

@@ -19,91 +19,16 @@
           </tr>
         </thead>
         <tbody>
+          <?php $groups = new WP_Query( array( 'post_type' => 'group' ) );?>
+            <?php if( $groups->have_posts()): ?>
+              <?php while ( $groups->have_posts()) : $groups->the_post();  ?>
           <tr>
-            <td>Smith</td>
-            <td>John</td>
+            <td><?php the_field('group_name'); ?></td>
+            <td><?php the_field('location_body'); ?></td>
 
           </tr>
-          <tr>
-            <td>Bach</td>
-            <td>Frank</td>
-
-          </tr>
-          <tr>
-            <td>Doe</td>
-            <td>Jason</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
+        <?php endwhile; ?>
+      <?php endif ?>
         </tbody>
       </table>
     </div>

@@ -495,8 +495,6 @@ textarea {
   width: 100%;
   background-color: rgba(50, 54, 57, 0.8);
   min-height: 180px;
-  position: absolute;
-  bottom: 0;
 }
 
 .wb__page-dash-inner-ctn {
@@ -516,6 +514,7 @@ textarea {
           flex: 2 1 auto;
   height: 150px;
   min-width: 200px;
+  padding: 0 10px;
 }
 
 .wb__page-dash-item h3 {
@@ -528,13 +527,42 @@ textarea {
   padding: 25px 0;
 }
 
+.wb__progressgoal-ctn {
+  height: auto;
+  background-color: #222;
+  border-radius: 6px;
+}
+
+.wb__progressgoal-bar {
+  background-color: #c2001a;
+  border-radius: 6px;
+  height: 20px;
+  width: 20%;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.wb__progressgoal-amount {
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  font-family: 'pill-gothic-300mg', sans-serif;
+}
+
 .wb__dash-donate {
   text-align: center;
-  padding: 60px 0;
+  padding: 70px 0;
 }
 
 .wb__page-legal {
   padding: 35px 25px;
+}
+
+@media screen and (min-width:48em) {
+  .wb__page-dash-ctn {
+    position: absolute;
+    top: 420px;
+  }
 }
 
 .icon {
@@ -634,8 +662,12 @@ Example showing how to change the color/size of the icons:
   border-bottom: 0;
 }
 
-.wb__nav__ctn-item:hover {
+.wb__nav__ctn-item.active {
   height: 26%;
+}
+
+.wb__nav__ctn-item.compress {
+  height: 18.5%;
 }
 
 .wb__nav__ctn-item a {
@@ -660,30 +692,35 @@ Example showing how to change the color/size of the icons:
   background: url('../assets/wb__nav-bg-ourmission.jpg');
   background-position: center center;
   background-size: cover;
+  background-color: #323639;
 }
 
 .nav-item-donate {
   background: url('../assets/wb__nav-bg-donate.jpg');
   background-position: center center;
   background-size: cover;
+  background-color: #323639;
 }
 
 .nav-item-initiatives {
   background: url('../assets/wb__nav-bg-initiatives.jpg');
   background-position: center center;
   background-size: cover;
+  background-color: #323639;
 }
 
 .nav-item-waterboys {
   background: url('../assets/wb__nav-bg-waterboys.jpg');
   background-position: center center;
   background-size: cover;
+  background-color: #323639;
 }
 
 .nav-item-social {
   background: url('../assets/wb__nav-bg-social.jpg');
   background-position: center center;
   background-size: cover;
+  background-color: #323639;
 }
 
 .wb__nav-overflow {
@@ -773,7 +810,7 @@ Example showing how to change the color/size of the icons:
 
 @media screen and (max-width:20em) {
   .wb__hero-title {
-    font-size: 1.75rem;
+    font-size: 2rem;
     line-height: 2.1875rem;
     margin-bottom: -15px;
   }
@@ -1113,7 +1150,6 @@ Example showing how to change the color/size of the icons:
   font-size: 1.25rem;
   color: #fff;
   font-weight: bold;
-  margin-right: 20px;
   text-transform: uppercase;
 }
 
@@ -1129,7 +1165,7 @@ Example showing how to change the color/size of the icons:
   margin-right: 5px;
 }
 
-@media screen and (min-width:48em){
+@media screen and (min-width:48em) {
   .socialbar-copy {
     padding-bottom: 0;
     padding-right: 25px;
@@ -1143,10 +1179,12 @@ Example showing how to change the color/size of the icons:
   }
 }
 
-@media screen and (max-width:30em){
-  .socialbar-button{
+@media screen and (max-width:30em) {
+  .socialbar-button {
     display: inline-block;
-    margin-bottom: 15px;
+  }
+  .socialbar-buttons-ctn a:first-of-type {
+    margin-right: 10px;
   }
 }
 
@@ -1763,7 +1801,7 @@ Example showing how to change the color/size of the icons:
 }
 
 .rs__title {
-  padding-top: 100px;
+  padding-top: 155px;
   text-align: center;
   text-transform: uppercase;
   font-size: 3.75rem;
@@ -1918,7 +1956,12 @@ tr:nth-child(odd) {
 .slick-next::before {
   content: url(../assets/rs__slider-arrow-right.png);
   margin-right: 20px;
+}
 
+@media screen and (max-width: 48em) {
+  .block-hold {
+    height: 100vh;
+  }
 }
 
 .ck__pad {
@@ -1987,7 +2030,6 @@ tr:nth-child(odd) {
 }
 
 .cn__social-icons-ctn a {
-  text-decoration: underline;
   display: inline-block;
   height: 100px;
 }
@@ -2014,12 +2056,12 @@ tr:nth-child(odd) {
 .ninja-forms-all-fields-wrap textarea, input {
   border: 2px solid #d6d8d9;
   resize: none;
-  padding: 10px 0;
+  padding: 10px;
   font-size: 1.375rem;
 }
 
-.ninja-forms-all-fields-wrap div:nth-of-type(2),
-.ninja-forms-all-fields-wrap div:nth-of-type(3) {
+.connect .ninja-forms-all-fields-wrap div:nth-of-type(2),
+.connect .ninja-forms-all-fields-wrap div:nth-of-type(3) {
   display: block;
 }
 
@@ -2041,6 +2083,10 @@ label {
   font-family: 'liberatorlight', sans-serif;
 }
 
+.ninja-forms-required-items {
+  padding: 15px 0;
+}
+
 @media screen and (min-width:48em) {
   .cn__sidebar-ctn {
     -webkit-box-flex: 1;
@@ -2050,8 +2096,8 @@ label {
     max-width: 400px;
     min-width: 200px;
   }
-  .ninja-forms-all-fields-wrap div:nth-of-type(2),
-  .ninja-forms-all-fields-wrap div:nth-of-type(3) {
+  .connect .ninja-forms-all-fields-wrap div:nth-of-type(2),
+  .connect .ninja-forms-all-fields-wrap div:nth-of-type(3) {
     display: inline-block;
     width: 49.5%;
   }
@@ -2133,13 +2179,12 @@ label {
 }
 
 .single-group .wb__content-info {
-  margin-top: 4px;
+  margin-bottom: -5px;
 }
 
 .gp__page-dash-ctn {
-    width: 100%;
-    background-color: rgba(50, 54, 57, 0.8);
-    min-height: 180px;
+  width: 100%;
+  background-color: rgba(50, 54, 57, 0.8);
 }
 
 .gr__ctn {
@@ -2280,6 +2325,10 @@ label {
       -ms-flex: 1 1 25%;
           flex: 1 1 25%;
   margin-right: 10px;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  max-height: 60px;
 }
 
 .dn__select-amount-btn:focus {
@@ -2315,12 +2364,12 @@ label {
   text-align: center;
   margin-top: -50px;
   font-size: 1.25rem;
+  line-height: 1.375rem;
 }
 
 .donate .field-wrap {
   max-width: 900px;
   margin: 15px auto;
-  text-align: center;
 }
 
 .donate .ninja-forms-all-fields-wrap {
@@ -2336,6 +2385,41 @@ label {
   position: relative;
   top: -110px;
   text-align: center;
+}
+
+.donate select {
+  border: 2px solid #d6d8d9;
+  height: 50px !important;
+}
+
+.credit_card-wrap {
+  padding: 0 30px;
+}
+
+.donate .ninja-forms-credit-card-cvc {
+  display: inline-block;
+  width: 25%;
+}
+
+.donate .ninja-forms-credit-card-number {
+  display: inline-block;
+  width: 74.5%;
+}
+
+#ninja_forms_field_14_div_wrap {
+  text-align: center;
+}
+
+#ninja_forms_field_20_div_wrap,
+#ninja_forms_field_21_div_wrap,
+#ninja_forms_field_22_div_wrap,
+#ninja_forms_field_23_div_wrap,
+#ninja_forms_field_24_div_wrap,
+#ninja_forms_field_25_div_wrap,
+#ninja_forms_field_26_div_wrap,
+#ninja_forms_field_27_div_wrap {
+  padding: 0 30px;
+  text-align: left;
 }
 
 /* FOOTER */
@@ -2486,6 +2570,10 @@ a {
 .photo-credits .wb__page-legal li {
   list-style-type: none;
   text-align: center;
+}
+
+.photo-credits .wb__page-legal ul {
+  padding: 0;
 }
 
 .photo-credits .wb__page-legal {
@@ -2705,7 +2793,7 @@ body {
 }
 
 .solid-background {
-  background-color: #323639;
+  background-color: rgba(50, 54, 57, 0.85);
 }
 
 .transparent-background {

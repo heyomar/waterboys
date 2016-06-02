@@ -31,7 +31,7 @@ body {
 }
 
 .solid-background {
-  background-color: $wb__gray;
+  background-color: rgba(50, 54, 57, 0.85);
 }
 
 .transparent-background {

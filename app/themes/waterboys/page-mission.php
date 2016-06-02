@@ -79,11 +79,11 @@
     <div class="wb__mission-socialbar-ctn">
       <p class="socialbar-copy">Bring it in. Connect with us on social.</p>
       <div class="socialbar-buttons-ctn">
-        <a href="" class="socialbar-button">
+        <a href="" class="socialbar-button wb__button">
           <svg class="icon icon-twitter">
             <use xlink:href="#icon-twitter"></use>
           </svg> Tweet</a>
-        <a href="" class="socialbar-button">
+        <a href="" class="socialbar-button wb__button">
           <svg class="icon icon-facebook-square">
             <use xlink:href="#icon-facebook-square"></use>
           </svg> Share</a>

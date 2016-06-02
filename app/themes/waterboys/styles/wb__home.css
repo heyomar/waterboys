@@ -52,7 +52,7 @@
 
 @media screen and $sm-mobile {
   .wb__hero-title {
-    font-size: 28px;
+    font-size: 32px;
     line-height: 35px;
     margin-bottom: -15px;
   }

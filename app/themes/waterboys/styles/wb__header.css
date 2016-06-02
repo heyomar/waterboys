@@ -67,9 +67,14 @@
   border-bottom: 0;
 }
 
-.wb__nav__ctn-item:hover {
+.wb__nav__ctn-item.active {
   height: 26%;
 }
+
+.wb__nav__ctn-item.compress {
+  height: 18.5%;
+}
+
 
 .wb__nav__ctn-item a {
   font-family: $wb__libh;
@@ -92,30 +97,35 @@
   background: url('../assets/wb__nav-bg-ourmission.jpg');
   background-position: center center;
   background-size: cover;
+  background-color: $wb__gray;
 }
 
 .nav-item-donate {
   background: url('../assets/wb__nav-bg-donate.jpg');
   background-position: center center;
   background-size: cover;
+  background-color: $wb__gray;
 }
 
 .nav-item-initiatives {
   background: url('../assets/wb__nav-bg-initiatives.jpg');
   background-position: center center;
   background-size: cover;
+  background-color: $wb__gray;
 }
 
 .nav-item-waterboys {
   background: url('../assets/wb__nav-bg-waterboys.jpg');
   background-position: center center;
   background-size: cover;
+  background-color: $wb__gray;
 }
 
 .nav-item-social {
   background: url('../assets/wb__nav-bg-social.jpg');
   background-position: center center;
   background-size: cover;
+  background-color: $wb__gray;
 }
 
 .wb__nav-overflow {

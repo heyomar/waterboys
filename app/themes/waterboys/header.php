@@ -29,7 +29,7 @@
       <div class="site__header__content solid-background">
           <a href="/"><img class="wb__header-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-logo.png" alt="" /></a>
         <div class="wb__header__right">
-          <a class="wb__button wb__header-button" href="/">Donate</a>
+          <a class="wb__button wb__header-button" href="/donate">Donate</a>
           <img id="hamburger" class="wb__header__hamburger" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-waves.png" alt="" />
         </div>
       </div>
