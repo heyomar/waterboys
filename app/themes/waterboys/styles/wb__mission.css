@@ -50,8 +50,7 @@
 }
 
 .wb__mission-hero-copy {}
-.wb__mission-meter-ctn {
-}
+.wb__mission-meter-ctn {}
 
 .wb__mission-meter {
   height: 120px;
@@ -68,39 +67,22 @@
   text-align: center;
 }
 
-.wb__meter-sub-copy {}
-.wb__wb__mission-reasons-ctn {}
-
 .reasons__description-title {
   text-align: left;
   display: inline-block;
+  padding-bottom: 5px;
 }
 
 .reasons-flex-child {
-  flex: 2 1 50%;
-  padding: 10px 10px 35px 10px;
+  flex: 2 1 350px;
+  padding: 10px 10px 35px;
 
-}
-
-
-.mission-reason img {
-  width: 100px;
-  height: auto;
-  display: inline-block;
-  float: left;
-  margin-right: 20px;
 }
 
 .mission-reason p {
   display: inline-block;
   width: 250px;
 }
-
-.wb__mission-reason {}
-.wb__mission-education {}
-.wb__mission-agriculture {}
-.wb__mission-economy {}
-.wb__mission-health {}
 
 .wb__mission-video-ctn {
   padding: 35px 10%;
@@ -110,10 +92,10 @@
   background-position: center center;
 }
 
-.wb__mission-health {}
 .wb__dig-deep-ctn {}
 .wb__dig-deep-title {
   padding: 25px 0 15px 0;
+  font-size: 20px;
 }
 .wb__dig-deep-copy {}
 .wb__affilates-ctn {}
@@ -126,7 +108,8 @@
 }
 
 .affilates-title {
-  padding: 25px 0 15px 0;
+  padding: 25px 0 15px;
+  font-size: 20px;
 }
 
 .wb__affilates-ctn img {
@@ -171,6 +154,28 @@
   margin-right: 5px;
 }
 
+
+.mission-inner-flex-ctn {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mission-flex-image {
+  flex: 1 1 30%;
+  text-align: center;
+  align-self: center;
+}
+
+.mission-flex-image img {
+  max-width: 65%;
+  height: auto;
+}
+
+.mission-flex-para {
+  flex: 1 1 50%;
+}
+
+
 @media screen and $tablet {
   .socialbar-copy {
     padding-bottom: 0;
@@ -182,6 +187,13 @@
   }
   .mission-flex-ctn {
     padding: 15px 10%;
+  }
+  .mission-flex-image {
+    flex: auto;
+  }
+
+  .mission-flex-para {
+    flex: 1 1 50%;
   }
 }
 

@@ -594,7 +594,7 @@ Example showing how to change the color/size of the icons:
 
 .site__header {
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   width: 100%;
 }
 
@@ -1032,8 +1032,7 @@ Example showing how to change the color/size of the icons:
 
 .wb__mission-hero-copy {}
 
-.wb__mission-meter-ctn {
-}
+.wb__mission-meter-ctn {}
 
 .wb__mission-meter {
   height: 120px;
@@ -1050,46 +1049,25 @@ Example showing how to change the color/size of the icons:
   text-align: center;
 }
 
-.wb__meter-sub-copy {}
-
-.wb__wb__mission-reasons-ctn {}
-
 .reasons__description-title {
   text-align: left;
   display: inline-block;
+  padding-bottom: 5px;
 }
 
 .reasons-flex-child {
   -webkit-box-flex: 2;
-  -webkit-flex: 2 1 50%;
-      -ms-flex: 2 1 50%;
-          flex: 2 1 50%;
-  padding: 10px 10px 35px 10px;
+  -webkit-flex: 2 1 350px;
+      -ms-flex: 2 1 350px;
+          flex: 2 1 350px;
+  padding: 10px 10px 35px;
 
-}
-
-.mission-reason img {
-  width: 100px;
-  height: auto;
-  display: inline-block;
-  float: left;
-  margin-right: 20px;
 }
 
 .mission-reason p {
   display: inline-block;
   width: 250px;
 }
-
-.wb__mission-reason {}
-
-.wb__mission-education {}
-
-.wb__mission-agriculture {}
-
-.wb__mission-economy {}
-
-.wb__mission-health {}
 
 .wb__mission-video-ctn {
   padding: 35px 10%;
@@ -1099,12 +1077,11 @@ Example showing how to change the color/size of the icons:
   background-position: center center;
 }
 
-.wb__mission-health {}
-
 .wb__dig-deep-ctn {}
 
 .wb__dig-deep-title {
   padding: 25px 0 15px 0;
+  font-size: 1.25rem;
 }
 
 .wb__dig-deep-copy {}
@@ -1119,7 +1096,8 @@ Example showing how to change the color/size of the icons:
 }
 
 .affilates-title {
-  padding: 25px 0 15px 0;
+  padding: 25px 0 15px;
+  font-size: 1.25rem;
 }
 
 .wb__affilates-ctn img {
@@ -1165,6 +1143,39 @@ Example showing how to change the color/size of the icons:
   margin-right: 5px;
 }
 
+.mission-inner-flex-ctn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.mission-flex-image {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 30%;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  text-align: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+
+.mission-flex-image img {
+  max-width: 65%;
+  height: auto;
+}
+
+.mission-flex-para {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
 @media screen and (min-width:48em) {
   .socialbar-copy {
     padding-bottom: 0;
@@ -1176,6 +1187,19 @@ Example showing how to change the color/size of the icons:
   }
   .mission-flex-ctn {
     padding: 15px 10%;
+  }
+  .mission-flex-image {
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto;
+  }
+
+  .mission-flex-para {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
   }
 }
 
@@ -1936,14 +1960,14 @@ tr:nth-child(odd) {
 
 .slick-next {
   right: 0;
-  top: 200px;
-  z-index: 1;
+  top: 300px;
+  z-index: 0;
   width: auto;
 }
 
 .slick-prev {
   left: 0;
-  top: 200px;
+  top: 300px;
   z-index: 1;
   width: auto;
 }

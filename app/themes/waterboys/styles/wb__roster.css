@@ -196,14 +196,14 @@ tr:nth-child(odd) {
 
 .slick-next {
   right: 0;
-  top: 200px;
-  z-index: 1;
+  top: 300px;
+  z-index: 0;
   width: auto;
 }
 
 .slick-prev {
   left: 0;
-  top: 200px;
+  top: 300px;
   z-index: 1;
   width: auto;
 }
