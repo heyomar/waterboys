@@ -21,13 +21,3 @@ app/wp-cache-config.php
 app/w3tc-config/
 app/db.php
 
-# set plugins you install manually to a not-ignore statement
-app/plugins/*
-!app/plugins/index.php
-!app/plugins/advanced-custom-fields-pro
-!app/plugins/wp-migrate-db-pro
-!app/plugins/wp-migrate-db-pro-media-files
-!app/plugins/ninja-forms-*
-app/themes/*
-!app/themes/index.php
-!app/themes/waterboys
