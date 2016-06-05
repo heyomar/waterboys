@@ -25,8 +25,13 @@ Template Name: Group Profile
               $12,255
             </p>
           </div>
+          <?php $player = get_field('affiliated_player'); ?>
           <div class="wb__page-dash-item">
-            <div class="wb__dash-donate"><a class="wb__button" href="/">Donate Now</a></div>
+            <div class="wb__dash-donate">
+              <a class="wb__button" href="/donate/?plyr=<?php the_ID(); ?>&grp=<?php echo $player[0]->ID; ?>">
+                Donate Now
+              </a>
+            </div>
           </div>
         </div>
       </div>
