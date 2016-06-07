@@ -1066,6 +1066,7 @@ Example showing how to change the color/size of the icons:
 
 .mission__meter-title {
   text-align: center;
+  padding-top: 20px;
 }
 
 .reasons__description-title {
@@ -2440,13 +2441,13 @@ label {
 }
 
 .donate .ninja-forms-credit-card-cvc {
-  display: inline-block;
-  width: 25%;
+  display: block;
+  width: 100%;
 }
 
 .donate .ninja-forms-credit-card-number {
-  display: inline-block;
-  width: 74.5%;
+  display: block;
+  width: 100%;
 }
 
 #ninja_forms_field_14_div_wrap {
@@ -2476,6 +2477,22 @@ label {
   top: 241px;
   padding-left: 30px;
   padding-top: 0;
+}
+
+#ninja_forms_field_25 {
+  width: 100%;
+}
+
+@media screen and (min-width:48em) {
+  .donate .ninja-forms-credit-card-cvc {
+    display: inline-block;
+    width: 25%;
+  }
+
+  .donate .ninja-forms-credit-card-number {
+    display: inline-block;
+    width: 74.5%;
+  }
 }
 
 /* FOOTER */
