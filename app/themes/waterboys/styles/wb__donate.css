@@ -149,3 +149,16 @@
   padding: 0 30px;
   text-align: left;
 }
+
+#ninja_forms_field_19_div_wrap div:not(.label-above) {
+  display: none;
+}
+
+.donate .ninja-forms-required-items {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  top: 241px;
+  padding-left: 30px;
+  padding-top: 0;
+}
