@@ -6144,7 +6144,7 @@ var acf;
 					// add uploadedTo to filters
 					$.each( filters.filters, function( k, filter ){
 						
-						filter.props.uploadedTo = post_id;
+						filter.props.uploadedTo = settings.post_id;
 						
 					});
 					

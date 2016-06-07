@@ -27,7 +27,7 @@ Template Name: Player Profile
           </p>
         </div>
         <div class="wb__page-dash-item">
-          <div class="wb__dash-donate"><a class="wb__button" href="/">Donate Now</a></div>
+          <div class="wb__dash-donate"><a class="wb__button" href="/donate/?plyr=<?php the_ID(); ?>">Donate Now</a></div>
         </div>
       </div>
     </div>

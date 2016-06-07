@@ -33,7 +33,7 @@
               <p>to prevent a 292,000 km jerrycan carry</p></div>
 
               <label class="" for="custom-amount">$ Custom Amount</label>
-              <input type="text" name="custom-amount" value="">
+              <input type="number" id="custom-amount" name="custom-amount" value="">
 
             </div>
           </div>
