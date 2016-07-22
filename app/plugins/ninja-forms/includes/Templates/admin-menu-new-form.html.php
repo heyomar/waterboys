@@ -315,7 +315,7 @@
 </script>
 
 <script id="nf-tmpl-drawer-action-type-button" type="text/template">
-    <div class="nf-one-third" data-type="<%= id %>">
+    <div class="nf-one-third nf-action-type-draggable" data-type="<%= id %>">
         <div class="<%= renderClasses() %>" <%= renderStyle() %>><%= nicename %></div>
     </div>
 </script>
@@ -477,6 +477,18 @@
     <span class="nf-setting-label"><%= label %><%= renderTooltip() %></span>
     <input type="checkbox" id="<%= name %>" class="nf-toggle setting" <%= ( 1 == value ) ? 'checked' : '' %> />
     <label for="<%= name %>"><%= label %></label>
+
+</script>
+
+<script id="nf-tmpl-edit-setting-color" type="text/template">
+
+    <label for="<%= name %>" class="<%= renderLabelClasses() %>"><%= label %> <%= renderTooltip() %></label>
+
+    <input type="text" id="<%= name %>" value="<%= value %>" class="setting" data-default-color="#F9F9F9" />
+
+    <div class="nf-colorpicker">
+
+    </div>
 
 </script>
 
