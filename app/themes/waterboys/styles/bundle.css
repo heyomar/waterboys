@@ -456,6 +456,7 @@ textarea {
   border: 2px solid #fff;
   border-radius: 6px;
   padding: 12px 40px;
+  font-size: 20px;
   font-size: 1.25rem;
   color: #fff;
   font-weight: bold;
@@ -475,6 +476,7 @@ textarea {
 .wb__button-blue {
   background-color: #5c6268;
   font-family: 'pill-gothic-300mg', sans-serif;
+  font-size: 20px;
   font-size: 1.25rem;
   font-weight: bold;
   padding: 12px 40px;
@@ -499,17 +501,14 @@ textarea {
 
 .wb__page-dash-inner-ctn {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .wb__page-dash-item {
   -webkit-box-flex: 2;
-  -webkit-flex: 2 1 auto;
       -ms-flex: 2 1 auto;
           flex: 2 1 auto;
   height: 150px;
@@ -545,6 +544,7 @@ textarea {
 .wb__progressgoal-amount {
   color: #fff;
   text-align: center;
+  font-size: 20px;
   font-size: 1.25rem;
   font-family: 'pill-gothic-300mg', sans-serif;
 }
@@ -569,6 +569,7 @@ textarea {
   border: 2px solid #000;
   border-radius: 6px;
   padding: 12px 40px;
+  font-size: 20px;
   font-size: 1.25rem;
   color: #000;
   cursor: pointer;
@@ -692,7 +693,9 @@ Example showing how to change the color/size of the icons:
 .wb__nav__ctn-item a {
   font-family: 'liberatorheavy', sans-serif;
   text-transform: uppercase;
+  font-size: 45px;
   font-size: 2.8125rem;
+  letter-spacing: 3px;
   letter-spacing: 0.1875rem;
   color: #fff;
   position: relative;
@@ -801,13 +804,17 @@ Example showing how to change the color/size of the icons:
 }
 
 .wb__hero-title {
+  font-size: 50px;
   font-size: 3.125rem;
   font-family: 'liberatorheavy', sans-serif;
+  letter-spacing: 2px;
   letter-spacing: 0.125rem;
+  line-height: 55px;
   line-height: 3.4375rem;
 }
 
 .wb__hero-subtitle {
+  line-height: 30px;
   line-height: 1.875rem;
   font-weight: 300;
   padding-bottom: 50px;
@@ -849,8 +856,10 @@ Example showing how to change the color/size of the icons:
 }
 
 .wb__player-name {
+  font-size: 55px;
   font-size: 3.4375rem;
   margin-bottom: 23px;
+  letter-spacing: 5px;
   letter-spacing: 0.3125rem;
   margin-top: 0;
 }
@@ -860,6 +869,7 @@ Example showing how to change the color/size of the icons:
   font-family: 'pill-gothic-300mg', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 20px;
   font-size: 1.25rem;
 }
 
@@ -892,13 +902,11 @@ Example showing how to change the color/size of the icons:
 
 .wb__player-container {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin-top: -4px;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   height: auto;
   padding-bottom: 5px;
   margin-top: 0;
@@ -906,10 +914,10 @@ Example showing how to change the color/size of the icons:
 
 .wb__content-bio {
   -webkit-box-flex: 3;
-  -webkit-flex: 3 2 60%;
       -ms-flex: 3 2 60%;
           flex: 3 2 60%;
   font-weight: 400;
+  font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
   min-width: 330px;
@@ -917,7 +925,6 @@ Example showing how to change the color/size of the icons:
 
 .wb__content-info {
   -webkit-box-flex: 2;
-  -webkit-flex: 2 1 30%;
       -ms-flex: 2 1 30%;
           flex: 2 1 30%;
   min-width: 330px;
@@ -939,9 +946,11 @@ Example showing how to change the color/size of the icons:
 .wb__player__content__title {
   text-transform: uppercase;
   color: #c2001a;
+  letter-spacing: 1px;
   letter-spacing: 0.0625rem;
   padding-bottom: -10px;
   font-family: 'liberatorlight', sans-serif;
+  font-size: 13px;
   font-size: 0.8125rem;
   opacity: 0.55;
 }
@@ -965,7 +974,6 @@ Example showing how to change the color/size of the icons:
 @media screen and (min-width:48em) {
   .wb__content-bio {
     -webkit-box-flex: 3;
-    -webkit-flex: 3 2 55%;
         -ms-flex: 3 2 55%;
             flex: 3 2 55%;
     font-weight: 400;
@@ -975,7 +983,6 @@ Example showing how to change the color/size of the icons:
 
   .wb__content-info {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 20%;
         -ms-flex: 1 1 20%;
             flex: 1 1 20%;
     min-width: 335px;
@@ -991,18 +998,15 @@ Example showing how to change the color/size of the icons:
 
 .mission-flex-ctn {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 15px 5%;
 }
 
 .mission-flex-child {
   -webkit-box-flex: 2;
-  -webkit-flex: 2 1 50%;
       -ms-flex: 2 1 50%;
           flex: 2 1 50%;
 }
@@ -1014,7 +1018,9 @@ Example showing how to change the color/size of the icons:
 
 .wb__red-sm-title {
   color: #c2001a;
+  font-size: 14px;
   font-size: 0.875rem;
+  letter-spacing: 2px;
   letter-spacing: 0.125rem;
   font-family: 'liberatorlight', sans-serif;
   text-transform: uppercase;
@@ -1032,6 +1038,7 @@ Example showing how to change the color/size of the icons:
 .mission__title {
   text-align: center;
   text-transform: uppercase;
+  font-size: 50px;
   font-size: 3.125rem;
   font-family: 'liberatorheavy', sans-serif;
   color: #fff;
@@ -1041,6 +1048,7 @@ Example showing how to change the color/size of the icons:
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  letter-spacing: 2px;
   letter-spacing: 0.125rem;
 }
 
@@ -1077,7 +1085,6 @@ Example showing how to change the color/size of the icons:
 
 .reasons-flex-child {
   -webkit-box-flex: 2;
-  -webkit-flex: 2 1 350px;
       -ms-flex: 2 1 350px;
           flex: 2 1 350px;
   padding: 10px 10px 35px;
@@ -1101,6 +1108,7 @@ Example showing how to change the color/size of the icons:
 
 .wb__dig-deep-title {
   padding: 25px 0 15px 0;
+  font-size: 20px;
   font-size: 1.25rem;
 }
 
@@ -1117,6 +1125,7 @@ Example showing how to change the color/size of the icons:
 
 .affilates-title {
   padding: 25px 0 15px;
+  font-size: 20px;
   font-size: 1.25rem;
 }
 
@@ -1165,23 +1174,19 @@ Example showing how to change the color/size of the icons:
 
 .mission-inner-flex-ctn {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mission-flex-image {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 30%;
       -ms-flex: 1 1 30%;
           flex: 1 1 30%;
   text-align: center;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .mission-flex-image img {
@@ -1191,7 +1196,6 @@ Example showing how to change the color/size of the icons:
 
 .mission-flex-para {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 50%;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
 }
@@ -1210,14 +1214,12 @@ Example showing how to change the color/size of the icons:
   }
   .mission-flex-image {
     -webkit-box-flex: 1;
-    -webkit-flex: auto;
         -ms-flex: auto;
             flex: auto;
   }
 
   .mission-flex-para {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 50%;
         -ms-flex: 1 1 50%;
             flex: 1 1 50%;
   }
@@ -1243,18 +1245,15 @@ Example showing how to change the color/size of the icons:
 
 .st__flex-ctn {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 15px 5%;
 }
 
 .st__flex-child {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 45%;
       -ms-flex: 1 1 45%;
           flex: 1 1 45%;
 }
@@ -1272,6 +1271,7 @@ Example showing how to change the color/size of the icons:
 .st__title {
   text-align: center;
   text-transform: uppercase;
+  font-size: 50px;
   font-size: 3.125rem;
   font-family: 'liberatorheavy', sans-serif;
   color: #fff;
@@ -1281,6 +1281,7 @@ Example showing how to change the color/size of the icons:
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  letter-spacing: 2px;
   letter-spacing: 0.125rem;
 }
 
@@ -1335,6 +1336,7 @@ Example showing how to change the color/size of the icons:
 .hl__title {
   text-align: center;
   text-transform: uppercase;
+  font-size: 50px;
   font-size: 3.125rem;
   font-family: 'liberatorheavy', sans-serif;
   color: #fff;
@@ -1344,6 +1346,7 @@ Example showing how to change the color/size of the icons:
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  letter-spacing: 2px;
   letter-spacing: 0.125rem;
 }
 
@@ -1354,18 +1357,15 @@ Example showing how to change the color/size of the icons:
 
 .hl__flex-ctn {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 15px;
 }
 
 .hl__flex-child-copy {
   -webkit-box-flex: 3;
-  -webkit-flex: 3 2 50%;
       -ms-flex: 3 2 50%;
           flex: 3 2 50%;
   padding: 0 25px;
@@ -1393,6 +1393,7 @@ Example showing how to change the color/size of the icons:
 }
 
 .hl__article-link {
+  font-size: 16px;
   font-size: 1rem;
 }
 
@@ -1401,7 +1402,6 @@ Example showing how to change the color/size of the icons:
   background-size: contain;
   background-position: center;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 35%;
       -ms-flex: 1 1 35%;
           flex: 1 1 35%;
   min-width: 310px;
@@ -1613,6 +1613,7 @@ Example showing how to change the color/size of the icons:
 .slick-next:before
 {
     font-family: 'slick';
+    font-size: 20px;
     font-size: 1.25rem;
     line-height: 1;
 
@@ -1736,7 +1737,9 @@ Example showing how to change the color/size of the icons:
 .slick-dots li button:before
 {
     font-family: 'slick';
+    font-size: 6px;
     font-size: 0.375rem;
+    line-height: 20px;
     line-height: 1.25rem;
 
     position: absolute;
@@ -1779,18 +1782,15 @@ Example showing how to change the color/size of the icons:
 
 .rs___slider-flex-ctn {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .rs__slider-nameplate {
   background-color: #f1f0ee;
   -webkit-box-flex: 1;
-  -webkit-flex: auto;
       -ms-flex: auto;
           flex: auto;
   padding: 0 15px 20px 0;
@@ -1816,6 +1816,7 @@ Example showing how to change the color/size of the icons:
 }
 
 .rs__slider-nameplate h3 {
+  font-size: 30px;
   font-size: 1.875rem;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -1823,14 +1824,15 @@ Example showing how to change the color/size of the icons:
 }
 
 .rs__slider-nameplate p {
+  font-size: 20px;
   font-size: 1.25rem;
+  line-height: 22px;
   line-height: 1.375rem;
 }
 
 .rs__slider-player-minidash {
   background-color: #f1f0ee;
   -webkit-box-flex: 1;
-  -webkit-flex: auto;
       -ms-flex: auto;
           flex: auto;
   margin: 10px;
@@ -1839,6 +1841,7 @@ Example showing how to change the color/size of the icons:
 }
 
 .rs__slider-player-minidash p {
+  font-size: 30px;
   font-size: 1.875rem;
   font-weight: bold;
   margin: 15px;
@@ -1848,6 +1851,7 @@ Example showing how to change the color/size of the icons:
   padding-top: 155px;
   text-align: center;
   text-transform: uppercase;
+  font-size: 60px;
   font-size: 3.75rem;
   font-family: 'liberatorheavy', sans-serif;
   color: #c2001a;
@@ -1856,6 +1860,7 @@ Example showing how to change the color/size of the icons:
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  letter-spacing: 4px;
   letter-spacing: 0.25rem;
 }
 
@@ -1885,17 +1890,14 @@ tr:nth-child(odd) {
 
 .rs__honor-ctn {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .rs__honor-item {
   -webkit-box-flex: 2;
-  -webkit-flex: 2 1 auto;
       -ms-flex: 2 1 auto;
           flex: 2 1 auto;
   min-width: 280px;
@@ -1913,6 +1915,7 @@ tr:nth-child(odd) {
   color: #fff;
   font-family: 'pill-gothic-300mg', sans-serif;
   font-weight: 400;
+  font-size: 30px;
   font-size: 1.875rem;
   text-transform: uppercase;
   margin-bottom: -20px;
@@ -1922,6 +1925,7 @@ tr:nth-child(odd) {
   font-family: 'pill-gothic-300mg', sans-serif;
   text-transform: uppercase;
   color: #c2001a;
+  font-size: 22px;
   font-size: 1.375rem;
 }
 
@@ -1950,6 +1954,7 @@ tr:nth-child(odd) {
 }
 
 .rs__raised-ctn p {
+  font-size: 28px;
   font-size: 1.75rem;
 }
 
@@ -2022,19 +2027,16 @@ tr:nth-child(odd) {
 
 .cn__ctn {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .cn__sidebar-ctn {
   background-image: url('../assets/connect__sidebar-bg.jpg');
   background-size: cover;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   min-width: 200px;
@@ -2045,6 +2047,7 @@ tr:nth-child(odd) {
 }
 
 .cn__sidebar-info p {
+  font-size: 18px;
   font-size: 1.125rem;
 }
 
@@ -2056,7 +2059,6 @@ tr:nth-child(odd) {
 
 .cn__icon-flex {
   -webkit-box-flex: 2;
-  -webkit-flex: 2 1 33%;
       -ms-flex: 2 1 33%;
           flex: 2 1 33%;
 }
@@ -2064,6 +2066,7 @@ tr:nth-child(odd) {
 .cn__social-ctn h3 {
   text-align: center;
   padding: 25px;
+  font-size: 18px;
   font-size: 1.125rem;
 }
 
@@ -2086,7 +2089,6 @@ tr:nth-child(odd) {
 
 .cn__form-ctn {
   -webkit-box-flex: 3;
-  -webkit-flex: 3 2 auto;
       -ms-flex: 3 2 auto;
           flex: 3 2 auto;
   max-width: 900px;
@@ -2101,6 +2103,7 @@ tr:nth-child(odd) {
   border: 2px solid #d6d8d9;
   resize: none;
   padding: 10px;
+  font-size: 22px;
   font-size: 1.375rem;
 }
 
@@ -2109,7 +2112,8 @@ tr:nth-child(odd) {
   display: block;
 }
 
-.ninja-forms-all-fields-wrap input[type=submit] {
+.ninja-forms-all-fields-wrap input[type=submit],
+.form-button {
   color: #fff;
   padding: 10px 60px;
   text-transform: uppercase;
@@ -2134,7 +2138,6 @@ label {
 @media screen and (min-width:48em) {
   .cn__sidebar-ctn {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
     max-width: 400px;
@@ -2156,19 +2159,16 @@ label {
 
 .ty__inner-ctn {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 10px;
 }
 
 .ty__side-share-ctn {
   text-align: center;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   min-width: 190px;
@@ -2186,9 +2186,9 @@ label {
 
 .ty__body-copy-ctn {
   -webkit-box-flex: 3;
-  -webkit-flex: 3 2 50%;
       -ms-flex: 3 2 50%;
           flex: 3 2 50%;
+  font-size: 19px;
   font-size: 1.1875rem;
   font-family: 'pill-gothic-300mg', sans-serif;
   min-width: 250px;
@@ -2248,7 +2248,9 @@ label {
 }
 
 .gr__head-copy {
+  font-size: 20px;
   font-size: 1.25rem;
+  line-height: 30px;
   line-height: 1.875rem;
   padding: 50px 15px 0;
 }
@@ -2267,6 +2269,7 @@ label {
 .rg__ctn h3 {
   text-align: center;
   padding: 50px 15px;
+  font-size: 20px;
   font-size: 1.25rem;
 }
 
@@ -2287,6 +2290,7 @@ label {
 .hh__ctn h3 {
   text-align: center;
   padding: 50px 15px;
+  font-size: 20px;
   font-size: 1.25rem;
 }
 
@@ -2302,19 +2306,16 @@ label {
 
 .dn__flex-ctn {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .dn__now-ctn {
   max-width: 700px;
   margin: 0 auto;
   -webkit-box-flex: 3;
-  -webkit-flex: 3 1 30%;
       -ms-flex: 3 1 30%;
           flex: 3 1 30%;
   padding: 25px;
@@ -2322,17 +2323,18 @@ label {
 }
 
 .dn__now-copy-ctn p {
+  font-size: 18px;
   font-size: 1.125rem;
 }
 
 .copy-highlight {
+  font-size: 20px;
   font-size: 1.25rem;
   font-weight: bold;
 }
 
 .donate .cn__sidebar-info {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 25%;
       -ms-flex: 1 1 25%;
           flex: 1 1 25%;
 }
@@ -2347,6 +2349,7 @@ label {
 
 .dn__select-ctn h3 {
   padding: 25px 0;
+  font-size: 20px;
   font-size: 1.25rem;
 }
 
@@ -2362,16 +2365,15 @@ label {
   border-radius: 4px;
   min-width: 150px;
   cursor: pointer;
+  font-size: 30px;
   font-size: 1.875rem;
   margin-bottom: 15px;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 25%;
       -ms-flex: 1 1 25%;
           flex: 1 1 25%;
   margin-right: 10px;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   max-height: 60px;
 }
 
@@ -2381,7 +2383,6 @@ label {
 
 .dn__select-amount-ctn p {
   -webkit-box-flex: 2;
-  -webkit-flex: 2 1 30%;
       -ms-flex: 2 1 30%;
           flex: 2 1 30%;
   color: #5c6268;
@@ -2407,7 +2408,9 @@ label {
   padding: 45px 20px;
   text-align: center;
   margin-top: -50px;
+  font-size: 20px;
   font-size: 1.25rem;
+  line-height: 22px;
   line-height: 1.375rem;
 }
 
@@ -2512,17 +2515,14 @@ a {
 
 .site__footer__content {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   font-family: 'pill-gothic-300mg', sans-serif;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   height: 280px;
@@ -2533,7 +2533,6 @@ a {
 
 .wb__footer__flex-item {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 25%;
       -ms-flex: 1 1 25%;
           flex: 1 1 25%;
 
@@ -2570,12 +2569,12 @@ a {
 .wb__footer__links {
   text-align: center;
   -webkit-box-flex: 2;
-  -webkit-flex: 2 2 50%;
       -ms-flex: 2 2 50%;
           flex: 2 2 50%;
   font-weight: normal;
   color: #5c6268;
   padding: 0;
+  font-size: 13px;
   font-size: 0.8125rem;
 }
 
@@ -2712,6 +2711,7 @@ a {
   margin-top: -0.8em;
   width: 100%;
   text-align: center;
+  font-size: 14px;
   font-size: 0.875rem;
   font-family: Arial, Helvetica, sans-serif;
   opacity: 0;
@@ -2780,8 +2780,10 @@ a {
   padding: 0;
   color: #fff;
   font-style: normal;
+  font-size: 35px;
   font-size: 2.1875rem;
   font-family: Arial, Baskerville, monospace;
+  line-height: 35px;
   line-height: 2.1875rem;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   border: 0;
@@ -2804,8 +2806,10 @@ a {
   padding: 0;
   color: #fff;
   font-style: normal;
+  font-size: 35px;
   font-size: 2.1875rem;
   font-family: Arial, Baskerville, monospace;
+  line-height: 35px;
   line-height: 2.1875rem;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   border: 0;

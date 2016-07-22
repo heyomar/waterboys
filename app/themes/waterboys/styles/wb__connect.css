@@ -73,7 +73,8 @@
   display: block;
 }
 
-.ninja-forms-all-fields-wrap input[type=submit] {
+.ninja-forms-all-fields-wrap input[type=submit],
+.form-button {
   color: #fff;
   padding: 10px 60px;
   text-transform: uppercase;

@@ -32,9 +32,47 @@
               <div class="dn__flex-ctn"><span class="dn__select-amount-btn" data-donation="300">$300</span>
               <p>to prevent a 292,000 km jerrycan carry</p></div>
 
-              <label class="" for="custom-amount">$ Custom Amount</label>
-              <input type="number" id="custom-amount" name="custom-amount" value="">
+              <div class="dn__flex-ctn">
+                <label class="" for="custom-amount">$ Donation Amount</label>
+                <input type="number" id="custom-amount" name="custom-amount" value="">
+              </div>
 
+              <script src="https://checkout.stripe.com/checkout.js"></script>
+
+              <button id="donatebutton" class="form-button">Donate</button>
+
+              <script>
+                var handler = StripeCheckout.configure({
+                  key: 'pk_test_dAnBHTFaqcq516ofFXuP2izz',
+                  image: '',
+                  locale: 'auto',
+                  token: function(token) {
+                    // You can access the token ID with `token.id`.
+                    // Get the token ID to your server-side code for use.
+                  }
+                });
+
+                jQuery('#donatebutton').on('click', function(e) {
+                  if (jQuery('#custom-amount').val()) {
+                    // Open Checkout with further options:
+                    handler.open({
+                      name: 'The Chris Long Foundation',
+                      description: 'Waterboys Donation',
+                      zipCode: true,
+                      billingAddress: true,
+                      amount: jQuery('#custom-amount').val() * 100
+                    });
+                    e.preventDefault();
+                  } else {
+                    alert("Please enter a donation amount before continuing.")
+                  }
+                });
+
+                // Close Checkout on page navigation:
+                jQuery(window).on('popstate', function() {
+                  handler.close();
+                });
+              </script>
             </div>
           </div>
         </div>
@@ -69,10 +107,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="dn__ctn"> -->
-      <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 6 ); }?>
-    <!-- </div> -->
     <div class="st__bar-ctn">
       <p>14 million Tanzanians lack access to safe water. Dig deep with us. &nbsp;</p>
     </div>
