@@ -233,8 +233,22 @@ final class NF_Database_Models_Form extends NF_Abstracts_Model
 
         // Combine Field and Field Data
         foreach( $import[ 'fields' ] as $key => $field ){
+
+            if( '_honeypot' == $field[ 'type' ] ) {
+                unset( $import[ 'fields' ][ $key ] );
+                continue;
+            }
+
             // TODO: Split Credit Card field into multiple fields.
             $field = $this->import_field_backwards_compatibility( $field );
+
+            if( isset( $field[ 'new_fields' ] ) ){
+                foreach( $field[ 'new_fields' ] as $new_field ){
+                    $import[ 'fields' ][] = $new_field;
+                }
+                unset( $field[ 'new_fields' ] );
+            }
+
             $import[ 'fields' ][ $key ] = $field;
         }
 
@@ -256,7 +270,7 @@ final class NF_Database_Models_Form extends NF_Abstracts_Model
 
         $import = $this->import_merge_tags_backwards_compatibility( $import );
 
-        return $import;
+        return apply_filters( 'ninja_forms_after_upgrade_settings', $import );
     }
 
     public function import_merge_tags_backwards_compatibility( $import )
@@ -493,7 +507,44 @@ final class NF_Database_Models_Form extends NF_Abstracts_Model
             }
         }
 
-        return $field;
+        if( 'number' == $field[ 'type' ] ){
+
+            if( ! isset( $field[ 'number_min' ] ) || ! $field[ 'number_min' ] ){
+                $field[ 'num_min' ] = '';
+            } else {
+                $field[ 'num_min' ] = $field[ 'number_min' ];
+            }
+
+            if( ! isset( $field[ 'number_max' ] ) || ! $field[ 'number_max' ] ){
+                $field[ 'num_max' ] = '';
+            } else {
+                $field[ 'num_max' ] = $field[ 'number_max' ];
+            }
+
+            if( ! isset( $field[ 'number_step' ] ) || ! $field[ 'number_step' ] ){
+                $field[ 'num_step' ] = 1;
+            } else {
+                $field[ 'num_step' ] = $field[ 'number_step' ];
+            }
+        }
+
+        if( 'profile_pass' == $field[ 'type' ] ){
+            $field[ 'type' ] = 'password';
+
+            $passwordconfirm = array_merge( $field, array(
+                'id' => '',
+                'type' => 'passwordconfirm',
+                'label' => $field[ 'label' ] . ' ' . __( 'Confirm' ),
+                'confirm_field' => 'password_' . $field[ 'id' ]
+            ));
+            $field[ 'new_fields' ][] = $passwordconfirm;
+        }
+
+        if( 'desc' == $field[ 'type' ] ){
+            $field[ 'type' ] = 'html';
+        }
+
+        return apply_filters( 'ninja_forms_upgrade_field', $field );
     }
 
 } // End NF_Database_Models_Form

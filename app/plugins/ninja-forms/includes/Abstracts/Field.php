@@ -114,9 +114,6 @@ abstract class NF_Abstracts_Field
      */
     public function __construct()
     {
-        // Translate the nicename property.
-        $this->_nicename = __( $this->_nicename, 'ninja-forms' );
-
         if( ! empty( $this->_settings_only ) ){
 
             $this->_settings = array_merge( $this->_settings, $this->_settings_only );
@@ -275,7 +272,7 @@ abstract class NF_Abstracts_Field
             }
         }
 
-        return apply_filters( 'ninja_forms_field_' . $this->_name . '_settings', $settings );
+        return $settings = apply_filters( 'ninja_forms_field_load_settings', $settings, $this->_name, $this->get_parent_type() );
     }
 
     public static function get_base_template()
