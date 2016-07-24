@@ -4,9 +4,64 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "12e9421823134a23cce940195cf29482",
-    "content-hash": "51a04b648b94972fad6d1ee3faf07191",
+    "hash": "32dd6e9cdb9fafbf09d607c32e6e9849",
+    "content-hash": "42467a23d05484a83f146d534d1165e2",
     "packages": [
+        {
+            "name": "catfan/medoo",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/catfan/Medoo.git",
+                "reference": "d845b50455893d931ee6a86e1a17276847764385"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/catfan/Medoo/zipball/d845b50455893d931ee6a86e1a17276847764385",
+                "reference": "d845b50455893d931ee6a86e1a17276847764385",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "php": ">=5.1"
+            },
+            "suggest": {
+                "ext-pdo_dblib": "For MSSQL or Sybase databases on Linux/UNIX platform",
+                "ext-pdo_mysql": "For MySQL or MariaDB databases",
+                "ext-pdo_oci": "For Oracle databases",
+                "ext-pdo_pqsql": "For PostgreSQL databases",
+                "ext-pdo_sqlite": "For SQLite databases",
+                "ext-pdo_sqlsrv": "For MSSQL databases on Windows platform"
+            },
+            "type": "framework",
+            "autoload": {
+                "files": [
+                    "medoo.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Angel Lai",
+                    "email": "angel@catfan.me"
+                }
+            ],
+            "description": "The Lightest PHP database framework to accelerate development",
+            "homepage": "http://medoo.in",
+            "keywords": [
+                "database",
+                "lightweight",
+                "mssql",
+                "mysql",
+                "php framework",
+                "sql",
+                "sqlite"
+            ],
+            "time": "2016-07-07 17:58:29"
+        },
         {
             "name": "composer/installers",
             "version": "v1.0.25",
@@ -193,6 +248,61 @@
             "time": "2015-06-11 15:15:30"
         },
         {
+            "name": "stripe/stripe-php",
+            "version": "v3.17.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stripe/stripe-php.git",
+                "reference": "982b90dcbc9cfd59057db8819a247c6db18df6cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/982b90dcbc9cfd59057db8819a247c6db18df6cd",
+                "reference": "982b90dcbc9cfd59057db8819a247c6db18df6cd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "~0.6.1",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stripe\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stripe and contributors",
+                    "homepage": "https://github.com/stripe/stripe-php/contributors"
+                }
+            ],
+            "description": "Stripe PHP Library",
+            "homepage": "https://stripe.com/",
+            "keywords": [
+                "api",
+                "payment processing",
+                "stripe"
+            ],
+            "time": "2016-07-14 17:36:41"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v2.2.1",
             "source": {
@@ -253,7 +363,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.3.5.zip",
-                "reference": null,
+                "reference": "tags/1.3.5",
                 "shasum": null
             },
             "require": {
@@ -515,7 +625,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/query-monitor.2.11.0.zip",
-                "reference": null,
+                "reference": "tags/2.11.0",
                 "shasum": null
             },
             "require": {
