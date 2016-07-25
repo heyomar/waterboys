@@ -42,13 +42,55 @@
               <button id="donatebutton" class="form-button">Donate</button>
 
               <script>
+                jQuery('#custom-amount').on('blur', function () {
+                  jQuery(this).val(parseFloat(jQuery(this).val()).toFixed(2))
+                })
+
+                jQuery.QueryString = (function (a) {
+                  if (a == '') return {};
+                  var b = {};
+                  for (var i = 0; i < a.length; ++i) {
+                    var p=a[i].split('=', 2);
+                    if (p.length != 2) continue;
+                    b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, ' '));
+                  }
+                  return b;
+                })(window.location.search.substr(1).split('&'));
+
                 var handler = StripeCheckout.configure({
                   key: 'pk_test_dAnBHTFaqcq516ofFXuP2izz',
                   image: '',
                   locale: 'auto',
-                  token: function(token) {
-                    // You can access the token ID with `token.id`.
-                    // Get the token ID to your server-side code for use.
+                  token: function (token) {
+                    // NOTE: delete these console log in production
+                    console.log(token)
+                    console.log(jQuery.QueryString)
+
+                    // optional query strings
+                    var player = '0'
+                    var group = '0'
+
+                    if (jQuery.QueryString.plyr) {
+                      player = jQuery.QueryString.plyr
+                    }
+
+                    if (jQuery.QueryString.grp) {
+                      group = jQuery.QueryString.grp
+                    }
+
+                    jQuery.ajax({
+                      url: '/donations.php',
+                      method: 'POST',
+                      data: {
+                        email: token.email,
+                        player: player,
+                        group: group,
+                        donationAmount: jQuery('#custom-amount').val() * 100,
+                        stripeToken: token.id
+                      }
+                    }).done(function (data) {
+                      
+                    })
                   }
                 });
 

@@ -1,46 +1,92 @@
 <?php
-require 'stripe/lib/Stripe.php';
+require_once(__DIR__ . '/vendor/autoload.php');
 
+/*
+  If the request is a POST then continue processing, if it's anything else then
+  die.
+ */
 if ($_POST) {
+  if (file_exists(__DIR__ . '/.env')) {
+    $dotenv = new Dotenv\Dotenv(__DIR__);
+    $dotenv->load();
+  }
+
+  $dotenv->required(['DB_NAME', 'DB_USER', 'DB_PASSWORD', 'DB_HOST']);
+
+  // TODO: replace this with the production key
   \Stripe\Stripe::setApiKey('sk_test_SdPlSSiPU7dzvccLYc1MiHTT');
 
+  // var sanitization
+  $prefix = getenv('DB_PREFIX') ?: 'WP_';
+
+  // If ya ain't got a token, throw an exception
+  if (!isset($_POST['stripeToken']))
+    throw new Exception("Stripe Token Invalid");
+
+  // try to charge the card or else throw relevant error
   try {
     \Stripe\Charge::create(array(
-      // TODO: amount passed from Checkout
-      'amount' => 400,
+      'amount' => $_POST['donationAmount'],
       'currency' => 'usd',
-      // TODO: token passed from checkout
-      'source' => 'tok_18Zl1uG2VM5XA008xjczCrYF', // obtained with Stripe.js,
-      // TODO: metadata for order (address, etc)
-      'metadata' => array('order_id' => '6735')
+      'source' => $_POST['stripeToken'],
+      'metadata' => array(
+        'player' => $_POST['player'],
+        'group' => $_POST['group']
+      )
     ));
+
+    $db = new medoo([
+      'database_type' => 'mysql',
+      'database_name' => getenv('DB_NAME'),
+      'server' => getenv('DB_HOST'),
+      'username' => getenv('DB_USER'),
+      'password' => getenv('DB_PASSWORD'),
+      'charset' => 'utf8'
+    ]);
+
+    $db->insert('donation', [
+      'name' => 'Test',
+      'email' => 'email@domain.com',
+      'team_id' => '1',
+      'player_id' => '1',
+      'donation' => '4000'
+    ]);
   } catch (\Stripe\Error\Card $e) {
     // Since it's a decline, \Stripe\Error\Card will be caught
-    $body = $e->getJsonBody();
-    $err  = $body['error'];
-
-    print('Status is:' . $e->getHttpStatus() . "\n");
-    print('Type is:' . $err['type'] . "\n");
-    print('Code is:' . $err['code'] . "\n");
-    // param is '' in this case
-    print('Param is:' . $err['param'] . "\n");
-    print('Message is:' . $err['message'] . "\n");
+    displayError($e);
   } catch (\Stripe\Error\RateLimit $e) {
     // Too many requests made to the API too quickly
+    displayError($e);
   } catch (\Stripe\Error\InvalidRequest $e) {
     // Invalid parameters were supplied to Stripe's API
+    displayError($e);
   } catch (\Stripe\Error\Authentication $e) {
     // Authentication with Stripe's API failed
     // (maybe you changed API keys recently)
+    displayError($e);
   } catch (\Stripe\Error\ApiConnection $e) {
     // Network communication with Stripe failed
+    displayError($e);
   } catch (\Stripe\Error\Base $e) {
     // Display a very generic error to the user, and maybe send
     // yourself an email
+    displayError($e);
   } catch (Exception $e) {
     // Something else happened, completely unrelated to Stripe
+    displayError($e);
   }
 } else {
-  echo "Not accessible";
   die();
+}
+
+function displayError ($e) {
+  $body = $e->getJsonBody();
+  $err  = $body['error'];
+
+  print('Status is:' . $e->getHttpStatus() . "\n");
+  print('Type is:' . $err['type'] . "\n");
+  print('Code is:' . $err['code'] . "\n");
+  // param is '' in this case
+  print('Param is:' . $err['param'] . "\n");
+  print('Message is:' . $err['message'] . "\n");
 }
