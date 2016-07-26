@@ -43,10 +43,9 @@ if ($_POST) {
     $player = '"' . $db->real_escape_string($_POST['player']) . '"';
     $group = '"' . $db->real_escape_string($_POST['group']) . '"';
     $donation = '"' . $db->real_escape_string($_POST['donationAmount']) . '"';
-    // TODO: fix this escape
-    // $email = '"' . $db->real_escape_string($_POST['email'] . '"');
+    $email = '"' . $db->real_escape_string($_POST['email']) . '"';
 
-    $insert = $db->query("INSERT INTO wp_donations (plyr_id, grp_id, donation) VALUES ($player, $group, $donation)");
+    $insert = $db->query("INSERT INTO wp_donations (plyr_id, grp_id, donation, email) VALUES ($player, $group, $donation, $email)");
 
     echo var_dump($db);
   } catch (\Stripe\Error\Card $e) {
