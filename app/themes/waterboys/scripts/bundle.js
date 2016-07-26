@@ -37,12 +37,6 @@
   $('#custom-amount').on('keydown', function () {
     $('.dn__select-amount-btn').removeClass('active')
   })
-
-  if ($('body').hasClass('donate')) {
-    // TODO: send this data to the service instead
-    $('#ninja_forms_field_11').val($.QueryString['plyr'])
-    $('#ninja_forms_field_12').val($.QueryString['grp'])
-  }
 })(jQuery)
 
 fitvids()

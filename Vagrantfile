@@ -19,15 +19,4 @@ Vagrant.configure("2") do |config|
 
   config.ssh.forward_agent = true
 
-  if defined? VagrantPlugins::Triggers
-    config.trigger.before :halt, :stdout => true do
-      run "vagrant ssh -c '/var/www/public/db_backup'"
-    end
-    config.trigger.before :suspend, :stdout => true do
-      run "vagrant ssh -c '/var/www/public/db_backup'"
-    end
-    config.trigger.before :destroy, :stdout => true do
-      run "vagrant ssh -c '/var/www/public/db_backup'"
-    end
-  end
 end
