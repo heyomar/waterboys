@@ -70,6 +70,7 @@
                     while ($players->have_posts()) : $players->the_post();
                   ?>
                     playerInput += '<option value="<?php the_ID(); ?>">'
+                    playerInput += '<?php the_field('player_name'); ?> &mdash; '
                     playerInput += '<?php the_field('team'); ?>'
                     playerInput += '</option>'
                   <?php
