@@ -37,25 +37,52 @@
                 <input type="number" id="custom-amount" name="custom-amount" value="">
               </div>
 
+              <div class="dn__flex-ctn" id="playerInput"></div>
+
               <script src="https://checkout.stripe.com/checkout.js"></script>
 
               <button id="donatebutton" class="form-button">Donate</button>
 
               <script>
+                var player = '0' // scoped here so we can set it externally from CC call
+
                 jQuery('#custom-amount').on('blur', function () {
                   jQuery(this).val(parseFloat(jQuery(this).val()).toFixed(2))
                 })
 
                 jQuery.QueryString = (function (a) {
-                  if (a == '') return {};
-                  var b = {};
+                  if (a == '') return {}
+                  var b = {}
                   for (var i = 0; i < a.length; ++i) {
-                    var p=a[i].split('=', 2);
-                    if (p.length != 2) continue;
-                    b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, ' '));
+                    var p=a[i].split('=', 2)
+                    if (p.length != 2) continue
+                    b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, ' '))
                   }
                   return b;
                 })(window.location.search.substr(1).split('&'));
+
+                if (!jQuery.QueryString.plyr) {
+                  var playerInput = '<label class="" for="custom-amount">Donation Team</label>'
+                  playerInput += '<select>'
+                  playerInput += '<option value="0">No Team</option>'
+                  <?php
+                    $players = new WP_Query( array('post_type' => 'player') );
+                    while ($players->have_posts()) : $players->the_post();
+                  ?>
+                    playerInput += '<option value="<?php the_ID(); ?>">'
+                    playerInput += '<?php the_field('team'); ?>'
+                    playerInput += '</option>'
+                  <?php
+                    endwhile;
+                  ?>
+                  playerInput += '</select>'
+
+                  jQuery('#playerInput').html(playerInput)
+
+                  jQuery('#playerInput select').on('change', function () {
+                    player = jQuery('#playerInput select option:selected').val()
+                  })
+                }
 
                 var handler = StripeCheckout.configure({
                   key: 'pk_test_dAnBHTFaqcq516ofFXuP2izz',
@@ -63,15 +90,13 @@
                   locale: 'auto',
                   token: function (token) {
                     // optional query strings
-                    var player = '0'
                     var group = '0'
+                    if (jQuery.QueryString.grp) {
+                      group = jQuery.QueryString.grp
+                    }
 
                     if (jQuery.QueryString.plyr) {
                       player = jQuery.QueryString.plyr
-                    }
-
-                    if (jQuery.QueryString.grp) {
-                      group = jQuery.QueryString.grp
                     }
 
                     jQuery.ajax({
@@ -85,7 +110,7 @@
                         stripeToken: token.id
                       }
                     }).done(function (data) {
-                      console.log(data);
+                      console.log(data)
                       // TODO: take user to thank you page
                     })
                   }
@@ -100,8 +125,8 @@
                       zipCode: true,
                       billingAddress: true,
                       amount: jQuery('#custom-amount').val() * 100
-                    });
-                    e.preventDefault();
+                    })
+                    e.preventDefault()
                   } else {
                     alert("Please enter a donation amount before continuing.")
                   }
@@ -109,8 +134,8 @@
 
                 // Close Checkout on page navigation:
                 jQuery(window).on('popstate', function() {
-                  handler.close();
-                });
+                  handler.close()
+                })
               </script>
             </div>
           </div>
