@@ -35,22 +35,20 @@ if ($_POST) {
       )
     ));
 
-    $db = new medoo([
-      'database_type' => 'mysql',
-      'database_name' => getenv('DB_NAME'),
-      'server' => getenv('DB_HOST'),
-      'username' => getenv('DB_USER'),
-      'password' => getenv('DB_PASSWORD'),
-      'charset' => 'utf8'
-    ]);
+    $db = new mysqli(getenv('DB_HOST'), getenv('DB_USER'), getenv('DB_PASSWORD'), getenv('DB_NAME'));
+    if ($db->connect_error)
+      die('Error : (' . $db->connect_errno . ') ' . $db->connect_error);
 
-    $db->insert('donation', [
-      'name' => 'Test',
-      'email' => 'email@domain.com',
-      'team_id' => '1',
-      'player_id' => '1',
-      'donation' => '4000'
-    ]);
+    // SANITIZED DB INPUTS
+    $player = '"' . $db->real_escape_string($_POST['player']) . '"';
+    $group = '"' . $db->real_escape_string($_POST['group']) . '"';
+    $donation = '"' . $db->real_escape_string($_POST['donationAmount']) . '"';
+    // TODO: fix this escape
+    // $email = '"' . $db->real_escape_string($_POST['email'] . '"');
+
+    $insert = $db->query("INSERT INTO wp_donations (plyr_id, grp_id, donation) VALUES ($player, $group, $donation)");
+
+    echo var_dump($db);
   } catch (\Stripe\Error\Card $e) {
     // Since it's a decline, \Stripe\Error\Card will be caught
     displayError($e);

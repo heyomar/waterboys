@@ -62,10 +62,6 @@
                   image: '',
                   locale: 'auto',
                   token: function (token) {
-                    // NOTE: delete these console log in production
-                    console.log(token)
-                    console.log(jQuery.QueryString)
-
                     // optional query strings
                     var player = '0'
                     var group = '0'
@@ -89,7 +85,8 @@
                         stripeToken: token.id
                       }
                     }).done(function (data) {
-                      
+                      console.log(data);
+                      // TODO: take user to thank you page
                     })
                   }
                 });
