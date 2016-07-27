@@ -14,6 +14,11 @@ Template Name: Player Profile
     </div>
     <div class="wb__page-dash-ctn">
       <div class="wb__page-dash-inner-ctn">
+        <?php
+          global $wpdb;
+          $playerid = get_the_ID();
+          $donations = $wpdb->get_results('SELECT donation FROM wp_donations WHERE plyr_id = $playerid');
+        ?>
         <div class="wb__page-dash-item">
           <h3>Fundraising Goal</h3>
         </div>
@@ -23,7 +28,7 @@ Template Name: Player Profile
             <div class="wb__progressgoal-bar"></div>
           </div>
           <p class="wb__progressgoal-amount">
-            $12,255
+            $20,000
           </p>
         </div>
         <div class="wb__page-dash-item">
