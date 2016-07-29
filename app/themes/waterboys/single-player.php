@@ -17,10 +17,16 @@ Template Name: Player Profile
         <?php
           global $wpdb;
           $playerid = get_the_ID();
-          $donations = $wpdb->get_results('SELECT donation FROM wp_donations WHERE plyr_id = $playerid');
+          $donations = $wpdb->get_results("SELECT donation FROM wp_donations WHERE plyr_id = $playerid");
+          $donationTotal = 0;
+          foreach ($donations as $donation) {
+            $donationTotal += (int)$donation->donation;
+          }
+          $donationTotal = ceil($donationTotal/100);
         ?>
         <div class="wb__page-dash-item">
           <h3>Fundraising Goal</h3>
+          <div><?php echo $donationTotal; ?></div>
         </div>
         <div class="wb__page-dash-item">
           <h3>Progress to Goal</h3>
