@@ -13,8 +13,19 @@ Template Name: Group Profile
       </div>
       <div class="gp__page-dash-ctn">
         <div class="wb__page-dash-inner-ctn">
+          <?php
+            global $wpdb;
+            $groupid = get_the_ID();
+            $donations = $wpdb->get_results("SELECT donation FROM wp_donations WHERE grp_id = $groupid");
+            $donationTotal = 0;
+            foreach ($donations as $donation) {
+              $donationTotal += (int)$donation->donation;
+            }
+            $donationTotal = ceil($donationTotal/100);
+          ?>
           <div class="wb__page-dash-item">
             <h3>Fundraising Goal</h3>
+            <div><?php echo $donationTotal; ?></div>
           </div>
           <div class="wb__page-dash-item">
             <h3>Progress to Goal</h3>
