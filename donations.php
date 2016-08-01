@@ -47,6 +47,7 @@ if ($_POST) {
 
     $insert = $db->query("INSERT INTO wp_donations (plyr_id, grp_id, donation, email) VALUES ($player, $group, $donation, $email)");
 
+    // TODO: delet this
     echo var_dump($db);
   } catch (\Stripe\Error\Card $e) {
     // Since it's a decline, \Stripe\Error\Card will be caught
