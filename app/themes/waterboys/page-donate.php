@@ -69,10 +69,10 @@
                     $players = new WP_Query( array('post_type' => 'player') );
                     while ($players->have_posts()) : $players->the_post();
                   ?>
-                    playerInput += '<option value="<?php the_ID(); ?>">'
-                    playerInput += '<?php the_field('player_name'); ?> &mdash; '
-                    playerInput += '<?php the_field('team'); ?>'
-                    playerInput += '</option>'
+                      playerInput += '<option value="<?php the_ID(); ?>">'
+                      playerInput += '<?php the_field('player_name'); ?> &mdash; '
+                      playerInput += '<?php the_field('team'); ?>'
+                      playerInput += '</option>'
                   <?php
                     endwhile;
                   ?>
@@ -86,6 +86,7 @@
                 }
 
                 var handler = StripeCheckout.configure({
+                  // TODO: change to production key
                   key: 'pk_test_dAnBHTFaqcq516ofFXuP2izz',
                   image: '',
                   locale: 'auto',
