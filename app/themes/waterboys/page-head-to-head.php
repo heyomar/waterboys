@@ -20,55 +20,7 @@
   <h3 class="wb__red-sm-title">Weekly Match Ups and Results</h3>
   <div class="gr__table-ctn">
     <div class="">
-      <table border="0" id="" class="groups">
-        <thead>
-          <tr>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Smith</td>
-            <td>John</td>
 
-          </tr>
-          <tr>
-            <td>Bach</td>
-            <td>Frank</td>
-
-          </tr>
-          <tr>
-            <td>Doe</td>
-            <td>Jason</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-          <tr>
-            <td>Conway</td>
-            <td>Tim</td>
-
-          </tr>
-
-        </tbody>
-      </table>
     </div>
   </div>
 </div>

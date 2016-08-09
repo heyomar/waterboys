@@ -6,10 +6,15 @@ Template Name: Group Profile
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <div class="wb__page-hero gp__page-hero">
         <div class="gp__page-hero-inner-ctn">
-          <?php if( get_field('profile_image') ): ?><img class="gp__profile-image" src="<?php the_field('profile_image'); ?>" />
-            <?php endif; ?>
-              <h2 class="st__title ">
-      <?php the_field('group_name'); ?><br><img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/wb__home-wave.png" alt=""></h2></div>
+              <div class="gp__flex-profile-image">
+                <?php if (get_field('profile_image')): ?><img class="gp__profile-image" src="<?php the_field('profile_image'); ?>" />
+                <?php endif; ?>
+              </div>
+              <div class="gp__flex-group-title">
+                <h2 class="st__title "><?php the_field('group_name'); ?></h2>
+                <img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-wave.png" alt="">
+              </div>
+        </div>
       </div>
       <div class="gp__page-dash-ctn">
         <div class="wb__page-dash-inner-ctn">
@@ -33,7 +38,7 @@ Template Name: Group Profile
               <div class="wb__progressgoal-bar"></div>
             </div>
             <p class="wb__progressgoal-amount">
-              $12,255
+
             </p>
           </div>
           <?php $player = get_field('affiliated_player'); ?>
@@ -61,13 +66,13 @@ Template Name: Group Profile
               Location
             </p>
             <p class="wb__player__content__body">
-              <?php the_field('location_body'); ?>
+              <?php the_field('register_group_city'); ?>,<?php the_field('register_group_state'); ?>
             </p>
             <p class="wb__player__content__title wb__player__bio-title">
               Group Contact
             </p>
             <p class="wb__player__content__body">
-              <?php the_field('contact_body'); ?>
+              <?php the_field('group_contact_first_name'); ?><?php the_field('group_contact_last_name');  ?>
             </p>
           </div>
         </div>
@@ -76,7 +81,7 @@ Template Name: Group Profile
             About Waterboys
           </p>
           <p>
-            <?php the_field('about_waterboys_body'); ?>
+            Waterboys unites players and fans from across the NFL to bring life-sustaining well water to East African communities in need. We provide clean, safe and sustainable water access by hiring local crews to drill deep-bore wells serving up to 7,500 people. At a cost of $45,000 per well, every drop counts.
           </p>
 
         </div>

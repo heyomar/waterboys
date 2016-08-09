@@ -5,15 +5,14 @@
     </div>
 
 <div class="rg__ctn">
-  <p>
+  <p class="rg__head-copy">
     Groups are a great way to motivate your friends, family, students or colleagues around our cause. Register your group and start recruiting members to share goals and track progress.
   </p>
-  <h3 class="wb__red-sm-title">Group Information</h3>
   <div class="rg__form-ctn">
-
+    <?php if (function_exists('ninja_forms_display_form')) {
+    ninja_forms_display_form(7);
+} ?>
   </div>
-
-  <h3 class="wb__red-sm-title">Primary Group Contact</h3>
 </div>
 
 

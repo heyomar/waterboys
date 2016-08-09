@@ -6,24 +6,26 @@
   display: inline-block;
   text-align: center;
   position: relative;
+  max-width: 120px;
 }
 
-.gp__page-hero {
-}
+.gp__page-hero {}
 
 .gp__page-hero-inner-ctn {
-  max-width: 250px;
+  /*max-width: 450px;*/
   text-align: center;
   margin: 0 auto;
   position: relative;
   top: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  padding: 0 20px;
+
 }
 
 .gp__page-hero-inner-ctn h2 {
-  display: inline-block;
-  position: relative;
-  left: 80px;
-  top: 25px;
+  margin-bottom: 0;
 }
 
 .single-group .wb__content-info {
@@ -33,4 +35,24 @@
 .gp__page-dash-ctn {
   width: 100%;
   background-color: rgba(50, 54, 57, 0.8);
+}
+
+.wb__fund-goal {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  margin-top: 0;
+}
+
+.gp__flex-group-title {
+  flex: 1 1 auto;
+  border: 1px solid red;
+  align-self: flex-end;
+  min-width: 200px;
+}
+
+.gp__flex-group-title {
+  flex: 2 1 auto;
+  border: 1px solid red;
+  min-width: 200px;
 }

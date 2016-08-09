@@ -17,6 +17,8 @@
         <img class="mission-meter-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__wells-funded.png" alt="" />
         <div class="mission-flex-child wb__mission-meter">
           <p class="wb__red-sm-title mission__meter-title">Progress To Next Level</p>
+
+
         </div>
       </div>
       <div class="mission-flex-ctn">

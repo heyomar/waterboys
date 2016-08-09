@@ -1,12 +1,12 @@
 <?php get_header(); ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <?php $players = new WP_Query( array( 'post_type' => 'player' ) );?>
+    <?php $players = new WP_Query(array('post_type' => 'player'));?>
 
       <div class="center rs__slider-ctn" data-slick="centerMode: true,">
         <?php
-    if( $players->have_posts()): ?>
-          <?php while ( $players->have_posts()) : $players->the_post();  ?>
+    if ($players->have_posts()): ?>
+          <?php while ($players->have_posts()) : $players->the_post();  ?>
 
 
             <div class="block-hold" style="background-image:url('<?php the_field('player_slider_image'); ?>')">
@@ -42,11 +42,11 @@
               <?php endif ?>
       </div>
 
-
-
-
       <div class="rs__ctn">
-        <h2 class="rs__title">The Roster<br><img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/roster__blue-wave.png" alt=""></h2>
+        <h2 class="rs__title">The Roster<br><img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/roster__blue-wave.png" ></h2>
+              <p class="wb__copy">
+              As Waterboys, these NFL stars are teaming up with fans to supply rural East African communities with clean, accessible drinking water.
+            </p>
         <div class="table-ctn">
           <table border="0" id="roster" class="tablesorter roster">
             <thead>
@@ -57,9 +57,9 @@
               </tr>
             </thead>
             <tbody>
-              <?php $players = new WP_Query( array( 'post_type' => 'player' ) );?>
-                <?php if( $players->have_posts()): ?>
-                  <?php while ( $players->have_posts()) : $players->the_post();  ?>
+              <?php $players = new WP_Query(array('post_type' => 'player'));?>
+                <?php if ($players->have_posts()): ?>
+                  <?php while ($players->have_posts()) : $players->the_post();  ?>
                     <tr>
                       <td>
                         <?php the_field('player_name'); ?>
