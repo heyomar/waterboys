@@ -1,3 +1,7 @@
+.ms__hero-bg {
+  background: url('../assets/header__ourmission.jpg') top center no-repeat;
+}
+
 .mission-flex-ctn {
   display: flex;
   flex-wrap: wrap;

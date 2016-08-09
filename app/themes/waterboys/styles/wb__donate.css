@@ -1,3 +1,7 @@
+.dn__hero-bg {
+  background: url('../assets/header__donate.jpg') top center no-repeat;
+}
+
 .dn__ctn {
   max-width: 900px;
   margin: 0 auto;

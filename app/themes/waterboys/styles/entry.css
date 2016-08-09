@@ -39,7 +39,6 @@ body {
 }
 
 .wb__page-hero {
-  background: url('../assets/page-hero.jpg') top center no-repeat;
   background-size: cover;
   height: 320px;
   width: 100%;

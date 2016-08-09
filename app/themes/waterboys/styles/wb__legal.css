@@ -18,3 +18,7 @@
 .photo-credits .wb__page-legal {
   text-align: center;
 }
+
+.legal__hero-bg {
+  background: url('../assets/header__legal.jpg') top center no-repeat;
+}

@@ -1,3 +1,7 @@
+.st__hero-bg {
+  background: url('../assets/header__specialteams.jpg') top center no-repeat;
+}
+
 .st__bar-ctn {
   background-color: $wb__gray;
   height: auto;

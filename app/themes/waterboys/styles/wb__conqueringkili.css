@@ -1,3 +1,7 @@
+.ck__hero-bg {
+  background: url('../assets/header__conqueringkili.jpg') top center no-repeat;
+}
+
 .ck__pad {
   padding: 30px;
 }
