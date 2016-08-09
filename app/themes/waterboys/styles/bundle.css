@@ -2270,7 +2270,9 @@ label {
   max-width: 120px;
 }
 
-.gp__page-hero {}
+.gp__page-hero {
+  background: url('../assets/header__groups.jpg') top center no-repeat;
+}
 
 .gp__page-hero-inner-ctn {
   /*max-width: 450px;*/

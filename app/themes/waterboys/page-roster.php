@@ -14,7 +14,7 @@
                 <div class="rs___slider-flex-ctn-wrapper">
                   <div class="rs___slider-flex-ctn">
                     <div class="rs__slider-nameplate">
-                      <h3><?php the_field('player_name'); ?></h3>
+                      <h3><a href="<?php echo get_permalink(); ?>"><?php the_field('player_name'); ?></a></h3>
                       <p class="wb__red-sm-title">
                         <?php the_field('team'); ?>
                       </p>
@@ -62,7 +62,7 @@
                   <?php while ($players->have_posts()) : $players->the_post();  ?>
                     <tr>
                       <td>
-                        <?php the_field('player_name'); ?>
+                        <a href="<?php echo get_permalink(); ?>"><?php the_field('player_name'); ?></a>
                       </td>
                       <td>
                         <?php the_field('team'); ?>

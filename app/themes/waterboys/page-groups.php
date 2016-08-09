@@ -1,6 +1,6 @@
 <?php get_header(); ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <div class="wb__page-hero">
+    <div class="wb__page-hero gp__page-hero">
       <h2 class="st__title">Groups<br><img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/wb__home-wave.png" alt=""></h2>
     </div>
 
@@ -23,9 +23,8 @@
             <?php if( $groups->have_posts()): ?>
               <?php while ( $groups->have_posts()) : $groups->the_post();  ?>
           <tr>
-            <td><?php the_field('group_name'); ?></td>
+            <td><a href="<?php echo get_permalink(); ?>"><?php the_field('group_name'); ?></a></td>
             <td><?php the_field('location_body'); ?></td>
-
           </tr>
         <?php endwhile; ?>
       <?php endif ?>
