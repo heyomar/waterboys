@@ -24,7 +24,9 @@
           <svg class="icon icon-facebook-square">
             <use xlink:href="#icon-facebook-square"></use>
           </svg> /WaterboysORG</a>
-        <a href="https://www.instagram.com/waterboysorg/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-footerinstagram.svg" alt="" />@WaterboysORG</a>
+        <a href="https://www.instagram.com/waterboysorg/"><svg class="icon icon-facebook-square">
+          <use xlink:href="#icon-instagram"></use>
+        </svg> @WaterboysORG</a>
       </div>
       <nav class="wb__footer__links">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-footerlogo.png" alt="" />
