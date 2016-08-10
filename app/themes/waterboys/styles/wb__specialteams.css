@@ -51,12 +51,27 @@
 }
 
 .st__box {
-  background-image: url('../assets/st__boxbg.jpg');
   background-size: cover;
   height: 290px;
   margin: 15px;
   position: relative;
 
+}
+
+.st__conqueringkili {
+  background-image: url('../assets/spteam__ck-bg.jpg');
+}
+
+.st__headtohead {
+  background-image: url('../assets/spteam__hth-bg.jpg');
+}
+
+.st__waterboychallenge {
+  background-image: url('../assets/spteam__wc-bg.jpg');
+}
+
+.st__streetteam {
+  background-image: url('../assets/spteam__st-bg.jpg');
 }
 
 .st__box-title {
