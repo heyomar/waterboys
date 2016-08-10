@@ -13,7 +13,7 @@
       </div>
 
       <div class="st__flex-ctn">
-        <div class="st__flex-child st__box">
+        <div class="st__flex-child st__box st__conqueringkili">
           <h2 class="st__box-title">Conquering Kili</h2>
           <div class="st__box-description">
             <h2 class="st__description-title">Conquering Kili</h2>
@@ -22,7 +22,7 @@
           </div>
         </div>
 
-        <div class="st__flex-child st__box">
+        <div class="st__flex-child st__box st__headtohead">
           <h2 class="st__box-title">Head-To-Head</h2>
           <div class="st__box-description">
             <h2 class="st__description-title">Head-To-Head</h2>
@@ -31,7 +31,7 @@
           </div>
         </div>
 
-        <div class="st__flex-child st__box">
+        <div class="st__flex-child st__box st__waterboychallenge">
           <h2 class="st__box-title">Waterboy Challenge</h2>
           <div class="st__box-description">
             <h2 class="st__description-title">Waterboy Challenge</h2>
@@ -41,7 +41,7 @@
           </div>
         </div>
 
-        <div class="st__flex-child st__box">
+        <div class="st__flex-child st__box st__streetteam">
           <h2 class="st__box-title">Street Team</h2>
           <div class="st__box-description">
             <h2 class="st__description-title">Street Team</h2>

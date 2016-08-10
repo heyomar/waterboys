@@ -60,3 +60,7 @@
   min-width: 310px;
   min-height: 250px;
 }
+
+.hl__page-hero {
+  background: url('../assets/header__highlights.jpg') top center no-repeat;
+}
