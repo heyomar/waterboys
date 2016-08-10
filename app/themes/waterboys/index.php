@@ -12,7 +12,7 @@
  */
 
  get_header(); ?>
-  <div class="wb__page-hero">
+  <div class="wb__page-hero hl__page-hero">
     <h2 class="hl__title">Highlights<br>
       <img class="hl__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/wb__home-wave.png" alt="">
     </h2>
