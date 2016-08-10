@@ -11,7 +11,7 @@
     return b
   })(window.location.search.substr(1).split('&'))
 
-  var header = $('.solid-background')
+  var header = $('.site__header__content')
   $(window).scroll(function () {
     var scroll = $(window).scrollTop()
 

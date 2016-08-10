@@ -15,13 +15,10 @@
   </div>
 </div>
 
+<div class="st__bar-ctn">
+  <p>Rally around a cause.&nbsp;</p>
+</div>
 
-
-    <div class="st__bar-ctn">
-      <p>Rally around a cause.&nbsp;</p>
-    </div>
-
-
-    <?php endwhile; ?>
-      <?php endif ?>
-        <?php get_footer(); ?>
+<?php endwhile; ?>
+  <?php endif ?>
+    <?php get_footer(); ?>
