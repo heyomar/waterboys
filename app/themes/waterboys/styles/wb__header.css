@@ -26,7 +26,6 @@
   padding: 8px 40px;
   text-transform: uppercase;
   color: #fff;
-  position: inline-block;
   margin-bottom: 10px;
   position: relative;
   top: -33px;
@@ -157,4 +156,20 @@
   .wb__nav__ctn-item a {
     font-size: 39px;
   }
+}
+
+.menu-icon-svg {
+  height: 2.0em;
+  fill:#fff;
+  width: 80px;
+  cursor: pointer;
+}
+
+.wb__header__right {
+  padding: 25px 0 0 0;
+}
+
+.wb__header-button {
+  right: 0;
+  top: -10px;
 }

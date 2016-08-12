@@ -30,7 +30,11 @@
           <a href="/"><img class="wb__header-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-logo.png" alt="" /></a>
         <div class="wb__header__right">
           <a class="wb__button wb__header-button" href="/donate">Donate</a>
-          <img id="hamburger" class="wb__header__hamburger" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-waves.png" alt="" />
+          <span id="hamburger">
+            <svg class="menu-icon-svg wb__header__hamburger">
+              <use xlink:href="#icon-menu-open"></use>
+            </svg>
+          </span>
         </div>
       </div>
       <nav id="main-nav" class="wb__header__nav">

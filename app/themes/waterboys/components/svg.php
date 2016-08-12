@@ -27,5 +27,13 @@
 <path class="st0" d="M405.2,134.2c0,15.1-12.3,27.4-27.4,27.4c-15.1,0-27.4-12.3-27.4-27.4c0-15.1,12.3-27.4,27.4-27.4
   C392.9,106.8,405.2,119.1,405.2,134.2"/>
 </symbol>
+<symbol id="icon-menu-close" viewBox="0 0 28.32 28.312">
+  <title>menu-x</title>
+  <path class="cls-1" d="M1378.86,42.314l25.45-25.456,2.83,2.828-25.45,25.456Zm25.33,2.672-25.18-25.175,2.8-2.8,25.18,25.175Z" transform="translate(-1378.84 -16.844)"/>
+</symbol>
+<symbol id="icon-menu-open" viewBox="0 0 75.25 60">
+  <title>menu-open</title>
+  <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="62px" height="54px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAeCAQAAADqHaTlAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfgCAoQCQah2qeLAAAA40lEQVRIx+2TPQrCQBgFX0IQ7SwtldhbeRIhF/AQilW0zTUiqNdI4SFSaZ/WJuhYiXHNrgja7dvy2xnYnycyakpyEiLkWDEbCioAGyEyHjkxJ2gVjdhx5T0G0ZQBHJkYog4rLtjTIEwZ3NgzY0yfAVOWnPmUB9EVPcbMOHD7CJ1ZMGVA30Kkz+NMODpEF1Z0jAswibQ5DJlzahFd2TFsfZhXIjXHEQlbSmoAKgrWxM4vE5GQU1KTBsiSQNaRjQi+JVwJf+hSqEy1SuVKFDl3xtqoUCWElfB18nXydfJ18nX6c53uPgMqRVSFugMAAAAASUVORK5CYII="/>
+</symbol>
 </defs>
 </svg>
