@@ -14,18 +14,20 @@
 
       <div class="st__flex-ctn">
         <div class="st__flex-child st__box st__conqueringkili">
-          <h2 class="st__box-title">Conquering Kili</h2>
-          <div class="st__box-description">
+            <h2 class="st__box-title">Conquering Kili</h2>
+          <a href="/conquering-kili">
+            <div class="st__box-description">
             <h2 class="st__description-title">Conquering Kili</h2>
             <p>Football is a game of inches. Hiking Africa’s highest mountain is, too. Our Conquering Kili program raises funding for wells while empowering veterans by proving that anything is possible, taken inch by inch.</p>
             <a href="" class="st__box-description-link"></a>
-          </div>
+            </div>
+          </a>
         </div>
 
         <div class="st__flex-child st__box st__headtohead">
           <h2 class="st__box-title">Head-To-Head</h2>
           <div class="st__box-description">
-            <h2 class="st__description-title">Head-To-Head</h2>
+            <a href="/head-t-head" <h2 class="st__description-title">Head-To-Head</h2>
             <p>Our head-to-head matchups mirror real life face-offs during the NFL season, motivating fan bases to donate with each down. </p>
             <a href="" class="st__box-description-link"></a>
           </div>
