@@ -5,14 +5,20 @@ Template Name: Group Profile
   <?php get_header(); ?>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <div class="wb__page-hero gp__page-hero">
-        <div class="gp__page-hero-inner-ctn">
-              <div class="gp__flex-profile-image">
-                <?php if (get_field('profile_image')): ?><img class="gp__profile-image" src="<?php the_field('profile_image'); ?>" />
-                <?php endif; ?>
-              </div>
-              <div class="gp__flex-group-title">
-                <h2 class="st__title "><?php the_field('group_name'); ?></h2>
-                <img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-wave.png" alt="">
+        <div class="gp__page-hero-ctn">
+              <div class="gp__page-hero-inner-ctn">
+                <div class="gp__flex-profile-image">
+                  <?php if (get_field('profile_image')): ?><img class="gp__profile-image" src="<?php the_field('profile_image'); ?>" />
+                  <?php endif; ?>
+                </div>
+                <div class="gp__wave-ctn">
+                  <img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-wave.png" alt="">
+                </div>
+                <div class="gp__flex-group-title">
+                  <span class="gp__title ">
+                    <?php the_field('group_name'); ?>
+                  </span>
+                </div>
               </div>
         </div>
       </div>
@@ -30,7 +36,7 @@ Template Name: Group Profile
           ?>
           <div class="wb__page-dash-item">
             <h3>Fundraising Goal</h3>
-            <div><?php echo $donationTotal; ?></div>
+            <div class="dash__goal"><?php echo $donationTotal; ?></div>
           </div>
           <div class="wb__page-dash-item">
             <h3>Progress to Goal</h3>
@@ -38,7 +44,7 @@ Template Name: Group Profile
               <div class="wb__progressgoal-bar"></div>
             </div>
             <p class="wb__progressgoal-amount">
-
+                $14,000
             </p>
           </div>
           <?php $player = get_field('affiliated_player'); ?>
