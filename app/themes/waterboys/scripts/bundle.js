@@ -70,7 +70,15 @@ jQuery('.center').slick({
 var burger = document.querySelector('#hamburger')
 var nav = document.querySelector('#main-nav')
 
+const menu = '<use xlink:href="#icon-menu-open"></use'
+const cross = '<use xlink:href="#icon-menu-close"></use'
+
 burger.addEventListener('click', function () {
-  nav.classList.toggle('active')
   document.getElementsByTagName('body')[0].classList.toggle('wb__nav-overflow')
+  if (jQuery(nav).hasClass('active')) {
+    jQuery(this).children('svg').html(menu)
+  } else {
+    jQuery(this).children('svg').html(cross)
+  }
+  nav.classList.toggle('active')
 })

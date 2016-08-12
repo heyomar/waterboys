@@ -643,7 +643,6 @@ Example showing how to change the color/size of the icons:
   padding: 8px 40px;
   text-transform: uppercase;
   color: #fff;
-  position: inline-block;
   margin-bottom: 10px;
   position: relative;
   top: -33px;
@@ -780,26 +779,53 @@ Example showing how to change the color/size of the icons:
   }
 }
 
+.menu-icon-svg {
+  height: 2.0em;
+  fill:#fff;
+  width: 80px;
+  cursor: pointer;
+}
+
+.wb__header__right {
+  padding: 25px 0 0 0;
+}
+
+.wb__header-button {
+  right: 0;
+  top: -10px;
+}
+
+#home__video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 2;
+
+}
+
 .wb__home-container {
-  background-image: url(../assets/wb__home-bg.jpg);
-  background-size: cover;
-  background-position: center center;
-  display: block;
   height: 100vh;
   position: relative;
 }
 
 .wb__home-content {
-  text-align: center;
   position: absolute;
+  text-align: center;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-family: 'liberatorheavy', sans-serif;
   color: #fff;
-  width: 100%;
   padding: 0 15px;
+  z-index: 3;
+  width: 100%;
 }
 
 .wb__home-content img {
@@ -1322,12 +1348,27 @@ Example showing how to change the color/size of the icons:
 }
 
 .st__box {
-  background-image: url('../assets/st__boxbg.jpg');
   background-size: cover;
   height: 290px;
   margin: 15px;
   position: relative;
 
+}
+
+.st__conqueringkili {
+  background-image: url('../assets/spteam__ck-bg.jpg');
+}
+
+.st__headtohead {
+  background-image: url('../assets/spteam__hth-bg.jpg');
+}
+
+.st__waterboychallenge {
+  background-image: url('../assets/spteam__wc-bg.jpg');
+}
+
+.st__streetteam {
+  background-image: url('../assets/spteam__st-bg.jpg');
 }
 
 .st__box-title {
@@ -1441,6 +1482,10 @@ Example showing how to change the color/size of the icons:
           flex: 1 1 35%;
   min-width: 310px;
   min-height: 250px;
+}
+
+.hl__page-hero {
+  background: url('../assets/header__highlights.jpg') top center no-repeat;
 }
 
 /* Slider */
@@ -2259,37 +2304,8 @@ label {
   min-width: 250px;
 }
 
-.gp__profile-image {
-  background-color: #fff;
-  border-radius: 100px;
-  border: 3px solid #fff;
-  height: 120px;
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  max-width: 120px;
-}
-
 .gp__page-hero {
   background: url('../assets/header__groups.jpg') top center no-repeat;
-}
-
-.gp__page-hero-inner-ctn {
-  /*max-width: 450px;*/
-  text-align: center;
-  margin: 0 auto;
-  position: relative;
-  top: 35%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  border: 1px solid red;
-  padding: 0 20px;
-
 }
 
 .gp__page-hero-inner-ctn h2 {
@@ -2313,25 +2329,69 @@ label {
   margin-top: 0;
 }
 
-.gp__flex-group-title {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  border: 1px solid red;
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
+.gp__page-hero-ctn {
+  text-align: center;
+  position: relative;
+  top: 30%;
+}
+
+.gp__wave-ctn {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  padding: 10px 0 15px 0;
+}
+
+.gp__page-hero-inner-ctn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   min-width: 200px;
+  margin: 0 auto;
+}
+
+.gp__flex-profile-image {
+  -webkit-flex-basis:100%;
+      -ms-flex-preferred-size:100%;
+          flex-basis:100%;
+}
+
+.gp__profile-image {
+  background-color: #fff;
+  border-radius: 100px;
+  border: 3px solid #fff;
+  height: 90px;
 }
 
 .gp__flex-group-title {
-  -webkit-box-flex: 2;
-  -webkit-flex: 2 1 auto;
-      -ms-flex: 2 1 auto;
-          flex: 2 1 auto;
-  border: 1px solid red;
-  min-width: 200px;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+
+.gp__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-family: 'liberatorheavy', sans-serif;
+  color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  line-height: 1.0;
+}
+
+.dash__goal {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  font-size: 1.5625rem;
 }
 
 .gr__ctn {
@@ -2668,6 +2728,14 @@ select {
   }
 }
 
+#playerInput {
+  padding: 20px 0;
+}
+
+#playerInput label {
+  padding-right: 15px;
+}
+
 /* FOOTER */
 
 .home ul li,
@@ -2681,6 +2749,8 @@ a {
 .site__footer {
   background-image: url('../assets/wb__home-footerpattern.png');
   background-size: cover;
+  position: relative;
+  z-index: 2;
 }
 
 .site__footer__content {
