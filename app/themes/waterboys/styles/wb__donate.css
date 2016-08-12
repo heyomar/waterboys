@@ -182,3 +182,11 @@
     width: 74.5%;
   }
 }
+
+#playerInput {
+  padding: 20px 0;
+}
+
+#playerInput label {
+  padding-right: 15px;
+}

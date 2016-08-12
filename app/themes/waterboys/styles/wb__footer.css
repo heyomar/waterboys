@@ -10,6 +10,8 @@ a {
 .site__footer {
   background-image: url('../assets/wb__home-footerpattern.png');
   background-size: cover;
+  position: relative;
+  z-index: 2;
 }
 
 .site__footer__content {
