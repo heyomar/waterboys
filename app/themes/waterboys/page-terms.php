@@ -31,7 +31,7 @@
      </p>
    </div>
    <div class="st__bar-ctn">
-     <p>14 million Tanzanians lack access to safe water. Dig deep with us. &nbsp;</p>
+     <p>Reducing the distance to a water source by 15 minutes results in a 12% increase in school attendance.</p>
    </div>
       <?php endwhile; ?>
       <?php endif ?>

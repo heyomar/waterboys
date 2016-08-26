@@ -125,3 +125,7 @@
     margin: 0 auto;
   }
 }
+
+.single-player .wb__header-button {
+  display: none;
+}

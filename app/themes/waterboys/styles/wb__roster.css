@@ -149,7 +149,7 @@ tr:nth-child(odd) {
 }
 
 .rs__honor-image-2 {
-  background-image: url('../assets/roster__honor-molina.jpg');
+  background-image: url('../assets/ck__honor-blake.jpg');
   background-size: cover;
   background-position: top center;
   height: 300px;
@@ -227,4 +227,8 @@ tr:nth-child(odd) {
   font-size: 20px;
   font-family: $wb__gothic;
   padding: 10px;
+}
+
+.table-ctn td a {
+    text-decoration: underline;
 }

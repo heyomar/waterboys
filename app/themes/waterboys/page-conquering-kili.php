@@ -33,7 +33,7 @@
           <div class="rs__honor-info-ctn">
             <div class="rs__honor-name-ctn">
               <h2 class="rs__honor-name-copy">Nate Boyer</h2>
-              <p class="rs__honor-team-copy">TEAM NAME</p>
+              <p class="rs__honor-team-copy">Former Green Beret &amp; NFL Player</p>
             </div>
 
             <div class="rs__raised-ctn ck__pad">
@@ -46,8 +46,8 @@
           <div class="rs__honor-image-2"></div>
           <div class="rs__honor-info-ctn">
             <div class="rs__honor-name-ctn">
-              <h2 class="rs__honor-name-copy">Yadier Molina</h2>
-              <p class="rs__honor-team-copy">TEAM NAME</p>
+              <h2 class="rs__honor-name-copy">Blake Watson</h2>
+              <p class="rs__honor-team-copy">Marine Combat Veteran</p>
             </div>
             <div class="rs__raised-ctn ck__pad">
               <a href="/" class="wb__button-blue">View Profile</a>
@@ -60,7 +60,9 @@
   </div>
   </div>
 </div>
-
+<div class="st__bar-ctn">
+  <p>Mount Kilimanjaro is 19,341 feet at its highest point.</p>
+</div>
 
       <?php endwhile; ?>
   <?php endif ?>

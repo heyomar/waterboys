@@ -190,3 +190,7 @@
 #playerInput label {
   padding-right: 15px;
 }
+
+.donate .wb__header-button{
+  display: none;
+}

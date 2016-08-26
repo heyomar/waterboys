@@ -70,7 +70,7 @@
         <div class="reasons-flex-child mission-reason">
           <div class="mission-inner-flex-ctn">
             <div class="mission-flex-image">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__reasons-agriculture.png" alt="">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__reasons-health.png" alt="">
             </div>
 
             <div class="mission-flex-para">
@@ -100,8 +100,8 @@
 
         <div class="affilates-img-ctn">
           <h3 class="affilates-title wb__red-sm-title">Affiliates &amp; Sponsors</h3>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__worldserve-logo.png" alt="">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__chrislong-logo.png" alt="">
+          <a href="http://www.worldserveintl.org/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__worldserve-logo.png" alt=""></a>
+          <a href="http://chrislongfoundation.org/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__chrislong-logo.png" alt=""></a>
         </div>
       </div>
     </div>

@@ -12,6 +12,7 @@ a {
   background-size: cover;
   position: relative;
   z-index: 2;
+  padding-bottom: 40px;
 }
 
 .site__footer__content {

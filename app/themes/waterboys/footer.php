@@ -16,21 +16,21 @@
   <footer role="contentinfo" class="site__footer">
     <div class="site__footer__content">
       <div class="wb__footer__social wb__footer__flex-item">
-        <a href="https://twitter.com/waterboysorg">
+        <a target="_blank" href="https://twitter.com/waterboysorg">
           <svg class="icon icon-twitter">
             <use xlink:href="#icon-twitter"></use>
           </svg> @WaterboysORG</a>
-        <a href="https://www.facebook.com/waterboysorg">
+        <a target="_blank" href="https://www.facebook.com/waterboysorg">
           <svg class="icon icon-facebook-square">
             <use xlink:href="#icon-facebook-square"></use>
           </svg> /WaterboysORG</a>
-        <a href="https://www.instagram.com/waterboysorg/"><svg class="icon icon-facebook-square">
+        <a target="_blank" href="https://www.instagram.com/waterboysorg/"><svg class="icon icon-facebook-square">
           <use xlink:href="#icon-instagram"></use>
         </svg> @WaterboysORG</a>
       </div>
       <nav class="wb__footer__links">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-footerlogo.png" alt="" />
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-chrislonglogo.png" alt="" />
+        <a href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-footerlogo.png" alt="" /></a>
+        <a href="http://chrislongfoundation.org/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-chrislonglogo.png" alt="" /></a>
         <?php
             $args = array(
                 'theme_location' => 'footer-bottom'

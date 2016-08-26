@@ -122,11 +122,14 @@
         </div>
       </div>
       </div>
-      <div class="wb__mission-socialbar-ctn rs__space">
+      <div class="st__bar-ctn">
+        <p>14 million Tanzanians lack access to safe water. Dig deep with us.</p>
+      </div>
+      <!-- <div class="wb__mission-socialbar-ctn rs__space">
         <div class="socialbar-buttons-ctn">
           <a href="/special-teams" class="socialbar-button wb__button">Meet Our Special Teams</a>
         </div>
-      </div>
+      </div> -->
       <?php endwhile; ?>
         <?php endif ?>
           <?php get_footer(); ?>

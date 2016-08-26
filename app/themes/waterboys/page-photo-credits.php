@@ -37,7 +37,7 @@
       </ul>
     </div>
     <div class="st__bar-ctn">
-      <p>14 million Tanzanians lack access to safe water. Dig deep with us. &nbsp;</p>
+      <p>Credit those snaps.</p>
     </div>
     <?php endwhile; ?>
       <?php endif ?>

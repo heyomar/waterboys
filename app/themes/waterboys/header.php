@@ -41,7 +41,7 @@
         <div class="wb__nav__ctn">
           <div class="wb__nav__ctn-item nav-item-ourmission"><a href="/mission/">Our Mission</a></div>
           <div class="wb__nav__ctn-item nav-item-donate"><a href="/donate/">Donate</a></div>
-          <div class="wb__nav__ctn-item nav-item-initiatives"><a href="/special-teams/">Special Teams</a></div>
+          <div class="wb__nav__ctn-item nav-item-initiatives"><a href="/conquering-kili">Conquering Kili</a></div>
           <div class="wb__nav__ctn-item nav-item-waterboys"><a href="/roster/">The Waterboys Roster</a></div>
           <div class="wb__nav__ctn-item nav-item-social"><a href="/connect/">Connect</a></div>
         </div>

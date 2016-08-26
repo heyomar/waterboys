@@ -1031,6 +1031,10 @@ Example showing how to change the color/size of the icons:
   }
 }
 
+.single-player .wb__header-button {
+  display: none;
+}
+
 .ms__hero-bg {
   background: url('../assets/header__ourmission.jpg') top center no-repeat;
 }
@@ -2023,7 +2027,7 @@ tr:nth-child(odd) {
 }
 
 .rs__honor-image-2 {
-  background-image: url('../assets/roster__honor-molina.jpg');
+  background-image: url('../assets/ck__honor-blake.jpg');
   background-size: cover;
   background-position: top center;
   height: 300px;
@@ -2103,6 +2107,10 @@ tr:nth-child(odd) {
   font-size: 1.25rem;
   font-family: 'pill-gothic-300mg', sans-serif;
   padding: 10px;
+}
+
+.table-ctn td a {
+    text-decoration: underline;
 }
 
 .ck__hero-bg {
@@ -2736,6 +2744,10 @@ select {
   padding-right: 15px;
 }
 
+.donate .wb__header-button{
+  display: none;
+}
+
 /* FOOTER */
 
 .home ul li,
@@ -2751,6 +2763,7 @@ a {
   background-size: cover;
   position: relative;
   z-index: 2;
+  padding-bottom: 40px;
 }
 
 .site__footer__content {
