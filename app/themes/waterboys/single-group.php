@@ -44,7 +44,9 @@ Template Name: Group Profile
               <div class="wb__progressgoal-bar"></div>
             </div>
             <p class="wb__progressgoal-amount">
-                $14,000
+                <?php echo
+                $donationTotal 
+                ?>
             </p>
           </div>
           <?php $player = get_field('affiliated_player'); ?>

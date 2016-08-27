@@ -27,7 +27,7 @@
         <div class="st__flex-child st__box st__headtohead">
           <h2 class="st__box-title">Head-To-Head</h2>
           <div class="st__box-description">
-            <a href="/head-t-head" <h2 class="st__description-title">Head-To-Head</h2>
+            <h2 class="st__description-title">Head-To-Head</h2>
             <p>Our head-to-head matchups mirror real life face-offs during the NFL season, motivating fan bases to donate with each down. </p>
             <a href="" class="st__box-description-link"></a>
           </div>

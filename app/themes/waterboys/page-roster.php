@@ -61,12 +61,8 @@
                 <?php if ($players->have_posts()): ?>
                   <?php while ($players->have_posts()) : $players->the_post();  ?>
                     <tr>
-                      <td>
-                        <a href="<?php echo get_permalink(); ?>"><?php the_field('player_name'); ?></a>
-                      </td>
-                      <td>
-                        <?php the_field('team'); ?>
-                      </td>
+                      <td><a href="<?php echo get_permalink(); ?>"><?php the_field('player_name'); ?></a></td>
+                      <td><?php the_field('team'); ?></td>
                       <td>1st</td>
                     </tr>
                   <?php endwhile; ?>

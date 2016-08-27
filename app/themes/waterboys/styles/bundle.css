@@ -1381,6 +1381,7 @@ Example showing how to change the color/size of the icons:
   text-align: center;
   top: 40%;
   text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .st__description-title {
