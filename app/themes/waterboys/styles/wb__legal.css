@@ -22,3 +22,7 @@
 .legal__hero-bg {
   background: url('../assets/header__legal.jpg') top center no-repeat;
 }
+
+.terms .st__bar-ctn p {
+  text-transform: none;
+}
