@@ -27,7 +27,7 @@
 			</div>
 		<?php else : ?>
 			<div class="article__content">
-				<?php the_content(); ?>
+        <?php the_field('excerpt_body') ?>
 			</div>
 		<?php endif; ?>
 
