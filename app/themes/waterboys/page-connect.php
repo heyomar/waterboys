@@ -6,8 +6,11 @@
     <div class="cn__ctn">
       <div class="cn__sidebar-ctn">
         <div class="cn__sidebar-info">
-          <p><strong>Connect with us on social or contact us directly to learn more about our efforts to provide clean, accessible drinking water to East African communities in need.</strong></p>
-            <br>
+          <p><strong>Connect with us on social or contact us directly to learn more about our efforts to provide clean, accessible drinking water to East African communities in need.</strong></p><br>
+
+              <p class="cn__address">The Chris Long Foundation c/o The Moneta Group<br>
+              100 South Brentwood Blvd., Suite 500<br>
+              Clayton, Missouri 63105</p><br>
             <a href="mailto:Events@chrislongfoundation.org">Events@chrislongfoundation.org</a>
         </div>
       </div>

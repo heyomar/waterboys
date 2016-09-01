@@ -34,7 +34,11 @@ Template Name: Player Profile
             <div class="wb__progressgoal-bar"></div>
           </div>
           <p class="wb__progressgoal-amount">
-          <?php echo $donationTotal; ?>
+          <?php
+          $fundgoal = get_field('fundraising_goal');
+
+          echo $donationTotal / $fundgoal;
+          ?>
           </p>
         </div>
         <div class="wb__page-dash-item">
