@@ -8,7 +8,7 @@
         <div class="cn__sidebar-info">
           <p><strong>Connect with us on social or contact us directly to learn more about our efforts to provide clean, accessible drinking water to East African communities in need.</strong></p>
             <br>
-            <a href="mailto:info@waterboys.org">info@waterboys.org</a>
+            <a href="mailto:Events@chrislongfoundation.org">Events@chrislongfoundation.org</a>
         </div>
       </div>
       <div class="cn__form-ctn">

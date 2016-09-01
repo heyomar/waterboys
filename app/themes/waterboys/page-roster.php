@@ -91,7 +91,7 @@
                   <p>
                     $27,000
                   </p>
-                  <a href="/" class="wb__button-blue">View Profile</a>
+                  <a href="/player/nate-boyer" class="wb__button-blue">View Profile</a>
                 </div>
               </div>
             </div>
@@ -100,15 +100,15 @@
               <div class="rs__honor-image-2"></div>
               <div class="rs__honor-info-ctn">
                 <div class="rs__honor-name-ctn">
-                  <h2 class="rs__honor-name-copy">Yadier Molina</h2>
-                  <p class="rs__honor-team-copy">TEAM NAME</p>
+                  <h2 class="rs__honor-name-copy">BLAKE WATSON</h2>
+                  <p class="rs__honor-team-copy">MARINE COMBAT VETERAN</p>
                 </div>
                 <div class="rs__raised-ctn">
                   <h3 class="wb__red-sm-title">Total Raised</h3>
                   <p>
                     $27,000
                   </p>
-                  <a href="/" class="wb__button-blue">View Profile</a>
+                  <a href="/player/blake-watson" class="wb__button-blue">View Profile</a>
                 </div>
               </div>
             </div>

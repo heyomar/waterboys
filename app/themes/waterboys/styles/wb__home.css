@@ -1,19 +1,15 @@
-#home__video-bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 2;
 
+#home__video-bg{
+  display: none;
 }
 
 .wb__home-container {
   height: 100vh;
   position: relative;
+  background-image: url('../assets/wb__home-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .wb__home-content {
@@ -73,5 +69,20 @@
   .wb__home-content img {
     padding: 0;
     width: 100px;
+  }
+}
+
+@media screen and $tablet {
+  #home__video-bg {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 2;
   }
 }
