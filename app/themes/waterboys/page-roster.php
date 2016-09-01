@@ -21,10 +21,20 @@
                     </div>
                   </div>
                   <div class="rs___slider-flex-ctn">
+                    <?php
+                          global $wpdb;
+                          $playerid = get_the_ID();
+                          $donations = $wpdb->get_results("SELECT donation FROM wp_donations WHERE plyr_id = $playerid");
+                          $donationTotal = 0;
+                          foreach ($donations as $donation) {
+                            $donationTotal += (int)$donation->donation;
+                          }
+                          $donationTotal = ceil($donationTotal/100);
+                        ?>
                     <div class="rs__slider-player-minidash">
                       <h3 class="wb__red-sm-title">Total Raised</h3>
                       <p>
-                        $27,000
+                        $<?php echo $donationTotal ?>
                       </p>
                     </div>
                     <div class="rs__slider-player-minidash">
@@ -89,7 +99,7 @@
                 <div class="rs__raised-ctn">
                   <h3 class="wb__red-sm-title">Total Raised</h3>
                   <p>
-                    $27,000
+                      $<?php echo $donationTotal ?>
                   </p>
                   <a href="/player/nate-boyer" class="wb__button-blue">View Profile</a>
                 </div>
@@ -106,7 +116,7 @@
                 <div class="rs__raised-ctn">
                   <h3 class="wb__red-sm-title">Total Raised</h3>
                   <p>
-                    $27,000
+                      $<?php echo $donationTotal ?>
                   </p>
                   <a href="/player/blake-watson" class="wb__button-blue">View Profile</a>
                 </div>

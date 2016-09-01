@@ -14,10 +14,9 @@
         </p>
       </div>
       <div class="mission-flex-ctn wb__mission-meter-ctn">
-        <img class="mission-meter-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mission__wells-funded.png" alt="" />
+        <img class="mission-meter-img" src="<?php the_field('wells_graphic') ?>" alt="" />
         <div class="mission-flex-child wb__mission-meter">
           <p class="wb__red-sm-title mission__meter-title">Progress To Next Level</p>
-
 
         </div>
       </div>
@@ -53,6 +52,7 @@
             </div>
           </div>
         </div>
+        
 
         <div class="reasons-flex-child mission-reason">
           <div class="mission-inner-flex-ctn">

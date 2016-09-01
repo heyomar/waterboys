@@ -26,7 +26,7 @@
     <div class="rs__ctn rs__honor-copy">
       <h3>Conquering Kili Participants</h3>
     </div>
-    <div class="rs__ctn">
+    <div style="max-width:480px;" class="rs__ctn">
       <div class="rs__honor-ctn">
         <div class="rs__honor-item">
           <div class="rs__honor-image-1"></div>
@@ -42,7 +42,7 @@
           </div>
         </div>
 
-        <div class="rs__honor-item">
+        <!-- <div class="rs__honor-item">
           <div class="rs__honor-image-2"></div>
           <div class="rs__honor-info-ctn">
             <div class="rs__honor-name-ctn">
@@ -53,7 +53,7 @@
               <a href="/" class="wb__button-blue">View Profile</a>
             </div>
           </div>
-        </div>
+        </div> -->
 
       </div>
     </div>
