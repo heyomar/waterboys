@@ -26,7 +26,7 @@ Template Name: Player Profile
         ?>
         <div class="wb__page-dash-item">
           <h3>Fundraising Goal</h3>
-          <div class="dash__goal"><?php echo $donationTotal; ?></div>
+          <div class="dash__goal">$<?php the_field('fundraising_goal'); ?></div>
         </div>
         <div class="wb__page-dash-item">
           <h3>Progress to Goal</h3>

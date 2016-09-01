@@ -1,7 +1,7 @@
 <?php get_header(); ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <?php $players = new WP_Query(array('post_type' => 'player'));?>
+    <?php $players = new WP_Query(array('post_type' => 'player', 'posts_per_page' => -1));?>
 
       <div class="center rs__slider-ctn" data-slick="centerMode: true,">
         <?php
@@ -57,7 +57,6 @@
               </tr>
             </thead>
             <tbody>
-              <?php $players = new WP_Query(array('post_type' => 'player'));?>
                 <?php if ($players->have_posts()): ?>
                   <?php while ($players->have_posts()) : $players->the_post();  ?>
                     <tr>
