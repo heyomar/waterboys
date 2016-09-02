@@ -37,7 +37,7 @@
             </div>
 
             <div class="rs__raised-ctn ck__pad">
-              <a href="/" class="wb__button-blue">View Profile</a>
+              <a href="/player/nate-boyer" class="wb__button-blue">View Profile</a>
             </div>
           </div>
         </div>

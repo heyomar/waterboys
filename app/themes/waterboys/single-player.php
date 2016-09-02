@@ -26,18 +26,19 @@ Template Name: Player Profile
         ?>
         <div class="wb__page-dash-item">
           <h3>Fundraising Goal</h3>
-          <div class="dash__goal">$<?php the_field('fundraising_goal'); ?></div>
+          <div class="dash__goal">$<?php echo number_format(get_field('fundraising_goal')); ?></div>
         </div>
         <div class="wb__page-dash-item">
           <h3>Progress to Goal</h3>
           <div class="wb__progressgoal-ctn">
-            <div class="wb__progressgoal-bar"></div>
+            <div id="progressbar" class="wb__progressgoal-bar"></div>
           </div>
-          <p class="wb__progressgoal-amount">
+          <p class="wb__progressgoal-amount">$
           <?php
           $fundgoal = get_field('fundraising_goal');
-
-          echo $donationTotal / $fundgoal;
+          $goalstatus = get_field('goal_status');
+          $printTotal = $donationTotal / $fundgoal + $goalstatus;
+          echo number_format($printTotal);
           ?>
           </p>
         </div>

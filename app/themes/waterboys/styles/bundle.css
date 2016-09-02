@@ -1261,6 +1261,10 @@ Example showing how to change the color/size of the icons:
           flex: 1 1 50%;
 }
 
+.mission .wb__progressgoal-ctn {
+      margin: 30px 50px 15px 50px;
+}
+
 @media screen and (min-width:48em) {
   .socialbar-copy {
     padding-bottom: 0;

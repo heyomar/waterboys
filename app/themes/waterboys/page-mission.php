@@ -16,8 +16,10 @@
       <div class="mission-flex-ctn wb__mission-meter-ctn">
         <img class="mission-meter-img" src="<?php the_field('wells_graphic') ?>" alt="" />
         <div class="mission-flex-child wb__mission-meter">
-          <p class="wb__red-sm-title mission__meter-title">Progress To Next Level</p>
-
+          <p class="wb__red-sm-title mission__meter-title">Progress To Next Well</p>
+          <div class="wb__progressgoal-ctn">
+                 <div class="wb__progressgoal-bar"></div>
+          </div>
         </div>
       </div>
       <div class="mission-flex-ctn">
@@ -52,7 +54,7 @@
             </div>
           </div>
         </div>
-        
+
 
         <div class="reasons-flex-child mission-reason">
           <div class="mission-inner-flex-ctn">

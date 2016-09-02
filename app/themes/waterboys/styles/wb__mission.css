@@ -180,6 +180,10 @@
   flex: 1 1 50%;
 }
 
+.mission .wb__progressgoal-ctn {
+      margin: 30px 50px 15px 50px;
+}
+
 
 @media screen and $tablet {
   .socialbar-copy {
