@@ -41,6 +41,7 @@ Template Name: Player Profile
           echo number_format($printTotal);
           ?>
           </p>
+          <span id="printTotal"><?php echo $printTotal ?></span>
         </div>
         <div class="wb__page-dash-item">
           <div class="wb__dash-donate"><a class="wb__button" href="/donate/?plyr=<?php the_ID(); ?>">Donate Now</a></div>

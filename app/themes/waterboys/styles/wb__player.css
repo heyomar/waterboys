@@ -129,3 +129,8 @@
 .single-player .wb__header-button {
   display: none;
 }
+
+#printTotal{
+  position: absolute;
+  z-index: -1000;
+}

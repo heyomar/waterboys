@@ -82,3 +82,8 @@ burger.addEventListener('click', function () {
   }
   nav.classList.toggle('active')
 })
+
+//Set progressbar width
+var printTotal = jQuery('#printTotal').html();
+var barwidth = printTotal / 45000 * 100;
+jQuery("#progressbar").width(barwidth + '%');
