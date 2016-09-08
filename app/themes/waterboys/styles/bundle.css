@@ -742,7 +742,7 @@ Example showing how to change the color/size of the icons:
 }
 
 .nav-item-social {
-  background: url('../assets/wb__nav-bg-social.jpg');
+  background: url('../assets/wb__nav-connect-dark-bg.jpg');
   background-position: center center;
   background-size: cover;
   background-color: #323639;
@@ -1048,6 +1048,11 @@ Example showing how to change the color/size of the icons:
 #printTotal{
   position: absolute;
   z-index: -1000;
+}
+
+#fundTotal {
+    position: absolute;
+    z-index: -1000;
 }
 
 .ms__hero-bg {

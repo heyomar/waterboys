@@ -134,3 +134,8 @@
   position: absolute;
   z-index: -1000;
 }
+
+#fundTotal {
+    position: absolute;
+    z-index: -1000;
+}

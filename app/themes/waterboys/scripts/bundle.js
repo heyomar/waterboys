@@ -84,6 +84,7 @@ burger.addEventListener('click', function () {
 })
 
 //Set progressbar width
+var fundgoal = jQuery('#fundTotal').html()
 var printTotal = jQuery('#printTotal').html();
-var barwidth = printTotal / 45000 * 100;
+var barwidth = printTotal / fundgoal * 100;
 jQuery("#progressbar").width(barwidth + '%');
