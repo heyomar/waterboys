@@ -93,35 +93,70 @@
 }
 
 .nav-item-ourmission {
-  background: url('../assets/wb__nav-bg-ourmission.jpg');
+  background: url('../assets/wb__nav-ourmission-dark-bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-color: $wb__gray;
+}
+
+.nav-item-ourmission:hover {
+  background: url('../assets/wb__nav-ourmission-color-bg.jpg');
   background-position: center center;
   background-size: cover;
   background-color: $wb__gray;
 }
 
 .nav-item-donate {
-  background: url('../assets/wb__nav-bg-donate.jpg');
+  background: url('../assets/wb__nav-donate-dark-bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-color: $wb__gray;
+}
+
+.nav-item-donate:hover {
+  background: url('../assets/wb__nav-donate-color-bg.jpg');
   background-position: center center;
   background-size: cover;
   background-color: $wb__gray;
 }
 
 .nav-item-initiatives {
-  background: url('../assets/wb__nav-bg-initiatives.jpg');
+  background: url('../assets/wb__nav-specialteams-dark-bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-color: $wb__gray;
+}
+
+.nav-item-initiatives:hover {
+  background: url('../assets/wb__nav-specialteams-color-bg.jpg');
   background-position: center center;
   background-size: cover;
   background-color: $wb__gray;
 }
 
 .nav-item-waterboys {
-  background: url('../assets/wb__nav-bg-waterboys.jpg');
+  background: url('../assets/wb__nav-roster-dark-bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-color: $wb__gray;
+}
+
+.nav-item-waterboys:hover {
+  background: url('../assets/wb__nav-roster-color-bg.jpg');
   background-position: center center;
   background-size: cover;
   background-color: $wb__gray;
 }
 
 .nav-item-social {
-  background: url('../assets/wb__nav-bg-social.jpg');
+  background: url('../assets/wb__nav-connect-dark-bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-color: $wb__gray;
+}
+
+.nav-item-social:hover {
+  background: url('../assets/wb__nav-connect-color-bg.jpg');
   background-position: center center;
   background-size: cover;
   background-color: $wb__gray;
