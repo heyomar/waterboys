@@ -11,7 +11,7 @@
       <div class="dn__now-ctn">
         <div class="dn__now-copy-ctn">
           <p class="copy-highlight">
-            Each deep-bore well costs $45,000 to install. Just one can serve up to 7,500 people. That’s $6 per person. Six dollars can save a life, send a child to school, and return countless hours.
+             Each deep borehole well costs $45,000 to install. Just one can serve up to 7,500 people. That’s $6 per person. Six dollars can save a life, send a child to school, and return countless hours.
           </p>
           <p>
             For an issue with impact this broad, every contribution counts: every dollar, every drop.
@@ -30,7 +30,7 @@
               <p>to save 35,000 hours spent on retrival</p></div>
 
               <div class="dn__flex-ctn"><span class="dn__select-amount-btn" data-donation="300">$300</span>
-              <p>to prevent a 292,000 km jerrycan carry</p></div>
+              <p>to prevent a 181,440 mile jerrycan carry</p></div>
 
               <div class="dn__flex-ctn">
                 <label class="" for="custom-amount">$ Donation Amount</label>

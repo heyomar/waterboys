@@ -18,7 +18,7 @@
         <div class="mission-flex-child wb__mission-meter">
           <p class="wb__red-sm-title mission__meter-title">Progress To Next Well</p>
           <div class="wb__progressgoal-ctn">
-                 <div class="wb__progressgoal-bar"></div>
+                 <div style="width:25%;" class="wb__progressgoal-bar"></div>
           </div>
         </div>
       </div>

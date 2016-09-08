@@ -93,7 +93,7 @@
               <div class="rs__honor-info-ctn">
                 <div class="rs__honor-name-ctn">
                   <h2 class="rs__honor-name-copy">Nate Boyer</h2>
-                  <p class="rs__honor-team-copy">Former Green Beret &amp; NFL Player</p>
+                  <p class="rs__honor-team-copy">Conquering Kili</p>
                 </div>
 
                 <div class="rs__raised-ctn">
