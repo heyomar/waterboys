@@ -724,7 +724,6 @@ Example showing how to change the color/size of the icons:
   background: url('../assets/wb__nav-ourmission-color-bg.jpg');
   background-position: center center;
   background-size: cover;
-  background-color: #323639;
 }
 
 .nav-item-donate {
@@ -738,7 +737,6 @@ Example showing how to change the color/size of the icons:
   background: url('../assets/wb__nav-donate-color-bg.jpg');
   background-position: center center;
   background-size: cover;
-  background-color: #323639;
 }
 
 .nav-item-initiatives {
@@ -752,7 +750,6 @@ Example showing how to change the color/size of the icons:
   background: url('../assets/wb__nav-specialteams-color-bg.jpg');
   background-position: center center;
   background-size: cover;
-  background-color: #323639;
 }
 
 .nav-item-waterboys {
@@ -766,7 +763,6 @@ Example showing how to change the color/size of the icons:
   background: url('../assets/wb__nav-roster-color-bg.jpg');
   background-position: center center;
   background-size: cover;
-  background-color: #323639;
 }
 
 .nav-item-social {
@@ -780,7 +776,6 @@ Example showing how to change the color/size of the icons:
   background: url('../assets/wb__nav-connect-color-bg.jpg');
   background-position: center center;
   background-size: cover;
-  background-color: #323639;
 }
 
 .wb__nav-overflow {
