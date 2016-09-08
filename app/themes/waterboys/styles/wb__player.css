@@ -139,3 +139,12 @@
     position: absolute;
     z-index: -1000;
 }
+
+.roster .rs___slider-flex-ctn {
+  & h3 {
+    padding-top: 15px;
+  }
+  & a {
+  width: 100%;
+  }
+}

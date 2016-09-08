@@ -1085,6 +1085,17 @@ Example showing how to change the color/size of the icons:
     z-index: -1000;
 }
 
+.roster .rs___slider-flex-ctn {
+}
+
+.roster .rs___slider-flex-ctn h3 {
+  padding-top: 15px;
+}
+
+.roster .rs___slider-flex-ctn a {
+  width: 100%;
+}
+
 .ms__hero-bg {
   background: url('../assets/header__ourmission.jpg') top center no-repeat;
 }

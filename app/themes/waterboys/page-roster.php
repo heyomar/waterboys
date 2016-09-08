@@ -1,47 +1,47 @@
 <?php get_header(); ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <?php $players = new WP_Query(array('post_type' => 'player', 'posts_per_page' => -1));?>
-
+    <?php
+          $pd_query = "select * from wp_posts as p
+          left join (select * from wp_postmeta where meta_key = 'team') as pm on p.ID = pm.post_id
+          left join (select plyr_id, sum(donation) as total_donations from wp_donations group by plyr_id ) as t_donations on p.ID = t_donations.plyr_id
+          where p.post_type='player' and p.post_status='publish'
+          order by total_donations desc
+          ;
+          ;";
+          $players_and_donations = $wpdb->get_results($pd_query);
+          ?>
       <div class="center rs__slider-ctn" data-slick="centerMode: true,">
-        <?php
-    if ($players->have_posts()): ?>
-          <?php while ($players->have_posts()) : $players->the_post();  ?>
 
 
-            <div class="block-hold" style="background-image:url('<?php the_field('player_slider_image'); ?>')">
+<?php $counter = 1;
+      foreach($players_and_donations as $player) { //$player is an OBJECT ?>
+
+            <div class="block-hold" style="background-image:url('<?php echo wp_get_attachment_url(get_post_meta($player->ID, 'player_slider_image', true)); ?>')">
               <div class="rs__slider-overlay">
                 <div class="rs___slider-flex-ctn-wrapper">
                   <div class="rs___slider-flex-ctn">
-                    <div class="rs__slider-nameplate">
-                      <h3><a href="<?php echo get_permalink(); ?>"><?php the_field('player_name'); ?></a></h3>
+                    <a href="<?php echo get_permalink($player->ID) ?>"><div class="rs__slider-nameplate">
+                      <h3><?php echo $player->post_title; ?></h3>
                       <p class="wb__red-sm-title">
-                        <?php the_field('team'); ?>
+                        <?php echo $player->meta_value ?>
                       </p>
-                    </div>
+                    </div></a>
                   </div>
                   <div class="rs___slider-flex-ctn">
-                    <?php
-                          global $wpdb;
-                          $playerid = get_the_ID();
-                          $donations = $wpdb->get_results("SELECT donation FROM wp_donations WHERE plyr_id = $playerid");
-                          $donationTotal = 0;
-                          foreach ($donations as $donation) {
-                            $donationTotal += (int)$donation->donation;
-                          }
-                          $donationTotal = ceil($donationTotal/100);
-                          $goalstatus = get_field('goal_status');
-                        ?>
+
                     <div class="rs__slider-player-minidash">
                       <h3 class="wb__red-sm-title">Total Raised</h3>
-                      <p>
-                        $<?php echo number_format($donationTotal + $goalstatus)  ?>
+                      <p>$
+                        <?php
+                        $donationAmount = $player->total_donations;
+                        echo number_format($donationAmount / 100)  ?>
                       </p>
                     </div>
                     <div class="rs__slider-player-minidash">
                       <h3 class="wb__red-sm-title">Ranking</h3>
                       <p>
-                        3RD
+                       <?php echo $counter; ?>
                       </p>
                     </div>
                   </div>
@@ -49,8 +49,10 @@
               </div>
 
             </div>
-            <?php endwhile; ?>
-              <?php endif ?>
+            <?php
+            $counter +=1;
+            }
+            ?>
       </div>
 
       <div class="rs__ctn">
@@ -68,15 +70,22 @@
               </tr>
             </thead>
             <tbody>
-                <?php if ($players->have_posts()): ?>
-                  <?php while ($players->have_posts()) : $players->the_post();  ?>
+
+                    <?php
+                    $counter = 1;
+                    foreach($players_and_donations as $player) {
+                    //$player is an OBJECT
+                    ?>
                     <tr>
-                      <td><a href="<?php echo get_permalink(); ?>"><?php the_field('player_name'); ?></a></td>
-                      <td><?php the_field('team'); ?></td>
-                      <td>1st</td>
+                      <td><a href="<?php echo get_permalink($player->ID) ?>"
+                      ><?php echo $player->post_title; ?></a></td>
+                      <td><?php echo $player->meta_value; ?></td>
+                      <td><?php echo $counter ?> </td>
                     </tr>
-                  <?php endwhile; ?>
-                <?php endif ?>
+                    <?php
+                    $counter +=1;
+                    }
+                    ?>
             </tbody>
           </table>
         </div>
@@ -100,7 +109,7 @@
                 <div class="rs__raised-ctn">
                   <h3 class="wb__red-sm-title">Total Raised</h3>
                   <p>
-                      $<?php echo $donationTotal ?>
+
                   </p>
                   <a href="/player/nate-boyer" class="wb__button-blue">View Profile</a>
                 </div>
@@ -117,7 +126,6 @@
                 <div class="rs__raised-ctn">
                   <h3 class="wb__red-sm-title">Total Raised</h3>
                   <p>
-                      $<?php echo $donationTotal ?>
                   </p>
                   <a href="/player/blake-watson" class="wb__button-blue">View Profile</a>
                 </div>
