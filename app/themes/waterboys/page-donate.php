@@ -66,7 +66,7 @@
                   playerInput += '<select>'
                   playerInput += '<option value="0">No Team</option>'
                   <?php
-                    $players = new WP_Query( array('post_type' => 'player', 'posts_per_page' => -1) );
+                    $players = new WP_Query( array('post_type' => 'player', 'posts_per_page' => -1 , 'orderby' => 'title' , 'order' => 'ASC') );
                     while ($players->have_posts()) : $players->the_post();
                   ?>
                       playerInput += '<option value="<?php the_ID(); ?>">'
