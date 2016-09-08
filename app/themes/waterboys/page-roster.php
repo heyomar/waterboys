@@ -30,11 +30,12 @@
                             $donationTotal += (int)$donation->donation;
                           }
                           $donationTotal = ceil($donationTotal/100);
+                          $goalstatus = get_field('goal_status');
                         ?>
                     <div class="rs__slider-player-minidash">
                       <h3 class="wb__red-sm-title">Total Raised</h3>
                       <p>
-                        $<?php echo $donationTotal ?>
+                        $<?php echo number_format($donationTotal + $goalstatus)  ?>
                       </p>
                     </div>
                     <div class="rs__slider-player-minidash">
