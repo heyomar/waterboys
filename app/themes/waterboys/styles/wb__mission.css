@@ -41,7 +41,7 @@
   font-family: $wb__libh;
   color: #fff;
   margin-top: 0;
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
