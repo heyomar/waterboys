@@ -1360,6 +1360,10 @@ Example showing how to change the color/size of the icons:
   color: #323639;
 }
 
+.socialbar-copy {
+  color: #fff;
+}
+
 .st__hero-bg {
   background: url('../assets/header__specialteams.jpg') top center no-repeat;
 }
