@@ -88,3 +88,7 @@ var fundgoal = jQuery('#fundTotal').html()
 var printTotal = jQuery('#printTotal').html();
 var barwidth = printTotal / fundgoal * 100;
 jQuery("#progressbar").width(barwidth + '%');
+
+//Set mission progressbar width
+// var totalProgress = jQuery('#totalProgress').html();
+// jQuery('#missionProgress').width(totalProgress + '%');

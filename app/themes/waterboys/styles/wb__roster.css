@@ -20,6 +20,9 @@
 }
 
 .rs__slider-nameplate {
+  background-image: url('../assets/roster__slider-boxes-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: $wb__tan;
   flex: auto;
   padding: 0 15px 20px 0;
@@ -56,6 +59,9 @@
 }
 
 .rs__slider-player-minidash {
+  background-image: url('../assets/roster__slider-boxes-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: $wb__tan;
   flex: auto;
   margin: 10px;

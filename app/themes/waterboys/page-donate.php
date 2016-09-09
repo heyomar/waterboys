@@ -27,7 +27,7 @@
               <p>to provide water access to one household</p></div>
 
               <div class="dn__flex-ctn"><span class="dn__select-amount-btn" data-donation="100">$100</span>
-              <p>to save 35,000 hours spent on retrival</p></div>
+              <p>to save 35,000 hours spent on retrieval</p></div>
 
               <div class="dn__flex-ctn"><span class="dn__select-amount-btn" data-donation="300">$300</span>
               <p>to prevent a 181,440 mile jerrycan carry</p></div>
@@ -148,25 +148,25 @@
 
       <div class="cn__sidebar-ctn">
         <div class="cn__sidebar-info">
-          <p>
+          <p class="scarcity">
             Water scarcity limits millions of people in the developing world in ways you might not imagine.
-          </p>
-          <h3 class="wb__red-sm-title">Education</h3>
+          </p><br>
+          <span class="wb__red-sm-title">Education</span>
           <p class="wb__player__content__body">
             Women are primarily responsible for retrieving water, and often have to bring their children. Reducing the distance to a water source by just 15 minutes results in a 12% increase in girls’ school attendance.
-          </p>
+          </p><br>
 
-          <h3 class="wb__red-sm-title">Economy</h3>
+          <span class="wb__red-sm-title">Economy</span>
           <p class="wb__player__content__body">
             People living in Sub-Saharan Africa spend more than 40 billion hours per year retrieving water. Water access frees time to generate income.
-          </p>
+          </p><br>
 
-          <h3 class="wb__red-sm-title">Agriculture</h3>
+          <span class="wb__red-sm-title">Agriculture</span>
           <p class="wb__player__content__body">
             With dependable access to ample drinking water, families can afford to farm.
-          </p>
+          </p><br>
 
-          <h3 class="wb__red-sm-title">Health</h3>
+          <span class="wb__red-sm-title">Health</span>
           <p class="wb__player__content__body">
             Water-related diseases currently cause nearly 1 in 5 deaths of children under 5. It doesn’t have to be this way.
           </p>

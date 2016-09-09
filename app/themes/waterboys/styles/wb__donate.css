@@ -194,3 +194,19 @@
 .donate .wb__header-button{
   display: none;
 }
+
+.donate {
+  & .cn__sidebar-info {
+    & p {
+      font-size: 18px;
+    }
+    & .scarcity {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+    & .wb__red-sm-title {
+      margin-bottom: -12px;
+      display: block;
+    }
+  }
+}

@@ -17,7 +17,7 @@
   </div>
 </div> -->
 <div class="rs__ctn ck__body-copy">
-  <p><strong>Each season, all Waterboys and Waterboys champion, Green Beret and former Seattle Seahawk Nate Boyer challenges combat veterans and NFL alumni to join him on a new mission: conquering Africa’s highest peak, Mount Kilimanjaro.</strong></p>
+  <p><strong>Each season, Waterboys champion, Green Beret and former Seattle Seahawk Nate Boyer and the rest of the Waterboys challenge combat veterans and NFL alumni to take on a new mission: conquering Africa’s highest peak, Mount Kilimanjaro.</strong></p>
   <p>Conquering Kili raises awareness for water scarcity issues and empowers veterans to recognize that no goal is too lofty. Donations to this initiative fund both well projects and the cost of the climb. Help the #ConqueringKili crew reach new heights.</p>
 </div>
 
