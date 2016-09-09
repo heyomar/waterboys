@@ -1356,12 +1356,15 @@ Example showing how to change the color/size of the icons:
   color: #323639;
 }
 
-.mission p {
-  color: #323639;
-}
-
 .socialbar-copy {
   color: #fff;
+}
+
+.mission__ctn {
+}
+
+.mission__ctn p {
+  color: #323639;
 }
 
 .st__hero-bg {
@@ -2865,7 +2868,7 @@ select {
   display: block;
 }
 
-.donate p {
+.donate .dn__now-ctn {
   color: #323639;
 }
 

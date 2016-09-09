@@ -219,11 +219,14 @@
   & .dash__goal {
     color: #323639;
   }
-  & p {
-    color: $wb__gray;
-  }
 }
 
 .socialbar-copy {
   color: #fff;
+}
+
+.mission__ctn {
+  & p {
+    color: $wb__gray;
+  }
 }
