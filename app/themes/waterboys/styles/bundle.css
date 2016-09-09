@@ -1005,8 +1005,6 @@ Example showing how to change the color/size of the icons:
   font-weight: 700;
 }
 
-.wb__player__content-career {}
-
 .wb__player-content {
   padding: 25px;
   color: #323639;
@@ -1031,8 +1029,6 @@ Example showing how to change the color/size of the icons:
 .wb__player__info-title {
   margin-bottom: -12px;
 }
-
-.wb__player__content__body {}
 
 .wb__player__career-ul {
   padding-left: 20px;
@@ -1357,6 +1353,10 @@ Example showing how to change the color/size of the icons:
 }
 
 .mission .dash__goal {
+  color: #323639;
+}
+
+.mission p {
   color: #323639;
 }
 
@@ -2028,6 +2028,7 @@ Example showing how to change the color/size of the icons:
 .rs__ctn {
   max-width: 900px;
   margin: 0 auto;
+  color: #323639;
 }
 
 .table-ctn {
@@ -2206,6 +2207,17 @@ tr:nth-child(odd) {
 
 .ck__body-copy {
   padding: 35px 20px;
+}
+
+.conquering-kili .rs__ctn ck__body-copy{
+}
+
+.conquering-kili .rs__ctn ck__body-copy p {
+  color: #323639;
+}
+
+.cq__white {
+  color: #fff;
 }
 
 .cn__hero-bg {
@@ -2830,7 +2842,8 @@ select {
 .donate {
 }
 
-.donate .cn__sidebar-info {}
+.donate .cn__sidebar-info {
+}
 
 .donate .cn__sidebar-info p {
   font-size: 18px;
@@ -2846,6 +2859,10 @@ select {
 .donate .cn__sidebar-info .wb__red-sm-title {
   margin-bottom: -12px;
   display: block;
+}
+
+.donate p {
+  color: #323639;
 }
 
 /* FOOTER */

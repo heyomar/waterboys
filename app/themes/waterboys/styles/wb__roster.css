@@ -87,6 +87,7 @@
 .rs__ctn {
   max-width: 900px;
   margin: 0 auto;
+  color: $wb__gray;
 }
 
 .table-ctn {

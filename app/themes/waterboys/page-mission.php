@@ -35,7 +35,7 @@
           <div class="wb__progressgoal-ctn">
                  <div style="width:25%;" id="missonProgress" class="wb__progressgoal-bar"></div>
           </div>
-          <p class="dash__goal">$45,000</p>
+          <p class="dash__goal">Goal: $45,000</p>
         </div>
       </div>
       <div class="mission-flex-ctn">

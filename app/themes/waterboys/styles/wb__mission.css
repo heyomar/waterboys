@@ -219,4 +219,7 @@
   & .dash__goal {
     color: #323639;
   }
+  & p {
+    color: $wb__gray;
+  }
 }

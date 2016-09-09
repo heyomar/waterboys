@@ -91,7 +91,7 @@
         </div>
       </div>
 
-      <div class="rs__honor-bg">
+      <!-- <div class="rs__honor-bg">
         <div class="rs__ctn rs__honor-copy">
           <h3>Honorary Waterboys</h3>
           <p>Our honorary Waterboys work in — and play on— other fields, but demonstrate the same passion and dedication to.</p>
@@ -134,7 +134,7 @@
 
           </div>
         </div>
-      </div>
+      </div> -->
       </div>
       <div class="st__bar-ctn">
         <p>14 million Tanzanians lack access to safe water. Dig deep with us.</p>

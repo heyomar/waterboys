@@ -209,4 +209,7 @@
       display: block;
     }
   }
+  & p {
+    color: $wb__gray;
+  }
 }

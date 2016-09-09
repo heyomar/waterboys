@@ -13,3 +13,13 @@
 .ck__body-copy {
   padding: 35px 20px;
 }
+
+.conquering-kili .rs__ctn ck__body-copy{
+  & p {
+    color: $wb__gray;
+  }
+}
+
+.cq__white {
+  color: #fff;
+}

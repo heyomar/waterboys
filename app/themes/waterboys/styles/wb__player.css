@@ -69,8 +69,6 @@
   font-weight: 700;
 }
 
-.wb__player__content-career {}
-
 .wb__player-content {
   padding: 25px;
   color: $wb__gray;
@@ -93,8 +91,6 @@
 .wb__player__info-title {
   margin-bottom: -12px;
 }
-
-.wb__player__content__body {}
 
 .wb__player__career-ul {
   padding-left: 20px;
