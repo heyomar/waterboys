@@ -112,8 +112,7 @@
                         stripeToken: token.id
                       }
                     }).done(function (data) {
-                      console.log(data)
-                      // TODO: take user to thank you page
+                      window.location.href = 'https://waterboys.org/thank-you/'
                     })
                   }
                 });
