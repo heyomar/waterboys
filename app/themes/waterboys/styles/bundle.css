@@ -866,13 +866,14 @@ Example showing how to change the color/size of the icons:
   letter-spacing: 0.125rem;
   line-height: 55px;
   line-height: 3.4375rem;
+  margin-bottom: 5px;
 }
 
 .wb__hero-subtitle {
   line-height: 30px;
   line-height: 1.875rem;
   font-weight: 300;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   font-family: 'liberatorlight', sans-serif;
 }
 

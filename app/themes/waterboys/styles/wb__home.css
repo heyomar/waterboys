@@ -35,12 +35,13 @@
   font-family: $wb__libh;
   letter-spacing: 2px;
   line-height: 55px;
+  margin-bottom: 5px;
 }
 
 .wb__hero-subtitle {
   line-height: 30px;
   font-weight: 300;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   font-family: $wb__libl;
 }
 
