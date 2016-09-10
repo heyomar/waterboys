@@ -14,7 +14,7 @@ if ($_POST) {
   $dotenv->required(['DB_NAME', 'DB_USER', 'DB_PASSWORD', 'DB_HOST']);
 
   // TODO: replace this with the production key
-  \Stripe\Stripe::setApiKey('sk_test_SdPlSSiPU7dzvccLYc1MiHTT');
+  \Stripe\Stripe::setApiKey('sk_live_s6A94UlFldNLpwFA99wpks3R');
 
   // var sanitization
   $prefix = getenv('DB_PREFIX') ?: 'WP_';

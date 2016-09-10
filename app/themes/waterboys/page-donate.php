@@ -87,7 +87,7 @@
 
                 var handler = StripeCheckout.configure({
                   // TODO: change to production key
-                  key: 'pk_test_dAnBHTFaqcq516ofFXuP2izz',
+                  key: 'pk_live_d7uQZFqoY8jDBkA7FEDEWDf0',
                   image: '',
                   locale: 'auto',
                   token: function (token) {
