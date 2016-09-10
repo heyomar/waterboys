@@ -129,11 +129,13 @@
 #printTotal{
   position: absolute;
   z-index: -1000;
+  color: #fff;
 }
 
 #fundTotal {
     position: absolute;
     z-index: -1000;
+    color: #fff;
 }
 
 .roster .rs___slider-flex-ctn {

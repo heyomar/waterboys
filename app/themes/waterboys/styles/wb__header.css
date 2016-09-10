@@ -103,6 +103,7 @@
   background: url('../assets/wb__nav-ourmission-color-bg.jpg');
   background-position: center center;
   background-size: cover;
+  background-color: $wb__gray;
 }
 
 .nav-item-donate {
@@ -116,6 +117,7 @@
   background: url('../assets/wb__nav-donate-color-bg.jpg');
   background-position: center center;
   background-size: cover;
+  background-color: $wb__gray;
 }
 
 .nav-item-initiatives {
@@ -129,6 +131,7 @@
   background: url('../assets/wb__nav-specialteams-color-bg.jpg');
   background-position: center center;
   background-size: cover;
+  background-color: $wb__gray;
 }
 
 .nav-item-waterboys {
@@ -142,6 +145,7 @@
   background: url('../assets/wb__nav-roster-color-bg.jpg');
   background-position: center center;
   background-size: cover;
+  background-color: $wb__gray;
 }
 
 .nav-item-social {
@@ -155,6 +159,7 @@
   background: url('../assets/wb__nav-connect-color-bg.jpg');
   background-position: center center;
   background-size: cover;
+  background-color: $wb__gray;
 }
 
 .wb__nav-overflow {
