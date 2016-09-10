@@ -15,7 +15,7 @@
 }
 
 .wb__home-content {
-  position: absolute;
+  position: relative;
   text-align: center;
   top: 50%;
   left: 50%;
