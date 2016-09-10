@@ -63,7 +63,7 @@
 }
 
 .wb__content-info {
-  flex: 2 1 30%;
+  flex: 2 1 auto;
   min-width: 330px;
   background-color: #f0f0ef;
   font-weight: 700;
