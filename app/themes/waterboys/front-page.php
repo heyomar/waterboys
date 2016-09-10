@@ -3,7 +3,7 @@
     <div class="wb__home-container">
       <div class="wb__home-content">
         <h1 class="wb__hero-title">
-		        Team Up to <br> Tackle Thirst
+		        Team Up to<br>Tackle&nbsp;Thirst
 		    </h1>
 		    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-wave.png" alt="" />
 		    <h3 class="wb__hero-subtitle">
