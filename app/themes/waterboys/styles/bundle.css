@@ -875,6 +875,8 @@ Example showing how to change the color/size of the icons:
   font-weight: 300;
   padding-bottom: 25px;
   font-family: 'liberatorlight', sans-serif;
+  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 }
 
 .wb__hero-button {
