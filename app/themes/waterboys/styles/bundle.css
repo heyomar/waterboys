@@ -850,7 +850,7 @@ Example showing how to change the color/size of the icons:
           transform: translate(-50%, -50%);
   font-family: 'liberatorheavy', sans-serif;
   color: #fff;
-  padding: 0 15px;
+  padding: 0 10px;
   z-index: 3;
 }
 
@@ -867,6 +867,8 @@ Example showing how to change the color/size of the icons:
   line-height: 55px;
   line-height: 3.4375rem;
   margin-bottom: 5px;
+  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 }
 
 .wb__hero-subtitle {
@@ -875,8 +877,7 @@ Example showing how to change the color/size of the icons:
   font-weight: 300;
   padding-bottom: 25px;
   font-family: 'liberatorlight', sans-serif;
-  letter-spacing: 1px;
-  letter-spacing: 0.0625rem;
+
 }
 
 .wb__hero-button {

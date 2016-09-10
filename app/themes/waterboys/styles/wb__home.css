@@ -22,7 +22,7 @@
   transform: translate(-50%, -50%);
   font-family: $wb__libh;
   color: #fff;
-  padding: 0 15px;
+  padding: 0 10px;
   z-index: 3;
 }
 
@@ -36,6 +36,7 @@
   letter-spacing: 2px;
   line-height: 55px;
   margin-bottom: 5px;
+  letter-spacing: 1px;
 }
 
 .wb__hero-subtitle {
@@ -43,7 +44,7 @@
   font-weight: 300;
   padding-bottom: 25px;
   font-family: $wb__libl;
-  letter-spacing: 1px;
+
 }
 
 .wb__hero-button {
