@@ -31,7 +31,8 @@ if ($_POST) {
       'source' => $_POST['stripeToken'],
       'metadata' => array(
         'player' => $_POST['player'],
-        'group' => $_POST['group']
+        'group' => $_POST['group'],
+        'email' => $_POST['email']
       )
     ));
 
