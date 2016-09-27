@@ -8,15 +8,19 @@
       <div class="ty__inner-ctn">
         <div class="ty__body-copy-ctn">
           <p>Thank you for teaming up with us to tackle thirst. Your generosity will mean so much to the people we serve. Connect with us on social media to witness our work in real time and see what your contribution can accomplish.</p>
+          <a class="twitter-share-button"
+  href="https://twitter.com/waterboysorg/intent/tweet?text=Hello%20world"
+  data-size="large">
+Tweet</a>
         </div>
 
         <div class="ty__side-share-ctn">
-          <a href="" class="socialbar-button ty__share-button">
+          <a href="https://twitter.com/waterboysorg" class="socialbar-button ty__share-button">
             <svg class="icon icon-twitter">
               <use xlink:href="#icon-twitter"></use>
             </svg> Tweet</a>
           <br>
-          <a href="" class="socialbar-button ty__share-button">
+          <a href="https://www.facebook.com/waterboysorg" class="socialbar-button ty__share-button">
             <svg class="icon icon-facebook-square">
               <use xlink:href="#icon-facebook-square"></use>
             </svg> Share</a>
