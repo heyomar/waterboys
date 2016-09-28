@@ -36,7 +36,11 @@
 .cn__social-ctn h3 {
   text-align: center;
   padding: 25px;
-  font-size: 18px;
+  font-size: 24px;
+  font-family: $wb__gothic;
+  font-weight: bold;
+  line-height: 36px;
+  letter-spacing: 0.2px;
 }
 
 .cn__social-icons-ctn {
@@ -48,12 +52,22 @@
 .cn__social-icons-ctn a {
   display: inline-block;
   height: 100px;
+  color: #5c6268;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  text-decoration: underline;
+
+  &:hover {
+    color:#95999d;
+  }
 }
 
 .cn__social-icons-ctn svg {
-  height: 60px;
-  width: 60px;
-  color: $wb__red;
+  height: 65px;
+  width: 65px;
+  color: #5c6268;
 }
 
 .cn__form-ctn {
@@ -92,7 +106,9 @@
   text-align: center;
 }
 
-label {
+.connect label {
+  line-height: 26px;
+  font-size: 16px;
   color: $wb__lblue;
   font-family: $wb__libl;
 }
@@ -100,6 +116,34 @@ label {
 .ninja-forms-required-items {
   padding: 15px 0;
 }
+
+.connect .ninja-forms-required-items {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 0.2px;
+}
+
+.connect .ninja-forms-req-symbol {
+  color: $wb__red;
+}
+
+#ninja_forms_field_4 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  box-shadow: inset 0 0 0 0 #95999d;
+  transition: all ease 0.6s;
+}
+
+#ninja_forms_field_4:hover {
+  cursor: pointer;
+  box-shadow: inset 0 -100px 0 0 #95999d;
+}
+
+
 
 @media screen and $tablet {
   .cn__sidebar-ctn {
@@ -111,5 +155,8 @@ label {
   .connect .ninja-forms-all-fields-wrap div:nth-of-type(3) {
     display: inline-block;
     width: 49.5%;
+  }
+  .connect #ninja_forms_field_5_div_wrap {
+    padding-right: 30px;
   }
 }

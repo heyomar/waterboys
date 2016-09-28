@@ -174,3 +174,11 @@ p {
   line-height:30px;
   letter-spacing:0.25px;
 }
+
+.basic__link{
+  text-decoration: underline;
+
+  &:hover {
+    color: #95999d;
+  }
+}

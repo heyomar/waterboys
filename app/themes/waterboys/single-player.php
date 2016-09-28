@@ -58,11 +58,11 @@ Template Name: Player Profile
               </div>
           </div>
           <div class="wb__player-content wb__content-info">
-            <p class="wb__player__content__info-position wb__player__content__title wb__player__info-title">Position</p>
+            <span class="wb__player__content__info-position wb__player__content__title wb__player__info-title">Position</span>
               <p><?php the_field('position'); ?></p>
-            <p class="wb__player__content__info-college wb__player__content__title wb__player__info-title">College</p>
+            <span class="wb__player__content__info-college wb__player__content__title wb__player__info-title">College</span>
               <p><?php the_field('college'); ?></p>
-            <p class="wb__player__content__info-careerhighlights wb__player__content__title wb__player__info-title">Career Highlights</p>
+            <span class="wb__player__content__info-careerhighlights wb__player__content__title wb__player__info-title">Career Highlights</span>
             <?php
             if( have_rows('career_highlights') ): ?>
                 <ul class="wb__player__career-ul">

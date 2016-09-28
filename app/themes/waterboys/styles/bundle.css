@@ -658,6 +658,14 @@ p {
   letter-spacing:0.01563rem;
 }
 
+.basic__link{
+  text-decoration: underline
+}
+
+.basic__link:hover {
+  color: #95999d;
+}
+
 .icon {
 	display: inline-block;
 	width: 1em;
@@ -1013,12 +1021,15 @@ Example showing how to change the color/size of the icons:
 }
 
 .wb__player-team {
-  padding-top: 5px;
   font-family: 'pill-gothic-300mg', sans-serif;
-  font-weight: 700;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  line-height: 32px;
+  line-height: 2rem;
   text-transform: uppercase;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 26px;
+  font-size: 1.625rem;
 }
 
 .wb__player__header {
@@ -1070,8 +1081,12 @@ Example showing how to change the color/size of the icons:
   font-weight: 400;
   font-size: 20px;
   font-size: 1.25rem;
-  line-height: 1.4;
+  line-height: 30px;
+  line-height: 1.875rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
   min-width: 330px;
+
 }
 
 .wb__content-info {
@@ -1081,7 +1096,17 @@ Example showing how to change the color/size of the icons:
           flex: 2 1 auto;
   min-width: 330px;
   background-color: #f0f0ef;
-  font-weight: 700;
+  font-weight: 700
+}
+
+.wb__content-info p {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  margin-top: 0;
 }
 
 .wb__player-content {
@@ -1096,13 +1121,14 @@ Example showing how to change the color/size of the icons:
 .wb__player__content__title {
   text-transform: uppercase;
   color: #c2001a;
-  letter-spacing: 1px;
-  letter-spacing: 0.0625rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   padding-bottom: -10px;
   font-family: 'liberatorlight', sans-serif;
-  font-size: 13px;
-  font-size: 0.8125rem;
-  opacity: 0.55;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
 }
 
 .wb__player__info-title {
@@ -1111,10 +1137,18 @@ Example showing how to change the color/size of the icons:
 
 .wb__player__career-ul {
   padding-left: 20px;
+  margin-top: 0;
 }
 
 .wb__player__career-ul li {
   padding: 2px 0;
+  list-style-type: square;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 /* MEDIA QUERIES */
@@ -1126,8 +1160,9 @@ Example showing how to change the color/size of the icons:
         -ms-flex: 3 2 55%;
             flex: 3 2 55%;
     font-weight: 400;
+    letter-spacing: 0.0125rem;
+    line-height: 1.875rem;
     font-size: 1.25rem;
-    line-height: 1.4;
   }
 
   .wb__content-info {
@@ -2371,8 +2406,14 @@ tr:nth-child(odd) {
 .cn__social-ctn h3 {
   text-align: center;
   padding: 25px;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-family: 'pill-gothic-300mg', sans-serif;
+  font-weight: bold;
+  line-height: 36px;
+  line-height: 2.25rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 .cn__social-icons-ctn {
@@ -2384,12 +2425,25 @@ tr:nth-child(odd) {
 .cn__social-icons-ctn a {
   display: inline-block;
   height: 100px;
+  color: #5c6268;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  text-decoration: underline
+}
+
+.cn__social-icons-ctn a:hover {
+  color: #95999d;
 }
 
 .cn__social-icons-ctn svg {
-  height: 60px;
-  width: 60px;
-  color: #c2001a;
+  height: 65px;
+  width: 65px;
+  color: #5c6268;
 }
 
 .cn__form-ctn {
@@ -2432,13 +2486,50 @@ tr:nth-child(odd) {
   text-align: center;
 }
 
-label {
+.connect label {
+  line-height: 26px;
+  line-height: 1.625rem;
+  font-size: 16px;
+  font-size: 1rem;
   color: #5c6268;
   font-family: 'liberatorlight', sans-serif;
 }
 
 .ninja-forms-required-items {
   padding: 15px 0;
+}
+
+.connect .ninja-forms-required-items {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+}
+
+.connect .ninja-forms-req-symbol {
+  color: #c2001a;
+}
+
+#ninja_forms_field_4 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 32px;
+  line-height: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  box-shadow: inset 0 0 0 0 #95999d;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+
+#ninja_forms_field_4:hover {
+  cursor: pointer;
+  box-shadow: inset 0 -100px 0 0 #95999d;
 }
 
 @media screen and (min-width:48em) {
@@ -2454,6 +2545,9 @@ label {
   .connect .ninja-forms-all-fields-wrap div:nth-of-type(3) {
     display: inline-block;
     width: 49.5%;
+  }
+  .connect #ninja_forms_field_5_div_wrap {
+    padding-right: 30px;
   }
 }
 
