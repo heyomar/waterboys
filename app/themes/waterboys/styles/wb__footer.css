@@ -13,6 +13,10 @@ a {
   position: relative;
   z-index: 2;
   padding-bottom: 40px;
+
+  & a:hover {
+    color: #95999d;
+  }
 }
 
 .site__footer__content {
@@ -22,13 +26,11 @@ a {
   justify-content: center;
   height: 280px;
   margin: 0 auto;
-
   max-width: 1260px;
 }
 
 .wb__footer__flex-item {
   flex: 1 1 25%;
-
 }
 
 .wb__footer__links ul li {
@@ -48,6 +50,9 @@ a {
   display: block;
   padding: 5px 0;
   color: $wb__lblue;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing:0.2px;
 }
 
 .wb__footer__social img {
@@ -94,7 +99,9 @@ a {
   font-weight: bold;
   padding-bottom: 10px;
   list-style-type: none;
-
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
 }
 
 /* MEDIA QUERIES */

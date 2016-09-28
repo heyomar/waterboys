@@ -134,8 +134,9 @@ tr:nth-child(odd) {
 .rs__honor-name-copy {
   color: #fff;
   font-family: $wb__gothic;
-  font-weight: 400;
-  font-size: 30px;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+  font-size: 40px;
   text-transform: uppercase;
   margin-bottom: -20px;
 }
@@ -144,7 +145,10 @@ tr:nth-child(odd) {
   font-family: $wb__gothic;
   text-transform: uppercase;
   color: $wb__red;
-  font-size: 22px;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
 }
 
 .rs__honor-image-1 {
@@ -186,6 +190,11 @@ tr:nth-child(odd) {
 }
 
 .rs__ctn h3 {
+  font-family: $wb__gothic;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
   text-align: center;
   color: $wb__red;
   text-transform: uppercase;

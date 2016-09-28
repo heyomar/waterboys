@@ -137,7 +137,7 @@
       </div> -->
       </div>
       <div class="st__bar-ctn">
-        <p>14 million Tanzanians lack access to safe water. Dig deep with us.</p>
+        <p>Explore the site to learn more about our special initiatives, browse the roster or view our career highlights.</p>
       </div>
       <!-- <div class="wb__mission-socialbar-ctn rs__space">
         <div class="socialbar-buttons-ctn">

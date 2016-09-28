@@ -452,14 +452,50 @@ textarea {
 
 /* BREAK POINTS */
 
+/*h1 {
+  font-family:$wb__libh;
+  font-size:85px;
+  font-weight:Bold*;
+  line-height:85px;
+  letter-spacing:2px;
+}
+
+h2 {
+  font-family:$wb__libh;
+  font-size:70px;
+  font-weight:Bold*;
+  line-height:85px;
+  letter-spacing:2px;
+}
+
+h3 {
+  font-family:$wb__gothic;
+  font-size:24px;
+  font-weight:Bold;
+  line-height:36px;
+  letter-spacing:1.5px;
+}
+
+p {
+  font-family:$wb__gothic;
+  font-size:20px;
+  font-weight:Normal;
+  line-height:30px;
+  letter-spacing:0.25px;
+}*/
+
 .wb__button {
   border: 2px solid #fff;
   border-radius: 6px;
-  padding: 12px 40px;
-  font-size: 20px;
-  font-size: 1.25rem;
+  padding: 12px 35px;
+  font-size: 24px;
+  font-size: 1.5rem;
   color: #fff;
   font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  line-height: 36px;
+  line-height: 2.25rem;
   cursor: pointer;
   box-shadow: inset 0 0 0 0 #fff;
   -webkit-transition: all ease 0.6s;
@@ -476,9 +512,11 @@ textarea {
 .wb__button-blue {
   background-color: #5c6268;
   font-family: 'pill-gothic-300mg', sans-serif;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
   padding: 12px 40px;
   color: #fff;
   border-radius: 6px;
@@ -521,8 +559,14 @@ textarea {
 
 .wb__page-dash-item h3 {
   margin: 0;
-  color: #fff;
-  font-family: 'pill-gothic-300mg', sans-serif;
+  color: #f1f0ee;
+  font-family: 'liberatorlight', sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
@@ -548,8 +592,11 @@ textarea {
 .wb__progressgoal-amount {
   color: #fff;
   text-align: center;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  font-weight: normal;
   font-family: 'pill-gothic-300mg', sans-serif;
 }
 
@@ -587,6 +634,28 @@ textarea {
 .dn__select-amount-btn.active {
   box-shadow: inset 0 -100px 0 0 #c2001a;
   color: #fff;
+}
+
+.copy__intro {
+  font-family: 'pill-gothic-300mg', sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: Bold;
+  line-height: 36px;
+  line-height: 2.25rem;
+  letter-spacing: 0.25px;
+  letter-spacing: 0.01563rem;
+}
+
+.copy__secondary {
+  font-family: 'pill-gothic-300mg', sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: normal;
+  line-height: 30px;
+  line-height:1.875rem;
+  letter-spacing: 0.25px;
+  letter-spacing:0.01563rem;
 }
 
 .icon {
@@ -1486,7 +1555,6 @@ Example showing how to change the color/size of the icons:
   height: 100%;
   color: #fff;
   padding: 15px 25px;
-
 }
 
 .st__box:hover .st__box-description,
@@ -2102,9 +2170,11 @@ tr:nth-child(odd) {
 .rs__honor-name-copy {
   color: #fff;
   font-family: 'pill-gothic-300mg', sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  font-size: 1.875rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  font-weight: bold;
+  font-size: 40px;
+  font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: -20px;
 }
@@ -2113,8 +2183,13 @@ tr:nth-child(odd) {
   font-family: 'pill-gothic-300mg', sans-serif;
   text-transform: uppercase;
   color: #c2001a;
-  font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 .rs__honor-image-1 {
@@ -2157,6 +2232,14 @@ tr:nth-child(odd) {
 }
 
 .rs__ctn h3 {
+  font-family: 'pill-gothic-300mg', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
   text-align: center;
   color: #c2001a;
   text-transform: uppercase;
@@ -2508,8 +2591,11 @@ label {
 .dash__goal {
   text-align: center;
   color: #fff;
-  font-size: 25px;
-  font-size: 1.5625rem;
+  font-size: 60px;
+  font-size: 3.75rem;
+  line-height: 60px;
+  line-height: 3.75rem;
+  font-weight: normal;
 }
 
 .gr__ctn {
@@ -2899,7 +2985,11 @@ a {
   background-size: cover;
   position: relative;
   z-index: 2;
-  padding-bottom: 40px;
+  padding-bottom: 40px
+}
+
+.site__footer a:hover {
+  color: #95999d;
 }
 
 .site__footer__content {
@@ -2919,7 +3009,6 @@ a {
           justify-content: center;
   height: 280px;
   margin: 0 auto;
-
   max-width: 1260px;
 }
 
@@ -2928,7 +3017,6 @@ a {
   -webkit-flex: 1 1 25%;
       -ms-flex: 1 1 25%;
           flex: 1 1 25%;
-
 }
 
 .wb__footer__links ul li {
@@ -2949,6 +3037,12 @@ a {
   display: block;
   padding: 5px 0;
   color: #5c6268;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 32px;
+  line-height: 2rem;
+  letter-spacing: 0.2px;
+  letter-spacing:0.0125rem;
 }
 
 .wb__footer__social img {
@@ -3001,7 +3095,11 @@ a {
   font-weight: bold;
   padding-bottom: 10px;
   list-style-type: none;
-
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 /* MEDIA QUERIES */
@@ -3033,6 +3131,15 @@ a {
   color: #5c6268;
 }
 
+.photo-credits p {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+}
+
 .photo-credits .wb__page-legal li {
   list-style-type: none;
   text-align: center;
@@ -3052,6 +3159,15 @@ a {
 
 .terms .st__bar-ctn p {
   text-transform: none;
+}
+
+.legal__subhead{
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  font-family:'liberatorheavy', sans-serif;
+  color: #c2001a;
 }
 
 /*! Lity - v1.6.6 - 2016-04-22
