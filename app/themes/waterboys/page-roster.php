@@ -57,16 +57,16 @@
 
       <div class="rs__ctn">
         <h2 class="rs__title">The Roster<br><img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/roster__blue-wave.png" ></h2>
-              <p class="wb__copy">
+              <p class="copy__intro">
               As Waterboys, these NFL stars are teaming up with fans to supply rural East African communities with clean, accessible drinking water.
             </p>
         <div class="table-ctn">
-          <table border="0" id="roster" class="tablesorter roster">
+          <table id="roster__table" border="0" id="roster" class="tablesorter roster">
             <thead>
               <tr>
-                <th><a class="wb__red-sm-title" href="#">Waterboys</a></th>
-                <th><a class="wb__red-sm-title" href="#">Team</a></th>
-                <th><a class="wb__red-sm-title" href="#">Fundraising Rank</a></th>
+                <th><a href="#">Waterboys</a></th>
+                <th><a href="#">Team</a></th>
+                <th><a href="#">Fundraising Rank</a></th>
               </tr>
             </thead>
             <tbody>

@@ -157,6 +157,9 @@
 .roster .rs___slider-flex-ctn {
   & h3 {
     padding-top: 15px;
+    font-family: $wb__libl;
+    line-height: 26px;
+    letter-spacing: 2px;
   }
   & a {
   width: 100%;

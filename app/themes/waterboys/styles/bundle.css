@@ -1191,6 +1191,11 @@ Example showing how to change the color/size of the icons:
 
 .roster .rs___slider-flex-ctn h3 {
   padding-top: 15px;
+  font-family: 'liberatorlight', sans-serif;
+  line-height: 26px;
+  line-height: 1.625rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 
 .roster .rs___slider-flex-ctn a {
@@ -2033,6 +2038,10 @@ Example showing how to change the color/size of the icons:
     color: black;
 }
 
+.roster table {
+  border-collapse:collapse
+}
+
 .block-hold {
   background-position: center;
   background-repeat: no-repeat;
@@ -2046,6 +2055,7 @@ Example showing how to change the color/size of the icons:
   position: absolute;
   bottom: 0;
   width: 100%;
+  padding: 0 40px;
 }
 
 .rs___slider-flex-ctn {
@@ -2067,7 +2077,7 @@ Example showing how to change the color/size of the icons:
   -webkit-flex: auto;
       -ms-flex: auto;
           flex: auto;
-  padding: 0 15px 20px 0;
+  padding: 20px 15px 20px 0;
   display: none;
   margin: 10px;
 }
@@ -2090,18 +2100,28 @@ Example showing how to change the color/size of the icons:
 }
 
 .rs__slider-nameplate h3 {
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 40px;
+  font-size: 2.5rem;
+  color: #323639;
+  line-height: 54px;
+  line-height: 3.375rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
   margin-bottom: 10px;
+  margin-top: 0;
   text-transform: uppercase;
-  color: #5c6268;
 }
 
 .rs__slider-nameplate p {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 22px;
-  line-height: 1.375rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  font-family: 'pill-gothic-300mg', sans-serif;
 }
 
 .rs__slider-player-minidash {
@@ -2119,9 +2139,14 @@ Example showing how to change the color/size of the icons:
 }
 
 .rs__slider-player-minidash p {
-  font-size: 30px;
-  font-size: 1.875rem;
+  color: #323639;
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 40px;
+  line-height: 2.5rem;
   font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
   margin: 15px;
 }
 
@@ -2134,6 +2159,7 @@ Example showing how to change the color/size of the icons:
   color: #c2001a;
   letter-spacing: 4px;
   letter-spacing: 0.25rem;
+  margin-bottom: 0;
 }
 
 .rs__ctn {
@@ -2143,7 +2169,7 @@ Example showing how to change the color/size of the icons:
 }
 
 .table-ctn {
-  padding-bottom: 50px;
+  padding: 30px 0 ;
 }
 
 .roster {
@@ -2151,8 +2177,17 @@ Example showing how to change the color/size of the icons:
 }
 
 .roster th {
+  color: #c2001a;
   background-color: #fff;
   text-decoration: underline;
+  font-family: 'liberatorlight', sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+
 }
 
 tr:nth-child(odd) {
@@ -2163,6 +2198,12 @@ tr:nth-child(odd) {
   padding: 10px;
   width: 150px;
   text-align: center;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 .rs__honor-ctn {
