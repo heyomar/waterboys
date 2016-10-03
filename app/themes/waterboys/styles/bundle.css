@@ -930,13 +930,13 @@ Example showing how to change the color/size of the icons:
 }
 
 .wb__hero-title {
-  font-size: 50px;
-  font-size: 3.125rem;
+  font-size: 85px;
+  font-size: 5.3125rem;
   font-family: 'liberatorheavy', sans-serif;
   letter-spacing: 2px;
   letter-spacing: 0.125rem;
-  line-height: 55px;
-  line-height: 3.4375rem;
+  line-height: 85px;
+  line-height: 5.3125rem;
   margin-bottom: 5px;
   letter-spacing: 1px;
   letter-spacing: 0.0625rem;
@@ -947,7 +947,14 @@ Example showing how to change the color/size of the icons:
   line-height: 1.875rem;
   font-weight: 300;
   padding-bottom: 25px;
-  font-family: 'liberatorlight', sans-serif;
+  font-family: 'pill-gothic-300mg', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 30px;
+  text-transform: uppercase;
 
 }
 
@@ -955,6 +962,13 @@ Example showing how to change the color/size of the icons:
   font-family: 'pill-gothic-300mg', sans-serif;
   text-transform: uppercase;
   padding: 8px 40px;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 32px;
+  line-height: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 .wb__hero-missionlink {
@@ -962,6 +976,11 @@ Example showing how to change the color/size of the icons:
   text-decoration: underline;
   margin-top: 20px;
   display: block;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  font-weight: normal;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 @media screen and (max-width:20em) {
@@ -976,6 +995,13 @@ Example showing how to change the color/size of the icons:
   .wb__home-content img {
     padding: 0;
     width: 100px;
+  }
+}
+
+@media screen and (max-width:30em) {
+  .wb__hero-title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
   }
 }
 
