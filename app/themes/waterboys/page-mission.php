@@ -24,22 +24,22 @@
 
     <div class="mission-ctn">
       <div class="mission-flex-ctn wb__mission-hero-copy">
-        <p class="mission-flex-child">
+        <p class="mission-flex-child copy__intro">
           <?php the_field('hero_sub_copy'); ?>
         </p>
       </div>
       <div class="mission-flex-ctn wb__mission-meter-ctn">
         <img class="mission-meter-img" src="<?php the_field('wells_graphic') ?>" alt="" />
         <div class="mission-flex-child wb__mission-meter">
-          <p class="wb__red-sm-title mission__meter-title">Progress To Next Well</p>
-          <div class="wb__progressgoal-ctn">
+          <p class="mission__meter-title">Progress To Next Well</p>
+          <div style="background-color:#cccdcd;" class="wb__progressgoal-ctn">
                  <div style="width:25%;" id="missonProgress" class="wb__progressgoal-bar"></div>
           </div>
-          <p class="dash__goal">Goal: $45,000</p>
+          <p class="ourmission__goal">Goal: $45,000</p>
         </div>
       </div>
       <div class="mission-flex-ctn">
-        <p class="mission-flex-child meter-sub-copy">
+        <p class="mission-flex-child meter-sub-copy copy__secondary">
           <?php the_field('meter_sub_copy'); ?>
 
         </p>
@@ -53,7 +53,7 @@
             </div>
 
             <div class="mission-flex-para">
-                <h3 class="wb__red-sm-title reasons__description-title">Education</h3> <br>
+                <h3 class="reasons__description-title">Education</h3> <br>
                 <?php the_field('reasons_education_copy'); ?>
             </div>
           </div>
@@ -66,7 +66,7 @@
             </div>
 
             <div class="mission-flex-para">
-                <h3 class="wb__red-sm-title reasons__description-title">Agriculture</h3> <br>
+                <h3 class="reasons__description-title">Agriculture</h3> <br>
                 <?php the_field('reasons_agriculture_copy'); ?>
             </div>
           </div>
@@ -80,7 +80,7 @@
             </div>
 
             <div class="mission-flex-para">
-                <h3 class="wb__red-sm-title reasons__description-title">Economy</h3> <br>
+                <h3 class="reasons__description-title">Economy</h3> <br>
                 <?php the_field('reasons_economy_copy'); ?>
             </div>
           </div>
@@ -93,13 +93,13 @@
             </div>
 
             <div class="mission-flex-para">
-                <h3 class="wb__red-sm-title reasons__description-title">Health</h3> <br>
+                <h3 class="reasons__description-title">Health</h3> <br>
                 <?php the_field('reasons_health_copy'); ?>
             </div>
           </div>
         </div>
 
-        <p class="mission-flex-child reasons-sub-copy">
+        <p class="mission-flex-child reasons-sub-copy copy__secondary">
           <?php the_field('reasons_sub_copy'); ?>
         </p>
       </div>
@@ -110,7 +110,7 @@
     <div class="mission-ctn">
       <div class="mission-flex-ctn wb__dig-deep-ctn">
         <h3 class="wb__dig-deep-title wb__red-sm-title">How We Dig Deep</h3>
-        <p class="dig-deep-copy">
+        <p class="dig-deep-copy copy__secondary">
           <?php the_field('dig_deep_copy'); ?>
         </p>
       </div>

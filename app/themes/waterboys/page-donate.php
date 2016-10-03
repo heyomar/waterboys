@@ -33,7 +33,7 @@
               <p>to prevent a 181,440 mile jerrycan carry</p></div>
 
               <div class="dn__flex-ctn">
-                <label class="" for="custom-amount">$ Donation Amount</label>
+                <label class="" for="custom-amount">Your Donation Amount</label>
                 <input type="number" id="custom-amount" name="custom-amount" value="">
               </div>
 
@@ -62,7 +62,7 @@
                 })(window.location.search.substr(1).split('&'));
 
                 if (!jQuery.QueryString.plyr) {
-                  var playerInput = '<label class="" for="custom-amount">Donation Team</label>'
+                  var playerInput = '<label class="" for="custom-amount">Support Your Favorite Team’s Donation Goal</label>'
                   playerInput += '<select>'
                   playerInput += '<option value="0">No Team</option>'
                   <?php

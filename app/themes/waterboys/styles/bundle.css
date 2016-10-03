@@ -455,11 +455,15 @@ textarea {
 .wb__button {
   border: 2px solid #fff;
   border-radius: 6px;
-  padding: 12px 40px;
-  font-size: 20px;
-  font-size: 1.25rem;
+  padding: 12px 35px;
+  font-size: 24px;
+  font-size: 1.5rem;
   color: #fff;
   font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  line-height: 36px;
+  line-height: 2.25rem;
   cursor: pointer;
   box-shadow: inset 0 0 0 0 #fff;
   -webkit-transition: all ease 0.6s;
@@ -476,9 +480,11 @@ textarea {
 .wb__button-blue {
   background-color: #5c6268;
   font-family: 'pill-gothic-300mg', sans-serif;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
   padding: 12px 40px;
   color: #fff;
   border-radius: 6px;
@@ -521,8 +527,14 @@ textarea {
 
 .wb__page-dash-item h3 {
   margin: 0;
-  color: #fff;
-  font-family: 'pill-gothic-300mg', sans-serif;
+  color: #f1f0ee;
+  font-family: 'liberatorlight', sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
@@ -548,8 +560,11 @@ textarea {
 .wb__progressgoal-amount {
   color: #fff;
   text-align: center;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  font-weight: normal;
   font-family: 'pill-gothic-300mg', sans-serif;
 }
 
@@ -570,12 +585,17 @@ textarea {
 }
 
 .dn__select-amount-btn {
-  border: 2px solid #000;
+  border: 2px solid #5c6268;
   border-radius: 6px;
   padding: 12px 40px;
-  font-size: 20px;
-  font-size: 1.25rem;
-  color: #000;
+  font-size: 44px;
+  font-size: 2.75rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  color: #5c6268;
   cursor: pointer;
   box-shadow: inset 0 0 0 0 #c2001a;
   -webkit-transition: all ease 0.6s;
@@ -584,9 +604,55 @@ textarea {
   text-transform: uppercase;
 }
 
+.dn__select-amount-btn:hover {
+  border-color: #c2001a;
+  color: #c2001a;
+}
+
 .dn__select-amount-btn.active {
   box-shadow: inset 0 -100px 0 0 #c2001a;
   color: #fff;
+}
+
+.copy__intro {
+  font-family: 'pill-gothic-300mg', sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: Bold;
+  line-height: 36px;
+  line-height: 2.25rem;
+  letter-spacing: 0.25px;
+  letter-spacing: 0.01563rem;
+}
+
+.copy__secondary {
+  font-family: 'pill-gothic-300mg', sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: normal;
+  line-height: 30px;
+  line-height:1.875rem;
+  letter-spacing: 0.25px;
+  letter-spacing:0.01563rem;
+}
+
+.basic__link{
+  text-decoration: underline
+}
+
+.basic__link:hover {
+  color: #95999d;
+}
+
+.btn__fill-blue {
+  box-shadow: inset 0 0 0 0 #95999d;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s
+}
+
+.btn__fill-blue:hover {
+  cursor: pointer;
+  box-shadow: inset 0 -100px 0 0 #95999d;
 }
 
 .icon {
@@ -647,6 +713,13 @@ Example showing how to change the color/size of the icons:
   margin-bottom: 10px;
   position: relative;
   top: -33px;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 
 }
 
@@ -864,13 +937,13 @@ Example showing how to change the color/size of the icons:
 }
 
 .wb__hero-title {
-  font-size: 50px;
-  font-size: 3.125rem;
+  font-size: 85px;
+  font-size: 5.3125rem;
   font-family: 'liberatorheavy', sans-serif;
   letter-spacing: 2px;
   letter-spacing: 0.125rem;
-  line-height: 55px;
-  line-height: 3.4375rem;
+  line-height: 85px;
+  line-height: 5.3125rem;
   margin-bottom: 5px;
   letter-spacing: 1px;
   letter-spacing: 0.0625rem;
@@ -881,7 +954,14 @@ Example showing how to change the color/size of the icons:
   line-height: 1.875rem;
   font-weight: 300;
   padding-bottom: 25px;
-  font-family: 'liberatorlight', sans-serif;
+  font-family: 'pill-gothic-300mg', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 30px;
+  text-transform: uppercase;
 
 }
 
@@ -889,6 +969,13 @@ Example showing how to change the color/size of the icons:
   font-family: 'pill-gothic-300mg', sans-serif;
   text-transform: uppercase;
   padding: 8px 40px;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 32px;
+  line-height: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 .wb__hero-missionlink {
@@ -896,6 +983,11 @@ Example showing how to change the color/size of the icons:
   text-decoration: underline;
   margin-top: 20px;
   display: block;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  font-weight: normal;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 @media screen and (max-width:20em) {
@@ -910,6 +1002,13 @@ Example showing how to change the color/size of the icons:
   .wb__home-content img {
     padding: 0;
     width: 100px;
+  }
+}
+
+@media screen and (max-width:30em) {
+  .wb__hero-title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -944,12 +1043,15 @@ Example showing how to change the color/size of the icons:
 }
 
 .wb__player-team {
-  padding-top: 5px;
   font-family: 'pill-gothic-300mg', sans-serif;
-  font-weight: 700;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  line-height: 32px;
+  line-height: 2rem;
   text-transform: uppercase;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 26px;
+  font-size: 1.625rem;
 }
 
 .wb__player__header {
@@ -1001,8 +1103,12 @@ Example showing how to change the color/size of the icons:
   font-weight: 400;
   font-size: 20px;
   font-size: 1.25rem;
-  line-height: 1.4;
+  line-height: 30px;
+  line-height: 1.875rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
   min-width: 330px;
+
 }
 
 .wb__content-info {
@@ -1012,7 +1118,17 @@ Example showing how to change the color/size of the icons:
           flex: 2 1 auto;
   min-width: 330px;
   background-color: #f0f0ef;
-  font-weight: 700;
+  font-weight: 700
+}
+
+.wb__content-info p {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  margin-top: 0;
 }
 
 .wb__player-content {
@@ -1027,13 +1143,14 @@ Example showing how to change the color/size of the icons:
 .wb__player__content__title {
   text-transform: uppercase;
   color: #c2001a;
-  letter-spacing: 1px;
-  letter-spacing: 0.0625rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   padding-bottom: -10px;
   font-family: 'liberatorlight', sans-serif;
-  font-size: 13px;
-  font-size: 0.8125rem;
-  opacity: 0.55;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
 }
 
 .wb__player__info-title {
@@ -1042,10 +1159,18 @@ Example showing how to change the color/size of the icons:
 
 .wb__player__career-ul {
   padding-left: 20px;
+  margin-top: 0;
 }
 
 .wb__player__career-ul li {
   padding: 2px 0;
+  list-style-type: square;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 /* MEDIA QUERIES */
@@ -1057,8 +1182,9 @@ Example showing how to change the color/size of the icons:
         -ms-flex: 3 2 55%;
             flex: 3 2 55%;
     font-weight: 400;
+    letter-spacing: 0.0125rem;
+    line-height: 1.875rem;
     font-size: 1.25rem;
-    line-height: 1.4;
   }
 
   .wb__content-info {
@@ -1098,6 +1224,11 @@ Example showing how to change the color/size of the icons:
 
 .roster .rs___slider-flex-ctn h3 {
   padding-top: 15px;
+  font-family: 'liberatorlight', sans-serif;
+  line-height: 26px;
+  line-height: 1.625rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 
 .roster .rs___slider-flex-ctn a {
@@ -1153,8 +1284,8 @@ Example showing how to change the color/size of the icons:
 .mission__title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 50px;
-  font-size: 3.125rem;
+  font-size: 70px;
+  font-size: 4.375rem;
   font-family: 'liberatorheavy', sans-serif;
   color: #fff;
   margin-top: 0;
@@ -1189,7 +1320,22 @@ Example showing how to change the color/size of the icons:
 
 .mission__meter-title {
   text-align: center;
-  padding-top: 20px;
+  font-family: 'liberatorlight', sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  color: #c2001a;
+}
+
+.ourmission__goal {
+  color: #323639;
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  font-weight: normal;
 }
 
 .reasons__description-title {
@@ -1224,8 +1370,15 @@ Example showing how to change the color/size of the icons:
 
 .wb__dig-deep-title {
   padding: 25px 0 15px 0;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 36px;
+  line-height: 2.25rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  font-family: 'pill-gothic-300mg', sans-serif;
+
 }
 
 .wb__dig-deep-copy {}
@@ -1241,8 +1394,14 @@ Example showing how to change the color/size of the icons:
 
 .affilates-title {
   padding: 25px 0 15px;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 36px;
+  line-height: 2.25rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  font-family: 'pill-gothic-300mg', sans-serif;
 }
 
 .wb__affilates-ctn img {
@@ -1319,6 +1478,22 @@ Example showing how to change the color/size of the icons:
   -webkit-flex: 1 1 50%;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem
+}
+
+.mission-flex-para h3 {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  font-family: 'liberatorlight', sans-serif;
+  color: #c2001a;
+  margin: 0;
 }
 
 .mission .wb__progressgoal-ctn {
@@ -1353,6 +1528,10 @@ Example showing how to change the color/size of the icons:
 }
 
 @media screen and (max-width:30em) {
+  .mission__title {
+    font-size: 3.125rem;
+    line-height: 3.125rem;
+  }
   .socialbar-button {
     display: inline-block;
   }
@@ -1423,8 +1602,8 @@ Example showing how to change the color/size of the icons:
 .st__title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 50px;
-  font-size: 3.125rem;
+  font-size: 70px;
+  font-size: 4.375rem;
   font-family: 'liberatorheavy', sans-serif;
   color: #fff;
   margin-top: 0;
@@ -1486,7 +1665,6 @@ Example showing how to change the color/size of the icons:
   height: 100%;
   color: #fff;
   padding: 15px 25px;
-
 }
 
 .st__box:hover .st__box-description,
@@ -1499,6 +1677,13 @@ Example showing how to change the color/size of the icons:
 
 .st__box:hover .st__box-title {
   display: none;
+}
+
+@media screen and (max-width:30em) {
+  .st__title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
 }
 
 .hl__title {
@@ -1941,6 +2126,10 @@ Example showing how to change the color/size of the icons:
     color: black;
 }
 
+.roster table {
+  border-collapse:collapse
+}
+
 .block-hold {
   background-position: center;
   background-repeat: no-repeat;
@@ -1954,6 +2143,7 @@ Example showing how to change the color/size of the icons:
   position: absolute;
   bottom: 0;
   width: 100%;
+  padding: 0 40px;
 }
 
 .rs___slider-flex-ctn {
@@ -1975,7 +2165,7 @@ Example showing how to change the color/size of the icons:
   -webkit-flex: auto;
       -ms-flex: auto;
           flex: auto;
-  padding: 0 15px 20px 0;
+  padding: 20px 15px 20px 0;
   display: none;
   margin: 10px;
 }
@@ -1998,18 +2188,28 @@ Example showing how to change the color/size of the icons:
 }
 
 .rs__slider-nameplate h3 {
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 40px;
+  font-size: 2.5rem;
+  color: #323639;
+  line-height: 54px;
+  line-height: 3.375rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
   margin-bottom: 10px;
+  margin-top: 0;
   text-transform: uppercase;
-  color: #5c6268;
 }
 
 .rs__slider-nameplate p {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 22px;
-  line-height: 1.375rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  font-family: 'pill-gothic-300mg', sans-serif;
 }
 
 .rs__slider-player-minidash {
@@ -2027,9 +2227,14 @@ Example showing how to change the color/size of the icons:
 }
 
 .rs__slider-player-minidash p {
-  font-size: 30px;
-  font-size: 1.875rem;
+  color: #323639;
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 40px;
+  line-height: 2.5rem;
   font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
   margin: 15px;
 }
 
@@ -2042,6 +2247,7 @@ Example showing how to change the color/size of the icons:
   color: #c2001a;
   letter-spacing: 4px;
   letter-spacing: 0.25rem;
+  margin-bottom: 0;
 }
 
 .rs__ctn {
@@ -2051,7 +2257,7 @@ Example showing how to change the color/size of the icons:
 }
 
 .table-ctn {
-  padding-bottom: 50px;
+  padding: 30px 0 ;
 }
 
 .roster {
@@ -2059,8 +2265,17 @@ Example showing how to change the color/size of the icons:
 }
 
 .roster th {
+  color: #c2001a;
   background-color: #fff;
   text-decoration: underline;
+  font-family: 'liberatorlight', sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+
 }
 
 tr:nth-child(odd) {
@@ -2071,6 +2286,12 @@ tr:nth-child(odd) {
   padding: 10px;
   width: 150px;
   text-align: center;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 .rs__honor-ctn {
@@ -2102,9 +2323,11 @@ tr:nth-child(odd) {
 .rs__honor-name-copy {
   color: #fff;
   font-family: 'pill-gothic-300mg', sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  font-size: 1.875rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  font-weight: bold;
+  font-size: 40px;
+  font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: -20px;
 }
@@ -2113,8 +2336,13 @@ tr:nth-child(odd) {
   font-family: 'pill-gothic-300mg', sans-serif;
   text-transform: uppercase;
   color: #c2001a;
-  font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 .rs__honor-image-1 {
@@ -2157,6 +2385,14 @@ tr:nth-child(odd) {
 }
 
 .rs__ctn h3 {
+  font-family: 'pill-gothic-300mg', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
   text-align: center;
   color: #c2001a;
   text-transform: uppercase;
@@ -2288,8 +2524,14 @@ tr:nth-child(odd) {
 .cn__social-ctn h3 {
   text-align: center;
   padding: 25px;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-family: 'pill-gothic-300mg', sans-serif;
+  font-weight: bold;
+  line-height: 36px;
+  line-height: 2.25rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 .cn__social-icons-ctn {
@@ -2301,12 +2543,25 @@ tr:nth-child(odd) {
 .cn__social-icons-ctn a {
   display: inline-block;
   height: 100px;
+  color: #5c6268;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  text-decoration: underline
+}
+
+.cn__social-icons-ctn a:hover {
+  color: #95999d;
 }
 
 .cn__social-icons-ctn svg {
-  height: 60px;
-  width: 60px;
-  color: #c2001a;
+  height: 65px;
+  width: 65px;
+  color: #5c6268;
 }
 
 .cn__form-ctn {
@@ -2349,13 +2604,50 @@ tr:nth-child(odd) {
   text-align: center;
 }
 
-label {
+.connect label {
+  line-height: 26px;
+  line-height: 1.625rem;
+  font-size: 16px;
+  font-size: 1rem;
   color: #5c6268;
   font-family: 'liberatorlight', sans-serif;
 }
 
 .ninja-forms-required-items {
   padding: 15px 0;
+}
+
+.connect .ninja-forms-required-items {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+}
+
+.connect .ninja-forms-req-symbol {
+  color: #c2001a;
+}
+
+#ninja_forms_field_4 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 32px;
+  line-height: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  box-shadow: inset 0 0 0 0 #95999d;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+
+#ninja_forms_field_4:hover {
+  cursor: pointer;
+  box-shadow: inset 0 -100px 0 0 #95999d;
 }
 
 @media screen and (min-width:48em) {
@@ -2371,6 +2663,9 @@ label {
   .connect .ninja-forms-all-fields-wrap div:nth-of-type(3) {
     display: inline-block;
     width: 49.5%;
+  }
+  .connect #ninja_forms_field_5_div_wrap {
+    padding-right: 30px;
   }
 }
 
@@ -2508,8 +2803,11 @@ label {
 .dash__goal {
   text-align: center;
   color: #fff;
-  font-size: 25px;
-  font-size: 1.5625rem;
+  font-size: 60px;
+  font-size: 3.75rem;
+  line-height: 60px;
+  line-height: 3.75rem;
+  font-weight: normal;
 }
 
 .gr__ctn {
@@ -2667,14 +2965,22 @@ select {
 }
 
 .dn__now-copy-ctn p {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  line-height: 30px;
+  line-height: 1.875rem;
 }
 
 .copy-highlight {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
+  line-height: 36px;
+  line-height: 2.25rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 .donate .cn__sidebar-info {
@@ -2693,13 +2999,19 @@ select {
 }
 
 .dn__select-ctn h3 {
+  font-family: 'pill-gothic-300mg', sans-serif;
+  font-weight: bold;
   padding: 25px 0;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 .dn__select-amount-ctn {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
@@ -2721,7 +3033,7 @@ select {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
-  max-height: 60px;
+  max-height: auto;
 }
 
 .dn__select-amount-btn:focus {
@@ -2734,6 +3046,13 @@ select {
       -ms-flex: 2 1 30%;
           flex: 2 1 30%;
   color: #5c6268;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  margin-top: 11px;
 }
 
 .dn__select-amount-ctn input {
@@ -2741,7 +3060,11 @@ select {
 }
 
 .dn__select-amount-ctn label {
-  color: #5c6268;
+  color: #c2001a;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
   font-family: 'liberatorlight', sans-serif;
   font-weight: bold;
   float: left;
@@ -2785,6 +3108,16 @@ select {
 .donate select {
   border: 2px solid #d6d8d9;
   height: 50px !important;
+  padding: 10px;
+  background: url('../assets/select__dropdown-arrow.png') no-repeat;
+  background-size: 15px;
+  background-position:  right 10px center;
+  border-radius: 0;
+  background-color: #fff;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
 }
 
 .credit_card-wrap {
@@ -2864,24 +3197,54 @@ select {
 .donate .cn__sidebar-info {
 }
 
+.donate .cn__sidebar-info span {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  font-family: 'liberatorlight', sans-serif;
+}
+
 .donate .cn__sidebar-info p {
   font-size: 18px;
   font-size: 1.125rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  margin-top: 0;
 }
 
 .donate .cn__sidebar-info .scarcity {
   font-size: 20px;
   font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.donate .cn__sidebar-info .wb__red-sm-title {
-  margin-bottom: -12px;
-  display: block;
+  line-height: 30px;
+  line-height: 1.875rem;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 .donate .dn__now-ctn {
   color: #323639;
+}
+
+#donatebutton {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 32px;
+  line-height: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  box-shadow: inset 0 0 0 0 #95999d;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s
+}
+
+#donatebutton:hover {
+  cursor: pointer;
+  box-shadow: inset 0 -100px 0 0 #95999d;
 }
 
 /* FOOTER */
@@ -2899,7 +3262,11 @@ a {
   background-size: cover;
   position: relative;
   z-index: 2;
-  padding-bottom: 40px;
+  padding-bottom: 40px
+}
+
+.site__footer a:hover {
+  color: #95999d;
 }
 
 .site__footer__content {
@@ -2919,7 +3286,6 @@ a {
           justify-content: center;
   height: 280px;
   margin: 0 auto;
-
   max-width: 1260px;
 }
 
@@ -2928,7 +3294,6 @@ a {
   -webkit-flex: 1 1 25%;
       -ms-flex: 1 1 25%;
           flex: 1 1 25%;
-
 }
 
 .wb__footer__links ul li {
@@ -2949,6 +3314,12 @@ a {
   display: block;
   padding: 5px 0;
   color: #5c6268;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 32px;
+  line-height: 2rem;
+  letter-spacing: 0.2px;
+  letter-spacing:0.0125rem;
 }
 
 .wb__footer__social img {
@@ -3001,7 +3372,11 @@ a {
   font-weight: bold;
   padding-bottom: 10px;
   list-style-type: none;
-
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 /* MEDIA QUERIES */
@@ -3033,6 +3408,15 @@ a {
   color: #5c6268;
 }
 
+.photo-credits p {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+}
+
 .photo-credits .wb__page-legal li {
   list-style-type: none;
   text-align: center;
@@ -3052,6 +3436,15 @@ a {
 
 .terms .st__bar-ctn p {
   text-transform: none;
+}
+
+.legal__subhead{
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  font-family:'liberatorheavy', sans-serif;
+  color: #c2001a;
 }
 
 /*! Lity - v1.6.6 - 2016-04-22
@@ -3269,6 +3662,7 @@ a {
 body {
   background: #fff;
   font-family: 'pill-gothic-300mg', sans-serif;
+  color: #323639;
 }
 
 .solid-background {

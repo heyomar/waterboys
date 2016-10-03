@@ -28,6 +28,7 @@
 body {
   background: #fff;
   font-family: $wb__gothic;
+  color: $wb__gray;
 }
 
 .solid-background {
