@@ -713,6 +713,13 @@ Example showing how to change the color/size of the icons:
   margin-bottom: 10px;
   position: relative;
   top: -33px;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 
 }
 
@@ -1277,8 +1284,8 @@ Example showing how to change the color/size of the icons:
 .mission__title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 50px;
-  font-size: 3.125rem;
+  font-size: 70px;
+  font-size: 4.375rem;
   font-family: 'liberatorheavy', sans-serif;
   color: #fff;
   margin-top: 0;
@@ -1521,6 +1528,10 @@ Example showing how to change the color/size of the icons:
 }
 
 @media screen and (max-width:30em) {
+  .mission__title {
+    font-size: 3.125rem;
+    line-height: 3.125rem;
+  }
   .socialbar-button {
     display: inline-block;
   }
@@ -1591,8 +1602,8 @@ Example showing how to change the color/size of the icons:
 .st__title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 50px;
-  font-size: 3.125rem;
+  font-size: 70px;
+  font-size: 4.375rem;
   font-family: 'liberatorheavy', sans-serif;
   color: #fff;
   margin-top: 0;
@@ -1666,6 +1677,13 @@ Example showing how to change the color/size of the icons:
 
 .st__box:hover .st__box-title {
   display: none;
+}
+
+@media screen and (max-width:30em) {
+  .st__title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
 }
 
 .hl__title {
@@ -3644,6 +3662,7 @@ a {
 body {
   background: #fff;
   font-family: 'pill-gothic-300mg', sans-serif;
+  color: #323639;
 }
 
 .solid-background {
