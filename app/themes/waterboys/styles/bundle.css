@@ -1287,7 +1287,22 @@ Example showing how to change the color/size of the icons:
 
 .mission__meter-title {
   text-align: center;
-  padding-top: 20px;
+  font-family: 'liberatorlight', sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  color: #c2001a;
+}
+
+.ourmission__goal {
+  color: #323639;
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  font-weight: normal;
 }
 
 .reasons__description-title {
@@ -1322,8 +1337,15 @@ Example showing how to change the color/size of the icons:
 
 .wb__dig-deep-title {
   padding: 25px 0 15px 0;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 36px;
+  line-height: 2.25rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  font-family: 'pill-gothic-300mg', sans-serif;
+
 }
 
 .wb__dig-deep-copy {}
@@ -1339,8 +1361,14 @@ Example showing how to change the color/size of the icons:
 
 .affilates-title {
   padding: 25px 0 15px;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 36px;
+  line-height: 2.25rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
+  font-family: 'pill-gothic-300mg', sans-serif;
 }
 
 .wb__affilates-ctn img {
@@ -1417,6 +1445,22 @@ Example showing how to change the color/size of the icons:
   -webkit-flex: 1 1 50%;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem
+}
+
+.mission-flex-para h3 {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  font-family: 'liberatorlight', sans-serif;
+  color: #c2001a;
+  margin: 0;
 }
 
 .mission .wb__progressgoal-ctn {

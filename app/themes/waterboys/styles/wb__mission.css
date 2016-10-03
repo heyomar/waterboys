@@ -69,7 +69,18 @@
 
 .mission__meter-title {
   text-align: center;
-  padding-top: 20px;
+  font-family: $wb__libl;
+  font-size: 16px;
+  line-height: 26px;
+  color: $wb__red;
+}
+
+.ourmission__goal {
+  color: $wb__gray;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
 }
 
 .reasons__description-title {
@@ -100,7 +111,12 @@
 .wb__dig-deep-ctn {}
 .wb__dig-deep-title {
   padding: 25px 0 15px 0;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  font-family: $wb__gothic;
+
 }
 .wb__dig-deep-copy {}
 .wb__affilates-ctn {}
@@ -114,7 +130,11 @@
 
 .affilates-title {
   padding: 25px 0 15px;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  font-family: $wb__gothic;
 }
 
 .wb__affilates-ctn img {
@@ -178,6 +198,17 @@
 
 .mission-flex-para {
   flex: 1 1 50%;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+
+  & h3 {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: $wb__libl;
+    color: $wb__red;
+    margin: 0;
+  }
 }
 
 .mission .wb__progressgoal-ctn {
