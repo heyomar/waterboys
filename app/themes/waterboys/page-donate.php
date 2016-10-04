@@ -172,7 +172,7 @@
         </div>
       </div>
     </div>
-    <div class="st__bar-ctn">
+    <div class="cta">
       <p>14 million Tanzanians lack access to safe water. Dig deep with us. &nbsp;</p>
     </div>
     <?php endwhile; ?>

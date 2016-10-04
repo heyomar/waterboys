@@ -39,7 +39,7 @@
         <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); } ?>
       </div>
     </div>
-    <div class="st__bar-ctn">
+    <div class="cta">
       <p>"Being a human being doesn’t have borders or nationality." — Chris Long</p>
     </div>
 

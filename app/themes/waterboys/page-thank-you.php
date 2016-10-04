@@ -28,7 +28,7 @@ Tweet</a>
       </div>
     </div>
 
-    <div class="st__bar-ctn">
+    <div class="cta">
       <p>Pile on: Every $1 spent on water and sanitation has a $4 return.&nbsp;</p>
     </div>
 

@@ -136,7 +136,7 @@
         </div>
       </div> -->
       </div>
-      <div class="st__bar-ctn">
+      <div class="cta">
         <p>Explore the site to learn more about our special initiatives, browse the roster or view our career highlights.</p>
       </div>
       <!-- <div class="wb__mission-socialbar-ctn rs__space">
