@@ -8,19 +8,16 @@
       <div class="ty__inner-ctn">
         <div class="ty__body-copy-ctn">
           <p>Thank you for teaming up with us to tackle thirst. Your generosity will mean so much to the people we serve. Connect with us on social media to witness our work in real time and see what your contribution can accomplish.</p>
-          <a class="twitter-share-button"
-  href="https://twitter.com/waterboysorg/intent/tweet?text=Hello%20world"
-  data-size="large">
-Tweet</a>
+
         </div>
 
         <div class="ty__side-share-ctn">
-          <a href="https://twitter.com/waterboysorg" class="socialbar-button ty__share-button">
+          <a href="http://twitter.com/intent/tweet?text=I+just+teamed+up+to+tackle+thirst+with+@WaterboysORG.+Help+your+favorite+%23NFL+team+dig+deep+and+change+lives:" target="_blank" class="wb__button-blue">
             <svg class="icon icon-twitter">
               <use xlink:href="#icon-twitter"></use>
             </svg> Tweet</a>
-          <br>
-          <a href="https://www.facebook.com/waterboysorg" class="socialbar-button ty__share-button">
+          <br><br><br>
+          <a href="https://www.facebook.com/waterboysorg" target="_blank" class="wb__button-blue">
             <svg class="icon icon-facebook-square">
               <use xlink:href="#icon-facebook-square"></use>
             </svg> Share</a>
@@ -28,7 +25,7 @@ Tweet</a>
       </div>
     </div>
 
-    <div class="st__bar-ctn">
+    <div class="cta">
       <p>Pile on: Every $1 spent on water and sanitation has a $4 return.&nbsp;</p>
     </div>
 
