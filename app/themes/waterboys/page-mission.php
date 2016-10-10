@@ -129,12 +129,12 @@
     <div class="cta">
       <p>Bring it in. Connect with us on social.</p>
       <div class="share">
-        <a href="https://twitter.com/waterboysorg" target="_blank" class="socialbar-button wb__button">
+        <a target="_blank" href="http://twitter.com/intent/tweet?text=I+just+teamed+up+to+tackle+thirst+with+@WaterboysORG.+Help+your+favorite+%23NFL+team+dig+deep+and+change+lives:" target="_blank" class="socialbar-button wb__button">
           <svg class="icon icon-twitter">
             <use xlink:href="#icon-twitter"></use>
           </svg> Tweet</a>
           <span class="space"></span>
-        <a href="https://www.facebook.com/waterboysorg" target="_blank" class="socialbar-button wb__button">
+        <a target="_blank" href="https://www.facebook.com/waterboysorg" target="_blank" class="socialbar-button wb__button">
           <svg class="icon icon-facebook-square">
             <use xlink:href="#icon-facebook-square"></use>
           </svg> Share</a>
