@@ -2,6 +2,18 @@
   border-collapse:collapse
 }
 
+.roster .rs___slider-flex-ctn {
+  & h3 {
+    padding-top: 15px;
+    font-family: $wb__gothic;
+    line-height: 26px;
+    letter-spacing: 2px;
+  }
+  & a {
+  width: 100%;
+  }
+}
+
 .block-hold {
   background-position: center;
   background-repeat: no-repeat;
@@ -35,10 +47,11 @@
 }
 
 .rs__slider-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(25, 28, 31, 0.7);
   width: 100%;
   height: 100%;
   transition: all 0.5s ease-in-out;
+  cursor: -webkit-grab;
 }
 
 .slick-center .rs__slider-overlay {
@@ -87,6 +100,7 @@
   font-weight: bold;
   letter-spacing: 0.2px;
   margin: 15px;
+  margin-top: 0;
 }
 
 .rs__title {
@@ -118,6 +132,7 @@
   background-color: #fff;
   text-decoration: underline;
   font-family: $wb__libl;
+  font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 2px;
@@ -271,4 +286,13 @@ tr:nth-child(odd) {
 
 .table-ctn td a {
     text-decoration: underline;
+}
+
+.dash__item-title {
+  font-family: $wb__libl;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: $wb__red;
+  display: block;
 }

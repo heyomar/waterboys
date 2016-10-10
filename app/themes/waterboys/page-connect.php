@@ -6,7 +6,7 @@
     <div class="cn__ctn">
       <div class="cn__sidebar-ctn">
         <div class="cn__sidebar-info">
-          <p class="copy__intro"><strong>Connect with us on social or contact us directly to learn more about our efforts to provide clean, accessible drinking water to East African communities in need.</strong></p><br>
+          <p class="copy__intro">Connect with us on social or contact us directly to learn more about our efforts to provide clean, accessible drinking water to East African communities in need.</p>
 
               <p class="copy__secondary">The Chris Long Foundation c/o The Moneta Group<br>
               100 South Brentwood Blvd., Suite 500<br>
@@ -39,7 +39,7 @@
         <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); } ?>
       </div>
     </div>
-    <div class="st__bar-ctn">
+    <div class="cta">
       <p>"Being a human being doesn’t have borders or nationality." — Chris Long</p>
     </div>
 

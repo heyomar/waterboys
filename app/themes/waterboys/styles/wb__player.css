@@ -76,6 +76,7 @@
     line-height: 26px;
     letter-spacing: 0.2px;
     margin-top: 0;
+    font-weight: normal;
   }
 }
 
@@ -96,6 +97,7 @@
   font-family: $wb__libl;
   font-size: 16px;
   line-height: 26px;
+  font-weight: normal;
 }
 
 .wb__player__info-title {
@@ -113,6 +115,7 @@
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.2px;
+  font-weight: normal;
 }
 
 /* MEDIA QUERIES */
@@ -129,7 +132,6 @@
     flex: 1 1 20%;
     min-width: 335px;
     background-color: #f0f0ef;
-    font-weight: 700;
   }
 
   .wb__player__content-career {
@@ -152,16 +154,4 @@
     position: absolute;
     z-index: -1000;
     color: #fff;
-}
-
-.roster .rs___slider-flex-ctn {
-  & h3 {
-    padding-top: 15px;
-    font-family: $wb__libl;
-    line-height: 26px;
-    letter-spacing: 2px;
-  }
-  & a {
-  width: 100%;
-  }
 }

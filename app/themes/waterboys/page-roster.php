@@ -31,7 +31,7 @@
                   <div class="rs___slider-flex-ctn">
 
                     <div class="rs__slider-player-minidash">
-                      <h3 class="wb__red-sm-title">Total Raised</h3>
+                      <span class="dash__item-title">Total Raised</span>
                       <p>$
                         <?php
                         $donationAmount = $player->total_donations;
@@ -39,7 +39,7 @@
                       </p>
                     </div>
                     <div class="rs__slider-player-minidash">
-                      <h3 class="wb__red-sm-title">Ranking</h3>
+                      <span class="dash__item-title">Ranking</span>
                       <p>
                        <?php echo $counter; ?>
                       </p>
@@ -136,7 +136,7 @@
         </div>
       </div> -->
       </div>
-      <div class="st__bar-ctn">
+      <div class="cta">
         <p>Explore the site to learn more about our special initiatives, browse the roster or view our career highlights.</p>
       </div>
       <!-- <div class="wb__mission-socialbar-ctn rs__space">

@@ -10,10 +10,10 @@
     <div class="dn__flex-ctn">
       <div class="dn__now-ctn">
         <div class="dn__now-copy-ctn">
-          <p class="copy-highlight">
+          <p class="copy__intro">
              Each deep borehole well costs $45,000 to install. Just one can serve up to 7,500 people. That’s $6 per person. Six dollars can save a life, send a child to school, and return countless hours.
           </p>
-          <p>
+          <p class="copy__secondary">
             For an issue with impact this broad, every contribution counts: every dollar, every drop.
           </p>
           <div class="dn__select-ctn">
@@ -172,7 +172,7 @@
         </div>
       </div>
     </div>
-    <div class="st__bar-ctn">
+    <div class="cta">
       <p>14 million Tanzanians lack access to safe water. Dig deep with us. &nbsp;</p>
     </div>
     <?php endwhile; ?>

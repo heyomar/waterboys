@@ -1,3 +1,6 @@
+label {
+  font-weight: inherit;
+}
 
 .cn__hero-bg {
   background: url('../assets/header__connect.jpg') top center no-repeat;
@@ -109,8 +112,10 @@
 .connect label {
   line-height: 26px;
   font-size: 16px;
-  color: $wb__lblue;
+  color: $wb__red;
   font-family: $wb__libl;
+  font-weight: normal;
+  letter-spacing: 2px;
 }
 
 .ninja-forms-required-items {

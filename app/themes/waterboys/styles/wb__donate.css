@@ -20,11 +20,6 @@
   padding-bottom: 60px;
 }
 
-.dn__now-copy-ctn p {
-  font-size: 20px;
-  letter-spacing: 0.2px;
-  line-height: 30px;
-}
 
 .copy-highlight {
   font-size: 24px;
@@ -37,7 +32,7 @@
   flex: 1 1 25%;
 }
 
-.cn__sidebar-info p {
+.donate .cn__sidebar-info p {
   color: $wb__lblue;
 }
 
@@ -96,7 +91,7 @@
   font-size: 16px;
   line-height: 26px;
   font-family: $wb__libl;
-  font-weight: bold;
+  letter-spacing: 2px;
   float: left;
   padding: 20px 0 10px;
 }

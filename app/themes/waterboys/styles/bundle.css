@@ -983,7 +983,7 @@ Example showing how to change the color/size of the icons:
   font-weight: 300;
   padding-bottom: 25px;
   font-family: 'pill-gothic-300mg', sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: 0.2px;
   letter-spacing: 0.0125rem;
   font-size: 20px;
@@ -1157,6 +1157,7 @@ Example showing how to change the color/size of the icons:
   letter-spacing: 0.2px;
   letter-spacing: 0.0125rem;
   margin-top: 0;
+  font-weight: normal;
 }
 
 .wb__player-content {
@@ -1179,6 +1180,7 @@ Example showing how to change the color/size of the icons:
   font-size: 1rem;
   line-height: 26px;
   line-height: 1.625rem;
+  font-weight: normal;
 }
 
 .wb__player__info-title {
@@ -1199,6 +1201,7 @@ Example showing how to change the color/size of the icons:
   line-height: 1.625rem;
   letter-spacing: 0.2px;
   letter-spacing: 0.0125rem;
+  font-weight: normal;
 }
 
 /* MEDIA QUERIES */
@@ -1222,7 +1225,6 @@ Example showing how to change the color/size of the icons:
             flex: 1 1 20%;
     min-width: 335px;
     background-color: #f0f0ef;
-    font-weight: 700;
   }
 
   .wb__player__content-career {
@@ -1245,22 +1247,6 @@ Example showing how to change the color/size of the icons:
     position: absolute;
     z-index: -1000;
     color: #fff;
-}
-
-.roster .rs___slider-flex-ctn {
-}
-
-.roster .rs___slider-flex-ctn h3 {
-  padding-top: 15px;
-  font-family: 'liberatorlight', sans-serif;
-  line-height: 26px;
-  line-height: 1.625rem;
-  letter-spacing: 2px;
-  letter-spacing: 0.125rem;
-}
-
-.roster .rs___slider-flex-ctn a {
-  width: 100%;
 }
 
 .ms__hero-bg {
@@ -1354,6 +1340,8 @@ Example showing how to change the color/size of the icons:
   line-height: 26px;
   line-height: 1.625rem;
   color: #c2001a;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 
 .ourmission__goal {
@@ -1521,6 +1509,8 @@ Example showing how to change the color/size of the icons:
   line-height: 1.625rem;
   font-family: 'liberatorlight', sans-serif;
   color: #c2001a;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   margin: 0;
 }
 
@@ -1553,9 +1543,16 @@ Example showing how to change the color/size of the icons:
         -ms-flex: 1 1 50%;
             flex: 1 1 50%;
   }
+  .mission__meter-title {
+    margin-top: 0;
+  }
+  .ourmission__goal {
+    margin-top: 25px;
+  }
 }
 
 @media screen and (max-width:30em) {
+
   .mission__title {
     font-size: 3.125rem;
     line-height: 3.125rem;
@@ -2158,6 +2155,22 @@ Example showing how to change the color/size of the icons:
   border-collapse:collapse
 }
 
+.roster .rs___slider-flex-ctn {
+}
+
+.roster .rs___slider-flex-ctn h3 {
+  padding-top: 15px;
+  font-family: 'pill-gothic-300mg', sans-serif;
+  line-height: 26px;
+  line-height: 1.625rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+}
+
+.roster .rs___slider-flex-ctn a {
+  width: 100%;
+}
+
 .block-hold {
   background-position: center;
   background-repeat: no-repeat;
@@ -2199,11 +2212,12 @@ Example showing how to change the color/size of the icons:
 }
 
 .rs__slider-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(25, 28, 31, 0.7);
   width: 100%;
   height: 100%;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  cursor: -webkit-grab;
 }
 
 .slick-center .rs__slider-overlay {
@@ -2264,6 +2278,7 @@ Example showing how to change the color/size of the icons:
   letter-spacing: 0.2px;
   letter-spacing: 0.0125rem;
   margin: 15px;
+  margin-top: 0;
 }
 
 .rs__title {
@@ -2297,6 +2312,7 @@ Example showing how to change the color/size of the icons:
   background-color: #fff;
   text-decoration: underline;
   font-family: 'liberatorlight', sans-serif;
+  font-weight: normal;
   font-size: 16px;
   font-size: 1rem;
   line-height: 26px;
@@ -2476,6 +2492,18 @@ tr:nth-child(odd) {
     text-decoration: underline;
 }
 
+.dash__item-title {
+  font-family: 'liberatorlight', sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  color: #c2001a;
+  display: block;
+}
+
 .ck__hero-bg {
   background: url('../assets/header__conqueringkili.jpg') top center no-repeat;
 }
@@ -2501,6 +2529,10 @@ tr:nth-child(odd) {
 
 .cq__white {
   color: #fff;
+}
+
+label {
+  font-weight: inherit;
 }
 
 .cn__hero-bg {
@@ -2637,8 +2669,11 @@ tr:nth-child(odd) {
   line-height: 1.625rem;
   font-size: 16px;
   font-size: 1rem;
-  color: #5c6268;
+  color: #c2001a;
   font-family: 'liberatorlight', sans-serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 
 .ninja-forms-required-items {
@@ -2992,15 +3027,6 @@ select {
   padding-bottom: 60px;
 }
 
-.dn__now-copy-ctn p {
-  font-size: 20px;
-  font-size: 1.25rem;
-  letter-spacing: 0.2px;
-  letter-spacing: 0.0125rem;
-  line-height: 30px;
-  line-height: 1.875rem;
-}
-
 .copy-highlight {
   font-size: 24px;
   font-size: 1.5rem;
@@ -3018,7 +3044,7 @@ select {
           flex: 1 1 25%;
 }
 
-.cn__sidebar-info p {
+.donate .cn__sidebar-info p {
   color: #5c6268;
 }
 
@@ -3094,7 +3120,8 @@ select {
   line-height: 26px;
   line-height: 1.625rem;
   font-family: 'liberatorlight', sans-serif;
-  font-weight: bold;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   float: left;
   padding: 20px 0 10px;
 }
@@ -3222,8 +3249,7 @@ select {
 .donate {
 }
 
-.donate .cn__sidebar-info {
-}
+.donate .cn__sidebar-info {}
 
 .donate .cn__sidebar-info span {
   font-size: 16px;
@@ -3471,8 +3497,10 @@ a {
   font-size: 1rem;
   line-height: 26px;
   line-height: 1.625rem;
-  font-family:'liberatorheavy', sans-serif;
+  font-family:'liberatorlight', sans-serif;
   color: #c2001a;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 
 /*! Lity - v1.6.6 - 2016-04-22
