@@ -98,7 +98,7 @@
   </div>
   </div>
 </div>
-<div class="st__bar-ctn">
+<div class="cta">
   <p>Mount Kilimanjaro is 19,341 feet at its highest point.</p>
 </div>
 <span id="printTotal"><?php echo $printTotal ?></span>
