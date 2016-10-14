@@ -1249,6 +1249,10 @@ Example showing how to change the color/size of the icons:
     color: #fff;
 }
 
+.nate-boyer .wb__content-info {
+  display: none;
+}
+
 .ms__hero-bg {
   background: url('../assets/header__ourmission.jpg') top center no-repeat;
 }

@@ -155,3 +155,7 @@
     z-index: -1000;
     color: #fff;
 }
+
+.nate-boyer .wb__content-info {
+  display: none;
+}
