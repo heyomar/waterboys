@@ -37,7 +37,7 @@ Template Name: Player Profile
           <?php
           $fundgoal = get_field('fundraising_goal');
           $goalstatus = get_field('goal_status');
-          $printTotal = $donationTotal / $fundgoal + $goalstatus;
+          $printTotal = $donationTotal;
           echo number_format($printTotal);
           ?>
           </p>
