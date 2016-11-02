@@ -683,6 +683,16 @@ textarea {
   width: 30px;
 }
 
+.mask__white {
+  /*-webkit-mask-image:url('../assets/text__mask-red.png');
+  -webkit-mask-position:center;*/ -webkit-mask-image: url(../assets/text__mask-red.png);
+  mask-image: url(../assets/text__mask-red.png);
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
 .icon {
 	display: inline-block;
 	width: 1em;
@@ -3528,6 +3538,32 @@ a {
   color: #c2001a;
   letter-spacing: 2px;
   letter-spacing: 0.125rem;
+}
+
+.error404page {
+	font-family: 'pill-gothic-300mg', sans-serif;
+	font-weight: normal;
+	text-align: center;
+	height: 100vh;
+	color: #323639
+}
+
+.error404page h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.error404page a {
+  text-decoration: underline;
+}
+
+.error404page .copy {
+  font-style: italic;
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #95999d;
 }
 
 /*! Lity - v1.6.6 - 2016-04-22

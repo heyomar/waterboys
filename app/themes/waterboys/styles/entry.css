@@ -23,6 +23,7 @@
 @import "./wb__donate.css";
 @import "./wb__footer.css";
 @import "./wb__legal.css";
+@import "./wb__404.css";
 @import "lity/dist/lity.css";
 
 body {
