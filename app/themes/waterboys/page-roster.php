@@ -137,7 +137,7 @@
       </div> -->
       </div>
       <div class="cta">
-        <p>Explore the site to learn more about our special initiatives, browse the roster or view our career highlights.</p>
+        <p>As athletes, we have a tremendous opportunity to use our platforms to make an immediate difference. - Chris Long</p>
       </div>
       <!-- <div class="wb__mission-socialbar-ctn rs__space">
         <div class="socialbar-buttons-ctn">

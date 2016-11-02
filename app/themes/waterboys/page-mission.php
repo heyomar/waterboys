@@ -127,7 +127,7 @@
 
 
     <div class="cta">
-      <p>Bring it in. Connect with us on social.</p>
+      <p>Explore the site to learn more about our special initiatives, browse the roster or view our career highlights.</p>
       <div class="share">
         <a target="_blank" href="http://twitter.com/intent/tweet?text=I+just+teamed+up+to+tackle+thirst+with+@WaterboysORG.+Help+your+favorite+%23NFL+team+dig+deep+and+change+lives:" target="_blank" class="socialbar-button wb__button">
           <svg class="icon icon-twitter">
