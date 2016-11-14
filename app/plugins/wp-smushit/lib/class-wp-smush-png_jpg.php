@@ -120,16 +120,19 @@ if ( ! class_exists( 'WpSmushPngtoJpg' ) ) {
 		 */
 		function should_convert( $id, $file ) {
 
+			global $wpsmush_settings;
+
 			$should_convert = false;
 
 			//Get the Transparency conversion settings
-			$convert_png = get_site_option( WP_SMUSH_PREFIX . 'png_to_jpg', false );
+			$convert_png = $wpsmush_settings->get_setting( WP_SMUSH_PREFIX . 'png_to_jpg', false );
+
 			if ( ! $convert_png ) {
 				return $should_convert;
 			}
 
 			//Whether to convert transparent images or not
-			$transparent_settings = get_option( WP_SMUSH_PREFIX . 'transparent_png', false );
+			$transparent_settings = $wpsmush_settings->get_setting( WP_SMUSH_PREFIX . 'transparent_png', false );
 
 			$convert_transparent = $transparent_settings['convert'];
 
@@ -157,7 +160,7 @@ if ( ! class_exists( 'WpSmushPngtoJpg' ) ) {
 		 * @return bool True/False Can be converted or not
 		 *
 		 */
-		function can_be_converted( $id = '', $size = 'full', $mime = '' ) {
+		function can_be_converted( $id = '', $size = 'full', $mime = '', $file = '' ) {
 
 			if ( empty( $id ) ) {
 				return false;
@@ -185,7 +188,9 @@ if ( ! class_exists( 'WpSmushPngtoJpg' ) ) {
 				return false;
 			}
 
-			$file = get_attached_file( $id );
+			if ( empty( $file ) ) {
+				$file = get_attached_file( $id );
+			}
 
 			/** Whether to convert to jpg or not **/
 			$should_convert = $this->should_convert( $id, $file );
@@ -224,6 +229,8 @@ if ( ! class_exists( 'WpSmushPngtoJpg' ) ) {
 		 *
 		 */
 		function update_image_path( $id, $o_file, $n_file, $meta, $size_k, $o_type = 'conversion' ) {
+
+			global $wpsmush_settings;
 
 			//Upload Directory
 			$upload_dir = wp_upload_dir();
@@ -283,7 +290,7 @@ if ( ! class_exists( 'WpSmushPngtoJpg' ) ) {
 			$wpdb->query( $query );
 
 			//Delete the Original files if backup not enabled
-			if ( 'conversion' == $o_type && ! get_option( WP_SMUSH_PREFIX . 'backup' ) ) {
+			if ( 'conversion' == $o_type && ! $wpsmush_settings->get_setting( WP_SMUSH_PREFIX . 'backup' ) ) {
 				@unlink( $o_file );
 			}
 
@@ -433,14 +440,14 @@ if ( ! class_exists( 'WpSmushPngtoJpg' ) ) {
 				return $meta;
 			}
 
+			$file = get_attached_file( $id );
+
 			/** Whether to convert to jpg or not **/
 			$should_convert = $this->can_be_converted( $id );
 
 			if ( ! $should_convert ) {
 				return $meta;
 			}
-
-			$file = get_attached_file( $id );
 
 			$result['meta'] = $meta;
 
@@ -458,14 +465,15 @@ if ( ! class_exists( 'WpSmushPngtoJpg' ) ) {
 				if ( ! empty( $meta['sizes'] ) ) {
 					foreach ( $meta['sizes'] as $size_k => $data ) {
 
+						$s_file = path_join( dirname( $file ), $data['file'] );
+
 						/** Whether to convert to jpg or not **/
-						$should_convert = $this->can_be_converted( $id, $size_k, 'image/png' );
+						$should_convert = $this->can_be_converted( $id, $size_k, 'image/png', $s_file );
 
 						//Perform the conversion
 						if ( ! $should_convert = apply_filters( 'wp_smush_convert_to_jpg', $should_convert, $id, $file, $size_k ) ) {
 							continue;
 						}
-						$s_file = path_join( dirname( $file ), $data['file'] );
 
 						//Perform the conversion, and update path
 						if ( ! $this->is_transparent ) {
@@ -508,6 +516,9 @@ if ( ! class_exists( 'WpSmushPngtoJpg' ) ) {
 		 * @return array Savings and Updated Meta
 		 */
 		function convert_tpng_to_jpg( $id = '', $file = '', $meta = '', $size = 'full' ) {
+
+			global $wpsmush_settings;
+
 			$result = array(
 				'meta'    => $meta,
 				'savings' => ''
@@ -535,7 +546,7 @@ if ( ! class_exists( 'WpSmushPngtoJpg' ) ) {
 			//Updated File name
 			$n_file = path_join( $n_file['dirname'], $n_file['filename'] );
 
-			$transparent_png = get_option( WP_SMUSH_PREFIX . 'transparent_png' );
+			$transparent_png = $wpsmush_settings->get_setting( WP_SMUSH_PREFIX . 'transparent_png' );
 
 			/**
 			 * Filter Background Color for Transparent PNGs
