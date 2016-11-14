@@ -2,7 +2,7 @@
 Contributors: elliotcondon
 Tags: acf, advanced, custom, field, fields, custom field, custom fields, simple fields, magic fields, more fields, repeater, edit
 Requires at least: 3.6.0
-Tested up to: 4.5.2
+Tested up to: 4.7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -105,6 +105,125 @@ http://support.advancedcustomfields.com/
 
 
 == Changelog ==
+
+= 5.5.0-beta1 =
+* True False field: Added new 'ui' setting which renders as a toggle switch
+* WYSIWYG field: Added new 'delay' setting which delays tinymce initialization until the field is clicked
+* Checkbox field: Added new 'allow_custom' and 'save_custom' settings allowing you to add custom choices
+* Select field: Fixed bug where Select2 fields did not correctly use the ‘allow null’ setting
+* Clone field: Fixed bug causing save/load issues found when 2 sub fields clone in the same field/group.
+* Flexible Content field: Improved popup style and validation messages
+* Google Map field: Prevent scroll zoom
+* Date picker field: Added better compatibility logic for custom 'date_format' setting found in version < 5.0.0
+* API: acf_form() 'id' setting is now used as 'id' attribute in <form> element
+* Options page: Fixed incorrect redirect URL from a sub options page
+* Core: Added support for the wp_termmeta table (includes DB upgrade)
+* Core: Added new 'select_2_version' setting which can be changed between 3 and 4
+* Core: Added new 'enqueue_select2' setting which can be used to prevent the library from being enqueued
+* Core: Added new 'enqueue_google_maps' setting which can be used to prevent the library from being enqueued
+* Core: Minor fixes and improvements
+
+* Language: Updated Portuguese translation - thanks to Pedro Mendonca
+* Language: Updated Swiss German translation - thanks to Raphael Hüni
+
+= 5.4.8 =
+* Flexible Content field: Fixed bug in 'layout_title' filter preventing values being loaded correctly
+
+= 5.4.7 =
+* Time Picker field: Fixed bug preventing default time from being selected
+* Date Picker field: Improved compatibility with unix timestamp values
+* File field: Fixed validation bugs when used as a sub field (multiple selection)
+* Select field: Fixed bug incorrectly allowing a disabled field (hidden by conditional logic) to save values
+* API: Added new `add_sub_row()` function
+* API: Added new `update_sub_row()` function
+* API: Added new `delete_sub_row()` function
+* Core: Fixed bug causing 'sync' issues with sub clone fields
+* Core: Minor fixes and improvements
+
+= 5.4.6 =
+* Gallery field: Fixed bug where open sidebar fields were saved to post
+* Flexible Content field: Fixed bug causing Google map render issue within collapsed layout
+* Flexible Content field: Fixed bug during 'duplicate layout' where radio input values were lost
+* API: Fixed bug causing `get_row(true)` to return incorrect values
+* Core: Fixed bug where preview values did not load for a draft post
+* Core: Added notice when PRO license fails to validate URL
+* Core: Fixed bug where conditional logic would incorrectly enable select elements
+* Core: Minor fixes and improvements
+
+= 5.4.5 =
+* API: Fixed bug in `acf_form()` where AJAX validation ignored 'post_title'
+* API: Improved `update_field()` when saving a new value (when reference value does not yet exist)
+* Core: Added search input & toggle to admin field groups list
+* Core: Fixed bug where preview values did not load for a draft post
+
+= 5.4.4 =
+* WYSIWYG field: Fixed JS error when 'Disable the visual editor when writing' is checked
+
+= 5.4.3 =
+* WYSIWYG field: Fixed JS bug (since WP 4.6) causing conflicts with editor plugins
+* Google Maps field: Fixed JS error conflict with Divi theme
+* Radio field: Fixed bug (Chrome only) ignoring default values in cloned sub fields
+* Core: Fixed `wp_get_sites()` deprecated error (since WP 4.6) shown in network admin
+
+= 5.4.2 =
+* API: Fixed bug preventing post_title and post_content values saving in `acf_form()`
+
+= 5.4.1 =
+* API: Fixed bug causing `get_fields('options')` to return false
+* Core: Fixed bug causing `get_current_screen()` to throw PHP error
+* Core: Fixed bug causing 'Preview Post' to load empty field values
+
+= 5.4.0 =
+* Clone field: Added new field type (https://www.advancedcustomfields.com/resources/clone/)
+* Gallery field: Removed 'Preview Size' setting and improved UI
+* Taxonomy field: Added compatibility to save/load terms to user object
+* Select field: Added new 'Return Format' setting
+* Radio field: Added new 'Return Format' setting
+* Checkbox field: Added new 'Return Format' setting
+* Page link field: Added new 'Allow Archives URLs' setting
+* Core: Fixed plugin update bug delaying updates
+* Core: Fixed bug when editing field settings in Chrome causing required setting to self toggle
+* Core: Improved speed and fixed bugs when creating and restoring revisions
+* Core: Minor fixes and improvements
+* Language: Updated Portuguese translation - thanks to Pedro Mendonca
+* Language: Updated Brazilian Portuguese translation - thanks to Augusto Simão
+* Language: Updated Dutch translation - thanks to Derk Oosterveld
+* Language: Updated Persian translation - thanks to Kamel
+* Language: Updated German translation - thanks to Ralf Koller
+* Language: Updated Swiss German translation - thanks to Raphael Hüni
+
+= 5.3.10 =
+* Core: Added new 'google_api_key' and 'google_api_client' global settings
+* Google Map: Added new 'acf/fields/google_map/api' filter
+
+= 5.3.9.2 =
+* Time Picker field: Added compatibility with previous 3rd party field settings
+* Core: Fixed JS error setting l10n for Select2 with 3rd party libraries
+
+= 5.3.9.1 =
+* Time Picker field: Fixed bug causing value to appear as current time
+* API: Fixed bug causing `have_rows()` to fail when using an object as $post_id parameter
+
+= 5.3.9 =
+* Date Time Picker field: Added new field
+* Time Picker field: Added new field
+* Taxonomy field: Fixed bug preventing saved terms from being loaded during save/update actions
+* API: Added new function `the_row_index()` to output the current row number (1,2,3)
+* Core: Improved import tool to update existing field groups
+* Core: Added upgrade_notice message to plugins page for future announcements
+* Core: Fixed bug where updating value did not clear persistent cache
+* Core: Added Select2 JS strings to .pot for translation
+* Core: Added Date and Time picker JS strings to .pot for translation
+* Core: Improved compatibility with WPML during AJAX calls
+* Core: Fixed bug preventing access to network database upgrade page
+* Core: Minor fixes and improvements
+* Language: Updated Swedish translation - thanks to Jonathan de Jong
+* Language: Updated Russian translation - thanks to Andy Toniyevych 
+* Language: Updated Portuguese translation - thanks to Pedro Mendonca
+* Language: Updated Polish translation - thanks to Michal Lepiarz
+* Language: Updated Italian translation - thanks to Davide Pantè
+* Language: Updated German translation - thanks to Ralf Koller
+* Language: Added Arabic translation - thanks to Adil el hallaoui
 
 = 5.3.8.1 =
 * Image field: Fixed JS bug causing errors when 'Uploaded to post' library setting is checked
