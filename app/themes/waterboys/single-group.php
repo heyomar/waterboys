@@ -49,7 +49,7 @@ Template Name: Group Profile
           <?php $player = get_field('affiliated_player'); ?>
           <div class="wb__page-dash-item">
             <div class="wb__dash-donate">
-              <a class="wb__button" href="/donate/?plyr=<?php the_ID(); ?>&grp=<?php echo $player[0]->ID; ?>">
+              <a class="wb__button" href="/donate/?plyr=<?php the_field('register_group_team_to_support'); ?>&grp=<?php the_ID() ?>">
                 Donate Now
               </a>
             </div>
