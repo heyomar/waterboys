@@ -25,7 +25,7 @@ function offset_load_assets()
   wp_enqueue_script( 'lity' );
   wp_enqueue_script( 'slick' );
   wp_enqueue_script( 'fitVids' );
-  wp_enqueue_script( 'tablesort' );
+  // wp_enqueue_script( 'tablesort' );
   wp_enqueue_script( 'footer_scripts' );
 }
 add_action( 'wp_enqueue_scripts', 'offset_load_assets' );

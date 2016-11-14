@@ -683,16 +683,6 @@ textarea {
   width: 30px;
 }
 
-.mask__white {
-  /*-webkit-mask-image:url('../assets/text__mask-red.png');
-  -webkit-mask-position:center;*/ -webkit-mask-image: url(../assets/text__mask-red.png);
-  mask-image: url(../assets/text__mask-red.png);
-  -webkit-mask-position: center center;
-  mask-position: center center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-
 .icon {
 	display: inline-block;
 	width: 1em;

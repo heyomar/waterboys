@@ -64,9 +64,9 @@
           <table id="roster__table" border="0" id="roster" class="tablesorter roster">
             <thead>
               <tr>
-                <th><a href="#">Waterboys</a></th>
-                <th><a href="#">Team</a></th>
-                <th><a href="#">Fundraising Rank</a></th>
+                <th>Waterboys</th>
+                <th>Team</th>
+                <th>Fundraising Rank</th>
               </tr>
             </thead>
             <tbody>
