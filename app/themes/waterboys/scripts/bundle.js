@@ -83,12 +83,17 @@ burger.addEventListener('click', function () {
   nav.classList.toggle('active')
 })
 
-//Set progressbar width
-var fundgoal = jQuery('#fundTotal').html()
-var printTotal = jQuery('#printTotal').html();
-var barwidth = printTotal / fundgoal * 100;
-jQuery("#progressbar").width(barwidth + '%');
+// Set progressbar width
+function setDonationProgressBar() {
+    var currentDonations = jQuery('.dash_progress span').html();
+    var currentDonationsGoal = jQuery('.dash__goal span').html();
 
-//Set mission progressbar width
-// var totalProgress = jQuery('#totalProgress').html();
-// jQuery('#missionProgress').width(totalProgress + '%');
+    currentDonations = currentDonations.replace(/,/g, "");
+    currentDonationsGoal = currentDonationsGoal.replace(/,/g, "");
+
+    var barwidth = currentDonations / currentDonationsGoal * 100;
+    jQuery('#progressbar').width(barwidth + '%');
+}
+
+setDonationProgressBar();
+
