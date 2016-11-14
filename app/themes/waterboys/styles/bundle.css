@@ -2887,6 +2887,32 @@ label {
   font-weight: normal;
 }
 
+.sidebar-body {
+  padding-top: 20px;
+}
+
+.single-group {
+}
+
+.single-group .wb__progressgoal-amount {
+  margin: 15px;
+}
+
+.single-group .wb__player__content__title {
+  font-size: 16px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+}
+
+.single-group .wb__mission-socialbar-ctn {
+  background-color: #5c6268;
+}
+
+.single-group .wb__page-dash-item h3 {
+  padding-bottom: 10px;
+}
+
 .gr__ctn {
   max-width: 900px;
   margin: 0 auto;
