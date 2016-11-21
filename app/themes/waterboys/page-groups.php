@@ -6,7 +6,13 @@
 
 <div class="gr__ctn">
   <p class="gr__head-copy">
-    Waterboys unites players and fans from across the NFL to bring life-sustaining well water to East African communities in need. We provide clean, safe and sustainable water access by hiring local crews to drill deep-bore wells serving up to 7,500 people. At a cost of $45,000 per well, every drop counts.
+    Waterboys brings together NFL players and fans to tackle one mission together: bring life-sustaining well water to East African communities in need. We provide clean, safe and sustainable water access by hiring local crews to drill deep-borehole wells serving up to 7,500 people. At a cost of $45,000 per well, every drop counts. <br> <br>
+
+    Start your own fundraising group: recruit your family, friends, neighbors, colleagues and social networks. Set your group’s fundraising goal, engage your members, create a challenge and have some fun for a good cause! <br><br>
+
+    Feeling competitive? Challenge another group to see who can fundraise the most, the fastest, or who’s the first to catch up to their favorite Waterboy.<br><br>
+
+    No matter what you do, remember that every dollar makes a big difference for someone!<br>
   </p>
   <div class="gr__button-ctn"><a class="wb__button-blue" href="/register-group">Register A New Group</a></div>
   <div class="gr__table-ctn">

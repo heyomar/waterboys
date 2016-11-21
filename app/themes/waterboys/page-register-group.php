@@ -6,7 +6,9 @@
 
 <div class="rg__ctn">
   <p class="rg__head-copy">
-    Groups are a great way to motivate your friends, family, students or colleagues around our cause. Register your group and start recruiting members to share goals and track progress.
+    We’re all about teaming up to make a big difference!<br><br>
+
+Groups are a great way to motivate your friends, family students or colleagues around our cause. Register your group and start recruiting members to share goals and track progress and raise funds. $6 per person can change a life; get started and see how many lives your group can impact!
   </p>
   <div class="rg__form-ctn">
     <?php if (function_exists('ninja_forms_display_form')) {

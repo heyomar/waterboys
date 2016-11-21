@@ -97,3 +97,15 @@
   }
 }
 
+
+.profile-image {
+  border: 3px solid #fff;
+  min-height: 100px;
+  max-width: 100px;
+  border-radius: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+
+}
