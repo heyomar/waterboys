@@ -22,13 +22,12 @@
     }
   })
 
+  // show custom message when groups form is completed
   $(document).ready(function(){
     if ($('.ninja-forms-no-display')[0]) {
-      console.log('form is present');
       $('#ninja_forms_form_7_response_msg').hide()
       $('#FormSubmitCopy').show()
     }else if(!$('.ninja-forms-no-display')[0]) {
-      
     }
   })
 
