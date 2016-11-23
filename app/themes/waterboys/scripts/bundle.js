@@ -23,8 +23,7 @@
   })
 
   $(document).ready(function(){
-    if ($('#nf_submit_7').length) {
-
+    if ($('#ninja_forms_form_7').length) {
     }else {
       $('#ninja_forms_form_7_response_msg').hide()
       $('#FormSubmitCopy').show()
