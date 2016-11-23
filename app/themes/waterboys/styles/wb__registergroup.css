@@ -68,3 +68,9 @@ select {
 #FormSubmitCopy {
   display: none;
 }
+
+#ninja_forms_form_7_response_msg {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1000;
+}
