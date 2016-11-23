@@ -23,8 +23,9 @@
   })
 
   $(document).ready(function(){
-    if ($('#ninja_forms_form_7').length) {
-    }else {
+    if ($('.ninja-forms-no-display').length) {
+      console.log('form is present');
+    }else if(!$('.ninja-forms-no-display').length) {
       $('#ninja_forms_form_7_response_msg').hide()
       $('#FormSubmitCopy').show()
     }
