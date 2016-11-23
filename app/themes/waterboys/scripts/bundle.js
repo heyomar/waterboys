@@ -25,9 +25,10 @@
   $(document).ready(function(){
     if ($('.ninja-forms-no-display')[0]) {
       console.log('form is present');
-    }else if(!$('.ninja-forms-no-display')[0]) {
       $('#ninja_forms_form_7_response_msg').hide()
       $('#FormSubmitCopy').show()
+    }else if(!$('.ninja-forms-no-display')[0]) {
+      
     }
   })
 
