@@ -22,6 +22,17 @@
     }
   })
 
+  $(document).ready(function(){
+    if ($('#nf_submit_7').length) {
+
+    }else {
+      $('#ninja_forms_form_7_response_msg').hide()
+      $('#FormSubmitCopy').show()
+    }
+  })
+
+
+
   $('.wb__nav__ctn-item').on('mouseenter mouseleave', function () {
     $('.wb__nav__ctn-item').not('.active').toggleClass('compress')
     $(this).toggleClass('active').removeClass('compress')
@@ -91,9 +102,18 @@ function setDonationProgressBar() {
     currentDonations = currentDonations.replace(/,/g, "");
     currentDonationsGoal = currentDonationsGoal.replace(/,/g, "");
 
+    // if (currentDonations > currentDonationsGoal && currentDonations < 90000) {
+    //   jQuery('.dash__goal span').text(currentDonationsGoal * 2);
+    //   currentDonationsGoal = currentDonationsGoal * 2;
+
+    // } else if (currentDonations > 90000 && currentDonations < 135000) {
+    //   jQuery('.dash__goal span').text(currentDonationsGoal * 3);
+    //   currentDonationsGoal = currentDonationsGoal * 3;
+    // }
+
     var barwidth = currentDonations / currentDonationsGoal * 100;
     jQuery('#progressbar').width(barwidth + '%');
+
 }
 
 setDonationProgressBar();
-

@@ -2908,7 +2908,7 @@ label {
   min-height: 100px;
   max-width: 100px;
   border-radius: 100px;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -3011,6 +3011,10 @@ select {
   bottom: -235px;
   text-align: center;
   color: red;
+}
+
+#FormSubmitCopy {
+  display: none;
 }
 
 .hh__ctn {

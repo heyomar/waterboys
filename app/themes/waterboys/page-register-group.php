@@ -5,7 +5,11 @@
     </div>
 
 <div class="rg__ctn">
+  <p></p>
   <p class="rg__head-copy">
+    <span  id="FormSubmitCopy">Group Created!<br>
+Please be patient as we approve the group. Thanks!</span><br><br>
+
     We’re all about teaming up to make a big difference!<br><br>
 
 Groups are a great way to motivate your friends, family students or colleagues around our cause. Register your group and start recruiting members to share goals and track progress and raise funds. $6 per person can change a life; get started and see how many lives your group can impact!
