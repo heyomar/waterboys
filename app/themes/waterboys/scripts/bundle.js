@@ -51,7 +51,7 @@
 })(jQuery)
 
 fitvids()
-jQuery(document).ready(function () { jQuery('#roster').tablesorter() })
+// jQuery(document).ready(function () { jQuery('#roster').tablesorter() })
 jQuery('.center').slick({
   centerMode: true,
   centerPadding: '60px',
@@ -96,24 +96,18 @@ burger.addEventListener('click', function () {
 
 // Set progressbar width
 function setDonationProgressBar() {
-    var currentDonations = jQuery('.dash_progress span').html();
-    var currentDonationsGoal = jQuery('.dash__goal span').html();
+    var currentDonations = jQuery('.dash__progress span').text();
+    var currentDonationsGoal = jQuery('.dash__goal span').text();
 
     currentDonations = currentDonations.replace(/,/g, "");
     currentDonationsGoal = currentDonationsGoal.replace(/,/g, "");
 
-    // if (currentDonations > currentDonationsGoal && currentDonations < 90000) {
-    //   jQuery('.dash__goal span').text(currentDonationsGoal * 2);
-    //   currentDonationsGoal = currentDonationsGoal * 2;
-
-    // } else if (currentDonations > 90000 && currentDonations < 135000) {
-    //   jQuery('.dash__goal span').text(currentDonationsGoal * 3);
-    //   currentDonationsGoal = currentDonationsGoal * 3;
-    // }
-
     var barwidth = currentDonations / currentDonationsGoal * 100;
     jQuery('#progressbar').width(barwidth + '%');
-
 }
 
-setDonationProgressBar();
+if (jQuery('body').hasClass('single-player')) {
+    setDonationProgressBar();
+}else if (jQuery('body').hasClass('kili')) {
+    setDonationProgressBar();
+}

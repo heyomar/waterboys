@@ -33,7 +33,7 @@ Template Name: Player Profile
           <div class="wb__progressgoal-ctn">
             <div id="progressbar" class="wb__progressgoal-bar"></div>
           </div>
-          <p class="dash_progress wb__progressgoal-amount">$
+          <p class="dash__progress wb__progressgoal-amount">$
           <span><?php echo number_format($donationTotal); ?></span>
           </p>
         </div>

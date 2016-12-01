@@ -27,21 +27,21 @@
         ?>
         <div class="wb__page-dash-item">
           <h3>Fundraising Goal</h3>
-          <div class="dash__goal">$150,000</div>
+          <div class="dash__goal">$<span>150,000</span></div>
         </div>
         <div class="wb__page-dash-item">
           <h3>Progress to Goal</h3>
           <div class="wb__progressgoal-ctn">
             <div id="progressbar" class="wb__progressgoal-bar"></div>
           </div>
-          <p class="cq__white wb__progressgoal-amount">$
-          <?php
-          $fundgoal = 150000;
-
-          $printTotal = $donationTotal;
-          echo number_format($printTotal);
-          ?>
-          </p>
+          <div class="wb__progressgoal-amount dash__progress"><br>$
+          <span>
+            <?php
+            $printTotal = $donationTotal;
+            echo number_format($printTotal);
+            ?>
+          </span>
+        </div>
 
         </div>
         <div class="wb__page-dash-item">
