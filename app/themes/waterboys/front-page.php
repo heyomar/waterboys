@@ -2,7 +2,7 @@
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="wb__home-container">
       <div class="wb__home-content">
-        <h1 class="wb__hero-title">
+        <h1 class="wb__hero-title texture-white">
 		        Team Up to<br>Tackle&nbsp;Thirst
 		    </h1>
 		    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-wave.png" alt="" />

@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "./animate.css";
 @import "./wb__base.css";
 @import "./wb__fonts.css";
 @import "./wb__vars.css";

@@ -192,3 +192,8 @@
     width: 30px;
   }
 }
+
+
+.texture-white {
+	-webkit-mask-image: url('../assets/grit.png');
+}

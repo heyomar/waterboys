@@ -1,5 +1,8 @@
 ;(function ($) {
-  // http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript#answer-3855394
+
+  //––– –––––––––––––––––––––––––– –––//
+  // get query strings
+  //––– –––––––––––––––––––––––––– –––//
   $.QueryString = (function (a) {
     if (a == '') return {}
     var b = {}
@@ -11,6 +14,11 @@
     return b
   })(window.location.search.substr(1).split('&'))
 
+
+
+  //––– –––––––––––––––––––––––––– –––//
+  // Sticky nav scroll background
+  //––– –––––––––––––––––––––––––– –––//
   var header = $('.site__header__content')
   $(window).scroll(function () {
     var scroll = $(window).scrollTop()
@@ -22,7 +30,11 @@
     }
   })
 
-  // show custom message when groups form is completed
+
+
+  //––– –––––––––––––––––––––––––– –––//
+  // Custom msg groups form completion
+  //––– –––––––––––––––––––––––––– –––//
   $(document).ready(function(){
     if ($('.ninja-forms-no-display')[0]) {
       $('#ninja_forms_form_7_response_msg').hide()
@@ -33,6 +45,9 @@
 
 
 
+  //––– –––––––––––––––––––––––––– –––//
+  // Donation amounts selectors
+  //––– –––––––––––––––––––––––––– –––//
   $('.wb__nav__ctn-item').on('mouseenter mouseleave', function () {
     $('.wb__nav__ctn-item').not('.active').toggleClass('compress')
     $(this).toggleClass('active').removeClass('compress')
@@ -48,66 +63,89 @@
   $('#custom-amount').on('keydown', function () {
     $('.dn__select-amount-btn').removeClass('active')
   })
-})(jQuery)
 
-fitvids()
-// jQuery(document).ready(function () { jQuery('#roster').tablesorter() })
-jQuery('.center').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 1000,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 760,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
+
+
+  //––– –––––––––––––––––––––––––– –––//
+  // Navigation
+  //––– –––––––––––––––––––––––––– –––//
+  var burger = document.querySelector('#hamburger')
+  var nav = document.querySelector('#main-nav')
+
+  const menu = '<use xlink:href="#icon-menu-open"></use'
+  const cross = '<use xlink:href="#icon-menu-close"></use'
+
+  burger.addEventListener('click', function () {
+    document.getElementsByTagName('body')[0].classList.toggle('wb__nav-overflow')
+    if ($(nav).hasClass('active')) {
+      $(this).children('svg').html(menu)
+    } else {
+      $(this).children('svg').html(cross)
     }
-  ]
-})
+    nav.classList.toggle('active')
+  })
 
-var burger = document.querySelector('#hamburger')
-var nav = document.querySelector('#main-nav')
 
-const menu = '<use xlink:href="#icon-menu-open"></use'
-const cross = '<use xlink:href="#icon-menu-close"></use'
 
-burger.addEventListener('click', function () {
-  document.getElementsByTagName('body')[0].classList.toggle('wb__nav-overflow')
-  if (jQuery(nav).hasClass('active')) {
-    jQuery(this).children('svg').html(menu)
-  } else {
-    jQuery(this).children('svg').html(cross)
-  }
-  nav.classList.toggle('active')
-})
+	//––– –––––––––––––––––––––––––– –––//
+	// Set progressbar width
+	//––– –––––––––––––––––––––––––– –––//
+	function setDonationProgressBar() {
+	    var currentDonations = $('.dash__progress span').text();
+	    var currentDonationsGoal = $('.dash__goal span').text();
 
-// Set progressbar width
-function setDonationProgressBar() {
-    var currentDonations = jQuery('.dash__progress span').text();
-    var currentDonationsGoal = jQuery('.dash__goal span').text();
+	    currentDonations = currentDonations.replace(/,/g, "");
+	    currentDonationsGoal = currentDonationsGoal.replace(/,/g, "");
 
-    currentDonations = currentDonations.replace(/,/g, "");
-    currentDonationsGoal = currentDonationsGoal.replace(/,/g, "");
+	    var barwidth = currentDonations / currentDonationsGoal * 100;
+	    $('#progressbar').width(barwidth + '%');
+	}
 
-    var barwidth = currentDonations / currentDonationsGoal * 100;
-    jQuery('#progressbar').width(barwidth + '%');
-}
+	if ($('body').hasClass('single-player')) {
+	    setDonationProgressBar();
+	}else if ($('body').hasClass('kili')) {
+	    setDonationProgressBar();
+	}
 
-if (jQuery('body').hasClass('single-player')) {
-    setDonationProgressBar();
-}else if (jQuery('body').hasClass('kili')) {
-    setDonationProgressBar();
-}
+
+
+	//––– –––––––––––––––––––––––––– –––//
+	// Slick slider configuration
+	//––– –––––––––––––––––––––––––– –––//
+	$('.center').slick({
+	  centerMode: true,
+	  centerPadding: '60px',
+	  slidesToShow: 3,
+	  responsive: [
+	    {
+	      breakpoint: 1000,
+	      settings: {
+	        arrows: false,
+	        centerMode: true,
+	        centerPadding: '40px',
+	        slidesToShow: 2
+	      }
+	    },
+	    {
+	      breakpoint: 760,
+	      settings: {
+	        arrows: false,
+	        centerMode: true,
+	        centerPadding: '40px',
+	        slidesToShow: 1
+	      }
+	    }
+	  ]
+	})
+
+
+
+	//––– –––––––––––––––––––––––––– –––//
+	// Call fitvids
+	//––– –––––––––––––––––––––––––– –––//
+	fitvids()
+
+
+
+// END MAIN FUNCTION
+})(jQuery)
