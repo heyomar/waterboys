@@ -48,8 +48,7 @@ if ($_POST) {
 
     $insert = $db->query("INSERT INTO wp_donations (plyr_id, grp_id, donation, email) VALUES ($player, $group, $donation, $email)");
 
-    // TODO: delet this
-    echo var_dump($db);
+    sendEmail($email);
   } catch (\Stripe\Error\Card $e) {
     // Since it's a decline, \Stripe\Error\Card will be caught
     displayError($e);
@@ -88,4 +87,31 @@ function displayError ($e) {
   // param is '' in this case
   print('Param is:' . $err['param'] . "\n");
   print('Message is:' . $err['message'] . "\n");
+}
+
+function sendEmail ($email) {
+  require_once 'Mandrill.php';
+  $mandrill = new Mandrill('Ft0u-JledNLKAk10Mb7PKA');
+
+  $messagebody = 'Thank you for your donation toward securing clean water for all.';
+
+  try {
+    $message = array(
+      'text' => $messagebody,
+      'subject' => 'Thank you for your donation to Waterboys',
+      'from_email' => 'no-reply@waterboys.org',
+      'from_name' => 'Waterboys - Chris Long Foundation',
+      'to' => array(
+        array(
+          'email' => $email,
+          'type' => to
+        )
+      ),
+      'headers' => array('Reply-To' => 'no-reply@waterboys.org')
+    );
+
+    $mandrill->messages->send($message);
+  } catch (Mandrill_Error $e) {
+    return 'A Mandrill error occured: ' . get_class($e) . ' - ' . $e->getMessage();
+  }
 }
