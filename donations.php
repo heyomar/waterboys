@@ -94,7 +94,7 @@ function displayError ($e) {
 function sendEmail ($email) {
   $mandrill = new Mandrill('Ft0u-JledNLKAk10Mb7PKA');
 
-  $messagebody = 'Thank you for your donation to the Chris Long Foundation. Your generosity toward the Waterboys project has helped secure clean water for tens of thousands.\r\n\r\nPlease follow our progress on waterboys.org or on our social media on Facebook and Twitter.';
+  $messagebody = 'Thank you for your donation to the Chris Long Foundation. Your generosity toward the Waterboys project has helped secure clean water for tens of thousands. Please follow our progress on waterboys.org or on our social media on Facebook and Twitter.';
 
   try {
     $message = array(
