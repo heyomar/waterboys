@@ -48,7 +48,7 @@ if ($_POST) {
 
     $insert = $db->query("INSERT INTO wp_donations (plyr_id, grp_id, donation, email) VALUES ($player, $group, $donation, $email)");
 
-    sendEmail($email);
+    sendEmail($_POST['email']);
   } catch (\Stripe\Error\Card $e) {
     // Since it's a decline, \Stripe\Error\Card will be caught
     displayError($e);
@@ -92,10 +92,9 @@ function displayError ($e) {
 
 
 function sendEmail ($email) {
-  require_once 'Mandrill.php';
   $mandrill = new Mandrill('Ft0u-JledNLKAk10Mb7PKA');
 
-  $messagebody = 'Thank you for your donation to the Chris Long Foundation. Your generosity toward the Waterboys project will help secure clean water for thousands.\r\n\r\nPlease follow our progress on waterboys.org or on our social media on Facebook and Twitter.';
+  $messagebody = 'Thank you for your donation to the Chris Long Foundation. Your generosity toward the Waterboys project has helped secure clean water for tens of thousands.\r\n\r\nPlease follow our progress on waterboys.org or on our social media on Facebook and Twitter.';
 
   try {
     $message = array(
