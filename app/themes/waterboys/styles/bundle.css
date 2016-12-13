@@ -4024,8 +4024,9 @@ textarea {
   width: 30px;
 }
 
-.texture-white {
-	-webkit-mask-image: url('../assets/grit.png');
+.textured {
+	-webkit-mask-image: url('../assets/texture__normal.png');
+	mask-image: url('../assets/texture__normal.png');
 }
 
 .icon {

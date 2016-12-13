@@ -56,7 +56,7 @@
       </div>
 
       <div class="rs__ctn">
-        <h2 class="rs__title">The Roster<br><img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/roster__blue-wave.png" ></h2>
+        <h2 class="rs__title textured">The Roster<br><img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/roster__blue-wave.png" ></h2>
               <p class="copy__intro">
               As Waterboys, these NFL stars are teaming up with fans to supply rural East African communities with clean, accessible drinking water.
             </p>

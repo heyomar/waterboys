@@ -6,7 +6,7 @@ Template Name: Player Profile
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
     <div style="background: url('<?php the_field('desktop_header'); ?>') top center no-repeat; background-size: cover;" class="wb__player__header">
-        <div class="wb__player-name-ctn"><h2 class="wb__player-name"><?php the_field('player_name'); ?></h2>
+        <div class="wb__player-name-ctn"><h2 class="wb__player-name textured"><?php the_field('player_name'); ?></h2>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-wave.png" alt="" />
         <p class="wb__player-team"><?php the_field('team'); ?></p></div>
 

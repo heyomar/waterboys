@@ -17,7 +17,7 @@
     <?php  } $amount = $donationTotals / 100?> -->
 
     <div class="wb__page-hero ms__hero-bg">
-      <h2 class="mission__title"> Our Mission<br>
+      <h2 class="mission__title textured"> Our Mission<br>
         <img class="mission__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/wb__home-wave.png">
       </h2>
     </div>

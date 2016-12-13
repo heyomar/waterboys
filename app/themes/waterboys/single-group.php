@@ -14,7 +14,7 @@ Template Name: Group Profile
                   <img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-wave.png" alt="">
                 </div>
                 <div class="gp__flex-group-title">
-                  <span class="gp__title ">
+                  <span class="gp__title textured ">
                     <?php the_field('group_name'); ?>
                   </span>
                 </div>

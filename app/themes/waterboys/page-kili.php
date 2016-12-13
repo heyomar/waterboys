@@ -5,7 +5,7 @@
     </div> -->
 
     <div style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/header__conqueringkili.jpg') top center no-repeat; background-size: cover;" class="wb__player__header">
-        <div class="wb__player-name-ctn"><h2 class="wb__player-name">Conquering Kili</h2>
+        <div class="wb__player-name-ctn"><h2 class="wb__player-name textured">Conquering Kili</h2>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-wave.png" alt="" />
 
       </div>

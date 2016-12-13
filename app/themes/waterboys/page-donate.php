@@ -2,7 +2,7 @@
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
     <div class="wb__page-hero dn__hero-bg">
-      <h2 class="mission__title"> Tackle Thirst<br>
+      <h2 class="mission__title textured"> Tackle Thirst<br>
         <img class="mission__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/wb__home-wave.png">
       </h2>
     </div>

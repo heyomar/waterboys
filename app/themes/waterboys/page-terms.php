@@ -1,7 +1,7 @@
 <?php get_header(); ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="wb__page-hero legal__hero-bg">
-      <h2 class="st__title">Terms<br><img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/wb__home-wave.png" alt=""></h2>
+      <h2 class="st__title textured">Terms<br><img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri() ?>/assets/wb__home-wave.png" alt=""></h2>
     </div>
 
    <div class="rs__ctn wb__page-legal">

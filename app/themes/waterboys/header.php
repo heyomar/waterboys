@@ -48,11 +48,11 @@
       </div>
       <nav id="main-nav" class="wb__header__nav">
         <div class="wb__nav__ctn">
-          <div class="wb__nav__ctn-item nav-item-ourmission"><a href="/mission/">Our Mission</a></div>
-          <div class="wb__nav__ctn-item nav-item-donate"><a href="/donate/">Donate</a></div>
-          <div class="wb__nav__ctn-item nav-item-initiatives"><a href="/kili/">Conquering Kili</a></div>
-          <div class="wb__nav__ctn-item nav-item-waterboys"><a href="/roster/">The Waterboys Roster</a></div>
-          <div class="wb__nav__ctn-item nav-item-social"><a href="/connect/">Connect</a></div>
+          <div class="wb__nav__ctn-item nav-item-ourmission"><a class="textured" href="/mission/">Our Mission</a></div>
+          <div class="wb__nav__ctn-item nav-item-donate"><a class="textured" href="/donate/">Donate</a></div>
+          <div class="wb__nav__ctn-item nav-item-initiatives"><a class="textured" href="/kili/">Conquering Kili</a></div>
+          <div class="wb__nav__ctn-item nav-item-waterboys"><a class="textured" href="/roster/">The Waterboys Roster</a></div>
+          <div class="wb__nav__ctn-item nav-item-social"><a class="textured" href="/connect/">Connect</a></div>
         </div>
       </nav>
     </header>
