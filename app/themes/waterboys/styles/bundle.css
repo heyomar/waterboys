@@ -3848,14 +3848,17 @@ textarea {
 
 .wb__page-dash-inner-ctn {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .wb__page-dash-item {
   -webkit-box-flex: 2;
+  -webkit-flex: 2 1 auto;
       -ms-flex: 2 1 auto;
           flex: 2 1 auto;
   height: 150px;
@@ -4454,11 +4457,13 @@ Example showing how to change the color/size of the icons:
 
 .wb__player-container {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin-top: -4px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   height: auto;
   padding-bottom: 5px;
   margin-top: 0;
@@ -4466,6 +4471,7 @@ Example showing how to change the color/size of the icons:
 
 .wb__content-bio {
   -webkit-box-flex: 3;
+  -webkit-flex: 3 2 60%;
       -ms-flex: 3 2 60%;
           flex: 3 2 60%;
   font-weight: 400;
@@ -4481,6 +4487,7 @@ Example showing how to change the color/size of the icons:
 
 .wb__content-info {
   -webkit-box-flex: 2;
+  -webkit-flex: 2 1 auto;
       -ms-flex: 2 1 auto;
           flex: 2 1 auto;
   min-width: 330px;
@@ -4548,6 +4555,7 @@ Example showing how to change the color/size of the icons:
 @media screen and (min-width:48em) {
   .wb__content-bio {
     -webkit-box-flex: 3;
+    -webkit-flex: 3 2 55%;
         -ms-flex: 3 2 55%;
             flex: 3 2 55%;
     font-weight: 400;
@@ -4558,6 +4566,7 @@ Example showing how to change the color/size of the icons:
 
   .wb__content-info {
     -webkit-box-flex: 1;
+    -webkit-flex: 1 1 20%;
         -ms-flex: 1 1 20%;
             flex: 1 1 20%;
     min-width: 335px;
@@ -4596,15 +4605,18 @@ Example showing how to change the color/size of the icons:
 
 .mission-flex-ctn {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   padding: 15px 5%;
 }
 
 .mission-flex-child {
   -webkit-box-flex: 2;
+  -webkit-flex: 2 1 50%;
       -ms-flex: 2 1 50%;
           flex: 2 1 50%;
 }
@@ -4700,6 +4712,7 @@ Example showing how to change the color/size of the icons:
 
 .reasons-flex-child {
   -webkit-box-flex: 2;
+  -webkit-flex: 2 1 350px;
       -ms-flex: 2 1 350px;
           flex: 2 1 350px;
   padding: 10px 10px 35px;
@@ -4802,19 +4815,23 @@ Example showing how to change the color/size of the icons:
 
 .mission-inner-flex-ctn {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .mission-flex-image {
   -webkit-box-flex: 1;
+  -webkit-flex: 1 1 30%;
       -ms-flex: 1 1 30%;
           flex: 1 1 30%;
   text-align: center;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 
 .mission-flex-image img {
@@ -4824,6 +4841,7 @@ Example showing how to change the color/size of the icons:
 
 .mission-flex-para {
   -webkit-box-flex: 1;
+  -webkit-flex: 1 1 50%;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
   font-size: 18px;
@@ -4864,12 +4882,14 @@ Example showing how to change the color/size of the icons:
   }
   .mission-flex-image {
     -webkit-box-flex: 1;
+    -webkit-flex: auto;
         -ms-flex: auto;
             flex: auto;
   }
 
   .mission-flex-para {
     -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
         -ms-flex: 1 1 50%;
             flex: 1 1 50%;
   }
@@ -4928,15 +4948,18 @@ Example showing how to change the color/size of the icons:
 
 .st__flex-ctn {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   padding: 15px 5%;
 }
 
 .st__flex-child {
   -webkit-box-flex: 1;
+  -webkit-flex: 1 1 45%;
       -ms-flex: 1 1 45%;
           flex: 1 1 45%;
 }
@@ -5062,15 +5085,18 @@ Example showing how to change the color/size of the icons:
 
 .hl__flex-ctn {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   padding: 15px;
 }
 
 .hl__flex-child-copy {
   -webkit-box-flex: 3;
+  -webkit-flex: 3 2 50%;
       -ms-flex: 3 2 50%;
           flex: 3 2 50%;
   padding: 0 25px;
@@ -5107,6 +5133,7 @@ Example showing how to change the color/size of the icons:
   background-size: contain;
   background-position: center;
   -webkit-box-flex: 1;
+  -webkit-flex: 1 1 35%;
       -ms-flex: 1 1 35%;
           flex: 1 1 35%;
   min-width: 310px;
@@ -5512,10 +5539,12 @@ Example showing how to change the color/size of the icons:
 
 .rs___slider-flex-ctn {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .rs__slider-nameplate {
@@ -5524,6 +5553,7 @@ Example showing how to change the color/size of the icons:
   background-repeat: no-repeat;
   background-color: #f1f0ee;
   -webkit-box-flex: 1;
+  -webkit-flex: auto;
       -ms-flex: auto;
           flex: auto;
   padding: 20px 15px 20px 0;
@@ -5580,6 +5610,7 @@ Example showing how to change the color/size of the icons:
   background-repeat: no-repeat;
   background-color: #f1f0ee;
   -webkit-box-flex: 1;
+  -webkit-flex: auto;
       -ms-flex: auto;
           flex: auto;
   margin: 10px;
@@ -5638,6 +5669,7 @@ Example showing how to change the color/size of the icons:
   line-height: 1.625rem;
   letter-spacing: 2px;
   letter-spacing: 0.125rem;
+	cursor: pointer;
 
 }
 
@@ -5659,14 +5691,17 @@ tr:nth-child(odd) {
 
 .rs__honor-ctn {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .rs__honor-item {
   -webkit-box-flex: 2;
+  -webkit-flex: 2 1 auto;
       -ms-flex: 2 1 auto;
           flex: 2 1 auto;
   min-width: 280px;
@@ -5862,16 +5897,19 @@ label {
 
 .cn__ctn {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .cn__sidebar-ctn {
   background-image: url('../assets/connect__sidebar-bg.jpg');
   background-size: cover;
   -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   min-width: 200px;
@@ -5894,6 +5932,7 @@ label {
 
 .cn__icon-flex {
   -webkit-box-flex: 2;
+  -webkit-flex: 2 1 33%;
       -ms-flex: 2 1 33%;
           flex: 2 1 33%;
 }
@@ -5943,6 +5982,7 @@ label {
 
 .cn__form-ctn {
   -webkit-box-flex: 3;
+  -webkit-flex: 3 2 auto;
       -ms-flex: 3 2 auto;
           flex: 3 2 auto;
   max-width: 900px;
@@ -6032,6 +6072,7 @@ label {
 @media screen and (min-width:48em) {
   .cn__sidebar-ctn {
     -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
     max-width: 400px;
@@ -6056,16 +6097,19 @@ label {
 
 .ty__inner-ctn {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   padding: 10px;
 }
 
 .ty__side-share-ctn {
   text-align: center;
   -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   min-width: 190px;
@@ -6083,6 +6127,7 @@ label {
 
 .ty__body-copy-ctn {
   -webkit-box-flex: 3;
+  -webkit-flex: 3 2 50%;
       -ms-flex: 3 2 50%;
           flex: 3 2 50%;
   font-size: 19px;
@@ -6123,24 +6168,28 @@ label {
 }
 
 .gp__wave-ctn {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
   padding: 10px 0 15px 0;
 }
 
 .gp__page-hero-inner-ctn {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   min-width: 200px;
   margin: 0 auto;
 }
 
 .gp__flex-profile-image {
-  -ms-flex-preferred-size:100%;
-      flex-basis:100%;
+  -webkit-flex-basis:100%;
+      -ms-flex-preferred-size:100%;
+          flex-basis:100%;
 }
 
 .gp__profile-image {
@@ -6151,8 +6200,9 @@ label {
 }
 
 .gp__flex-group-title {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
 }
 
 .gp__title {
@@ -6362,16 +6412,19 @@ select {
 
 .dn__flex-ctn {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .dn__now-ctn {
   max-width: 700px;
   margin: 0 auto;
   -webkit-box-flex: 3;
+  -webkit-flex: 3 1 30%;
       -ms-flex: 3 1 30%;
           flex: 3 1 30%;
   padding: 25px;
@@ -6390,6 +6443,7 @@ select {
 
 .donate .cn__sidebar-info {
   -webkit-box-flex: 1;
+  -webkit-flex: 1 1 25%;
       -ms-flex: 1 1 25%;
           flex: 1 1 25%;
 }
@@ -6430,11 +6484,13 @@ select {
   font-size: 1.875rem;
   margin-bottom: 15px;
   -webkit-box-flex: 1;
+  -webkit-flex: 1 1 25%;
       -ms-flex: 1 1 25%;
           flex: 1 1 25%;
   margin-right: 10px;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
   max-height: auto;
 }
 
@@ -6444,6 +6500,7 @@ select {
 
 .dn__select-amount-ctn p {
   -webkit-box-flex: 2;
+  -webkit-flex: 2 1 30%;
       -ms-flex: 2 1 30%;
           flex: 2 1 30%;
   color: #5c6268;
@@ -6695,14 +6752,17 @@ a {
 
 .site__footer__content {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   font-family: 'pill-gothic-300mg', sans-serif;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   height: 280px;
@@ -6712,6 +6772,7 @@ a {
 
 .wb__footer__flex-item {
   -webkit-box-flex: 1;
+  -webkit-flex: 1 1 25%;
       -ms-flex: 1 1 25%;
           flex: 1 1 25%;
 }
@@ -6753,6 +6814,7 @@ a {
 .wb__footer__links {
   text-align: center;
   -webkit-box-flex: 2;
+  -webkit-flex: 2 2 50%;
       -ms-flex: 2 2 50%;
           flex: 2 2 50%;
   font-weight: normal;

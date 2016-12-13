@@ -60,25 +60,17 @@
  *         option to "complex", on large tables the complex option can be slow.
  *         Default value: "simple"
  * 
- * @option Object headers (optional) An object of instructions for per-column
- *         controls in the format: headers: { 0: { option: setting }, ... }. For 
- *         example, to disable sorting on the first two columns of a table:
- *         headers: { 0: { sorter: false}, 1: {sorter: false} }.
- *         Default value: null.
+ * @option Object headers (optional) An array containing the forces sorting
+ *         rules. This option let's you specify a default sorting rule. Default
+ *         value: null
  * 
- * @option Array sortList (optional) An array of instructions for per-column sorting 
- *         and direction in the format: [[columnIndex, sortDirection], ... ] where 
- *         columnIndex is a zero-based index for your columns left-to-right and 
- *         sortDirection is 0 for Ascending and 1 for Descending. A valid argument 
- *         that sorts ascending first by column 1 and then column 2 looks like: 
- *         [[0,0],[1,0]]. Default value: null.
+ * @option Array sortList (optional) An array containing the forces sorting
+ *         rules. This option let's you specify a default sorting rule. Default
+ *         value: null
  * 
  * @option Array sortForce (optional) An array containing forced sorting rules.
- *         Use to add an additional forced sort that will be appended to the dynamic
- *         selections by the user. For example, can be used to sort people alphabetically
- *         after some other user-selected sort that results in rows with the same value 
- *         like dates or money due. It can help prevent data from appearing as though it 
- *         has a random secondary sort. Default value: null.
+ *         This option let's you specify a default sorting rule, which is
+ *         prepended to user-selected rules. Default value: null
  * 
  * @option Boolean sortLocaleCompare (optional) Boolean flag indicating whatever
  *         to use String.localeCampare method or not. Default set to true.
@@ -300,14 +292,10 @@
             };
 
             function getElementText(config, node) {
-            	
-                if (!node) return "";
-                
-		        var $node = $(node),
-		            data = $node.attr('data-sort-value');
-		        if (data !== undefined) return data;
 
                 var text = "";
+
+                if (!node) return "";
 
                 if (!config.supportsTextContent) config.supportsTextContent = node.textContent || false;
 
@@ -396,7 +384,7 @@
                 
                 var header_index = computeTableHeaderCellIndexes(table);
 
-                var $tableHeaders = $(table.config.selectorHeaders, table).each(function (index) {
+                $tableHeaders = $(table.config.selectorHeaders, table).each(function (index) {
 
                     this.column = header_index[this.parentNode.rowIndex + "-" + this.cellIndex];
                     // this.column = index;
@@ -588,8 +576,6 @@
             }
 
             /* sorting methods */
-            
-            var sortWrapper;
 
             function multisort(table, sortList, cache) {
 
@@ -597,7 +583,7 @@
                     var sortTime = new Date();
                 }
 
-                var dynamicExp = "sortWrapper = function(a,b) {",
+                var dynamicExp = "var sortWrapper = function(a,b) {",
                     l = sortList.length;
 
                 // TODO: inline functions.
@@ -874,9 +860,11 @@
             };
             this.clearTableBody = function (table) {
                 if ($.browser.msie) {
-                    while (table.tBodies[0].firstChild) {
-                        table.tBodies[0].removeChild(table.tBodies[0].firstChild);
+                    function empty() {
+                        while (this.firstChild)
+                        this.removeChild(this.firstChild);
                     }
+                    empty.apply(table.tBodies[0]);
                 } else {
                     table.tBodies[0].innerHTML = "";
                 }
@@ -988,9 +976,6 @@
             if (c.dateFormat == "us") {
                 // reformat the string in ISO format
                 s = s.replace(/(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/, "$3/$1/$2");
-            }    
-            if (c.dateFormat == "pt") {
-                s = s.replace(/(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/, "$3/$2/$1");   
             } else if (c.dateFormat == "uk") {
                 // reformat the string in ISO format
                 s = s.replace(/(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/, "$3/$2/$1");
