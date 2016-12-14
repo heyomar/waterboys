@@ -212,3 +212,31 @@
   right: 0;
   top: -10px;
 }
+
+.menu-handle {
+	position: relative;
+	display: inline-block;
+
+	& #open-svg {
+		right: 0;
+		position: absolute;
+		top: 0;
+	}
+	& span {
+		display: inline-block;
+	}
+
+	& svg {
+		transition: ease .3s;
+	}
+
+	& .active {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	& .inactive {
+		opacity: 0;
+		transform: scale(0);
+	}
+}

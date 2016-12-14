@@ -1,5 +1,4 @@
 ;(function ($) {
-
   //––– –––––––––––––––––––––––––– –––//
   // get query strings
   //––– –––––––––––––––––––––––––– –––//
@@ -13,8 +12,6 @@
     }
     return b
   })(window.location.search.substr(1).split('&'))
-
-
 
 
 
@@ -79,11 +76,13 @@
 
   burger.addEventListener('click', function () {
     document.getElementsByTagName('body')[0].classList.toggle('wb__nav-overflow')
-    if ($(nav).hasClass('active')) {
-      $(this).children('svg').html(menu)
-    } else {
-      $(this).children('svg').html(cross)
-    }
+		if ($('#open-svg').hasClass('active')) {
+				$('#open-svg').addClass('inactive').removeClass('active');
+				$('#close-svg').addClass('active').removeClass('inactive');
+		}else {
+				$('#close-svg').addClass('inactive').removeClass('active');
+				$('#open-svg').addClass('active').removeClass('inactive');
+		}
     nav.classList.toggle('active')
   })
 
@@ -152,7 +151,6 @@
 	// Make table sortable
 	//––– –––––––––––––––––––––––––– –––//
 	$('#roster__table').tablesorter();
-
 
 
 // END MAIN FUNCTION

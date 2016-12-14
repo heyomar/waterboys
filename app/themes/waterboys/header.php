@@ -38,11 +38,19 @@
           <a href="/"><img class="wb__header-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-logo.png" alt="" /></a>
         <div class="wb__header__right">
           <a class="wb__button wb__header-button" href="/donate">Donate</a>
-          <span id="hamburger">
-            <svg class="menu-icon-svg wb__header__hamburger">
-              <use xlink:href="#icon-menu-open"></use>
-            </svg>
-          </span>
+          <div id="hamburger" class="menu-handle">
+            <span>
+							<svg id="open-svg" class="menu-icon-svg wb__header__hamburger active">
+              	<use xlink:href="#icon-menu-open"></use>
+            	</svg>
+						</span>
+
+						<span>
+							<svg id="close-svg" class="menu-icon-svg wb__header__hamburger inactive">
+              	<use xlink:href="#icon-menu-close"></use>
+            	</svg>
+						</span>
+          </div>
         </div>
       </div>
       <nav id="main-nav" class="wb__header__nav">
