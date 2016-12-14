@@ -25,12 +25,18 @@
           </tr>
         </thead>
         <tbody>
-          <?php $groups = new WP_Query( array( 'post_type' => 'group' ) );?>
+          <?php $groups = new WP_Query( array(
+						'post_type' => 'group',
+						'post_status' => 'publish',
+						'posts_per_page' => -1
+					) );?>
             <?php if( $groups->have_posts()): ?>
               <?php while ( $groups->have_posts()) : $groups->the_post();  ?>
           <tr>
             <td><a href="<?php echo get_permalink(); ?>"><?php the_field('group_name'); ?></a></td>
-            <td><?php the_field('location_body'); ?></td>
+            <td>
+						<?php the_field('favorite_nfl_team'); ?>
+						</td>
           </tr>
         <?php endwhile; ?>
       <?php endif ?>
