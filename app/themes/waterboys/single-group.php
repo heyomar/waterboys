@@ -8,7 +8,7 @@ Template Name: Group Profile
         <div class="gp__page-hero-ctn">
               <div class="gp__page-hero-inner-ctn">
                 <div  class="gp__flex-profile-image">
-                  <div class="profile-image" style="background-image:url('<?php the_post_thumbnail_url(); ?>')"></div>
+                  <div class="profile-image" style="background-image:url('<?php the_field('profile_image'); ?>')"></div>
                 </div>
                 <div class="gp__wave-ctn">
                   <img class="st__title-wave" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-wave.png" alt="">
