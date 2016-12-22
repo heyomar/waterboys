@@ -14,10 +14,10 @@ able to set it up yourself, you will have to make directory edits in
 `/index.php` and `/wp-config.php`.
 
 ## Requirements
-* Vagrant or the following:
-  * PHP 5.5 or higher
-  * MariaDB, Percona XtraDB, or MySQL
-  * Composer (required for dev)
+*   Vagrant or the following:
+*   PHP 5.5 or higher
+*   MariaDB, Percona XtraDB, or MySQL
+*   Composer (required for dev)
 
 ## Setup
 If you have VirtualBox installed, you can use the current version, or if you

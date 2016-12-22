@@ -1,20 +1,5 @@
 <?php get_header(); ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <?php
-          $pd_query = "select * from wp_posts as p
-          left join (select * from wp_postmeta where meta_key = 'team') as pm on p.ID = pm.post_id
-          left join (select plyr_id, sum(donation) as total_donations from wp_donations group by plyr_id ) as t_donations on p.ID = t_donations.plyr_id
-          where p.post_type='player' and p.post_status='publish'
-          order by total_donations desc
-          ;
-          ;";
-          $players_and_donations = $wpdb->get_results($pd_query);
-          $donationTotals;
-          ?>
-
-    <!-- <?php foreach($players_and_donations as $player) { ?>
-		<?php $donationTotals += $player->total_donations;?>
-    <?php  } $amount = $donationTotals / 100?> -->
 
     <div class="wb__page-hero ms__hero-bg">
       <h2 class="mission__title textured"> Our Mission<br>
@@ -33,7 +18,22 @@
         <div class="mission-flex-child wb__mission-meter">
           <p class="mission__meter-title">Progress To Next Well</p>
           <div style="background-color:#cccdcd;" class="wb__progressgoal-ctn">
-                 <div style="width:25%;" id="missonProgress" class="wb__progressgoal-bar"></div>
+            <div id="missionProgress" class="wb__progressgoal-bar"></div>
+            <script>
+              // determine approx pct for wells fill
+              <?php
+              global $wpdb;
+              $donations = $wpdb->get_results("SELECT donation FROM wp_donations");
+              $donationTotal = 0;
+              foreach ($donations as $donation) {
+                $donationTotal += (int)$donation->donation;
+              } ?>
+              var donationTotal = <?php echo $donationTotal; ?>/100;
+              var wells = donationTotal/45000;
+              var wellsPct = Math.floor((wells % 1) * 100);
+              var progress = document.getElementById('missionProgress');
+              progress.style.width = wellsPct + '%';
+            </script>
           </div>
           <p class="ourmission__goal">Goal: $45,000</p>
         </div>
