@@ -15,8 +15,8 @@
 
 
 <?php $counter = 1;
-      foreach($players_and_donations as $player) { //$player is an OBJECT ?>
-
+      foreach($players_and_donations as $player) : //$player is an OBJECT
+        if (get_field('player_name', $player->ID) != "") : ?>
             <div class="block-hold" style="background-image:url('<?php echo wp_get_attachment_url(get_post_meta($player->ID, 'player_slider_image', true)); ?>')">
               <div class="rs__slider-overlay">
                 <div class="rs___slider-flex-ctn-wrapper">
@@ -51,7 +51,8 @@
             </div>
             <?php
             $counter +=1;
-            }
+          endif;
+        endforeach;
             ?>
       </div>
 
@@ -73,18 +74,18 @@
 
                     <?php
                     $counter = 1;
-                    foreach($players_and_donations as $player) {
-                    //$player is an OBJECT
-                    ?>
-                    <tr>
-                      <td><a href="<?php echo get_permalink($player->ID) ?>"
-                      ><?php echo $player->post_title; ?></a></td>
-                      <td><?php echo $player->meta_value; ?></td>
-                      <td><?php echo $counter ?> </td>
-                    </tr>
-                    <?php
-                    $counter +=1;
-                    }
+                    foreach($players_and_donations as $player) :
+                      if (get_field('player_name', $player->ID) != "") : ?>
+                        <tr>
+                          <td><a href="<?php echo get_permalink($player->ID) ?>"
+                          ><?php echo get_field('player_name', $player->ID); ?></a></td>
+                          <td><?php echo $player->meta_value; ?></td>
+                          <td><?php echo $counter ?> </td>
+                        </tr>
+                        <?php
+                        $counter +=1;
+                      endif;
+                    endforeach;
                     ?>
             </tbody>
           </table>
