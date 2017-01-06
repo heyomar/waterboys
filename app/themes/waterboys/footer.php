@@ -31,13 +31,20 @@
       <nav class="wb__footer__links">
         <a href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-footerlogo.png" alt="" /></a>
         <a href="http://chrislongfoundation.org/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wb__home-chrislonglogo.png" alt="" /></a>
+        <div class="wb__footer__mobile-only">
+          <?php
+            $args = array(
+              'theme_location' => 'footer'
+            );
+            wp_nav_menu($args); ?>
+        </div>
         <?php
             $args = array(
-                'theme_location' => 'footer-bottom'
+              'theme_location' => 'footer-bottom'
             );
-            ?>
-          <?php wp_nav_menu($args); ?>
+            wp_nav_menu($args); ?>
       </nav>
+
       <div class="wb__footer__nav wb__footer__flex-item">
         <?php
             $args = array(
@@ -49,6 +56,6 @@
     </div>
   </footer>
   <?php wp_footer(); ?>
-    </body>
+  </body>
 
-    </html>
+</html>

@@ -12,7 +12,7 @@ a {
   background-size: cover;
   position: relative;
   z-index: 2;
-  padding-bottom: 40px;
+  padding-bottom: 65px;
 
 
   & a:hover {
@@ -107,6 +107,12 @@ a {
   letter-spacing: 0.2px;
 }
 
+.wb__footer__mobile-only {
+	& ul {
+		padding: 0;
+	}
+}
+
 /* MEDIA QUERIES */
 @media screen and $desktop {
   .wb__footer__social {
@@ -125,4 +131,8 @@ a {
   .wb__footer__nav {
     display: block;
   }
+
+	.wb__footer__mobile-only {
+		display: none;
+	}
 }
