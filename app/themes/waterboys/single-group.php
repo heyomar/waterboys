@@ -35,7 +35,7 @@ Template Name: Group Profile
           ?>
           <div class="wb__page-dash-item">
             <h3>Fundraising Goal</h3>
-            <div class="dash__goal">$<span><?php echo the_field('register_group_fundraising_goal') ?></span></div>
+            <div class="dash__goal">$<span><?php echo number_format(get_field('register_group_fundraising_goal')); ?></span></div>
           </div>
           <div class="wb__page-dash-item">
             <h3>Progress to Goal</h3>
