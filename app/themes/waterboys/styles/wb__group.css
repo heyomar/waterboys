@@ -100,12 +100,16 @@
 
 .profile-image {
   border: 3px solid #fff;
-  min-height: 100px;
-  max-width: 100px;
+  min-height: 200px;
+  max-width: 200px;
   border-radius: 100px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
 
+}
+
+.group-template-default .wb__page-hero {
+	height: 500px;
 }
