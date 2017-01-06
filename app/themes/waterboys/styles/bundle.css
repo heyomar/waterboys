@@ -4629,7 +4629,7 @@ Example showing how to change the color/size of the icons:
 }
 
 .nate-boyer .wb__player__header {
-  background-position: center;
+  background-position: center !important;
 }
 
 .ms__hero-bg {

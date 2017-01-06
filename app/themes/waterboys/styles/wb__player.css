@@ -162,6 +162,6 @@
   }
 
   & .wb__player__header {
-    background-position: center;
+    background-position: center !important;
   }
 }
