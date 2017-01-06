@@ -160,8 +160,4 @@
   & .wb__content-info {
     display: none;
   }
-
-  & .wb__player__header {
-    background-position: center !important;
-  }
 }

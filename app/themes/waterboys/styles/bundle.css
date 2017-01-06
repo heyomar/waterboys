@@ -4628,10 +4628,6 @@ Example showing how to change the color/size of the icons:
   display: none;
 }
 
-.nate-boyer .wb__player__header {
-  background-position: center !important;
-}
-
 .ms__hero-bg {
   background: url('../assets/header__ourmission.jpg') top center no-repeat;
 }
