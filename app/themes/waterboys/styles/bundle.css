@@ -4621,8 +4621,15 @@ Example showing how to change the color/size of the icons:
     color: #fff;
 }
 
+.nate-boyer {
+}
+
 .nate-boyer .wb__content-info {
   display: none;
+}
+
+.nate-boyer .wb__player__header {
+  background-position: center;
 }
 
 .ms__hero-bg {
@@ -6638,7 +6645,8 @@ select {
 .donate {
 }
 
-.donate .cn__sidebar-info {}
+.donate .cn__sidebar-info {
+}
 
 .donate .cn__sidebar-info span {
   font-size: 16px;

@@ -156,6 +156,12 @@
     color: #fff;
 }
 
-.nate-boyer .wb__content-info {
-  display: none;
+.nate-boyer {
+  & .wb__content-info {
+    display: none;
+  }
+
+  & .wb__player__header {
+    background-position: center;
+  }
 }
