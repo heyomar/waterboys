@@ -223,11 +223,6 @@ tr:nth-child(odd) {
   background-image: url(../assets/roster__honor-bg.png);
   background-size: cover;
   padding: 25px 0;
-
-  @nest .kili & {
-    background-image: url(/app/uploads/2017/01/KILIFLAG_NAMES-01.png);
-    background-position: center;
-  }
 }
 
 .rs__honor-copy {

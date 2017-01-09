@@ -98,6 +98,9 @@
   </div>
   </div>
 </div>
+<div class="kiliflag">
+  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/kiliflag.png" alt="Conquering Kili flag">
+</div>
 <div class="cta">
   <p>Mount Kilimanjaro is 19,341 feet at its highest point.</p>
 </div>

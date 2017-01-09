@@ -23,3 +23,9 @@
 .cq__white {
   color: #fff;
 }
+
+.kiliflag img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}

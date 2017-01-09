@@ -5777,12 +5777,7 @@ tr:nth-child(odd) {
 .rs__honor-bg {
   background-image: url(../assets/roster__honor-bg.png);
   background-size: cover;
-  padding: 25px 0
-}
-
-.kili .rs__honor-bg {
-  background-image: url(/app/uploads/2017/01/KILIFLAG_NAMES-01.png);
-  background-position: center;
+  padding: 25px 0;
 }
 
 .rs__honor-copy {
@@ -5895,6 +5890,12 @@ tr:nth-child(odd) {
 
 .cq__white {
   color: #fff;
+}
+
+.kiliflag img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
 }
 
 label {
