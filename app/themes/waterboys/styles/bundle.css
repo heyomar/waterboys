@@ -5895,7 +5895,7 @@ tr:nth-child(odd) {
 .kiliflag img {
 	display: block;
 	margin: auto;
-	max-width: 100%;
+	max-width: 1152px;
 }
 
 label {
